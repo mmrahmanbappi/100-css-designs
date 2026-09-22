@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Harbor Gazette | Newspaper Editorial HTML Template</title>
+<meta name="description" content="Free newspaper style website template for a local news site. Masthead, serif headlines, multi column text and a print look in pure CSS. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Playfair+Display:wght@700;900&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4efe3;--ink:#1b1a17;--rule:#1b1a17;--muted:#5b574d}
+*{box-sizing:border-box;margin:0}
+body{font-family:"PT Serif",Georgia,serif;background:var(--paper);color:var(--ink);line-height:1.6;font-size:17px}
+.page{max-width:1120px;margin:0 auto;padding:20px 24px 40px}
+.top{display:flex;justify-content:space-between;font-size:.85rem;border-bottom:1px solid var(--rule);padding-bottom:6px}
+.mast{font-family:UnifrakturMaguntia,serif;font-size:clamp(2.8rem,9vw,6rem);text-align:center;line-height:1.1;padding:10px 0}
+.date{display:flex;justify-content:space-between;border-block:3px double var(--rule);padding:6px 0;font-size:.9rem;font-weight:700}
+a{color:var(--ink)}a:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.front{display:grid;grid-template-columns:2fr 1fr;gap:30px;padding-top:24px}
+.lead h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2rem,4.5vw,3.4rem);line-height:1.05}
+.dek{font-style:italic;font-size:1.2rem;color:var(--muted);margin:12px 0}
+.by{font-size:.85rem;font-weight:700;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:4px 0;margin-bottom:14px}
+.cols{columns:2;column-gap:26px;column-rule:1px solid #b9b2a2;text-align:justify;hyphens:auto}
+.cols p{margin-bottom:10px}
+.cols p:first-child::first-letter{font-family:"Playfair Display",serif;font-weight:900;float:left;font-size:4rem;line-height:.8;padding:6px 8px 0 0}
+.art{height:220px;margin:16px 0;border:1px solid var(--rule);background:repeating-linear-gradient(0deg,#cfc6b2 0 2px,#e7e0cf 2px 5px),linear-gradient(#bfb6a1,#e8e1d0)}
+.cap{font-size:.8rem;color:var(--muted);margin-top:-8px;margin-bottom:12px}
+aside{border-left:1px solid var(--rule);padding-left:26px}
+aside h2{font-family:"Playfair Display",serif;font-size:1.35rem;line-height:1.15;margin-bottom:6px}
+aside article{border-bottom:1px solid var(--rule);padding-bottom:16px;margin-bottom:16px}
+.weather{border:2px solid var(--rule);padding:12px;text-align:center}
+.weather b{font-family:"Playfair Display",serif;font-size:2.2rem;display:block}
+.credit{text-align:center;font-size:.85rem;border-top:3px double var(--rule);margin-top:30px;padding-top:12px}
+@media(max-width:820px){.front{grid-template-columns:1fr}.cols{columns:1}aside{border:0;padding:0}}
+</style></head><body><div class="page">
+<div class="top"><span>Est. 1894</span><span>Weekend edition</span></div>
+<header class="mast">The Harbor Gazette</header>
+<div class="date"><span>Saturday, 11 October</span><span>Serving Port Alder and the islands</span><span>$2.00</span></div>
+<main class="front"><article class="lead"><h1>Old ferry terminal will become a market hall by next summer</h1><p class="dek">Council votes 7 to 2 to save the 1920s building instead of pulling it down.</p><p class="by">By Ruth Okafor, city reporter</p>
+<div class="art" role="img" aria-label="Illustration of the old ferry terminal"></div><p class="cap">The terminal building has stood empty since the new pier opened in 2011.</p>
+<div class="cols"><p>After three years of arguments, the old ferry terminal on Water Street has a future. On Thursday night the town council voted to turn it into an indoor market with room for forty stalls, a small stage and a public cafe on the upper floor.</p><p>"People have walked past this building every day of their lives," said council member Dev Patel. "Now they will finally get to walk inside it."</p><p>The repairs will cost about $4.2 million. Half will come from a state grant for historic buildings, and the rest from stall rents over the next fifteen years. Work on the roof starts in January.</p><p>Not everyone is happy. Two council members said the money should go to the harbor road, which floods most winters. A public meeting on the road is planned for November.</p></div></article>
+<aside><article><h2>High school rowing team wins state title</h2><p>The girls' eight beat Lake City by less than a second in a finish nobody will forget.</p></article><article><h2>Library extends Sunday hours</h2><p>From November the main branch stays open until 6pm on Sundays.</p></article><div class="weather"><span>Today</span><b>14°C</b><span>Fog early, clear by noon</span></div></aside></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</div></body></html>

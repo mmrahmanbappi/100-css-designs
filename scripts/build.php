@@ -245,7 +245,7 @@ function category_page($c) {
 <div class=\"grid\">$tiles</div>
 </main>
 ";
-    out("{$c['slug']}/index.html", head($c['title'], $c['desc'], $url, $img, 'soft ui css, glassmorphism, neumorphism, claymorphism, css templates free', $schema) . $body . foot());
+    out("{$c['slug']}/index.html", head($c['title'], $c['desc'], $url, $img, $c['keywords'] ?? 'css templates free', $schema) . $body . foot());
 }
 
 function home() {

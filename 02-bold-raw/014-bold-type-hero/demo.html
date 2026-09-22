@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pace Running Club | Bold Typography Hero HTML Template</title>
+<meta name="description" content="Free bold typography website template for a running club. A giant headline fills the screen, with tight spacing and strong contrast. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#101820;--lime:#d7ff3a;--bg:#f2f0eb}
+*{box-sizing:border-box;margin:0}
+body{font-family:Barlow,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:18px}
+header{display:flex;justify-content:space-between;padding:20px 24px;font-weight:600}
+header a{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.big{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(4.5rem,19vw,17rem);line-height:.84;letter-spacing:-.01em;padding:0 20px}
+.big span{display:block}
+.big .o{-webkit-text-stroke:3px var(--ink);color:transparent}
+.big .l{background:var(--lime);display:inline-block;padding:0 .08em}
+.info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;padding:40px 24px;border-top:3px solid var(--ink);margin-top:30px}
+.info h2{font-family:Anton,sans-serif;font-weight:400;font-size:1.8rem;text-transform:uppercase}
+.btn{display:inline-block;background:var(--ink);color:var(--lime);padding:16px 28px;font-weight:600;text-decoration:none;margin-top:12px}
+.runs{padding:0 24px 60px}
+.runs div{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-top:1px solid var(--ink);font-size:1.2rem}
+.runs b{font-family:Anton,sans-serif;font-weight:400;font-size:1.6rem}
+.credit{padding:0 24px 30px;font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:760px){.info{grid-template-columns:1fr}.runs div{flex-direction:column;gap:2px}}
+</style></head><body>
+<header><span>Pace Running Club, Bristol</span><a href="#join">Join us</a></header>
+<main><h1 class="big"><span>Run</span><span class="o">with</span><span class="l">people.</span></h1>
+<section class="info"><div><h2>Every pace</h2><p>We have groups from 7 minute miles to 12. Nobody gets left at the back.</p></div><div><h2>Three runs a week</h2><p>Tuesday and Thursday evenings, Saturday morning. Free for the first month.</p></div><div id="join"><h2>Just turn up</h2><p>Meet at the Harbourside steps. Bring water and a smile.</p><a class="btn" href="#">Sign up for Tuesday</a></div></section>
+<section class="runs" aria-label="This week"><div><b>Tue 18:30</b><span>5K river loop, three pace groups</span></div><div><b>Thu 18:30</b><span>Hill repeats on Park Street</span></div><div><b>Sat 08:00</b><span>10K long run, coffee after</span></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

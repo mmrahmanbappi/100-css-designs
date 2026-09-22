@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixel Pond Game Studio | Retro Pixel 8-bit HTML Template</title>
+<meta name="description" content="Free retro pixel website template for an indie game. 8-bit fonts, pixel borders, a CSS pixel art character and a blinking start button. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#5fcde4;--grass:#4b8f29;--dirt:#8a4b2a;--ink:#1a1c2c;--gold:#ffcd75;--red:#b13e53;--white:#f4f4f4}
+*{box-sizing:border-box;margin:0}
+body{font-family:VT323,monospace;font-size:24px;background:var(--ink);color:var(--white);line-height:1.2;image-rendering:pixelated}
+.px{box-shadow:0 -4px 0 0 var(--white),0 4px 0 0 var(--white),-4px 0 0 0 var(--white),4px 0 0 0 var(--white),0 0 0 4px var(--ink) inset}
+.scene{position:relative;height:420px;background:linear-gradient(var(--sky) 0 72%,var(--grass) 72% 80%,var(--dirt) 80%);overflow:hidden}
+.cloud{position:absolute;width:96px;height:32px;background:var(--white);box-shadow:32px -16px 0 var(--white),64px 0 0 var(--white)}
+.hero{position:absolute;left:12%;bottom:20%;width:8px;height:8px;background:transparent;transform:scale(1);
+box-shadow:16px 0 var(--red),24px 0 var(--red),32px 0 var(--red),8px 8px var(--red),16px 8px var(--red),24px 8px var(--red),32px 8px var(--red),40px 8px var(--red),
+8px 16px var(--gold),16px 16px var(--gold),24px 16px var(--ink),32px 16px var(--gold),8px 24px var(--gold),16px 24px var(--gold),24px 24px var(--gold),32px 24px var(--gold),40px 24px var(--gold),
+16px 32px var(--grass),24px 32px var(--grass),32px 32px var(--grass),8px 40px var(--grass),16px 40px var(--grass),24px 40px var(--grass),32px 40px var(--grass),40px 40px var(--grass),
+16px 48px var(--dirt),32px 48px var(--dirt);animation:hop 1.2s steps(2) infinite}
+@keyframes hop{50%{transform:translateY(-16px)}}
+.title{position:absolute;top:60px;left:0;right:0;text-align:center}
+h1{font-family:"Press Start 2P",monospace;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold);text-shadow:4px 4px 0 var(--ink);line-height:1.3}
+.title p{color:var(--ink);font-size:28px;margin-top:10px}
+.start{font-family:"Press Start 2P",monospace;font-size:14px;background:var(--red);color:var(--white);border:0;padding:16px 22px;margin-top:22px;cursor:pointer;animation:blink 1s steps(1) infinite}
+.start:focus-visible{outline:4px solid var(--gold);outline-offset:6px}
+@keyframes blink{50%{opacity:.4}}
+@media(prefers-reduced-motion:reduce){.hero,.start{animation:none}}
+main{max-width:980px;margin:0 auto;padding:50px 20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.card{background:#29366f;padding:20px;margin:4px}
+.card h2{font-family:"Press Start 2P",monospace;font-size:14px;color:var(--gold);margin-bottom:12px;line-height:1.5}
+.hp{display:flex;gap:4px;margin-top:10px}.hp i{width:16px;height:16px;background:var(--red)}.hp i.e{background:#333c57}
+.credit{text-align:center;padding:10px 0 30px;font-size:20px}.credit a{color:var(--gold)}
+@media(max-width:780px){.cards{grid-template-columns:1fr}.cloud{display:none}}
+</style></head><body>
+<header class="scene"><span class="cloud" style="top:40px;left:8%" aria-hidden="true"></span><span class="cloud" style="top:90px;right:14%" aria-hidden="true"></span>
+<div class="title"><h1>Frog Knight</h1><p>A tiny hero. A very big pond.</p><button class="start">Press start</button></div><span class="hero" aria-hidden="true"></span></header>
+<main><div class="cards">
+<section class="card px"><h2>30 levels</h2><p>Jump lily pads, dodge herons and find the lost crown of the pond.</p></section>
+<section class="card px"><h2>Local co-op</h2><p>Grab a second controller and play as Toad Squire on the same screen.</p><div class="hp" aria-label="Health 3 of 5"><i></i><i></i><i></i><i class="e"></i><i class="e"></i></div></section>
+<section class="card px"><h2>Out in March</h2><p>Coming to Steam and Switch for $9.99. Wishlist it today.</p></section>
+</div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

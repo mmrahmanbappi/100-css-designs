@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stackd Invoicing | Neo Brutalism HTML Template</title>
+<meta name="description" content="Free neo brutalism website template for an invoicing tool. Thick black borders, hard offset shadows and flat bright colors in one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@700;900&family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#000;--paper:#fffdf5;--yellow:#ffd23f;--pink:#ff7aa2;--blue:#74b9ff;--green:#88d498}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Public Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+.b{border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn{display:inline-block;font:inherit;font-weight:800;color:var(--ink);text-decoration:none;padding:14px 24px;background:var(--yellow);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);cursor:pointer;transition:transform .08s,box-shadow .08s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:3px dashed var(--ink);outline-offset:5px}
+nav{max-width:1100px;margin:20px auto;padding:14px 20px;background:#fff;display:flex;justify-content:space-between;align-items:center}
+nav b{font-family:"Lexend Mega",sans-serif;font-size:1.3rem}
+nav a{color:var(--ink);font-weight:600;margin-left:18px}
+.hero{max-width:1100px;margin:0 auto;padding:40px 20px 60px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+h1{font-family:"Lexend Mega",sans-serif;font-weight:900;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;letter-spacing:-.04em}
+.hero p{font-size:1.15rem;margin:20px 0 28px;max-width:36ch}
+.inv{background:#fff;padding:24px}
+.inv h2{font-size:1.1rem;display:flex;justify-content:space-between;border-bottom:3px solid var(--ink);padding-bottom:12px;margin-bottom:12px}
+.tag{background:var(--green);border:2px solid var(--ink);padding:2px 10px;font-size:.85rem}
+.inv table{width:100%;border-collapse:collapse}
+.inv td{padding:8px 0;border-bottom:2px dashed var(--ink)}
+.inv td:last-child{text-align:right;font-weight:800}
+.total{font-size:1.6rem;font-weight:800;text-align:right;margin-top:14px}
+.feats{max-width:1100px;margin:0 auto;padding:0 20px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feats div{padding:24px}
+.feats h3{font-size:1.3rem;margin-bottom:6px}
+.credit{text-align:center;padding:0 0 30px;font-weight:600}.credit a{color:var(--ink)}
+@media(max-width:820px){.hero,.feats{grid-template-columns:1fr}nav a:not(:last-child){display:none}}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+</style></head><body>
+<nav class="b"><b>Stackd</b><div><a href="#">Pricing</a><a href="#">Log in</a></div></nav>
+<main><section class="hero"><div><h1>Send the invoice. Get paid. Move on.</h1><p>Stackd makes a clean invoice in two minutes and reminds your client when it is late, so you do not have to.</p><a class="btn" href="#">Make my first invoice</a></div>
+<div class="b inv"><h2>Invoice 0042 <span class="tag">Paid</span></h2><table><tr><td>Logo design</td><td>$900</td></tr><tr><td>Brand guide, 12 pages</td><td>$650</td></tr><tr><td>Two revision rounds</td><td>$250</td></tr></table><p class="total">$1,800</p></div></section>
+<section class="feats"><div class="b" style="background:var(--pink)"><h3>Late reminders</h3><p>Polite emails go out at 3, 7 and 14 days. You never have to chase.</p></div><div class="b" style="background:var(--blue)"><h3>Pay by card</h3><p>Clients pay with one click. Money lands in your bank in two days.</p></div><div class="b" style="background:var(--green)"><h3>Tax ready</h3><p>Export a year of invoices as one spreadsheet for your accountant.</p></div></section></main>
+<footer class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer></body></html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Starlite Playlist | Y2K Aesthetic HTML Template</title>
+<meta name="description" content="Free Y2K aesthetic website template for a music playlist site. Chrome text, bubble buttons, sparkles and early 2000s gradients in pure CSS. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c1446;--pink:#ff9ce6;--cyan:#8ff4ff;--lav:#c8b6ff}
+*{box-sizing:border-box;margin:0}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);min-height:100vh;line-height:1.5;background:linear-gradient(180deg,#b9e8ff 0%,#e6d4ff 50%,#ffd6f3 100%)}
+.chrome{font-family:Syne,sans-serif;font-weight:800;background:linear-gradient(180deg,#fff 0%,#c9d3e0 40%,#5c6b80 50%,#dfe7f1 60%,#fff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:1.5px #3a4a6b;filter:drop-shadow(0 4px 0 rgba(28,20,70,.25))}
+header{text-align:center;padding:40px 16px 10px}
+header h1{font-size:clamp(3rem,10vw,7rem);line-height:1}
+header p{font-size:1.2rem;margin-top:8px}
+.star{position:absolute;width:26px;height:26px;background:#fff;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{50%{transform:scale(.5) rotate(45deg);opacity:.5}}
+@media(prefers-reduced-motion:reduce){.star{animation:none}}
+.bubble{display:inline-block;font:inherit;font-weight:700;color:var(--ink);text-decoration:none;padding:12px 26px;border-radius:999px;border:2px solid #fff;cursor:pointer;background:radial-gradient(circle at 30% 25%,#fff 0,rgba(255,255,255,0) 35%),linear-gradient(180deg,var(--cyan),#4fc2ff);box-shadow:0 6px 16px rgba(80,120,220,.35),inset 0 -4px 8px rgba(0,60,140,.25)}
+.bubble.p{background:radial-gradient(circle at 30% 25%,#fff 0,rgba(255,255,255,0) 35%),linear-gradient(180deg,var(--pink),#ff5fc8)}
+.bubble:focus-visible,a:focus-visible{outline:3px dashed var(--ink);outline-offset:4px}
+main{max-width:900px;margin:0 auto;padding:20px 16px 50px;position:relative}
+.player{margin:26px auto;border-radius:28px;padding:22px;background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(255,255,255,.35));border:2px solid #fff;box-shadow:0 20px 40px rgba(60,40,140,.2),inset 0 2px 0 #fff}
+.screen{background:linear-gradient(180deg,#1c1446,#3b2b8a);color:var(--cyan);border-radius:16px;padding:16px 20px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.eq{display:flex;gap:4px;align-items:end;height:30px}
+.eq i{width:6px;background:var(--pink);border-radius:3px}
+ol{list-style:none;padding:0;margin-top:16px}
+li{display:flex;justify-content:space-between;padding:12px 16px;border-radius:14px}
+li:nth-child(odd){background:rgba(255,255,255,.55)}
+.ctrl{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem}.credit a{color:var(--ink)}
+</style></head><body>
+<span class="star" style="top:40px;left:10%" aria-hidden="true"></span><span class="star" style="top:120px;right:12%;animation-delay:.8s" aria-hidden="true"></span><span class="star" style="top:260px;left:6%;animation-delay:1.6s" aria-hidden="true"></span>
+<header><h1 class="chrome">Starlite</h1><p>Mixtapes for your commute, made by real people, not a robot.</p></header>
+<main><section class="player"><div class="screen"><span>Now playing: Sunday Roller Rink, track 3</span><span class="eq" aria-hidden="true"><i style="height:40%"></i><i style="height:90%"></i><i style="height:60%"></i><i style="height:100%"></i><i style="height:50%"></i></span></div>
+<ol><li><span>1. Glitter on the dashboard</span><span>3:42</span></li><li><span>2. Dial up heartbeat</span><span>4:05</span></li><li><span>3. Roller rink, 1999</span><span>3:18</span></li><li><span>4. Butterfly clips</span><span>2:57</span></li><li><span>5. See you on MSN</span><span>4:30</span></li></ol>
+<div class="ctrl"><button class="bubble">Play mix</button><button class="bubble p">Save to my tapes</button></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>
