@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>North Atlantic Walks | Full Bleed HTML Template</title>
+<meta name="description" content="Free full bleed website template for a walking tour company. Edge to edge screen filling sections with big type and CSS landscapes. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:Mulish,system-ui,sans-serif;color:#fff;line-height:1.6;background:#0d1b24}
+.full{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:40px 6vw 8vh;position:relative;overflow:hidden}
+.full>*{position:relative;z-index:1}
+.bg{position:absolute;inset:0;z-index:0}
+.a .bg{background:linear-gradient(180deg,#9fb8c8 0%,#dfe7ea 45%,transparent 45%),linear-gradient(170deg,transparent 52%,#2f4a3a 52% 64%,transparent 64%),linear-gradient(185deg,transparent 58%,#4f6f52 58%),#1f3326}
+.a .bg::after{content:"";position:absolute;left:0;right:0;top:42%;height:120px;background:linear-gradient(transparent,rgba(255,255,255,.6),transparent);filter:blur(12px)}
+.b .bg{background:radial-gradient(ellipse at 70% 30%,#f7c59f 0,transparent 35%),linear-gradient(180deg,#355070 0 55%,#1b263b 55%)}
+.b .bg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 2px,transparent 2px 14px)}
+.c .bg{background:linear-gradient(180deg,#0b132b,#1c2541 60%,#3a506b)}
+.c .bg::before{content:"";position:absolute;inset:0;background:radial-gradient(1px 1px at 20% 30%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 60% 15%,#fff 50%,transparent),radial-gradient(1px 1px at 80% 40%,#fff 50%,transparent),radial-gradient(1px 1px at 35% 10%,#fff 50%,transparent);}
+.c .bg::after{content:"";position:absolute;left:-10%;right:-10%;top:18%;height:40%;background:linear-gradient(100deg,transparent 20%,rgba(94,255,170,.35) 40%,rgba(120,120,255,.25) 60%,transparent 80%);filter:blur(30px);transform:skewY(-8deg)}
+.full .bg{box-shadow:inset 0 -40vh 30vh -10vh rgba(0,0,0,.55)}
+nav{position:absolute;top:0;left:0;right:0;padding:24px 6vw;display:flex;justify-content:space-between;z-index:2;font-weight:600}
+nav a{color:#fff}
+a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.kicker{font-weight:600;opacity:.9}
+h1,h2{font-family:Unbounded,sans-serif;font-weight:800;line-height:.98;letter-spacing:-.02em}
+h1{font-size:clamp(2.8rem,9vw,8rem)}
+h2{font-size:clamp(2.2rem,6vw,5rem)}
+.full p{max-width:44ch;font-size:1.15rem;margin-top:16px}
+.btn{display:inline-block;margin-top:24px;background:#fff;color:#0d1b24;padding:15px 28px;border-radius:999px;font-weight:600;text-decoration:none;width:max-content}
+.facts{display:flex;gap:40px;margin-top:26px;flex-wrap:wrap}
+.facts b{font-family:Unbounded,sans-serif;font-weight:500;font-size:1.8rem;display:block}
+.credit{text-align:center;padding:24px;font-size:.9rem;background:#0d1b24}.credit a{color:#fff}
+</style></head><body>
+<nav><span>North Atlantic Walks</span><a href="#book">Book a trip</a></nav>
+<main>
+<section class="full a"><div class="bg" aria-hidden="true"></div><span class="kicker">Faroe Islands, 7 days</span><h1>Walk to the edge of the map</h1><p>Small group hikes across cliff tops, sheep paths and villages with more puffins than people.</p></section>
+<section class="full b"><div class="bg" aria-hidden="true"></div><span class="kicker">Day 3</span><h2>Evenings by the harbor</h2><p>Every night ends in a warm guesthouse with fish soup, local beer and a view over the water.</p><div class="facts"><div><b>8</b>walkers max</div><div><b>12km</b>a day on average</div><div><b>2</b>local guides</div></div></section>
+<section class="full c" id="book"><div class="bg" aria-hidden="true"></div><span class="kicker">September and March trips</span><h2>Maybe the northern lights</h2><p>We can not promise them, but on half our autumn trips they have shown up. From €2,450 including all guesthouses and meals.</p><a class="btn" href="#">See 2027 dates</a></section>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

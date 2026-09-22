@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hilltop Roasters, Bean to Cup | Scrollytelling HTML Template</title>
+<meta name="description" content="Free scrollytelling website template for a coffee roaster. A sticky visual changes as each step of the story scrolls past. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Rethink+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5efe6;--ink:#2a1d15;--muted:#7b6a5c;--c1:#7fb069;--c2:#d7263d;--c3:#8c5a3c;--c4:#3b2417}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Rethink Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:18px}
+.intro{max-width:900px;margin:0 auto;padding:90px 24px 60px}
+h1{font-family:"Young Serif",serif;font-weight:400;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.05}
+.intro p{color:var(--muted);font-size:1.2rem;margin-top:16px;max-width:44ch}
+.story{max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.stage{position:sticky;top:0;height:100vh;display:grid;place-items:center}
+.bean{width:260px;height:340px;border-radius:50%;background:var(--c1);position:relative;transition:background .6s,transform .6s,border-radius .6s;box-shadow:inset -20px -20px 40px rgba(0,0,0,.18)}
+.bean::after{content:"";position:absolute;left:50%;top:12%;bottom:12%;width:14px;margin-left:-7px;border-radius:50%;background:rgba(0,0,0,.25);transition:opacity .6s}
+.stage[data-step="2"] .bean{background:var(--c2);transform:scale(.8)}
+.stage[data-step="3"] .bean{background:var(--c3);transform:scale(.7) rotate(25deg)}
+.stage[data-step="4"] .bean{background:var(--c4);border-radius:0 0 90px 90px;transform:scale(.8);height:260px}
+.stage[data-step="4"] .bean::after{opacity:0}
+.label{position:absolute;bottom:18%;font-family:"Young Serif",serif;font-size:1.3rem}
+.steps article{min-height:90vh;display:flex;flex-direction:column;justify-content:center;opacity:.35;transition:opacity .4s}
+.steps article.on{opacity:1}
+.steps span{color:var(--muted);font-weight:600}
+.steps h2{font-family:"Young Serif",serif;font-weight:400;font-size:2rem;margin:6px 0 10px}
+.end{max-width:900px;margin:0 auto;padding:60px 24px 80px;text-align:center}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:600;margin-top:18px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--c2);outline-offset:3px}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.bean,.bean::after,.steps article{transition:none}}
+@media(max-width:820px){.story{grid-template-columns:1fr}.stage{height:50vh;top:0;background:var(--bg);z-index:1}.bean{width:150px;height:200px}.steps article{min-height:70vh}}
+</style></head><body>
+<header class="intro"><h1>How your morning coffee gets here</h1><p>Four steps, about nine months and a lot of care between a farm in Huila and the bag on your kitchen shelf.</p></header>
+<main class="story"><div class="stage" id="stage" data-step="1" aria-hidden="true"><div class="bean"></div><div class="label" id="lbl">On the tree</div></div>
+<div class="steps">
+<article data-step="1" data-label="On the tree"><span>Step 1, March</span><h2>It starts as a green cherry</h2><p>Coffee grows as small fruit on shrubs high in the Andes. Our partner farm is at 1,800 meters, where cool nights slow the fruit down and build flavor.</p></article>
+<article data-step="2" data-label="Ripe cherry"><span>Step 2, October</span><h2>Picked by hand when red</h2><p>Only the ripe cherries are picked, one by one. The farm pays pickers by weight and pays a bonus for fully ripe fruit.</p></article>
+<article data-step="3" data-label="Roasted bean"><span>Step 3, January</span><h2>Roasted in small batches</h2><p>The seeds are dried, shipped to us and roasted 12 kilos at a time in Leeds. A light roast keeps the notes of plum and brown sugar.</p></article>
+<article data-step="4" data-label="Your cup"><span>Step 4, this morning</span><h2>Brewed in your kitchen</h2><p>We post within two days of roasting, so it arrives at its best. Grind right before you brew and it tastes like the farm intended.</p></article>
+</div></main>
+<section class="end"><h2 style="font-family:'Young Serif',serif;font-weight:400;font-size:2rem">Try the Huila light roast</h2><a class="btn" href="#">Order a 250g bag for £9</a></section>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const st=document.getElementById('stage'),lb=document.getElementById('lbl');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.steps article').forEach(a=>a.classList.remove('on'));e.target.classList.add('on');st.dataset.step=e.target.dataset.step;lb.textContent=e.target.dataset.label}}),{rootMargin:'-45% 0px -45% 0px'});
+document.querySelectorAll('.steps article').forEach(a=>io.observe(a));document.querySelector('.steps article').classList.add('on');
+</script>
+</body></html>

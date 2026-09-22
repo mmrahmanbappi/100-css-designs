@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tide and Table Magazine | Magazine Layout HTML Template</title>
+<meta name="description" content="Free magazine layout website template for a food and travel publication. Cover story, grid template areas, pull quote and article grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffaf3;--ink:#1f2421;--muted:#6a6f69;--sea:#2a6f73;--peach:#f4a582;--line:#e7ded0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink)}
+header b{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.8rem}
+header nav a{color:var(--ink);margin-left:18px;font-weight:600;text-decoration:none}
+a:focus-visible{outline:2px solid var(--sea);outline-offset:3px}
+.cover{max-width:1200px;margin:0 auto;padding:30px 24px;display:grid;grid-template-columns:repeat(6,1fr);grid-template-areas:"img img img img txt txt" "img img img img txt txt" "q q cap cap cap cap";gap:24px}
+.img{grid-area:img;min-height:460px;border-radius:4px;background:radial-gradient(circle at 70% 30%,#ffe3c2 0 8%,transparent 9%),linear-gradient(180deg,#f7c59f 0 40%,var(--sea) 40% 70%,#1d4e52 70%)}
+.txt{grid-area:txt;align-self:center}
+.issue{color:var(--sea);font-weight:700}
+.txt h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(2.2rem,4.2vw,3.6rem);line-height:1.02;margin:10px 0 14px}
+.txt p{color:var(--muted);font-size:1.1rem}
+.txt a{display:inline-block;margin-top:16px;color:var(--ink);font-weight:700}
+.q{grid-area:q;font-family:"DM Serif Display",serif;font-style:italic;font-size:1.6rem;line-height:1.25;border-left:4px solid var(--peach);padding-left:18px}
+.cap{grid-area:cap;color:var(--muted);font-size:.9rem;align-self:start}
+.more{max-width:1200px;margin:0 auto;padding:10px 24px 60px}
+.more h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.8rem;border-top:1px solid var(--ink);padding-top:14px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:26px}
+.grid article span{display:block;height:170px;border-radius:4px;margin-bottom:12px}
+.grid article:first-child span{height:260px}
+.grid small{color:var(--sea);font-weight:700}
+.grid h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:1.4rem;line-height:1.15;margin:4px 0 6px}
+.grid p{color:var(--muted);font-size:.95rem}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:860px){.cover{grid-template-columns:1fr;grid-template-areas:"img" "txt" "q" "cap"}.img{min-height:300px}.grid{grid-template-columns:1fr}header nav{display:none}}
+</style></head><body>
+<header><b>Tide and Table</b><nav><a href="#">Recipes</a><a href="#">Travel</a><a href="#">Subscribe</a></nav></header>
+<main><section class="cover"><div class="img" role="img" aria-label="Sunset over a fishing harbor in Sicily"></div>
+<div class="txt"><span class="issue">Issue 12, Autumn</span><h1>Three days eating our way around Sicily's fishing towns</h1><p>Sea urchin pasta at noon, almond granita at four, and a grandmother in Sciacca who would not let us leave without her caponata recipe.</p><a href="#">Read the story, 14 min</a></div>
+<blockquote class="q">"If the fish was caught this morning, you do not need a recipe. You need a lemon."</blockquote>
+<p class="cap">Photographs by Elena Russo. Words by Tom Hale. The harbor at Marzamemi, just before the boats come in.</p></section>
+<section class="more"><h2>Also in this issue</h2><div class="grid">
+<article><span style="background:linear-gradient(135deg,#e9c46a,#f4a261 60%,#e76f51)"></span><small>Recipe</small><h3>A tomato tart for the last warm weekend</h3><p>Puff pastry, three kinds of tomato and a thin layer of mustard.</p></article>
+<article><span style="background:linear-gradient(160deg,#90be6d,#43aa8b)"></span><small>Travel</small><h3>The slow train through the Douro valley</h3><p>Vineyards, river views and a picnic you pack yourself.</p></article>
+<article><span style="background:linear-gradient(160deg,#577590,#277da1)"></span><small>Interview</small><h3>The last oyster farmer on the bay</h3><p>Forty years, one boat and no plans to stop.</p></article>
+</div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomad Linen Lookbook | Broken Grid HTML Template</title>
+<meta name="description" content="Free broken grid website template for a fashion lookbook. Overlapping images and text blocks placed on an asymmetric CSS Grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Italiana&family=Albert+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#ece3d6;--clay:#b86b4b;--olive:#6b705c;--ink:#2b2622;--muted:#6f655c}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Albert Sans",system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.6}
+header{max-width:1200px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between}
+header b{font-family:Italiana,serif;font-size:1.6rem;font-weight:400;letter-spacing:.05em}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
+.look{max-width:1200px;margin:0 auto;padding:20px 24px 80px;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(10,70px);gap:0}
+.img{border-radius:2px}
+.i1{grid-column:1/6;grid-row:1/9;background:linear-gradient(180deg,#d9c7b0 0 35%,#c9a887 35% 38%,#e8dccb 38%),#ddd;position:relative}
+.i1::after{content:"";position:absolute;left:30%;right:30%;top:18%;bottom:0;border-radius:40% 40% 0 0;background:linear-gradient(#f3ece2,#e3d6c3)}
+.i2{grid-column:5/9;grid-row:4/11;background:linear-gradient(160deg,var(--clay),#8e4a33);z-index:1;position:relative}
+.i2::after{content:"";position:absolute;left:25%;right:25%;top:22%;bottom:0;border-radius:45% 45% 0 0;background:linear-gradient(#d88d6b,#a85a3d)}
+.i3{grid-column:10/13;grid-row:2/6;background:linear-gradient(180deg,#a5a58d,var(--olive))}
+.txt{grid-column:8/13;grid-row:6/10;background:#f7f2ea;padding:32px;z-index:2;align-self:start;box-shadow:0 20px 40px rgba(60,40,20,.12)}
+h1{font-family:Italiana,serif;font-weight:400;font-size:clamp(2.6rem,5vw,4.4rem);line-height:1;grid-column:1/8;grid-row:9/11;z-index:3;align-self:end;margin-bottom:-10px}
+.txt p{color:var(--muted);margin:10px 0 16px}
+.txt a{color:var(--ink);font-weight:600}
+.note{grid-column:10/13;grid-row:1/2;font-size:.85rem;color:var(--muted);align-self:end;padding-bottom:10px}
+.pieces{max-width:1200px;margin:0 auto;padding:0 24px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pieces div{border-top:1px solid var(--ink);padding-top:12px;display:flex;justify-content:space-between}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:860px){.look{display:flex;flex-direction:column;gap:18px}.img{height:320px}.i3{height:200px}h1{margin:0}.pieces{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>NOMAD LINEN</b><a href="#">Shop the collection</a></header>
+<main><section class="look"><span class="note">Collection 04, shot in Essaouira</span>
+<span class="img i1" role="img" aria-label="Model in an oat linen shirt against a pale wall"></span>
+<span class="img i2" role="img" aria-label="Model in a terracotta linen dress"></span>
+<span class="img i3" role="img" aria-label="Olive linen trousers, detail"></span>
+<h1>Made for slow summers</h1>
+<div class="txt"><p>Washed linen in four earth colors, cut loose so it moves with you. Sewn in a small workshop in Porto from flax grown in Normandy.</p><a href="#">See all 18 pieces</a></div></section>
+<section class="pieces" aria-label="Pieces in this look"><div><span>Oat camp shirt</span><span>€89</span></div><div><span>Terracotta wrap dress</span><span>€145</span></div><div><span>Olive wide trousers</span><span>€110</span></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

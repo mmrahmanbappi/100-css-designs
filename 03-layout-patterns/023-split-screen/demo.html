@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salt and Ember Restaurant | Split Screen HTML Template</title>
+<meta name="description" content="Free split screen website template for a restaurant. A fixed visual half on one side and scrolling menu and booking on the other. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--char:#1a1310;--ember:#e0582a;--cream:#f6efe4;--ink:#231a15;--muted:#7a6a5d}
+*{box-sizing:border-box;margin:0}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:100vh}
+.left{position:sticky;top:0;height:100vh;background:radial-gradient(circle at 50% 78%,#ffb36b 0,var(--ember) 8%,rgba(224,88,42,.35) 22%,transparent 40%),radial-gradient(ellipse at 50% 100%,#3a2418 0,var(--char) 60%);color:var(--cream);display:flex;flex-direction:column;justify-content:space-between;padding:40px}
+.left h1{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:clamp(3rem,6vw,5.4rem);line-height:.95}
+.left p{max-width:30ch;opacity:.85}
+.left small{opacity:.7}
+.right{padding:60px 56px}
+.right h2{font-family:"Cormorant Garamond",serif;font-size:2.2rem;font-weight:700;margin:0 0 18px}
+section+section{margin-top:56px}
+.dish{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid #e0d4c3}
+.dish b{font-weight:500}
+.dish em{font-family:"Cormorant Garamond",serif;font-size:1.05rem;color:var(--muted);display:block}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:.9rem;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+input,select{font:inherit;padding:12px;border:1px solid #cdbfab;background:#fff;border-radius:4px;color:var(--ink)}
+.btn{grid-column:1/-1;font:inherit;font-weight:500;background:var(--char);color:var(--cream);border:0;padding:15px;border-radius:4px;cursor:pointer}
+input:focus-visible,select:focus-visible,.btn:focus-visible,a:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+.credit{margin-top:50px;font-size:.85rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:860px){.split{grid-template-columns:1fr}.left{position:relative;height:70vh}.right{padding:40px 22px}form{grid-template-columns:1fr}}
+</style></head><body>
+<div class="split">
+<header class="left"><small>Open Wednesday to Sunday, from 6pm</small><div><h1>Salt and Ember</h1><p>Everything on the menu is cooked over a wood fire. Small plates, big table, long evenings.</p></div><small>22 Canal Road, Ghent</small></header>
+<main class="right">
+<section><h2>Tonight's menu</h2>
+<div class="dish"><span><b>Charred leeks</b><em>hazelnut, brown butter, soft egg</em></span><span>€12</span></div>
+<div class="dish"><span><b>Flatbread from the oven</b><em>smoked garlic, whipped feta</em></span><span>€8</span></div>
+<div class="dish"><span><b>Mussels in the pan</b><em>cider, fennel, grilled sourdough</em></span><span>€19</span></div>
+<div class="dish"><span><b>Dry aged pork chop</b><em>apple, mustard, embers potatoes</em></span><span>€28</span></div>
+<div class="dish"><span><b>Burnt honey tart</b><em>crème fraîche</em></span><span>€9</span></div></section>
+<section><h2>Book a table</h2>
+<form onsubmit="event.preventDefault();this.querySelector('.btn').textContent='Table requested. We will email you.'">
+<label>Date<input type="date" required></label><label>Time<select><option>18:00</option><option>19:30</option><option>21:00</option></select></label>
+<label>Guests<select><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label><label>Email<input type="email" required placeholder="you@example.com"></label>
+<button class="btn">Request a table</button></form></section>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</main></div>
+</body></html>

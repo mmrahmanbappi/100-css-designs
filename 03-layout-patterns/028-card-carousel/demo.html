@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiln Pottery Classes | Card Carousel HTML Template</title>
+<meta name="description" content="Free card carousel website template for a pottery studio. Swipeable course cards with scroll snap, arrow buttons and dots. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gloock&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe6dd;--ink:#2d2320;--muted:#76675f;--terra:#c0603c;--glaze:#5d8a8a;--card:#fbf7f2}
+*{box-sizing:border-box;margin:0}
+body{font-family:Outfit,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{max-width:1140px;margin:0 auto;padding:50px 24px 10px}
+h1{font-family:Gloock,serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;max-width:18ch}
+header p{color:var(--muted);font-size:1.1rem;margin-top:12px;max-width:44ch}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+.bar{display:flex;justify-content:space-between;align-items:center;margin:30px 0 14px}
+.bar h2{font-size:1.2rem;font-weight:700}
+.arrows{display:flex;gap:8px}
+.arrows button{font:inherit;font-size:1.2rem;width:46px;height:46px;border-radius:50%;border:0;background:var(--ink);color:var(--bg);cursor:pointer}
+.arrows button:disabled{opacity:.3;cursor:default}
+button:focus-visible,a:focus-visible,.rail:focus-visible{outline:3px solid var(--terra);outline-offset:3px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:10px;scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.c{scroll-snap-align:start;background:var(--card);border-radius:22px;overflow:hidden;display:flex;flex-direction:column}
+.pot{height:200px;display:grid;place-items:end center;background:var(--bgc,#e6d3c2)}
+.pot i{display:block;width:var(--w,110px);height:var(--h,130px);background:var(--pc,var(--terra));border-radius:var(--r,40% 40% 30% 30% / 50% 50% 20% 20%);margin-bottom:26px;box-shadow:inset -14px -10px 20px rgba(0,0,0,.18)}
+.c .in{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
+.c h3{font-family:Gloock,serif;font-weight:400;font-size:1.45rem;line-height:1.15}
+.meta{color:var(--muted);font-size:.92rem;margin:6px 0 12px}
+.c p{flex:1}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+.row b{font-size:1.2rem}
+.row a{background:var(--terra);color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:500}
+.dots{display:flex;gap:8px;justify-content:center;margin:18px 0 50px}
+.dots i{width:9px;height:9px;border-radius:50%;background:#cbb9aa}
+.dots i.on{background:var(--ink);width:26px;border-radius:9px}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:900px){.rail{grid-auto-columns:calc((100% - 24px)/2)}}
+@media(max-width:560px){.rail{grid-auto-columns:85%}}
+@media(prefers-reduced-motion:reduce){.rail{scroll-behavior:auto}}
+</style></head><body>
+<header><h1>Make something with your hands this winter</h1><p>Small evening and weekend classes at our studio in Lewes. Clay, tools, glazes and two firings are included.</p></header>
+<main class="wrap"><div class="bar"><h2>Courses starting in January</h2><div class="arrows"><button id="prev" aria-label="Previous courses">‹</button><button id="next" aria-label="Next courses">›</button></div></div>
+<div class="rail" id="rail" tabindex="0" aria-label="Courses">
+<article class="c"><div class="pot"><i></i></div><div class="in"><h3>Wheel throwing for beginners</h3><div class="meta">6 Tuesday evenings, 7pm to 9pm</div><p>Center the clay, pull your first walls and leave with four mugs or bowls.</p><div class="row"><b>£260</b><a href="#">Book a place</a></div></div></article>
+<article class="c"><div class="pot" style="--bgc:#d7e3df"><i style="--pc:var(--glaze);--w:150px;--h:70px;--r:10px 10px 60px 60px"></i></div><div class="in"><h3>Hand building bowls</h3><div class="meta">One Saturday, 10am to 4pm</div><p>Pinch, coil and slab your way to a set of rustic bowls. No wheel needed.</p><div class="row"><b>£95</b><a href="#">Book a place</a></div></div></article>
+<article class="c"><div class="pot" style="--bgc:#efd9c4"><i style="--pc:#e8c07d;--w:70px;--h:150px;--r:30px 30px 20px 20px"></i></div><div class="in"><h3>Glazing and surface</h3><div class="meta">4 Thursday evenings</div><p>Learn dipping, layering and wax resist on pieces we have already fired for you.</p><div class="row"><b>£180</b><a href="#">Book a place</a></div></div></article>
+<article class="c"><div class="pot" style="--bgc:#e2d6ea"><i style="--pc:#8e6c8a;--w:120px;--h:120px;--r:50%"></i></div><div class="in"><h3>Couples night</h3><div class="meta">Friday, 7pm to 10pm, wine included</div><p>A relaxed evening on the wheel for two. Great as a gift.</p><div class="row"><b>£120</b><a href="#">Book a place</a></div></div></article>
+<article class="c"><div class="pot" style="--bgc:#dde6cf"><i style="--pc:#7a8b52;--w:90px;--h:110px"></i></div><div class="in"><h3>Kids clay club</h3><div class="meta">Saturdays, ages 7 to 12</div><p>Animals, pots and tiles. Messy, fun and fired in our kiln.</p><div class="row"><b>£15</b><a href="#">Book a place</a></div></div></article>
+</div><div class="dots" id="dots" aria-hidden="true"></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const r=document.getElementById('rail'),cards=[...r.children],dots=document.getElementById('dots');
+cards.forEach(()=>dots.appendChild(document.createElement('i')));
+function step(){return cards[0].offsetWidth+24}
+document.getElementById('prev').onclick=()=>r.scrollBy({left:-step()});
+document.getElementById('next').onclick=()=>r.scrollBy({left:step()});
+function upd(){const i=Math.round(r.scrollLeft/step());[...dots.children].forEach((d,k)=>d.classList.toggle('on',k===i));
+document.getElementById('prev').disabled=r.scrollLeft<5;document.getElementById('next').disabled=r.scrollLeft+r.clientWidth>=r.scrollWidth-5}
+r.addEventListener('scroll',upd,{passive:true});upd();
+</script>
+</body></html>

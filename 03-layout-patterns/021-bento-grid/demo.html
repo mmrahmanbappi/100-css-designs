@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orbit Smartwatch | Bento Grid HTML Template</title>
+<meta name="description" content="Free bento grid website template for a smartwatch product page. Apple style boxes of different sizes built with CSS Grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1ec;--ink:#15171a;--muted:#62666d;--card:#fff;--dark:#1c1f24;--orange:#ff6b2c;--mint:#c8f1dd}
+*{box-sizing:border-box;margin:0}
+body{font-family:Sora,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:1120px;margin:0 auto;padding:40px 20px 24px}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:16ch}
+header p{color:var(--muted);font-size:1.1rem;margin-top:12px;max-width:44ch}
+.bento{max-width:1120px;margin:0 auto;padding:0 20px 60px;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:16px}
+.t{background:var(--card);border-radius:26px;padding:24px;position:relative;overflow:hidden}
+.t h2{font-size:1.1rem;font-weight:600}
+.t p{color:var(--muted);font-size:.95rem;margin-top:4px}
+.t.dark{background:var(--dark);color:#fff}.t.dark p{color:#b7bcc4}
+.big{grid-column:span 2;grid-row:span 2}
+.wide{grid-column:span 2}
+.tall{grid-row:span 2}
+.watch{position:absolute;right:30px;bottom:30px;width:200px;height:240px;border-radius:56px;background:linear-gradient(145deg,#2b3038,#0f1115);box-shadow:0 30px 50px rgba(0,0,0,.35),inset 0 0 0 6px #3a404a}
+.watch::before{content:"10:09";position:absolute;inset:22px;border-radius:40px;background:radial-gradient(circle at 50% 40%,#1e3a5a,#050608);color:#fff;font-size:2.6rem;font-weight:800;display:grid;place-items:center}
+.watch::after{content:"";position:absolute;right:-12px;top:70px;width:12px;height:44px;border-radius:6px;background:var(--orange)}
+.stat{font-size:3.4rem;font-weight:800;letter-spacing:-.04em;line-height:1;margin-top:auto}
+.col{display:flex;flex-direction:column;height:100%}
+.ring{width:120px;height:120px;border-radius:50%;margin:16px auto 0;background:conic-gradient(var(--orange) 0 78%,#2c3139 78%);-webkit-mask:radial-gradient(circle,transparent 42px,#000 43px);mask:radial-gradient(circle,transparent 42px,#000 43px)}
+.bands{display:flex;gap:10px;margin-top:18px}.bands i{flex:1;height:70px;border-radius:14px}
+.mint{background:var(--mint)}
+.btn{display:inline-block;margin-top:16px;background:var(--orange);color:#fff;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.bento{grid-template-columns:1fr;grid-auto-rows:auto}.big,.wide,.tall{grid-column:auto;grid-row:auto}.big{min-height:380px}.t{min-height:170px}}
+</style></head><body>
+<header><h1>Orbit. The watch that lasts all week.</h1><p>Seven days of battery, a bright always on screen and health tracking that stays quiet until it matters.</p></header>
+<main class="bento">
+<section class="t big dark"><h2>Orbit Series 2</h2><p>Titanium case, sapphire glass, 44mm.</p><a class="btn" href="#">Order from $329</a><span class="watch" aria-hidden="true"></span></section>
+<section class="t col"><h2>Battery</h2><p>With the screen always on.</p><span class="stat">7 days</span></section>
+<section class="t col mint"><h2>Water resistant</h2><p>Swim, surf, shower.</p><span class="stat">100m</span></section>
+<section class="t wide"><h2>Pick your band</h2><p>Swap in two seconds, no tools needed.</p><div class="bands" aria-hidden="true"><i style="background:#ff6b2c"></i><i style="background:#2f5bea"></i><i style="background:#1c1f24"></i><i style="background:#c8f1dd"></i><i style="background:#e7d6c4"></i></div></section>
+<section class="t tall dark"><h2>Move goal</h2><p>You are 78% of the way there today.</p><div class="ring" aria-hidden="true"></div></section>
+<section class="t"><h2>Sleep score</h2><p>Wakes you gently in your lightest sleep phase.</p></section>
+<section class="t wide"><h2>Works with your phone</h2><p>iPhone and Android. Calls, messages and maps right on your wrist.</p></section>
+<section class="t"><h2>Heart rhythm</h2><p>Checks every 10 minutes and alerts you if something looks off.</p></section>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

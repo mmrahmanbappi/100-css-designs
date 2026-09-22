@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 Years of Trams | Horizontal Scroll Timeline HTML Template</title>
+<meta name="description" content="Free horizontal scroll timeline template for a museum exhibition. Side scrolling panels with scroll snap and arrow buttons. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1ede4;--ink:#1e2329;--muted:#5f646b;--tram:#d62828;--cream:#fcbf49;--rail:#3d4148}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Source Serif 4",Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{max-width:1200px;margin:0 auto;padding:50px 24px 24px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+h1{font-family:Oswald,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1;text-transform:uppercase}
+header p{color:var(--muted);max-width:40ch;margin-top:10px}
+.nav{display:flex;gap:10px}
+.nav button{font:inherit;width:52px;height:52px;border-radius:50%;border:2px solid var(--ink);background:transparent;cursor:pointer;font-size:1.3rem}
+.nav button:hover{background:var(--ink);color:var(--bg)}
+button:focus-visible,.track:focus-visible,a:focus-visible{outline:3px solid var(--tram);outline-offset:3px}
+.track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:20px 24px 30px;scrollbar-width:thin}
+.card{flex:0 0 min(420px,85vw);scroll-snap-align:start;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.pic{height:210px;position:relative;background:linear-gradient(#bde0fe 0 70%,var(--rail) 70% 74%,#a3b18a 74%)}
+.pic .tram{position:absolute;left:20%;right:20%;bottom:28%;height:80px;border-radius:14px 14px 4px 4px;background:var(--c,var(--tram));box-shadow:inset 0 16px 0 rgba(255,255,255,.25)}
+.pic .tram::before{content:"";position:absolute;left:10%;right:10%;top:22px;height:22px;background:repeating-linear-gradient(90deg,#e0f2fe 0 26px,transparent 26px 34px)}
+.pic .tram::after{content:"";position:absolute;left:50%;top:-30px;width:2px;height:30px;background:var(--rail)}
+.year{font-family:Oswald,sans-serif;font-weight:700;font-size:3rem;line-height:1;color:var(--tram)}
+.body{padding:22px 24px 26px}
+.body h2{font-family:Oswald,sans-serif;font-weight:500;font-size:1.4rem;margin:6px 0}
+.body p{color:var(--muted)}
+.credit{text-align:center;padding:10px 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
+</style></head><body>
+<header><div><h1>100 years of trams</h1><p>City Transport Museum, Hall 3. Scroll sideways through a century of the red trams that shaped our streets.</p></div>
+<div class="nav"><button aria-label="Previous" onclick="go(-1)">‹</button><button aria-label="Next" onclick="go(1)">›</button></div></header>
+<main class="track" id="track" tabindex="0" aria-label="Timeline">
+<article class="card"><div class="pic"><span class="tram" style="--c:#8d6e63"></span></div><div class="body"><div class="year">1926</div><h2>The first electric line</h2><p>Line 1 opens between the station and the cathedral. Twelve wooden cars, open at the ends.</p></div></article>
+<article class="card"><div class="pic"><span class="tram"></span></div><div class="body"><div class="year">1938</div><h2>The famous red</h2><p>The city paints every tram bright red so they can be seen in winter fog. The color stays.</p></div></article>
+<article class="card"><div class="pic"><span class="tram" style="--c:#6c757d"></span></div><div class="body"><div class="year">1944</div><h2>Trams in wartime</h2><p>With no fuel for buses, trams carry the whole city. Women drive most of them.</p></div></article>
+<article class="card"><div class="pic"><span class="tram" style="--c:#e76f51"></span></div><div class="body"><div class="year">1968</div><h2>Almost closed</h2><p>Council plans to replace trams with buses. 40,000 people sign a petition to keep them.</p></div></article>
+<article class="card"><div class="pic"><span class="tram" style="--c:#fcbf49"></span></div><div class="body"><div class="year">1995</div><h2>Low floor cars</h2><p>New trams with no steps make travel easier for wheelchairs and prams.</p></div></article>
+<article class="card"><div class="pic"><span class="tram"></span></div><div class="body"><div class="year">2026</div><h2>A century on</h2><p>Six lines, 94 trams and 48 million trips a year. Still red.</p></div></article>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>function go(d){const t=document.getElementById('track');t.scrollBy({left:d*t.querySelector('.card').offsetWidth+d*24,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}</script>
+</body></html>

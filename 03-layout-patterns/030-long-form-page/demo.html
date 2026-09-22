@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant a Street Annual Report | Long Form Single Page HTML Template</title>
+<meta name="description" content="Free long form single page template for a charity annual report. Sticky table of contents, reading progress bar and big number sections. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfaf6;--ink:#1f2a22;--muted:#5d6b61;--leaf:#2f7d4f;--pale:#e4f1e7;--line:#dfe6df}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:Literata,Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:19px}
+.progress{position:fixed;top:0;left:0;height:4px;background:var(--leaf);width:0;z-index:5}
+.hero{max-width:1100px;margin:0 auto;padding:90px 24px 50px}
+.hero small{font-family:Onest,sans-serif;font-weight:600;color:var(--leaf)}
+h1{font-family:Onest,sans-serif;font-weight:700;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.03em;max-width:16ch;margin-top:10px}
+.hero p{font-size:1.25rem;color:var(--muted);max-width:44ch;margin-top:18px}
+.layout{max-width:1100px;margin:0 auto;padding:0 24px 60px;display:grid;grid-template-columns:220px 1fr;gap:60px}
+.toc{position:sticky;top:30px;align-self:start;font-family:Onest,sans-serif;font-size:.95rem}
+.toc b{display:block;margin-bottom:10px}
+.toc ol{padding-left:18px}
+.toc a{color:var(--muted);text-decoration:none;display:block;padding:4px 0}
+.toc a.on{color:var(--leaf);font-weight:600}
+a:focus-visible{outline:2px solid var(--leaf);outline-offset:2px}
+article section{padding-bottom:40px;margin-bottom:40px;border-bottom:1px solid var(--line);max-width:66ch;scroll-margin-top:30px}
+article h2{font-family:Onest,sans-serif;font-size:1.8rem;letter-spacing:-.02em;margin-bottom:12px}
+article p+p{margin-top:14px}
+.num{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0;font-family:Onest,sans-serif}
+.num div{background:var(--pale);border-radius:14px;padding:18px}
+.num b{display:block;font-size:2.2rem;line-height:1.1;color:var(--leaf)}
+blockquote{font-size:1.4rem;line-height:1.4;border-left:4px solid var(--leaf);padding-left:20px;margin:24px 0}
+blockquote cite{display:block;font-family:Onest,sans-serif;font-size:.95rem;font-style:normal;color:var(--muted);margin-top:8px}
+.btn{display:inline-block;font-family:Onest,sans-serif;font-weight:600;background:var(--leaf);color:#fff;text-decoration:none;padding:14px 26px;border-radius:10px;margin-top:10px}
+.credit{text-align:center;padding:0 0 30px;font-family:Onest,sans-serif;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+@media(max-width:860px){.layout{grid-template-columns:1fr;gap:10px}.toc{position:static;border-bottom:1px solid var(--line);padding-bottom:16px}.num{grid-template-columns:1fr}}
+</style></head><body>
+<div class="progress" id="bar" aria-hidden="true"></div>
+<header class="hero"><small>Plant a Street, 2026 report</small><h1>One year, 3,112 new street trees</h1><p>What we planted, where the money went, and what the neighbors said. Everything in one page, about eight minutes to read.</p></header>
+<div class="layout"><nav class="toc" aria-label="Contents"><b>In this report</b><ol><li><a href="#s1">The year in numbers</a></li><li><a href="#s2">Where we planted</a></li><li><a href="#s3">Where the money went</a></li><li><a href="#s4">What neighbors said</a></li><li><a href="#s5">Next year</a></li></ol></nav>
+<article>
+<section id="s1"><h2>The year in numbers</h2><p>We set out to plant 2,500 trees this year. With help from 640 volunteers and a very wet spring, we planted 3,112, and 94 percent of them are still growing strong.</p><div class="num"><div><b>3,112</b>trees planted</div><div><b>640</b>volunteers</div><div><b>94%</b>still thriving</div></div></section>
+<section id="s2"><h2>Where we planted</h2><p>Most trees went to the three districts with the least shade, where summer pavements reach over 50 degrees. We picked streets together with residents at twelve open meetings.</p><p>Limes and hornbeams did best. Cherry trees were the neighbors' favorite, even if they need more care in dry summers.</p></section>
+<section id="s3"><h2>Where the money went</h2><p>Every tree costs us about €210 to buy, plant and water for its first three years. Of every euro we raised, 84 cents went straight into trees and care, 11 cents into volunteer training and 5 cents into running the office.</p></section>
+<section id="s4"><h2>What neighbors said</h2><blockquote>"My kids named the tree outside our door. They check on it every morning before school."<cite>Fatima, Oosterstraat</cite></blockquote><p>In our autumn survey, 9 out of 10 residents said the new trees made their street feel calmer and cooler.</p></section>
+<section id="s5"><h2>Next year</h2><p>Our goal for 2027 is 4,000 trees and a watering team on every planted street. A gift of €210 plants one tree and looks after it until it can look after itself.</p><a class="btn" href="#">Plant a tree for €210</a></section>
+</article></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const bar=document.getElementById('bar'),links=[...document.querySelectorAll('.toc a')];
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('article section').forEach(s=>io.observe(s));
+</script>
+</body></html>

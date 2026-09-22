@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frame Club Photo Community | Masonry Grid HTML Template</title>
+<meta name="description" content="Free masonry grid website template for a photo community. Pinterest style staggered columns made with pure CSS, no JavaScript library. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141414;--ink:#f1efe9;--muted:#9a978f;--line:#2a2a2a}
+*{box-sizing:border-box;margin:0}
+body{font-family:Epilogue,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:1240px;margin:0 auto;padding:30px 20px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+header p{color:var(--muted);max-width:40ch;margin-top:10px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:inherit;color:var(--ink);background:transparent;border:1px solid #444;border-radius:999px;padding:8px 16px;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+button:focus-visible,a:focus-visible{outline:2px solid #ffcf70;outline-offset:3px}
+.wall{max-width:1240px;margin:0 auto;padding:0 20px 50px;columns:4 260px;column-gap:16px}
+figure{break-inside:avoid;margin:0 0 16px;border-radius:14px;overflow:hidden;background:#1d1d1d}
+.ph{display:block;width:100%}
+figcaption{padding:12px 14px;font-size:.9rem;display:flex;justify-content:space-between;gap:10px}
+figcaption span{color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem;color:var(--muted)}.credit a{color:var(--ink)}
+</style></head><body>
+<header><div><h1>This week on Frame Club</h1><p>Photos shared by 4,200 members. Vote for your favorite before Sunday night.</p></div>
+<div class="filters" role="group" aria-label="Filter"><button aria-pressed="true">All</button><button aria-pressed="false">Street</button><button aria-pressed="false">Landscape</button><button aria-pressed="false">Portrait</button></div></header>
+<main class="wall">
+<figure><span class="ph" style="height:340px;background:linear-gradient(180deg,#f7b267 0,#f4845f 40%,#2b2d42 41%,#1a1b2e 100%)"></span><figcaption>Harbor at dusk<span>Leo M.</span></figcaption></figure>
+<figure><span class="ph" style="height:220px;background:radial-gradient(circle at 30% 40%,#e9ecef 0 12%,transparent 13%),linear-gradient(135deg,#495057,#212529)"></span><figcaption>Moon over the mill<span>Aisha K.</span></figcaption></figure>
+<figure><span class="ph" style="height:420px;background:linear-gradient(90deg,#1b4332 0 30%,#2d6a4f 30% 55%,#40916c 55% 80%,#52b788 80%)"></span><figcaption>Pine rows<span>Tomás R.</span></figcaption></figure>
+<figure><span class="ph" style="height:260px;background:repeating-linear-gradient(90deg,#343a40 0 18px,#f8f9fa 18px 36px)"></span><figcaption>Crossing, Shibuya<span>Ken S.</span></figcaption></figure>
+<figure><span class="ph" style="height:300px;background:radial-gradient(ellipse at 50% 110%,#ffd166 0 30%,transparent 31%),linear-gradient(#118ab2,#073b4c)"></span><figcaption>First light, Algarve<span>Marta P.</span></figcaption></figure>
+<figure><span class="ph" style="height:380px;background:radial-gradient(circle at 50% 35%,#d4a373 0 16%,#6f4518 17% 30%,transparent 31%),linear-gradient(#fefae0,#e9edc9)"></span><figcaption>Grandad in the garden<span>Priya N.</span></figcaption></figure>
+<figure><span class="ph" style="height:200px;background:linear-gradient(160deg,#ff006e,#8338ec 50%,#3a86ff)"></span><figcaption>Neon alley<span>Jin W.</span></figcaption></figure>
+<figure><span class="ph" style="height:320px;background:linear-gradient(180deg,#caf0f8 0 45%,#ade8f4 45% 50%,#48cae4 50% 70%,#0077b6 70%)"></span><figcaption>Lake Bled, still<span>Anja B.</span></figcaption></figure>
+<figure><span class="ph" style="height:240px;background:conic-gradient(from 200deg at 60% 60%,#9d0208,#dc2f02,#f48c06,#9d0208)"></span><figcaption>Autumn maple<span>Hana O.</span></figcaption></figure>
+<figure><span class="ph" style="height:280px;background:linear-gradient(0deg,#3d405b 0 20%,#e07a5f 20% 22%,#f2cc8f 22%)"></span><figcaption>Desert road<span>Sam D.</span></figcaption></figure>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true')})</script>
+</body></html>
