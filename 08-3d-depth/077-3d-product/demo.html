@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kettle Lane Tea | 3D Product Box HTML Template</title>
+<meta name="description" content="Free 3D product template for a tea brand. A real CSS 3D box that spins slowly and can be dragged to turn, with a label on every side. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3ede2;--ink:#1f2b24;--muted:#66706a;--green:#2f5d4a;--gold:#c9a45c}
+*{box-sizing:border-box;margin:0}
+body{font-family:Lato,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-family:"Playfair Display",serif;font-size:1.4rem}
+header a{color:var(--ink)}
+a:focus-visible,.stage:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.hero{max-width:1120px;margin:0 auto;padding:20px 24px 60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+h1{font-family:"Playfair Display",serif;font-size:clamp(2.4rem,5.5vw,4rem);line-height:1.05}
+h1 em{font-weight:500;color:var(--green)}
+.hero p{color:var(--muted);font-size:1.15rem;margin:16px 0 20px;max-width:38ch}
+.price{font-size:1.5rem;font-weight:700;margin-bottom:16px}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:14px 26px;border-radius:6px;font-weight:700;text-decoration:none}
+.stage{height:440px;perspective:1100px;display:grid;place-items:center;cursor:grab;touch-action:none;position:relative}
+.stage:active{cursor:grabbing}
+.stage::after{content:"";position:absolute;bottom:40px;width:220px;height:30px;border-radius:50%;background:radial-gradient(rgba(0,0,0,.25),transparent 70%)}
+.box{--w:180px;--h:260px;--d:120px;position:relative;width:var(--w);height:var(--h);transform-style:preserve-3d;transform:rotateX(-12deg) rotateY(var(--ry,30deg))}
+.box.spin{animation:spin 16s linear -14.5s infinite}
+@keyframes spin{from{transform:rotateX(-12deg) rotateY(0)}to{transform:rotateX(-12deg) rotateY(360deg)}}
+@media(prefers-reduced-motion:reduce){.box.spin{animation:none}}
+.f{position:absolute;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:16px;color:#f3ede2;border:1px solid rgba(255,255,255,.12)}
+.fr,.bk{width:var(--w);height:var(--h)}
+.rt,.lf{width:var(--d);height:var(--h);left:calc((var(--w) - var(--d))/2)}
+.tp,.bt{width:var(--w);height:var(--d);top:calc((var(--h) - var(--d))/2);left:0}
+.fr{background:var(--green);transform:translateZ(calc(var(--d)/2))}
+.bk{background:#264c3d;transform:rotateY(180deg) translateZ(calc(var(--d)/2))}
+.rt{background:#23473a;transform:rotateY(90deg) translateZ(calc(var(--w)/2))}
+.lf{background:#2a5343;transform:rotateY(-90deg) translateZ(calc(var(--w)/2))}
+.tp{background:#3a6e58;transform:rotateX(90deg) translateZ(calc(var(--h)/2))}
+.bt{background:#1b3a2e;transform:rotateX(-90deg) translateZ(calc(var(--h)/2))}
+.fr b{font-family:"Playfair Display",serif;font-size:1.6rem;line-height:1.1;color:var(--gold)}
+.fr .ring{width:80px;height:80px;border:2px solid var(--gold);border-radius:50%;margin:16px 0;display:grid;place-items:center;font-family:"Playfair Display",serif;font-style:italic}
+.f small{font-size:.75rem;opacity:.85}
+.tip{text-align:center;color:var(--muted);font-size:.9rem;margin-top:-30px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Kettle Lane</b><a href="#">Basket</a></header>
+<main><section class="hero"><div><h1>Earl Grey, <em>the slow way</em></h1><p>Black tea from Assam, blended by hand with cold pressed bergamot oil from Calabria. Twenty silk pyramids in a box you will want to keep.</p><p class="price">£9.50</p><a class="btn" href="#">Add to basket</a></div>
+<div><div class="stage" id="stage" tabindex="0" aria-label="3D tea box, drag or use arrow keys to turn"><div class="box spin" id="box">
+<div class="f fr"><small>KETTLE LANE</small><span class="ring">No. 7</span><b>Earl Grey</b><small>20 pyramids</small></div>
+<div class="f bk"><small>Brew 3 to 4 minutes at 95°C.<br><br>Best with a slice of lemon or a drop of milk.</small></div>
+<div class="f rt"><small>ASSAM<br>BERGAMOT</small></div><div class="f lf"><small>BLENDED<br>IN BATH</small></div>
+<div class="f tp"></div><div class="f bt"></div></div></div><p class="tip">Drag to turn the box</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const st=document.getElementById('stage'),bx=document.getElementById('box');let ry=30,sx=0,dragging=false;
+function stopSpin(){if(bx.classList.contains('spin')){const m=new DOMMatrix(getComputedStyle(bx).transform);ry=Math.round(Math.atan2(-m.m31,m.m11)*180/Math.PI);bx.classList.remove('spin');bx.style.setProperty('--ry',ry+'deg')}}
+st.addEventListener('pointerdown',e=>{stopSpin();dragging=true;sx=e.clientX;st.setPointerCapture(e.pointerId)});
+st.addEventListener('pointermove',e=>{if(!dragging)return;ry+=(e.clientX-sx)*.6;sx=e.clientX;bx.style.setProperty('--ry',ry+'deg')});
+st.addEventListener('pointerup',()=>dragging=false);
+st.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){stopSpin();ry+=e.key==='ArrowLeft'?-20:20;bx.style.setProperty('--ry',ry+'deg')}});
+</script>
+</body></html>

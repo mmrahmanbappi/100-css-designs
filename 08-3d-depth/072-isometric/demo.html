@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stackyard Fulfillment | Isometric Design HTML Template</title>
+<meta name="description" content="Free isometric website template for a fulfillment warehouse. 3D boxes, shelves and a conveyor drawn with CSS transforms on an isometric grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f6;--ink:#1a2233;--muted:#5c6679;--top:#ffd166;--left:#e0a43c;--right:#b87d22;--blue:#3a6ff7}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;overflow-x:hidden}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-family:"Chakra Petch",sans-serif;font-size:1.3rem}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.hero{max-width:1120px;margin:0 auto;padding:20px 24px 40px;display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:center}
+h1{font-family:"Chakra Petch",sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.02}
+.hero p{color:var(--muted);font-size:1.15rem;margin:16px 0 24px;max-width:40ch}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 24px;border-radius:8px;font-weight:500;text-decoration:none}
+.iso{height:440px;display:grid;place-items:center}
+.floor{position:relative;width:360px;height:360px;transform:rotateX(60deg) rotateZ(-45deg);transform-style:preserve-3d;background:repeating-linear-gradient(0deg,#d5dbe6 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,#d5dbe6 0 1px,transparent 1px 40px),#fff;box-shadow:20px 20px 0 #c7cfdd}
+.box{position:absolute;width:var(--s,60px);height:var(--s,60px);transform-style:preserve-3d;transform:translateZ(calc(var(--z,0px)))}
+.box i{position:absolute;display:block}
+.box .t{inset:0;background:var(--c1,var(--top));transform:translateZ(var(--h,60px))}
+.box .l{left:0;bottom:0;width:100%;height:var(--h,60px);background:var(--c2,var(--left));transform-origin:bottom;transform:rotateX(-90deg) translateY(0)}
+.box .r{right:0;top:0;width:var(--h,60px);height:100%;background:var(--c3,var(--right));transform-origin:right;transform:rotateY(90deg)}
+.bl{--c1:#9db8ff;--c2:#6b8ef2;--c3:#4a6bd0}
+.belt{position:absolute;left:20px;top:280px;width:320px;height:40px;background:repeating-linear-gradient(90deg,#3a4256 0 20px,#4c556c 20px 40px);animation:belt 1s linear infinite}
+@keyframes belt{to{background-position:40px 0}}
+@media(prefers-reduced-motion:reduce){.belt{animation:none}}
+.stats{max-width:1120px;margin:0 auto;padding:10px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stats div{background:#fff;border-radius:14px;padding:22px}
+.stats b{font-family:"Chakra Petch",sans-serif;font-size:2.4rem;display:block;line-height:1.1}
+.stats span{color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.hero,.stats{grid-template-columns:1fr}.iso{height:360px;transform:scale(.8)}}
+</style></head><body>
+<header><b>Stackyard</b><a href="#">Get a quote</a></header>
+<main><section class="hero"><div><h1>We store, pack and ship your orders</h1><p>Send us your stock once. We pick, pack and post every order the same day, from a warehouse near Rotterdam that reaches 24 countries in two days.</p><a class="btn" href="#">Get a price in 2 minutes</a></div>
+<div class="iso" aria-hidden="true"><div class="floor"><span class="belt"></span>
+<div class="box" style="left:40px;top:40px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box" style="left:40px;top:40px;--z:60px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box bl" style="left:120px;top:40px;--h:90px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box" style="left:200px;top:40px;--s:80px;--h:40px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box bl" style="left:40px;top:140px;--h:40px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box" style="left:140px;top:150px;--s:50px;--h:50px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+<div class="box" style="left:250px;top:250px;--s:40px;--h:40px;--z:0px"><i class="t"></i><i class="l"></i><i class="r"></i></div>
+</div></div></section>
+<section class="stats"><div><b>99.8%</b><span>orders shipped without a mistake</span></div><div><b>14:00</b><span>order by this time, ships today</span></div><div><b>€1.90</b><span>per order to pick and pack</span></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

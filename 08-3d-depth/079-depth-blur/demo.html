@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terraza Wines | Depth Blur HTML Template</title>
+<meta name="description" content="Free depth of field blur template for a winery. Near and far layers are blurred while the middle stays sharp, like a camera lens, and focus shifts on scroll. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1a1f;--cream:#f6efe4;--wine:#6e1f36;--muted:#6f5f63}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+.scene{position:relative;height:92vh;min-height:560px;overflow:hidden;background:linear-gradient(#f9d3a6,#f2b389 45%,#d98b6e)}
+.l{position:absolute;left:-5%;right:-5%;will-change:filter,transform}
+.far{bottom:40%;height:30%;filter:blur(6px);background:radial-gradient(ellipse at 30% 100%,#9b7a85 0 40%,transparent 41%),radial-gradient(ellipse at 75% 100%,#8a6975 0 45%,transparent 46%)}
+.mid{bottom:12%;height:40%;background:repeating-linear-gradient(90deg,#4f6b3a 0 18px,#6f8f4f 18px 40px);clip-path:polygon(0 30%,100% 10%,100% 100%,0 100%);filter:blur(0)}
+.near{bottom:-6%;height:30%;filter:blur(10px);background:radial-gradient(circle at 12% 40%,#3b2a1c 0 12%,transparent 13%),radial-gradient(circle at 88% 50%,#3b2a1c 0 16%,transparent 17%),radial-gradient(circle at 20% 30%,#5a1f38 0 5%,transparent 6%),radial-gradient(circle at 24% 38%,#5a1f38 0 5%,transparent 6%),radial-gradient(circle at 18% 44%,#5a1f38 0 5%,transparent 6%)}
+.card{position:absolute;left:6vw;top:14vh;max-width:460px;background:rgba(246,239,228,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:6px;padding:34px}
+h1{font-family:"Libre Caslon Display",serif;font-weight:400;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.05}
+.card p{color:var(--muted);margin:14px 0 20px}
+.btn{display:inline-block;background:var(--wine);color:#fff;padding:13px 24px;border-radius:4px;font-weight:600;text-decoration:none}
+a:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+nav{position:absolute;top:0;left:0;right:0;padding:22px 6vw;display:flex;justify-content:space-between;z-index:2;font-weight:600}
+nav a{color:var(--ink)}
+.wines{max-width:1100px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.w h2{font-family:"Libre Caslon Display",serif;font-weight:400;font-size:1.6rem}
+.w p{color:var(--muted)}
+.w b{color:var(--wine)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.wines{grid-template-columns:1fr}.card{left:20px;right:20px}}
+</style></head><body>
+<header class="scene"><nav><span>Terraza Wines</span><a href="#visit">Visit us</a></nav>
+<span class="l far" aria-hidden="true"></span><span class="l mid" aria-hidden="true"></span><span class="l near" aria-hidden="true"></span>
+<div class="card"><h1>Grown on the slopes above Porto</h1><p>Four generations, 12 hectares of old vines and one small cellar. Tastings every afternoon from April to October.</p><a class="btn" href="#visit">Book a tasting</a></div></header>
+<main class="wines" id="visit"><article class="w"><h2>Encosta Tinto</h2><p>Deep red, dark cherry and a little smoke.</p><b>€18</b></article><article class="w"><h2>Vinha Branca</h2><p>Crisp white, lemon peel and green apple.</p><b>€14</b></article><article class="w"><h2>Tasting for two</h2><p>Five wines, cheese and a walk through the vines.</p><b>€40</b></article></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const far=document.querySelector('.far'),mid=document.querySelector('.mid'),near=document.querySelector('.near');
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)addEventListener('scroll',()=>{const p=Math.min(1,scrollY/400);far.style.filter='blur('+(6-p*6)+'px)';mid.style.filter='blur('+(p*5)+'px)';near.style.filter='blur('+(10+p*4)+'px)'},{passive:true});
+</script>
+</body></html>

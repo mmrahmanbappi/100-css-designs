@@ -80,6 +80,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 068 | [Staggered Entrance](https://mmrahmanbappi.github.io/100-css-designs/07-motion/068-staggered-entrance/) | Pipeline, a CRM landing page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/068-staggered-entrance/demo.html) | <img src="07-motion/068-staggered-entrance/preview.png" width="260" alt="Staggered Entrance preview"> |
 | 069 | [Skeleton Loaders](https://mmrahmanbappi.github.io/100-css-designs/07-motion/069-skeleton-loaders/) | Morning Brief, a news app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/069-skeleton-loaders/demo.html) | <img src="07-motion/069-skeleton-loaders/preview.png" width="260" alt="Skeleton Loaders preview"> |
 | 070 | [Cursor Effects](https://mmrahmanbappi.github.io/100-css-designs/07-motion/070-cursor-effects/) | Oddfellow, a creative studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/070-cursor-effects/demo.html) | <img src="07-motion/070-cursor-effects/preview.png" width="260" alt="Cursor Effects preview"> |
+| 071 | [3D Tilt Cards](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/071-3d-tilt-cards/) | Postcard Club, a postcard subscription | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/071-3d-tilt-cards/demo.html) | <img src="08-3d-depth/071-3d-tilt-cards/preview.png" width="260" alt="3D Tilt Cards preview"> |
+| 072 | [Isometric](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/072-isometric/) | Stackyard, a fulfillment warehouse | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/072-isometric/demo.html) | <img src="08-3d-depth/072-isometric/preview.png" width="260" alt="Isometric preview"> |
+| 073 | [Layered Shadows](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/073-layered-shadows/) | Forma, a furniture maker | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/073-layered-shadows/demo.html) | <img src="08-3d-depth/073-layered-shadows/preview.png" width="260" alt="Layered Shadows preview"> |
+| 074 | [Floating Elements](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/074-floating-elements/) | Driftwood, a to-do app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/074-floating-elements/demo.html) | <img src="08-3d-depth/074-floating-elements/preview.png" width="260" alt="Floating Elements preview"> |
+| 075 | [Perspective Scroll](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/075-perspective-scroll/) | Fieldnote, a year in review page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/075-perspective-scroll/demo.html) | <img src="08-3d-depth/075-perspective-scroll/preview.png" width="260" alt="Perspective Scroll preview"> |
+| 076 | [Flip Cards](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/076-flip-cards/) | Palabra, a Spanish flashcard app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/076-flip-cards/demo.html) | <img src="08-3d-depth/076-flip-cards/preview.png" width="260" alt="Flip Cards preview"> |
+| 077 | [3D Product Box](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/077-3d-product/) | Kettle Lane, a tea brand | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/077-3d-product/demo.html) | <img src="08-3d-depth/077-3d-product/preview.png" width="260" alt="3D Product Box preview"> |
+| 078 | [Spatial UI](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/) | Habitat, a spatial meeting workspace | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/demo.html) | <img src="08-3d-depth/078-spatial-ui/preview.png" width="260" alt="Spatial UI preview"> |
+| 079 | [Depth Blur](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/079-depth-blur/) | Terraza, a family winery | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/079-depth-blur/demo.html) | <img src="08-3d-depth/079-depth-blur/preview.png" width="260" alt="Depth Blur preview"> |
+| 080 | [Stacked Scroll Cards](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/080-stacked-cards/) | Harvest Planner, a garden app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/080-stacked-cards/demo.html) | <img src="08-3d-depth/080-stacked-cards/preview.png" width="260" alt="Stacked Scroll Cards preview"> |
 
 ## Categories
 
@@ -90,7 +100,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 5. Color and Light (live)
 - 6. Typography (live)
 - 7. Motion (live)
-- 8. 3D and Depth (coming soon)
+- 8. 3D and Depth (live)
 - 9. Cultural and Aesthetic (coming soon)
 - 10. Business Ready Pages (coming soon)
 

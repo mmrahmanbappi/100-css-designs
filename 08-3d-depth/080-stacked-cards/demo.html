@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harvest Planner | Stacked Scroll Cards HTML Template</title>
+<meta name="description" content="Free stacked cards template for a garden planner app. Cards pin in place and stack on top of each other as you scroll, using CSS position sticky. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1e8;--ink:#1f2a1d;--muted:#5f6b5b}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+header{max-width:1000px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.intro{max-width:1000px;margin:0 auto;padding:50px 24px 40px}
+h1{font-family:Fraunces,serif;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;max-width:15ch}
+.intro p{color:var(--muted);font-size:1.15rem;margin-top:14px;max-width:44ch}
+.stack{max-width:1000px;margin:0 auto;padding:0 24px 30vh}
+.sc{position:sticky;top:calc(80px + var(--i) * 28px);height:420px;border-radius:28px;padding:40px;margin-bottom:60px;background:var(--c);display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;box-shadow:0 -10px 30px rgba(0,0,0,.08);transform-origin:top center}
+.sc small{font-weight:600;opacity:.7}
+.sc h2{font-family:Fraunces,serif;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.05;margin:8px 0 12px}
+.sc p{font-size:1.05rem;max-width:34ch}
+.art{height:100%;min-height:220px;border-radius:18px;background:rgba(255,255,255,.45);display:grid;place-items:center}
+.art i{width:120px;height:120px;border-radius:50% 50% 50% 0;background:var(--a);transform:rotate(-45deg)}
+.end{max-width:1000px;margin:0 auto;padding:0 24px 60px;text-align:center}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:15px 28px;border-radius:999px;font-weight:600;text-decoration:none}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:760px){.sc{grid-template-columns:1fr;height:auto;min-height:420px;padding:28px}.art{min-height:140px}}
+</style></head><body>
+<header><b>Harvest Planner</b><a href="#">Get the app</a></header>
+<main><section class="intro"><h1>Grow more food in a small garden</h1><p>Four things Harvest Planner does for you. Scroll and watch the cards stack up.</p></section>
+<section class="stack">
+<article class="sc" style="--i:0;--c:#cfe3b8;--a:#5e8b3a"><div><small>Step 1</small><h2>Draw your beds</h2><p>Sketch your garden in two minutes. Raised beds, pots, a balcony, anything counts.</p></div><div class="art" aria-hidden="true"><i></i></div></article>
+<article class="sc" style="--i:1;--c:#f6d7a7;--a:#d98a2b"><div><small>Step 2</small><h2>Pick what you like to eat</h2><p>We suggest what grows well together and what fits the space you have.</p></div><div class="art" aria-hidden="true"><i></i></div></article>
+<article class="sc" style="--i:2;--c:#f4b9a6;--a:#c2452d"><div><small>Step 3</small><h2>Get a sowing calendar</h2><p>Reminders for when to sow, plant out and harvest, based on your local frost dates.</p></div><div class="art" aria-hidden="true"><i></i></div></article>
+<article class="sc" style="--i:3;--c:#c9d6ea;--a:#3e6aa8"><div><small>Step 4</small><h2>Keep a harvest diary</h2><p>Log what you picked and see next year what worked best.</p></div><div class="art" aria-hidden="true"><i></i></div></article>
+</section><section class="end"><a class="btn" href="#">Start planning free</a></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

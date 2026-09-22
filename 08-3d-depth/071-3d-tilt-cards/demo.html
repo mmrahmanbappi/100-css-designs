@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Postcard Club | 3D Tilt Cards HTML Template</title>
+<meta name="description" content="Free 3D tilt card template for a postcard subscription. Cards tilt toward your cursor with a moving glare and layered depth. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1ebe0;--ink:#26221c;--muted:#6f675b}
+*{box-sizing:border-box;margin:0}
+body{font-family:Karla,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible,.card:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.hero{max-width:1100px;margin:0 auto;padding:30px 24px 20px}
+h1{font-family:"Abril Fatface",serif;font-weight:400;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.02;max-width:16ch}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:44ch;margin-top:14px}
+.row{max-width:1100px;margin:0 auto;padding:40px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:34px;perspective:1000px}
+.card{--rx:0deg;--ry:0deg;--gx:50%;--gy:50%;position:relative;aspect-ratio:3/2;border-radius:10px;transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateY(var(--ry));transition:transform .3s ease-out;box-shadow:0 20px 40px rgba(60,40,20,.25);background:var(--bgc);cursor:pointer}
+.card.live{transition:transform .08s linear}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at var(--gx) var(--gy),rgba(255,255,255,.45),transparent 50%);opacity:0;transition:opacity .3s}
+.card:hover::after{opacity:1}
+.scene{position:absolute;inset:14px;border-radius:4px;overflow:hidden;transform:translateZ(20px)}
+.name{position:absolute;left:24px;bottom:22px;font-family:"Abril Fatface",serif;font-size:2rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.35);transform:translateZ(60px)}
+.stamp{position:absolute;right:22px;top:22px;width:50px;height:60px;background:#fff;border:3px dashed #d8c7a8;transform:translateZ(45px) rotate(6deg);display:grid;place-items:center;font-size:.7rem;font-weight:600}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.row{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Postcard Club</b><a href="#">Join for £6 a month</a></header>
+<main><section class="hero"><h1>A real postcard from somewhere new, every month</h1><p>Written by a traveller on the spot and posted to your door. Move your mouse over the cards.</p></section>
+<section class="row" id="row">
+<div class="card" tabindex="0" style="--bgc:#fffaf0"><div class="scene" style="background:radial-gradient(circle at 70% 30%,#fff1c1 0 9%,transparent 10%),linear-gradient(#f7a072 0 50%,#2a9d8f 50%)"></div><span class="stamp">LISBOA</span><span class="name">Lisbon</span></div>
+<div class="card" tabindex="0" style="--bgc:#fffaf0"><div class="scene" style="background:linear-gradient(160deg,transparent 45%,#fff 45% 48%,transparent 48%),linear-gradient(200deg,transparent 50%,#6d597a 50%),linear-gradient(#b8c0ff,#e7c6ff)"></div><span class="stamp">KYOTO</span><span class="name">Kyoto</span></div>
+<div class="card" tabindex="0" style="--bgc:#fffaf0"><div class="scene" style="background:repeating-linear-gradient(90deg,#e76f51 0 30px,#f4a261 30px 60px,#e9c46a 60px 90px) 0 60%/100% 40% no-repeat,linear-gradient(#8ecae6,#fefae0)"></div><span class="stamp">OAXACA</span><span class="name">Oaxaca</span></div>
+</section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.querySelectorAll('.card').forEach(c=>{
+c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.classList.add('live');c.style.setProperty('--ry',(x-.5)*22+'deg');c.style.setProperty('--rx',(.5-y)*22+'deg');c.style.setProperty('--gx',x*100+'%');c.style.setProperty('--gy',y*100+'%')});
+c.addEventListener('pointerleave',()=>{c.classList.remove('live');c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')})});
+</script>
+</body></html>

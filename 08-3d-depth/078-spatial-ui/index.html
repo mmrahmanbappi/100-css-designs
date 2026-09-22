@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Spatial UI Template Inspired by visionOS (Live Demo)</title>
+<meta name="description" content="Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo.">
+<meta name="keywords" content="visionos ui css, spatial ui design, glass window css, apple vision pro design, spatial computing web">
+<meta name="author" content="mmrahmanbappi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="100 CSS Designs">
+<meta property="og:title" content="Free Spatial UI Template Inspired by visionOS (Live Demo)">
+<meta property="og:description" content="Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo.">
+<meta property="og:url" content="https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/">
+<meta property="og:image" content="https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Spatial UI Template Inspired by visionOS (Live Demo)">
+<meta name="twitter:description" content="Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo.">
+<meta name="twitter:image" content="https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#fbfbf8;--ink:#17191f;--muted:#5a5f6b;--line:#e4e3dc;--blue:#2445d6;--card:#fff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Instrument Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.bar{border-bottom:1px solid var(--line);background:#fff}
+.bar div{max-width:1120px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.bar a.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.25rem;color:var(--ink);text-decoration:none}
+.bar nav a{margin-left:18px;color:var(--ink);font-weight:600;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.crumbs{font-size:.9rem;color:var(--muted);padding:22px 0 0}
+.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;margin:14px 0 14px;max-width:22ch}
+h2{font-size:1.6rem;margin:0 0 14px}
+h3{font-size:1.15rem}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:#fff}
+.btn.main{background:var(--ink);color:#fff}
+.shot{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(20,20,40,.12)}
+.shot img{display:block;width:100%;height:auto}
+.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;padding:60px 0}
+.cols p{margin-bottom:14px;max-width:65ch}
+ul.list{padding-left:20px}
+ul.list li{margin-bottom:6px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.code{position:relative;margin:0 0 60px}
+pre{background:#1d2030;color:#e8eaf3;border-radius:14px;padding:24px;overflow-x:auto;font-size:.9rem;line-height:1.6}
+.copy{position:absolute;top:12px;right:12px;font:inherit;font-size:.85rem;font-weight:700;border:0;border-radius:8px;padding:6px 12px;background:#fff;color:var(--ink);cursor:pointer}
+ol.steps{padding-left:22px;max-width:65ch;margin-bottom:60px}
+ol.steps li{margin-bottom:8px}
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font-weight:700;cursor:pointer;font-size:1.05rem}
+details p{margin-top:10px;color:var(--muted);max-width:70ch}
+.faq{margin-bottom:60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:26px 0 60px}
+.tile{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.tile div{padding:14px 16px}
+.tile small{color:var(--muted)}
+.tile:hover{border-color:var(--ink)}
+.cat{margin:50px 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.soon{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:20px 0 70px}
+.soon div{border:1px dashed #c9c7bd;border-radius:12px;padding:18px;color:var(--muted)}
+.soon b{color:var(--ink);display:block}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:0 0 60px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:30px 22px;text-align:center;color:var(--muted);font-size:.95rem}
+@media(max-width:820px){.cols{grid-template-columns:1fr;gap:30px;padding:40px 0}.bar nav a:first-child{display:none}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/","url":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/","name":"Free Spatial UI Template Inspired by visionOS (Live Demo)","description":"Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo.","isPartOf":{"@type":"WebSite","name":"100 CSS Designs","url":"https://mmrahmanbappi.github.io/100-css-designs/"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/preview.png","width":1280,"height":800},"datePublished":"2026-09-23","dateModified":"2026-09-23","inLanguage":"en"},{"@type":"SoftwareSourceCode","name":"Spatial UI CSS Template","description":"Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo.","image":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/preview.png","url":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/","codeRepository":"https://github.com/mmrahmanbappi/100-css-designs","programmingLanguage":["HTML","CSS"],"license":"https://opensource.org/licenses/MIT","isAccessibleForFree":true,"keywords":"visionos ui css, spatial ui design, glass window css, apple vision pro design, spatial computing web","author":{"@type":"Person","name":"mmrahmanbappi","url":"https://github.com/mmrahmanbappi"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mmrahmanbappi.github.io/100-css-designs/"},{"@type":"ListItem","position":2,"name":"3D and Depth","item":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/"},{"@type":"ListItem","position":3,"name":"Spatial UI","item":"https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is spatial UI?","acceptedAnswer":{"@type":"Answer","text":"It is interface design for 3D spaces, like mixed reality headsets, where windows float around you with depth, glass materials and soft light."}},{"@type":"Question","name":"How do I make windows look like visionOS glass?","acceptedAnswer":{"@type":"Answer","text":"Use a semi transparent grey background with strong backdrop-filter blur and saturation, a thin light inner border and a large soft shadow."}},{"@type":"Question","name":"Does this template work in a headset browser?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is a normal web page. On a flat screen it uses CSS 3D to fake the depth."}}]}]}</script>
+</head>
+<body>
+<header class="bar"><div><a class="logo" href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a><nav><a href="https://mmrahmanbappi.github.io/100-css-designs/#categories">Categories</a><a href="https://github.com/mmrahmanbappi/100-css-designs">GitHub</a></nav></div></header>
+<main class="wrap">
+<p class="crumbs"><a href="https://mmrahmanbappi.github.io/100-css-designs/">Home</a> / <a href="../">3D and Depth</a> / Spatial UI</p>
+<h1>Spatial UI CSS Template, Free with Live Demo</h1>
+<p class="lead">Free spatial UI template inspired by Apple visionOS. Floating glass windows at different depths over a room, with a floating tab bar. Live demo. The example is Habitat, a spatial meeting workspace.</p>
+<div class="actions"><a class="btn main" href="demo.html">Open live demo</a><a class="btn" href="demo.html" download="spatial-ui-template.html">Download HTML file</a><a class="btn" href="https://github.com/mmrahmanbappi/100-css-designs/tree/main/08-3d-depth/078-spatial-ui">View code on GitHub</a></div>
+<a class="shot" href="demo.html"><img src="preview.png" alt="Spatial UI CSS template example: Habitat, a spatial meeting workspace" width="1280" height="800"></a>
+<section class="cols"><div><h2>What is spatial ui?</h2><p>Spatial UI is the design language of headsets like Apple Vision Pro. Windows are frosted glass floating in your room, side panels angle toward you, and tools sit in a small pill bar below the main window.</p><p>On the web you can get the same feel with CSS 3D. The side windows are pushed back and turned slightly with translateZ and rotateY, all glass is backdrop-filter blur, and the room behind is just gradients.</p></div>
+<div class="box"><h3>Good for</h3><ul class="list"><li>Apps and demos for spatial computing</li><li>Futuristic product launches</li><li>Meeting and collaboration tools</li><li>Concept and portfolio pieces</li></ul></div></section>
+<section><h2>What you get in this template</h2><ul class="list" style="margin-bottom:40px"><li>Three glass windows at different depths</li><li>Side panels angled toward the viewer</li><li>Floating ornament tool bar</li><li>Room background drawn with gradients</li><li>Flattens into a simple stack on phones</li></ul></section>
+<section><h2>The key CSS</h2><p style="margin-bottom:14px">This is the part that makes the spatial ui look work. Copy it into your own project.</p>
+<div class="code"><button class="copy" type="button">Copy CSS</button><pre><code>.room { perspective: 1400px; }
+.space { transform-style: preserve-3d; }
+.win {
+  border-radius: 30px;
+  background: rgba(128, 128, 128, .28);
+  backdrop-filter: blur(40px) saturate(160%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4), 0 30px 60px rgba(0,0,0,.25);
+}
+.side  { transform: translateZ(-120px) rotateY(18deg); }
+.right { transform: translateZ(-120px) rotateY(-18deg); }</code></pre></div></section>
+<section><h2>How to use it</h2><ol class="steps"><li>Click Download HTML file above.</li><li>Open the file in any code editor, like VS Code.</li><li>Change the text, colors and links to match your project. Colors are at the top of the style tag.</li><li>Upload it to any host, such as GitHub Pages, Netlify or your own server. It is one file with no build step.</li></ol></section>
+<section class="faq"><h2>Questions people ask</h2><details><summary>What is spatial UI?</summary><p>It is interface design for 3D spaces, like mixed reality headsets, where windows float around you with depth, glass materials and soft light.</p></details><details><summary>How do I make windows look like visionOS glass?</summary><p>Use a semi transparent grey background with strong backdrop-filter blur and saturation, a thin light inner border and a large soft shadow.</p></details><details><summary>Does this template work in a headset browser?</summary><p>Yes, it is a normal web page. On a flat screen it uses CSS 3D to fake the depth.</p></details></section>
+<nav class="pager" aria-label="More designs"><a href="../077-3d-product/">Previous: 3D Product Box</a><a href="../079-depth-blur/">Next: Depth Blur</a></nav>
+<section><h2>More 3D and Depth designs</h2><div class="grid"><a class="tile" href="../071-3d-tilt-cards/"><img src="../071-3d-tilt-cards/preview.png" alt="3D Tilt Cards CSS template preview" loading="lazy" width="1280" height="800"><div><h3>071. 3D Tilt Cards</h3><small>Postcard Club, a postcard subscription</small></div></a><a class="tile" href="../072-isometric/"><img src="../072-isometric/preview.png" alt="Isometric CSS template preview" loading="lazy" width="1280" height="800"><div><h3>072. Isometric</h3><small>Stackyard, a fulfillment warehouse</small></div></a><a class="tile" href="../073-layered-shadows/"><img src="../073-layered-shadows/preview.png" alt="Layered Shadows CSS template preview" loading="lazy" width="1280" height="800"><div><h3>073. Layered Shadows</h3><small>Forma, a furniture maker</small></div></a><a class="tile" href="../074-floating-elements/"><img src="../074-floating-elements/preview.png" alt="Floating Elements CSS template preview" loading="lazy" width="1280" height="800"><div><h3>074. Floating Elements</h3><small>Driftwood, a to-do app</small></div></a><a class="tile" href="../075-perspective-scroll/"><img src="../075-perspective-scroll/preview.png" alt="Perspective Scroll CSS template preview" loading="lazy" width="1280" height="800"><div><h3>075. Perspective Scroll</h3><small>Fieldnote, a year in review page</small></div></a><a class="tile" href="../076-flip-cards/"><img src="../076-flip-cards/preview.png" alt="Flip Cards CSS template preview" loading="lazy" width="1280" height="800"><div><h3>076. Flip Cards</h3><small>Palabra, a Spanish flashcard app</small></div></a><a class="tile" href="../077-3d-product/"><img src="../077-3d-product/preview.png" alt="3D Product Box CSS template preview" loading="lazy" width="1280" height="800"><div><h3>077. 3D Product Box</h3><small>Kettle Lane, a tea brand</small></div></a><a class="tile" href="../079-depth-blur/"><img src="../079-depth-blur/preview.png" alt="Depth Blur CSS template preview" loading="lazy" width="1280" height="800"><div><h3>079. Depth Blur</h3><small>Terraza, a family winery</small></div></a><a class="tile" href="../080-stacked-cards/"><img src="../080-stacked-cards/preview.png" alt="Stacked Scroll Cards CSS template preview" loading="lazy" width="1280" height="800"><div><h3>080. Stacked Scroll Cards</h3><small>Harvest Planner, a garden app</small></div></a></div></section>
+</main>
+<footer>Free under the MIT license. Made by <a href="https://github.com/mmrahmanbappi">mmrahmanbappi</a>. <a href="https://github.com/mmrahmanbappi/100-css-designs">Star the repo on GitHub</a> to get new designs.</footer>
+<script>document.querySelectorAll('.copy').forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(b.nextElementSibling.innerText).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy CSS',1500)})})</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forma Furniture | Layered Shadows HTML Template</title>
+<meta name="description" content="Free layered shadows template for a furniture shop. Realistic multi layer shadows that lift cards on hover and give soft natural depth. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efeae3;--card:#faf7f2;--ink:#2a2622;--muted:#716a61;--sh:30deg 20% 20%}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Albert Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.e1{box-shadow:0 1px 1px hsl(var(--sh)/.08),0 2px 2px hsl(var(--sh)/.08),0 4px 4px hsl(var(--sh)/.08)}
+.e2{box-shadow:0 1px 1px hsl(var(--sh)/.075),0 2px 2px hsl(var(--sh)/.075),0 4px 4px hsl(var(--sh)/.075),0 8px 8px hsl(var(--sh)/.075),0 16px 16px hsl(var(--sh)/.075)}
+.e3{box-shadow:0 1px 1px hsl(var(--sh)/.07),0 2px 2px hsl(var(--sh)/.07),0 4px 4px hsl(var(--sh)/.07),0 8px 8px hsl(var(--sh)/.07),0 16px 16px hsl(var(--sh)/.07),0 32px 32px hsl(var(--sh)/.07),0 64px 64px hsl(var(--sh)/.07)}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-family:"Cormorant Garamond",serif;font-size:1.6rem}
+header a{color:var(--ink)}
+a:focus-visible,.p:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.hero{max-width:1120px;margin:0 auto;padding:30px 24px 30px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(2.4rem,5.5vw,4.2rem);line-height:1.05;max-width:18ch}
+.hero p{color:var(--muted);max-width:44ch;margin-top:12px;font-size:1.1rem}
+.levels{max-width:1120px;margin:0 auto;padding:10px 24px 30px;display:flex;gap:24px;flex-wrap:wrap}
+.levels div{background:var(--card);border-radius:12px;padding:16px 22px;font-size:.9rem;color:var(--muted)}
+.grid{max-width:1120px;margin:0 auto;padding:20px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.p{display:block;background:var(--card);border-radius:18px;padding:18px;color:var(--ink);text-decoration:none;transition:transform .3s ease,box-shadow .3s ease}
+.p:hover,.p:focus-visible{transform:translateY(-6px)}
+.p:hover{box-shadow:0 1px 1px hsl(var(--sh)/.07),0 2px 2px hsl(var(--sh)/.07),0 4px 4px hsl(var(--sh)/.07),0 8px 8px hsl(var(--sh)/.07),0 16px 16px hsl(var(--sh)/.07),0 32px 32px hsl(var(--sh)/.07),0 64px 64px hsl(var(--sh)/.07)}
+.ph{height:230px;border-radius:12px;background:#e6ddd0;display:grid;place-items:end center;padding-bottom:30px}
+.chair{width:110px;height:140px;position:relative}
+.chair::before{content:"";position:absolute;left:10px;right:10px;top:0;height:70px;border-radius:12px 12px 4px 4px;background:var(--c)}
+.chair::after{content:"";position:absolute;left:0;right:0;top:66px;height:22px;border-radius:6px;background:var(--c);box-shadow:8px 44px 0 -6px #5b4636,-8px 44px 0 -6px #5b4636}
+.p h2{font-family:"Cormorant Garamond",serif;font-size:1.5rem;margin-top:14px}
+.p div{display:flex;justify-content:space-between;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.p{transition:none}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Forma</b><a href="#">Showroom</a></header>
+<main><section class="hero"><h1>Chairs made to be sat in for forty years</h1><p>Solid oak and wool upholstery, made to order in our workshop in Copenhagen. Hover a chair to lift it.</p></section>
+<div class="levels" aria-label="Shadow levels"><div class="e1">Level 1, resting</div><div class="e2">Level 2, raised</div><div class="e3">Level 3, lifted</div></div>
+<section class="grid">
+<a class="p e2" href="#"><div class="ph"><span class="chair" style="--c:#9c6b4a" aria-hidden="true"></span></div><h2>Tove lounge chair</h2><div><span>Oak, cognac wool</span><span>€1,240</span></div></a>
+<a class="p e2" href="#"><div class="ph" style="background:#dfe2d8"><span class="chair" style="--c:#6f7d5c" aria-hidden="true"></span></div><h2>Bo dining chair</h2><div><span>Oak, moss wool</span><span>€480</span></div></a>
+<a class="p e2" href="#"><div class="ph" style="background:#e5dfe3"><span class="chair" style="--c:#8a6f86" aria-hidden="true"></span></div><h2>Ida reading chair</h2><div><span>Walnut, heather wool</span><span>€1,560</span></div></a>
+</section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

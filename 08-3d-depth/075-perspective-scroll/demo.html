@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fieldnote Year in Review | Perspective Scroll HTML Template</title>
+<meta name="description" content="Free perspective scroll template for a year in review page. Panels tip back in 3D and flatten out as they reach the middle of the screen. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0f14;--ink:#f4f1ea;--muted:#a19ea8}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:1000px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid #ffd166;outline-offset:3px}
+.intro{max-width:1000px;margin:0 auto;padding:60px 24px 40px}
+h1{font-size:clamp(3rem,9vw,7rem);font-weight:800;line-height:.9;letter-spacing:-.04em}
+.intro p{color:var(--muted);font-size:1.2rem;margin-top:16px;max-width:40ch}
+.stage{perspective:1200px;perspective-origin:50% 50%;padding:0 24px 80px}
+.pn{--r:0deg;--s:1;max-width:900px;margin:0 auto 60px;border-radius:28px;padding:50px;background:var(--c);color:#111;transform:rotateX(var(--r)) scale(var(--s));transform-origin:50% 100%;will-change:transform}
+.pn small{font-weight:500;opacity:.7}
+.pn b{display:block;font-size:clamp(3.4rem,10vw,7rem);font-weight:800;line-height:1;letter-spacing:-.04em;margin:10px 0}
+.pn p{font-size:1.2rem;max-width:36ch}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:600px){.pn{padding:30px}}
+</style></head><body>
+<header><b>Fieldnote</b><a href="#">Try Fieldnote</a></header>
+<main><section class="intro"><h1>Our 2026 in five numbers</h1><p>Thank you for writing with us this year. Here is what you did together, one panel at a time.</p></section>
+<div class="stage" id="stage">
+<section class="pn" style="--c:#ffd166"><small>Notes written</small><b>14.2 million</b><p>That is one new note every two seconds, all year long.</p></section>
+<section class="pn" style="--c:#8ecae6"><small>Most active day</small><b>3 March</b><p>The day we launched shared notebooks. Servers were fine, just.</p></section>
+<section class="pn" style="--c:#b8e0a8"><small>Countries</small><b>162</b><p>From Iceland to Chile, and one very busy research base in Antarctica.</p></section>
+<section class="pn" style="--c:#f4a3b4"><small>Longest note</small><b>212,000 words</b><p>A whole novel. We hope it gets published.</p></section>
+<section class="pn" style="--c:#cdb4db"><small>Team size</small><b>19 people</b><p>Still small, still reading every support email ourselves.</p></section></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const P=[...document.querySelectorAll('.pn')];
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){let t=false;
+function upd(){const h=innerHeight;P.forEach(p=>{const r=p.getBoundingClientRect(),c=(r.top+r.height/2)/h,d=Math.max(-1,Math.min(1,(c-.5)*2));p.style.setProperty('--r',(d>0?d*38:d*-12)+'deg');p.style.setProperty('--s',1-Math.abs(d)*.08)});t=false}
+addEventListener('scroll',()=>{if(!t){requestAnimationFrame(upd);t=true}},{passive:true});addEventListener('resize',upd);upd()}
+</script>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habitat Spatial Workspace | Spatial UI HTML Template</title>
+<meta name="description" content="Free spatial UI template inspired by visionOS. Floating glass windows at different depths over a room, with an ornament tab bar. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;color:#fff;line-height:1.45;min-height:100vh;overflow:hidden;
+background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.35)),linear-gradient(0deg,#6b5846 0 22%,transparent 22%),linear-gradient(90deg,#d9cbb8 0 8%,transparent 8% 92%,#cdbda8 92%),linear-gradient(#e8dfd2 0 18%,#c9d6de 18% 58%,#e8dfd2 58%)}
+.room{position:fixed;inset:0;perspective:1400px;display:grid;place-items:center}
+.space{position:relative;width:min(1100px,96vw);height:min(620px,86vh);transform-style:preserve-3d}
+.win{position:absolute;border-radius:30px;background:rgba(128,128,128,.28);backdrop-filter:blur(40px) saturate(160%);-webkit-backdrop-filter:blur(40px) saturate(160%);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 0 0 1px rgba(255,255,255,.12),0 30px 60px rgba(0,0,0,.25);padding:22px}
+.main{left:18%;top:8%;width:64%;height:70%;transform:translateZ(0)}
+.side{left:0;top:18%;width:22%;height:54%;transform:translateZ(-120px) rotateY(18deg)}
+.right{right:0;top:14%;width:22%;height:40%;transform:translateZ(-120px) rotateY(-18deg)}
+.win h1{font-size:1.9rem;font-weight:700}
+.win h2{font-size:1.05rem;font-weight:600;margin-bottom:10px}
+.win p{opacity:.85}
+.pills{display:flex;gap:8px;margin:16px 0}
+.pills button,.orn button,.side a{font:inherit;font-weight:600;color:#fff;border:0;background:rgba(255,255,255,.14);border-radius:999px;padding:9px 16px;cursor:pointer;text-decoration:none;display:block}
+.pills button:hover,.orn button:hover,.side a:hover{background:rgba(255,255,255,.3)}
+.pills button[aria-pressed=true],.orn button[aria-pressed=true]{background:#fff;color:#222}
+button:focus-visible,a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tiles div{aspect-ratio:4/3;border-radius:18px;background:var(--g);display:flex;align-items:end;padding:10px;font-weight:600;font-size:.9rem}
+.side a{margin-bottom:8px;border-radius:14px;background:transparent}
+.side a[aria-current]{background:rgba(255,255,255,.2)}
+.av{display:flex;gap:-8px;margin-top:10px}.av i{width:34px;height:34px;border-radius:50%;background:var(--c);border:2px solid rgba(255,255,255,.6);margin-right:-8px}
+.orn{position:absolute;left:50%;bottom:4%;transform:translateX(-50%) translateZ(60px);display:flex;gap:6px;padding:8px;border-radius:999px;background:rgba(128,128,128,.3);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+.credit{position:fixed;bottom:8px;right:14px;font-size:.8rem;opacity:.85}.credit a{color:#fff}
+@media(max-width:820px){body{overflow:auto}.room{position:static;display:block;padding:20px}.space{height:auto;transform-style:flat}.win{position:static;width:auto!important;height:auto!important;transform:none!important;margin-bottom:16px}.orn{position:static;transform:none;margin:0 auto 16px;width:max-content}}
+</style></head><body>
+<div class="room"><div class="space">
+<nav class="win side" aria-label="Spaces"><h2>Spaces</h2><a href="#" aria-current="page">Design review</a><a href="#">Weekly planning</a><a href="#">Launch room</a></nav>
+<main class="win main"><h1>Design review</h1><p>Six people are in this space. Pull a board toward you to look closer.</p>
+<div class="pills" role="group" aria-label="View"><button aria-pressed="true">Boards</button><button aria-pressed="false">Notes</button><button aria-pressed="false">People</button></div>
+<div class="tiles"><div style="--g:linear-gradient(135deg,#ff9a8b,#ff6a88)">Home screen</div><div style="--g:linear-gradient(135deg,#a1c4fd,#c2e9fb)">Onboarding</div><div style="--g:linear-gradient(135deg,#d4fc79,#96e6a1)">Settings</div></div></main>
+<aside class="win right"><h2>In this space</h2><p>Mia is sharing. Leo and 3 others are watching.</p><div class="av" aria-hidden="true"><i style="--c:#ff9a8b"></i><i style="--c:#a1c4fd"></i><i style="--c:#96e6a1"></i><i style="--c:#fbc2eb"></i></div></aside>
+<div class="orn" role="group" aria-label="Tools"><button aria-pressed="true">Share</button><button aria-pressed="false">Mute</button><button aria-pressed="false">Leave</button></div>
+</div></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>document.querySelectorAll('[role=group]').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true')}))</script>
+</body></html>
