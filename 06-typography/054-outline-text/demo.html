@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Museum of Sound | Outline Text HTML Template</title>
+<meta name="description" content="Free outline text website template for a museum exhibition. Hollow stroked letters that fill with color on hover, stacked in a bold list. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,800;62..125,900&family=Archivo+Narrow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101820;--ink:#f2efe6;--acc:#f2c14e;--muted:#9aa3ad}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Archivo Narrow",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:18px}
+header{max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:4px}
+.o{font-family:Archivo,sans-serif;font-weight:900;font-stretch:125%;text-transform:uppercase;color:transparent;-webkit-text-stroke:2px var(--ink);transition:color .25s}
+.hero{max-width:1200px;margin:0 auto;padding:30px 24px 40px}
+.hero h1{font-size:clamp(3.4rem,11vw,10rem);line-height:.9}
+.hero h1 span{display:block}
+.hero h1 .f{color:var(--acc);-webkit-text-stroke:0}
+.hero p{max-width:44ch;color:var(--muted);font-size:1.2rem;margin-top:22px}
+.rooms{max-width:1200px;margin:0 auto;padding:30px 24px 70px}
+.rooms small{color:var(--muted)}
+.rooms a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;text-decoration:none;border-top:1px solid #2c3640;padding:10px 0}
+.rooms a .o{font-size:clamp(2.2rem,7vw,5.6rem);line-height:1}
+.rooms a:hover .o,.rooms a:focus-visible .o{color:var(--acc);-webkit-text-stroke-color:var(--acc)}
+.rooms a span:last-child{color:var(--muted);text-align:right;min-width:12ch}
+@media(prefers-reduced-motion:reduce){.o{transition:none}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:700px){.rooms a{flex-direction:column;gap:0}.rooms a span:last-child{text-align:left}}
+</style></head><body>
+<header><span>Museum of Sound, Glasgow</span><a href="#">Tickets</a></header>
+<main><section class="hero"><h1><span class="o">Turn it</span><span class="o f">up</span></h1><p>A new exhibition about a hundred years of loud. From the first gramophone to the stacks at a festival, with 40 things you are allowed to touch.</p></section>
+<nav class="rooms" aria-label="Exhibition rooms"><small>Six rooms, about 90 minutes</small>
+<a href="#"><span class="o">Wax and wire</span><span>Room 1, 1900s</span></a>
+<a href="#"><span class="o">The radio</span><span>Room 2, 1920s</span></a>
+<a href="#"><span class="o">Electric</span><span>Room 3, 1950s</span></a>
+<a href="#"><span class="o">Tape</span><span>Room 4, 1970s</span></a>
+<a href="#"><span class="o">The club</span><span>Room 5, 1990s</span></a>
+<a href="#"><span class="o">In your pocket</span><span>Room 6, now</span></a></nav></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

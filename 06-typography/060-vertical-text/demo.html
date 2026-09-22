@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumo Tea House | Vertical Text HTML Template</title>
+<meta name="description" content="Free vertical text website template for a Japanese tea house. Top to bottom writing with CSS writing-mode, rotated labels and a calm layout. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2ede3;--ink:#23201b;--muted:#6f685c;--matcha:#6b8e4e;--red:#b33a2b}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Zen Kaku Gothic New",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+header{max-width:1140px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.hero{max-width:1140px;margin:0 auto;padding:20px 24px 60px;display:grid;grid-template-columns:auto auto 1fr;gap:40px;align-items:start}
+.v{writing-mode:vertical-rl;text-orientation:mixed}
+.jp{font-family:"Noto Serif JP",serif;font-weight:700;font-size:clamp(3.4rem,8vw,6.4rem);line-height:1.1;letter-spacing:.1em}
+.stamp{writing-mode:vertical-rl;background:var(--red);color:#fff;font-family:"Noto Serif JP",serif;padding:10px 6px;font-size:1rem;letter-spacing:.3em;margin-top:10px}
+.intro{align-self:end;max-width:44ch}
+.intro h1{font-family:"Noto Serif JP",serif;font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.3;margin-bottom:14px}
+.intro p{color:var(--muted)}
+.btn{display:inline-block;margin-top:18px;background:var(--matcha);color:#fff;padding:12px 24px;text-decoration:none}
+.menu{max-width:1140px;margin:0 auto;padding:0 24px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}
+.menu div{display:flex;gap:18px;padding:22px 18px;border-right:1px solid #cfc6b6;min-height:260px}
+.menu div:last-child{border:0}
+.menu .v.lab{font-family:"Noto Serif JP",serif;font-size:1.5rem;letter-spacing:.15em;color:var(--matcha)}
+.menu h2{font-size:1.1rem}
+.menu p{color:var(--muted);font-size:.95rem}
+.menu b{display:block;margin-top:10px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.hero{grid-template-columns:auto 1fr}.intro{grid-column:1/-1}.menu{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header><span>Kumo Tea House, Kyoto</span><a href="#">Reserve a seat</a></header>
+<main><section class="hero"><p class="v jp" lang="ja">一服の静けさ</p><span class="stamp" lang="ja">雲茶房</span>
+<div class="intro"><h1>A quiet cup in the middle of a busy day</h1><p>Eight seats facing a moss garden. We whisk every bowl of matcha by hand and serve it with a small sweet made that morning by the shop next door.</p><a class="btn" href="#">Book a tea ceremony</a></div></section>
+<section class="menu" aria-label="Menu">
+<div><span class="v lab" lang="ja">抹茶</span><span><h2>Matcha</h2><p>Thick or thin, whisked in front of you.</p><b>¥900</b></span></div>
+<div><span class="v lab" lang="ja">煎茶</span><span><h2>Sencha</h2><p>Green tea from Uji, brewed three times.</p><b>¥700</b></span></div>
+<div><span class="v lab" lang="ja">焙じ茶</span><span><h2>Hojicha</h2><p>Roasted tea, warm and nutty, low caffeine.</p><b>¥600</b></span></div>
+<div><span class="v lab" lang="ja">和菓子</span><span><h2>Wagashi</h2><p>Seasonal sweet. This week: chestnut.</p><b>¥450</b></span></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

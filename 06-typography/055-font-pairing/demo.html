@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Lantern Books | Mixed Font Pairing HTML Template</title>
+<meta name="description" content="Free font pairing website template for an independent bookshop. Italic serif and bold grotesk mixed inside the same headline. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e7;--ink:#1b1a17;--muted:#6d665a;--red:#c1382b;--line:#d9cfbd}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;font-weight:500;background:var(--bg);color:var(--ink);line-height:1.55}
+.s{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic;letter-spacing:-.01em}
+.g{font-weight:800;letter-spacing:-.04em}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:baseline}
+header b{font-size:1.3rem}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.hero{max-width:1120px;margin:0 auto;padding:40px 24px}
+h1{font-size:clamp(3rem,8.5vw,7.4rem);line-height:.95;font-weight:800;letter-spacing:-.045em}
+h1 .s{font-size:1.12em;color:var(--red)}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:42ch;margin-top:20px}
+.picks{max-width:1120px;margin:0 auto;padding:20px 24px 70px}
+.picks h2{font-size:2.2rem;line-height:1;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.bk span{display:block;aspect-ratio:2/3;background:var(--c);margin-bottom:12px;padding:14px;color:#fff;font-size:1.3rem;line-height:1.05;box-shadow:4px 4px 0 rgba(0,0,0,.12)}
+.bk h3{font-size:1.05rem}
+.bk p{color:var(--muted);font-size:.95rem}
+.bk em{font-family:"Instrument Serif",serif;font-size:1.1rem}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header><b><span class="s">Paper</span> Lantern</b><a href="#">Events</a></header>
+<main><section class="hero"><h1>Books <span class="s">chosen by</span> people, <span class="s">not</span> algorithms.</h1><p>An independent bookshop on Hope Street. Every book on the front table was read by one of us first, with a handwritten note to say why.</p></section>
+<section class="picks"><h2><span class="g">This month's</span> <span class="s">picks</span></h2><div class="grid">
+<article class="bk"><span class="s" style="--c:#2f4858">The Lighthouse Keeper's Year</span><h3>Maren Holt</h3><p>Chosen by Sam. <em>"Quietly perfect."</em></p></article>
+<article class="bk"><span class="s" style="--c:#c1382b">Salt and Saffron</span><h3>Nadia Farouk</h3><p>Chosen by Priya. <em>"Made me cook for a week."</em></p></article>
+<article class="bk"><span class="s" style="--c:#7a8450">A Field Guide to Small Things</span><h3>Owen Pryce</h3><p>Chosen by Joe. <em>"You will look at moss differently."</em></p></article>
+<article class="bk"><span class="s" style="--c:#b08836">The Night Library</span><h3>Aiko Mori</h3><p>Chosen by Lena. <em>"Read it in one sitting."</em></p></article></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

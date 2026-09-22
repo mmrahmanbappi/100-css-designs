@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Byte Sized Weekly Newsletter | Monospace Typography HTML Template</title>
+<meta name="description" content="Free monospace website template for a developer newsletter. One mono font on a strict character grid, light paper look and aligned columns. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1ea;--ink:#1c1c1a;--muted:#6f6d65;--acc:#1f4fd1;--line:#cfccc0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"IBM Plex Mono",ui-monospace,monospace;background:var(--bg);color:var(--ink);line-height:1.6;font-size:16px}
+.wrap{max-width:74ch;margin:0 auto;padding:40px 2ch 50px}
+a{color:var(--acc)}
+a:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.top{display:flex;justify-content:space-between;border-bottom:1px dashed var(--ink);padding-bottom:1ch;margin-bottom:4ch}
+h1{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15;font-weight:600;margin-bottom:2ch}
+h1::after{content:"_";color:var(--acc);animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){h1::after{animation:none}}
+.lead{margin-bottom:3ch}
+form{display:flex;gap:1ch;margin-bottom:5ch;flex-wrap:wrap}
+input{flex:1;min-width:24ch;font:inherit;padding:1ch;border:1px solid var(--ink);background:#fff}
+button{font:inherit;font-weight:600;background:var(--ink);color:var(--bg);border:0;padding:1ch 2ch;cursor:pointer}
+h2{font-size:1rem;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:.5ch;margin-bottom:1.5ch}
+.issue{display:grid;grid-template-columns:8ch 1fr 6ch;gap:2ch;padding:1ch 0;border-bottom:1px dashed var(--line)}
+.issue span:first-child{color:var(--muted)}
+.issue span:last-child{text-align:right;color:var(--muted)}
+.box{margin:5ch 0;border:1px solid var(--ink);padding:2ch;background:#fff}
+.box pre{font:inherit;white-space:pre-wrap;color:var(--muted)}
+.credit{color:var(--muted);font-size:.9rem;border-top:1px dashed var(--ink);padding-top:1ch}.credit a{color:var(--ink)}
+@media(max-width:560px){.issue{grid-template-columns:1fr}.issue span:last-child{text-align:left}}
+</style></head><body><div class="wrap">
+<div class="top"><span>byte_sized_weekly</span><a href="#">archive</a></div>
+<main><h1>Five good links for developers, every Friday</h1>
+<p class="lead">No hot takes, no sponsored posts dressed as advice. Just five things worth your coffee break, picked by two tired engineers. 21,400 readers.</p>
+<form onsubmit="event.preventDefault();this.querySelector('button').textContent='subscribed'"><input type="email" required placeholder="you@example.com" aria-label="Email address"><button>subscribe</button></form>
+<h2>recent issues</h2>
+<div class="issue"><span>#212</span><a href="#">Why your Postgres index is not used</a><span>6 min</span></div>
+<div class="issue"><span>#211</span><a href="#">CSS has if() now, sort of</a><span>4 min</span></div>
+<div class="issue"><span>#210</span><a href="#">A calm guide to on call</a><span>7 min</span></div>
+<div class="issue"><span>#209</span><a href="#">Reading a stack trace like a detective</a><span>5 min</span></div>
+<div class="box"><pre>what you get:
+  5 links     one line of why for each
+  1 tool      we actually used this week
+  0 spam      unsubscribe in one click</pre></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</div></body></html>

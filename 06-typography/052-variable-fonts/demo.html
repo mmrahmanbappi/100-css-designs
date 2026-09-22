@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flexa Type Playground | Variable Fonts HTML Template</title>
+<meta name="description" content="Free variable font template with live sliders for weight, width and slant, plus hover and scroll changes. Built as a type foundry specimen. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1efe8;--ink:#161616;--muted:#6a6860;--acc:#3d5afe;--w:600;--wd:100;--sl:0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Roboto Flex",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-variation-settings:"wght" 900,"wdth" 151}
+header a{color:var(--ink)}
+.spec{max-width:1120px;margin:0 auto;padding:30px 24px}
+.big{font-size:clamp(4rem,14vw,12rem);line-height:.9;font-variation-settings:"wght" var(--w),"wdth" var(--wd),"slnt" var(--sl);outline:none;transition:font-variation-settings .15s}
+.ctrl{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin:30px 0;padding:22px;background:#fff;border-radius:16px}
+.ctrl label{display:flex;flex-direction:column;gap:8px;font-weight:600}
+.ctrl span{display:flex;justify-content:space-between;color:var(--muted);font-weight:500}
+input[type=range]{accent-color:var(--acc)}
+input:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.hov{display:flex;flex-wrap:wrap;gap:0 .3em;font-size:clamp(2.2rem,6vw,4.5rem);line-height:1.05;margin:40px 0}
+.hov span{font-variation-settings:"wght" 200,"wdth" 60;transition:font-variation-settings .35s}
+.hov span:hover{font-variation-settings:"wght" 1000,"wdth" 151}
+@media(prefers-reduced-motion:reduce){.hov span,.big{transition:none}}
+.axes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-bottom:60px}
+.axes div{border-top:2px solid var(--ink);padding-top:10px}
+.axes b{display:block;font-size:2.4rem;line-height:1.1}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.ctrl,.axes{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Flexa Type</b><a href="#">License the family</a></header>
+<main class="spec"><h1 class="big" id="big" contenteditable="true" spellcheck="false" aria-label="Type specimen, you can edit this text">Flexible</h1>
+<div class="ctrl"><label>Weight<span><output id="ow">600</output><em>100 to 1000</em></span><input type="range" min="100" max="1000" value="600" data-v="--w" data-o="ow"></label>
+<label>Width<span><output id="od">100</output><em>25 to 151</em></span><input type="range" min="25" max="151" value="100" data-v="--wd" data-o="od"></label>
+<label>Slant<span><output id="os">0</output><em>-10 to 0</em></span><input type="range" min="-10" max="0" value="0" data-v="--sl" data-o="os"></label></div>
+<p class="hov" aria-label="Hover over each word"><span>One</span><span>font</span><span>file</span><span>every</span><span>weight</span><span>you</span><span>will</span><span>ever</span><span>need</span></p>
+<section class="axes"><div><b style="font-variation-settings:'wght' 100">Thin</b>wght 100</div><div><b style="font-variation-settings:'wght' 1000,'wdth' 25">Squeezed</b>wdth 25</div><div><b style="font-variation-settings:'wght' 800,'wdth' 151">Extended</b>wdth 151</div><div><b style="font-variation-settings:'wght' 600,'slnt' -10">Slanted</b>slnt -10</div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>document.querySelectorAll('.ctrl input').forEach(r=>r.oninput=()=>{document.documentElement.style.setProperty(r.dataset.v,r.value);document.getElementById(r.dataset.o).textContent=r.value})</script>
+</body></html>

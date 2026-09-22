@@ -60,6 +60,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 048 | [High Contrast Accessible](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/) | Brookfield Council, a local government site | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/demo.html) | <img src="05-color-light/048-high-contrast/preview.png" width="260" alt="High Contrast Accessible preview"> |
 | 049 | [Grainy Gradient](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/) | Late Signal, a podcast | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/demo.html) | <img src="05-color-light/049-grainy-gradient/preview.png" width="260" alt="Grainy Gradient preview"> |
 | 050 | [Glow Borders](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/) | Northstar, a hosting pricing page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/demo.html) | <img src="05-color-light/050-glow-borders/preview.png" width="260" alt="Glow Borders preview"> |
+| 051 | [Kinetic Type](https://mmrahmanbappi.github.io/100-css-designs/06-typography/051-kinetic-type/) | Shift, a dance studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/051-kinetic-type/demo.html) | <img src="06-typography/051-kinetic-type/preview.png" width="260" alt="Kinetic Type preview"> |
+| 052 | [Variable Fonts](https://mmrahmanbappi.github.io/100-css-designs/06-typography/052-variable-fonts/) | Flexa, a type foundry specimen page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/052-variable-fonts/demo.html) | <img src="06-typography/052-variable-fonts/preview.png" width="260" alt="Variable Fonts preview"> |
+| 053 | [Oversized Serif](https://mmrahmanbappi.github.io/100-css-designs/06-typography/053-oversized-serif/) | Maison Clair, a boutique hotel | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/053-oversized-serif/demo.html) | <img src="06-typography/053-oversized-serif/preview.png" width="260" alt="Oversized Serif preview"> |
+| 054 | [Outline Text](https://mmrahmanbappi.github.io/100-css-designs/06-typography/054-outline-text/) | Museum of Sound, an exhibition site | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/054-outline-text/demo.html) | <img src="06-typography/054-outline-text/preview.png" width="260" alt="Outline Text preview"> |
+| 055 | [Mixed Font Pairing](https://mmrahmanbappi.github.io/100-css-designs/06-typography/055-font-pairing/) | Paper Lantern, an independent bookshop | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/055-font-pairing/demo.html) | <img src="06-typography/055-font-pairing/preview.png" width="260" alt="Mixed Font Pairing preview"> |
+| 056 | [Image in Text](https://mmrahmanbappi.github.io/100-css-designs/06-typography/056-image-in-text/) | Alpenglow, a ski resort | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/056-image-in-text/demo.html) | <img src="06-typography/056-image-in-text/preview.png" width="260" alt="Image in Text preview"> |
+| 057 | [Gradient Text](https://mmrahmanbappi.github.io/100-css-designs/06-typography/057-gradient-text/) | Sunset Sound, a festival lineup | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/057-gradient-text/demo.html) | <img src="06-typography/057-gradient-text/preview.png" width="260" alt="Gradient Text preview"> |
+| 058 | [Handwritten Accents](https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/) | Nonna's Kitchen, a cooking school | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/demo.html) | <img src="06-typography/058-handwritten-accents/preview.png" width="260" alt="Handwritten Accents preview"> |
+| 059 | [Monospace](https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/) | Byte Sized Weekly, a developer newsletter | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/demo.html) | <img src="06-typography/059-monospace/preview.png" width="260" alt="Monospace preview"> |
+| 060 | [Vertical Text](https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/) | Kumo, a Japanese tea house | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/demo.html) | <img src="06-typography/060-vertical-text/preview.png" width="260" alt="Vertical Text preview"> |
 
 ## Categories
 
@@ -68,7 +78,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 3. Layout Patterns (live)
 - 4. AI Era Interfaces (live)
 - 5. Color and Light (live)
-- 6. Typography (coming soon)
+- 6. Typography (live)
 - 7. Motion (coming soon)
 - 8. 3D and Depth (coming soon)
 - 9. Cultural and Aesthetic (coming soon)

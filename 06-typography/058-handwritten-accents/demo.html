@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nonna's Kitchen Cooking Classes | Handwritten Accents HTML Template</title>
+<meta name="description" content="Free handwritten accents website template for a cooking school. Scribbled underlines, circles, arrows and notes over a clean layout, drawn with SVG. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffdf8;--ink:#1f2320;--muted:#65695f;--red:#d64933;--green:#3b7a57}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.hand{font-family:Caveat,cursive;font-weight:700;color:var(--red)}
+header{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.hero{max-width:1100px;margin:0 auto;padding:50px 24px 40px;position:relative}
+h1{font-size:clamp(2.6rem,6.5vw,5rem);line-height:1.05;font-weight:800;letter-spacing:-.03em;max-width:15ch}
+.mark{position:relative;white-space:nowrap}
+.mark svg{position:absolute;left:-2%;width:104%;pointer-events:none}
+.under svg{bottom:-.18em;height:.35em}
+.circ svg{top:-.12em;height:1.3em;left:-6%;width:112%}
+.draw path{stroke-dasharray:600;stroke-dashoffset:600;animation:draw 1.2s .4s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.draw path{animation:none;stroke-dashoffset:0}}
+.note{position:absolute;right:8%;top:60px;transform:rotate(6deg);font-size:1.7rem;line-height:1.1;max-width:210px}
+.note svg{display:block;width:110px;height:70px;margin:6px 0 0 -30px}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:44ch;margin:24px 0 26px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 26px;border-radius:12px;font-weight:600;text-decoration:none}
+.classes{max-width:1100px;margin:0 auto;padding:20px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cl{border:2px solid var(--ink);border-radius:18px;padding:22px;position:relative}
+.cl h2{font-size:1.2rem}
+.cl p{color:var(--muted);margin:6px 0 12px}
+.cl .hand{position:absolute;top:-18px;right:14px;background:var(--bg);padding:0 6px;font-size:1.5rem;transform:rotate(-4deg)}
+.cl.fav{border-color:var(--green)}.cl.fav .hand{color:var(--green)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.classes{grid-template-columns:1fr}.note{position:static;transform:none;margin-top:20px}.note svg{display:none}}
+</style></head><body>
+<header><b>Nonna's Kitchen</b><a href="#">Gift vouchers</a></header>
+<main><section class="hero"><h1>Learn to make <span class="mark under">real pasta<svg class="draw" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 50 4, 120 18, 197 8" fill="none" stroke="#d64933" stroke-width="5" stroke-linecap="round"/></svg></span> in one <span class="mark circ">evening<svg class="draw" viewBox="0 0 200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M170 12 C 120 -2, 20 4, 10 34 C 2 60, 120 70, 185 50 C 205 40, 190 14, 150 8" fill="none" stroke="#d64933" stroke-width="3" stroke-linecap="round"/></svg></span></h1>
+<p class="note hand">You eat everything you make, and take the rest home!<svg viewBox="0 0 110 70" aria-hidden="true"><path d="M100 5 C 70 20, 40 30, 12 60 M12 60 L 30 55 M12 60 L 16 42" fill="none" stroke="#d64933" stroke-width="3" stroke-linecap="round"/></svg></p>
+<p>Small classes of eight around one big table in Bologna. Flour on your hands within five minutes, a glass of wine within ten.</p><a class="btn" href="#">Book a class</a></section>
+<section class="classes"><article class="cl"><span class="hand">easy!</span><h2>Tagliatelle and ragù</h2><p>The classic. Roll it by hand, cut it with a knife.</p><b>€75, 3 hours</b></article>
+<article class="cl fav"><span class="hand">our favourite</span><h2>Tortellini night</h2><p>Fold 100 tiny parcels and eat them in broth.</p><b>€85, 3.5 hours</b></article>
+<article class="cl"><span class="hand">bring a friend</span><h2>Gnocchi for two</h2><p>Potato gnocchi and brown butter with sage.</p><b>€130 per pair</b></article></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

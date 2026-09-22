@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset Sound Festival Lineup | Gradient Text HTML Template</title>
+<meta name="description" content="Free gradient text website template for a festival lineup. Artist names in warm sunset gradients that slowly shift, made with background-clip text. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a0f24;--ink:#fbeee6;--muted:#b9a7c4}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;text-align:center}
+.gt{background:linear-gradient(90deg,#ffd166,#ff8c42,#ff3c7a,#b14aed,#ff8c42,#ffd166);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shift 10s linear infinite}
+@keyframes shift{to{background-position:300% 0}}
+@media(prefers-reduced-motion:reduce){.gt{animation:none}}
+header{padding:26px 24px;display:flex;justify-content:space-between;text-align:left}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid #ffd166;outline-offset:3px}
+.date{color:var(--muted);font-weight:600;margin-top:30px}
+h1{font-family:"Dela Gothic One",sans-serif;font-weight:400;font-size:clamp(3rem,10vw,8rem);line-height:.95;margin:10px 0 40px}
+.line{max-width:1000px;margin:0 auto;padding:0 20px 60px}
+.day{margin-bottom:34px}
+.day small{display:block;color:var(--muted);font-weight:600;margin-bottom:8px}
+.head{font-family:"Dela Gothic One",sans-serif;font-size:clamp(2rem,6vw,4.2rem);line-height:1.05}
+.sub{font-family:"Dela Gothic One",sans-serif;font-size:clamp(1.2rem,3vw,2rem);line-height:1.3;color:var(--ink);opacity:.85}
+.sub span{white-space:nowrap}
+.sub span+span::before{content:"/";margin:0 .4em;opacity:.4}
+.btn{display:inline-block;margin:10px 0 60px;padding:16px 32px;border-radius:999px;font-weight:600;color:var(--bg);text-decoration:none;background:linear-gradient(90deg,#ffd166,#ff3c7a)}
+.credit{padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+</style></head><body>
+<header><span>Sunset Sound</span><a href="#">Tickets</a></header>
+<main><p class="date">18 to 20 July, Brighton seafront</p><h1 class="gt">Sunset Sound</h1>
+<section class="line" aria-label="Lineup">
+<div class="day"><small>Friday</small><div class="head gt">Marlowe Heights</div><div class="sub"><span>Kit Anand</span><span>The Paper Boats</span><span>Luma</span><span>Oyster Club</span></div></div>
+<div class="day"><small>Saturday</small><div class="head gt">Sofia Reyes Band</div><div class="sub"><span>Dune Motel</span><span>Hazel and the Hum</span><span>Night Swim</span><span>Tobi</span></div></div>
+<div class="day"><small>Sunday</small><div class="head gt">Golden Hour Choir</div><div class="sub"><span>Wren</span><span>Seaside Disco</span><span>Aki Tanaka</span><span>Low Tide</span></div></div></section>
+<a class="btn" href="#">Get weekend tickets from £129</a></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>
