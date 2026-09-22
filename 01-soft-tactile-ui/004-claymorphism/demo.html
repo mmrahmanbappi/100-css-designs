@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pebble Math for Kids | Claymorphism HTML Template</title>
+<meta name="description" content="Free claymorphism website template for a kids learning app. Puffy, clay-like 3D cards and buttons in bright colors, in one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf1e4;--ink:#3a2a5c;--pink:#ff9eb5;--mint:#8fe3c6;--sky:#8cc8ff;--lemon:#ffe07a;--grape:#b69cff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Baloo 2",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;font-size:1.1rem}
+.clay{border-radius:34px;box-shadow:inset -8px -8px 16px rgba(0,0,0,.12),inset 8px 8px 16px rgba(255,255,255,.6),10px 14px 24px rgba(90,60,120,.18)}
+nav{max-width:1080px;margin:0 auto;padding:22px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.5rem}
+.logo i{width:44px;height:44px;background:var(--grape);display:block}
+.btn{display:inline-block;font:inherit;font-weight:800;color:var(--ink);text-decoration:none;padding:14px 28px;border:0;cursor:pointer;background:var(--lemon);border-radius:24px;box-shadow:inset -5px -5px 10px rgba(0,0,0,.12),inset 5px 5px 10px rgba(255,255,255,.7),6px 8px 14px rgba(90,60,120,.2);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(2px) scale(.98)}
+.btn:focus-visible{outline:4px solid var(--grape);outline-offset:3px}
+.hero{max-width:1080px;margin:0 auto;padding:30px 22px 60px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(2.4rem,5.5vw,4rem);line-height:1;font-weight:800}
+.hero p{margin:18px 0 26px;max-width:32ch}
+.play{background:var(--sky);padding:30px;position:relative}
+.q{background:#fff;padding:22px;text-align:center;font-size:2.4rem;font-weight:800}
+.answers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.answers button{font:inherit;font-size:1.6rem;font-weight:800;color:var(--ink);border:0;padding:16px 0;cursor:pointer}
+.answers button:nth-child(1){background:var(--pink)}.answers button:nth-child(2){background:var(--mint)}.answers button:nth-child(3){background:var(--lemon)}
+.answers button:focus-visible{outline:4px solid var(--ink)}
+#msg{text-align:center;margin-top:14px;font-weight:700;min-height:1.5em}
+.worlds{max-width:1080px;margin:0 auto;padding:0 22px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.world{padding:24px}
+.world h3{font-size:1.35rem}
+.world p{font-size:1rem}
+.world:nth-child(1){background:var(--pink)}.world:nth-child(2){background:var(--mint)}.world:nth-child(3){background:var(--grape)}.world:nth-child(4){background:var(--lemon)}
+.world span{display:inline-block;width:46px;height:46px;border-radius:16px;background:rgba(255,255,255,.6);margin-bottom:10px;font-size:1.5rem;text-align:center;line-height:46px}
+footer{text-align:center;padding:0 0 30px;font-size:.95rem}
+footer a{color:var(--ink)}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.worlds{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="logo"><i class="clay" aria-hidden="true"></i>Pebble Math</div><a class="btn" href="#">Parents sign in</a></nav>
+<main>
+<section class="hero">
+<div><h1>Math practice your kid will ask for.</h1><p>Ten minute games for ages 5 to 9. Counting, adding, shapes and time, one small win at a time.</p><a class="btn" href="#">Try a free week</a></div>
+<div class="clay play"><div class="clay q">7 + 5 = ?</div>
+<div class="answers"><button class="clay" onclick="pick(this,false)">11</button><button class="clay" onclick="pick(this,true)">12</button><button class="clay" onclick="pick(this,false)">13</button></div>
+<p id="msg" aria-live="polite">Tap an answer</p></div>
+</section>
+<section class="worlds" aria-label="Learning worlds">
+<div class="clay world"><span aria-hidden="true">🔢</span><h3>Counting Cove</h3><p>Count shells, fish and boats up to 100.</p></div>
+<div class="clay world"><span aria-hidden="true">➕</span><h3>Plus Park</h3><p>Adding and taking away with friendly animals.</p></div>
+<div class="clay world"><span aria-hidden="true">🔺</span><h3>Shape Hill</h3><p>Build towers and learn the names of shapes.</p></div>
+<div class="clay world"><span aria-hidden="true">⏰</span><h3>Clock Town</h3><p>Read the clock and plan a busy day in town.</p></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>function pick(b,ok){document.getElementById('msg').textContent=ok?'Yes! 7 + 5 is 12. Nice work.':'Almost. Try again.'}</script>
+</body>
+</html>

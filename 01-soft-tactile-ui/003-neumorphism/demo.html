@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth Smart Home | Neumorphism HTML Template</title>
+<meta name="description" content="Free neumorphism UI template for a smart home control panel. Soft extruded dials, switches and cards with better contrast, in one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e3e8ef;--dark:#b9c2cf;--light:#ffffff;--ink:#2b3445;--muted:#5d6878;--accent:#e2673d}
+*{box-sizing:border-box;margin:0}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;line-height:1.5}
+.out{background:var(--bg);box-shadow:9px 9px 18px var(--dark),-9px -9px 18px var(--light);border-radius:28px}
+.in{background:var(--bg);box-shadow:inset 6px 6px 12px var(--dark),inset -6px -6px 12px var(--light);border-radius:20px}
+header{max-width:1040px;margin:0 auto;padding:30px 22px 10px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:1.6rem;font-weight:800}
+header p{color:var(--muted)}
+.avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+main{max-width:1040px;margin:0 auto;padding:24px 22px 60px;display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.thermo{padding:34px;text-align:center}
+.thermo h2,.rooms h2{font-size:1.05rem;margin-bottom:20px;text-align:left}
+.dial{width:230px;height:230px;border-radius:50%;margin:0 auto;display:grid;place-items:center;position:relative}
+.dial .inner{width:160px;height:160px;border-radius:50%;display:grid;place-items:center}
+.dial::before{content:"";position:absolute;inset:14px;border-radius:50%;background:conic-gradient(var(--accent) 0 62%,transparent 62%);-webkit-mask:radial-gradient(circle,transparent 94px,#000 95px);mask:radial-gradient(circle,transparent 94px,#000 95px)}
+.dial strong{font-size:3rem;font-weight:800;line-height:1}
+.dial small{color:var(--muted);display:block}
+.steps{display:flex;justify-content:center;gap:22px;margin-top:28px}
+.steps button{width:56px;height:56px;border:0;font:inherit;font-size:1.5rem;font-weight:800;color:var(--ink);cursor:pointer}
+.steps button:active{box-shadow:inset 5px 5px 10px var(--dark),inset -5px -5px 10px var(--light)}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.rooms{padding:28px;display:flex;flex-direction:column;gap:16px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:16px 18px}
+.row span{font-weight:600}
+.row small{display:block;color:var(--muted);font-weight:400}
+.sw{width:62px;height:34px;border-radius:34px;border:0;position:relative;cursor:pointer;background:var(--bg);box-shadow:inset 4px 4px 8px var(--dark),inset -4px -4px 8px var(--light)}
+.sw::after{content:"";position:absolute;top:5px;left:5px;width:24px;height:24px;border-radius:50%;background:var(--bg);box-shadow:3px 3px 6px var(--dark),-2px -2px 5px var(--light);transition:transform .2s}
+.sw[aria-checked=true]::after{transform:translateX(28px);background:var(--accent)}
+footer{text-align:center;color:var(--muted);padding:0 0 30px;font-size:.9rem}
+footer a{color:var(--ink)}
+@media(max-width:800px){main{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.sw::after{transition:none}}
+</style>
+</head>
+<body>
+<header><div><h1>Good evening, Sara</h1><p>Everything at home looks fine.</p></div><div class="avatar out" aria-hidden="true">S</div></header>
+<main>
+<section class="out thermo"><h2>Living room heating</h2>
+<div class="dial out"><div class="inner in"><div><strong id="t">21°</strong><small>Target 22°</small></div></div></div>
+<div class="steps"><button class="out" aria-label="Lower temperature" onclick="step(-1)">−</button><button class="out" aria-label="Raise temperature" onclick="step(1)">+</button></div>
+</section>
+<section class="out rooms"><h2>Lights and devices</h2>
+<div class="row in"><span>Kitchen lights<small>3 bulbs</small></span><button class="sw" role="switch" aria-checked="true" aria-label="Kitchen lights"></button></div>
+<div class="row in"><span>Bedroom lamp<small>Warm white</small></span><button class="sw" role="switch" aria-checked="false" aria-label="Bedroom lamp"></button></div>
+<div class="row in"><span>Front door lock<small>Locked at 18:02</small></span><button class="sw" role="switch" aria-checked="true" aria-label="Front door lock"></button></div>
+<div class="row in"><span>Garden sprinkler<small>Next run 06:00</small></span><button class="sw" role="switch" aria-checked="false" aria-label="Garden sprinkler"></button></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>
+let v=21;function step(d){v=Math.min(30,Math.max(10,v+d));document.getElementById('t').textContent=v+'°'}
+document.querySelectorAll('.sw').forEach(s=>s.onclick=()=>s.setAttribute('aria-checked',s.getAttribute('aria-checked')!=='true'))
+</script>
+</body>
+</html>

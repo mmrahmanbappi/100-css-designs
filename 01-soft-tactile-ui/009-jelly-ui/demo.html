@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wobble Gelato Shop | Jelly UI HTML Template</title>
+<meta name="description" content="Free jelly UI template for a gelato shop. Glossy, bouncy buttons and cards that squish when you press them. Pure CSS, one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4f7;--ink:#4a1d3a;--berry:#ff4f8b;--lime:#a6e22e;--mango:#ffb627;--blue:#4fc3ff}
+*{box-sizing:border-box;margin:0}
+body{font-family:Fredoka,system-ui,sans-serif;background:radial-gradient(circle at 10% 90%,#ffe1ec,transparent 40%),radial-gradient(circle at 90% 10%,#fff0c9,transparent 40%),var(--bg);color:var(--ink);min-height:100vh;line-height:1.5}
+.jelly{--c:var(--berry);position:relative;font:inherit;font-weight:700;color:#fff;border:0;cursor:pointer;border-radius:26px;padding:16px 30px;font-size:1.1rem;text-decoration:none;display:inline-block;
+background:radial-gradient(ellipse at 50% 120%,rgba(0,0,0,.18),transparent 60%),var(--c);
+box-shadow:inset 0 -6px 12px rgba(0,0,0,.2),inset 0 6px 10px rgba(255,255,255,.35),0 10px 20px color-mix(in srgb,var(--c) 45%,transparent)}
+.jelly::before{content:"";position:absolute;top:5px;left:14%;right:14%;height:38%;border-radius:20px;background:linear-gradient(rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.jelly:hover{animation:wob .6s}
+.jelly:active{transform:scale(1.08,.88)}
+.jelly:focus-visible{outline:4px solid var(--ink);outline-offset:4px}
+@keyframes wob{0%{transform:scale(1)}30%{transform:scale(1.12,.88)}50%{transform:scale(.92,1.08)}70%{transform:scale(1.04,.96)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.jelly:hover{animation:none}}
+header{max-width:1060px;margin:0 auto;padding:22px;display:flex;justify-content:space-between;align-items:center}
+header b{font-size:1.8rem;font-weight:700;color:var(--berry)}
+.hero{max-width:1060px;margin:0 auto;padding:30px 22px 50px;text-align:center}
+h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1;font-weight:700}
+.hero p{font-size:1.2rem;max-width:40ch;margin:18px auto 30px}
+.flavors{max-width:1060px;margin:0 auto;padding:0 22px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.flavor{background:#fff;border-radius:30px;padding:22px;text-align:center;box-shadow:0 12px 28px rgba(120,30,80,.1)}
+.scoop{width:110px;height:110px;border-radius:50%;margin:0 auto 14px;position:relative;box-shadow:inset -10px -12px 18px rgba(0,0,0,.18),inset 10px 10px 16px rgba(255,255,255,.5)}
+.scoop::after{content:"";position:absolute;top:18px;left:24px;width:30px;height:18px;border-radius:50%;background:rgba(255,255,255,.7);transform:rotate(-25deg)}
+.flavor h2{font-size:1.3rem}
+.flavor p{font-size:.95rem;margin:4px 0 16px;color:#7a4a66}
+.jelly.sm{padding:10px 22px;font-size:1rem}
+footer{text-align:center;padding:0 0 30px;font-size:.95rem}
+footer a{color:var(--ink)}
+@media(max-width:860px){.flavors{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.flavors{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><b>Wobble</b><a class="jelly sm" href="#" style="--c:var(--blue)">Find a shop</a></header>
+<main>
+<section class="hero"><h1>Gelato made fresh every morning.</h1><p>Small batches, real fruit, no shortcuts. Four flavors today and they usually sell out by six.</p>
+<a class="jelly" href="#flavors">See today's flavors</a></section>
+<section class="flavors" id="flavors">
+<div class="flavor"><div class="scoop" style="background:var(--berry)"></div><h2>Raspberry</h2><p>Sharp, sweet, very pink.</p><button class="jelly sm">Add a scoop</button></div>
+<div class="flavor"><div class="scoop" style="background:var(--mango)"></div><h2>Alphonso mango</h2><p>Made with mangoes from Ratnagiri.</p><button class="jelly sm" style="--c:var(--mango)">Add a scoop</button></div>
+<div class="flavor"><div class="scoop" style="background:var(--lime)"></div><h2>Lime and mint</h2><p>Our summer favorite. Very fresh.</p><button class="jelly sm" style="--c:#6fb31a">Add a scoop</button></div>
+<div class="flavor"><div class="scoop" style="background:#8b5a3c"></div><h2>Dark chocolate</h2><p>70% cocoa and a pinch of sea salt.</p><button class="jelly sm" style="--c:#8b5a3c">Add a scoop</button></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+</body>
+</html>

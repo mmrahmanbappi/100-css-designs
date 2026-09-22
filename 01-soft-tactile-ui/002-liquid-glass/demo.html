@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewell Weather | Liquid Glass HTML Template</title>
+<meta name="description" content="Free liquid glass UI template inspired by the 2025 Apple design style. Glossy, refractive panels and pill controls for a weather app, in one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--hi:rgba(255,255,255,.75)}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;color:#fff;min-height:100vh;line-height:1.5;
+background:radial-gradient(circle at 80% 15%,#ffe7a8 0,#ffb56b 12%,transparent 30%),linear-gradient(180deg,#3f7fd6 0%,#79aee9 45%,#f6a57a 100%);background-attachment:fixed}
+.lg{position:relative;border-radius:32px;background:linear-gradient(135deg,rgba(255,255,255,.28),rgba(255,255,255,.06));backdrop-filter:blur(14px) saturate(180%) brightness(1.1);-webkit-backdrop-filter:blur(14px) saturate(180%) brightness(1.1);
+box-shadow:inset 1px 1px 0 var(--hi),inset -1px -1px 0 rgba(255,255,255,.2),inset 0 0 20px rgba(255,255,255,.15),0 18px 40px rgba(20,40,90,.25)}
+.lg::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(160deg,rgba(255,255,255,.45) 0%,transparent 28%,transparent 70%,rgba(255,255,255,.18) 100%);mix-blend-mode:overlay}
+.top{max-width:980px;margin:22px auto 0;padding:10px;display:flex;gap:8px;justify-content:center;width:max-content;max-width:calc(100% - 32px);border-radius:999px}
+.top button{font:inherit;color:#fff;background:transparent;border:0;padding:10px 20px;border-radius:999px;font-weight:500;cursor:pointer}
+.top button[aria-pressed=true]{background:rgba(255,255,255,.35);box-shadow:inset 0 1px 0 var(--hi)}
+button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+main{max-width:980px;margin:0 auto;padding:40px 16px 60px}
+.now{text-align:center;padding:30px 0 40px}
+.now h1{font-weight:500;font-size:1.6rem}
+.temp{font-size:clamp(6rem,18vw,10rem);font-weight:300;line-height:1;letter-spacing:-.04em}
+.now p{font-size:1.2rem;opacity:.95}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+.panel{padding:22px 24px}
+.panel h2{font-size:.95rem;font-weight:500;opacity:.85;margin-bottom:14px}
+.hours{display:flex;justify-content:space-between;gap:10px;overflow-x:auto}
+.hours div{text-align:center;min-width:52px}
+.hours b{display:block;font-size:1.3rem;font-weight:700;margin-top:6px}
+.dot{width:26px;height:26px;border-radius:50%;margin:8px auto 0;background:radial-gradient(circle at 35% 35%,#fff6c9,#ffc24a)}
+.dot.c{background:radial-gradient(circle at 35% 35%,#fff,#c7d8ee)}
+.big{font-size:2.6rem;font-weight:700}
+.days{margin-top:18px}
+.days li{list-style:none;display:grid;grid-template-columns:80px 1fr 90px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.25)}
+.range{height:6px;border-radius:6px;background:linear-gradient(90deg,#9fd3ff,#ffd36e,#ff8e5e)}
+.days span:last-child{text-align:right}
+footer{text-align:center;padding:10px 0 30px;font-size:.9rem}
+footer a{color:#fff}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="lg top" aria-label="Views"><button aria-pressed="true">Today</button><button aria-pressed="false">10 days</button><button aria-pressed="false">Radar</button></nav>
+<main>
+<section class="now"><h1>Porto</h1><div class="temp">24°</div><p>Clear evening. Sunset at 20:14.</p></section>
+<section class="grid">
+<div class="lg panel"><h2>Next hours</h2><div class="hours">
+<div>Now<span class="dot"></span><b>24°</b></div><div>19:00<span class="dot"></span><b>23°</b></div><div>20:00<span class="dot"></span><b>21°</b></div><div>21:00<span class="dot c"></span><b>19°</b></div><div>22:00<span class="dot c"></span><b>18°</b></div><div>23:00<span class="dot c"></span><b>17°</b></div></div></div>
+<div class="lg panel"><h2>Sea temperature</h2><div class="big">19°</div><p>Good for a short swim before dark.</p></div>
+<div class="lg panel" style="grid-column:1/-1"><h2>This week</h2><ul class="days">
+<li><span>Thu</span><span class="range"></span><span>16° / 25°</span></li>
+<li><span>Fri</span><span class="range" style="width:80%"></span><span>15° / 23°</span></li>
+<li><span>Sat</span><span class="range" style="width:90%"></span><span>17° / 26°</span></li>
+<li><span>Sun</span><span class="range" style="width:70%"></span><span>14° / 21°</span></li></ul></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>document.querySelectorAll('.top button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.top button').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true')})</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crumb Recipe Box | Paper Stack HTML Template</title>
+<meta name="description" content="Free paper stack card template for a recipe website. Layered cards that look like index cards on a table, with a click to shuffle. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--table:#3f5b4a;--paper:#fffdf6;--ink:#2a2622;--muted:#6b635a;--tomato:#d9482b;--line:#e8e1d2}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Work Sans",system-ui,sans-serif;color:#f4f1e8;line-height:1.55;min-height:100vh;
+background:repeating-linear-gradient(45deg,rgba(255,255,255,.025) 0 2px,transparent 2px 6px),radial-gradient(circle at 50% 30%,#4d6d59,var(--table))}
+header{max-width:1060px;margin:0 auto;padding:24px 22px;display:flex;justify-content:space-between;align-items:center}
+header b{font-family:Newsreader,serif;font-size:1.6rem;font-weight:600}
+header a{color:#f4f1e8}
+.wrap{max-width:1060px;margin:0 auto;padding:20px 22px 70px;display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:center}
+h1{font-family:Newsreader,serif;font-weight:400;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.08}
+.wrap>div>p{margin:18px 0 26px;max-width:34ch;font-size:1.1rem;opacity:.9}
+.btn{font:inherit;font-weight:600;background:var(--paper);color:var(--ink);border:0;padding:14px 24px;border-radius:6px;cursor:pointer;box-shadow:0 3px 0 #c9c0ad}
+.btn:focus-visible,a:focus-visible{outline:3px solid #ffd36e;outline-offset:3px}
+.stack{position:relative;height:420px}
+.card{position:absolute;inset:0;margin:auto;width:min(100%,420px);height:360px;background:var(--paper);color:var(--ink);border-radius:6px;padding:26px 28px;
+background-image:linear-gradient(transparent 64px,var(--tomato) 64px 66px,transparent 66px),repeating-linear-gradient(transparent 0 27px,var(--line) 27px 28px);background-position:0 0,0 10px;
+box-shadow:0 1px 1px rgba(0,0,0,.1),0 10px 24px rgba(0,0,0,.28);transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.card:nth-child(1){transform:rotate(-7deg) translate(-26px,14px)}
+.card:nth-child(2){transform:rotate(5deg) translate(22px,6px)}
+.card:nth-child(3){transform:rotate(-1.5deg)}
+.card h2{font-family:Newsreader,serif;font-weight:600;font-size:1.6rem;line-height:1.2;height:52px}
+.card small{color:var(--muted);display:block;margin:10px 0 6px;font-weight:600}
+.card ul{padding-left:18px;line-height:28px}
+.card .note{position:absolute;bottom:18px;right:22px;font-family:Newsreader,serif;font-style:italic;color:var(--tomato)}
+.shelf{max-width:1060px;margin:0 auto;padding:0 22px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.mini{background:var(--paper);color:var(--ink);padding:20px;border-radius:4px;box-shadow:4px 4px 0 #e9e2d2,8px 8px 0 #d8cfbb,0 14px 24px rgba(0,0,0,.25)}
+.mini h3{font-family:Newsreader,serif;font-size:1.25rem}
+.mini p{color:var(--muted);font-size:.95rem}
+footer{text-align:center;padding:0 0 30px;font-size:.9rem}
+footer a{color:#f4f1e8}
+@media(max-width:860px){.wrap{grid-template-columns:1fr}.shelf{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+<header><b>Crumb</b><a href="#">My recipe box</a></header>
+<main>
+<section class="wrap">
+<div><h1>Grandma's recipes, saved before the cards fade.</h1><p>Type in the family recipes you keep on paper. Crumb keeps them neat, searchable and easy to share with the whole family.</p><button class="btn" id="shuffle">Shuffle the cards</button></div>
+<div class="stack" id="stack">
+<article class="card"><h2>Lemon drizzle cake</h2><small>Serves 8. 55 minutes.</small><ul><li>225g butter, soft</li><li>225g caster sugar</li><li>4 eggs</li><li>Zest of 2 lemons</li></ul><span class="note">From Auntie Jo</span></article>
+<article class="card"><h2>Sunday chicken curry</h2><small>Serves 4. 1 hour 10 minutes.</small><ul><li>1kg chicken thighs</li><li>3 onions, sliced thin</li><li>2 tbsp garam masala</li><li>400ml coconut milk</li></ul><span class="note">Dad's version</span></article>
+<article class="card"><h2>Nan's apple crumble</h2><small>Serves 6. 45 minutes.</small><ul><li>6 Bramley apples</li><li>150g plain flour</li><li>100g cold butter</li><li>75g brown sugar</li></ul><span class="note">Best with custard</span></article>
+</div>
+</section>
+<section class="shelf">
+<div class="mini"><h3>Scan old cards</h3><p>Take a photo of a handwritten card and keep the original next to the typed version.</p></div>
+<div class="mini"><h3>Family boxes</h3><p>Invite cousins to add their own recipes to one shared box.</p></div>
+<div class="mini"><h3>Print a booklet</h3><p>Turn your box into a small printed book for birthdays and weddings.</p></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>
+document.getElementById('shuffle').onclick=()=>{const s=document.getElementById('stack');s.insertBefore(s.lastElementChild,s.firstElementChild)}
+</script>
+</body>
+</html>

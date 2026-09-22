@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loom Weekly Planner | Soft UI Dashboard HTML Template</title>
+<meta name="description" content="Free soft UI dashboard template for a weekly planner. Calm colors, gentle inner shadows and rounded panels that are easy on the eyes. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1eef6;--card:#faf8fd;--ink:#2e2a3d;--muted:#6d6780;--sage:#9cc9b0;--peach:#f5c3a8;--lav:#c9bdf0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.app{display:grid;grid-template-columns:230px 1fr;min-height:100vh}
+aside{padding:28px 20px;display:flex;flex-direction:column;gap:6px}
+aside b{font-size:1.4rem;margin:0 10px 22px}
+aside a{padding:11px 14px;border-radius:14px;color:var(--muted);text-decoration:none;font-weight:600}
+aside a[aria-current]{background:var(--card);color:var(--ink);box-shadow:0 6px 16px rgba(80,60,130,.08)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--lav);outline-offset:2px}
+main{padding:28px 28px 40px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:16px;flex-wrap:wrap}
+h1{font-size:1.8rem}
+.top p{color:var(--muted)}
+.search{background:var(--bg);border:0;border-radius:16px;padding:12px 16px;font:inherit;width:240px;box-shadow:inset 3px 3px 7px rgba(120,100,160,.15),inset -3px -3px 7px #fff}
+.panel{background:var(--card);border-radius:24px;padding:22px;box-shadow:0 10px 30px rgba(80,60,130,.07),inset 0 -2px 0 rgba(80,60,130,.04)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat small{color:var(--muted);font-weight:600}
+.stat strong{display:block;font-size:2rem;margin-top:4px}
+.stat i{display:block;height:8px;border-radius:8px;margin-top:12px;background:var(--bg);box-shadow:inset 2px 2px 4px rgba(120,100,160,.18)}
+.stat i span{display:block;height:100%;border-radius:8px}
+.wide{grid-column:span 2}
+h2{font-size:1.1rem;margin-bottom:14px}
+.task{display:flex;align-items:center;gap:14px;padding:12px 4px;border-top:1px solid #ece8f3}
+.task:first-of-type{border-top:0}
+.task input{width:22px;height:22px;accent-color:#7a6bc4}
+.task div{flex:1}
+.task small{color:var(--muted)}
+.tag{font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:10px}
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center}
+.week div{padding:10px 0;border-radius:12px;font-weight:600;color:var(--muted)}
+.week .on{background:var(--lav);color:var(--ink)}
+.week small{display:block;font-weight:400;font-size:.75rem}
+footer{color:var(--muted);font-size:.9rem;margin-top:26px}
+footer a{color:var(--ink)}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{flex-direction:row;overflow-x:auto;padding:16px}aside b{margin:8px 10px}.grid{grid-template-columns:1fr}.wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside><b>Loom</b><a href="#" aria-current="page">This week</a><a href="#">Projects</a><a href="#">Calendar</a><a href="#">Notes</a><a href="#">Settings</a></aside>
+<main>
+<div class="top"><div><h1>Tuesday, 14 October</h1><p>You have 5 tasks today. Two are small.</p></div><input class="search" type="search" placeholder="Search tasks" aria-label="Search tasks"></div>
+<div class="grid">
+<div class="panel stat"><small>Done this week</small><strong>18 of 26</strong><i><span style="width:69%;background:var(--sage)"></span></i></div>
+<div class="panel stat"><small>Focus time</small><strong>9h 40m</strong><i><span style="width:55%;background:var(--peach)"></span></i></div>
+<div class="panel stat"><small>Meetings</small><strong>4</strong><i><span style="width:30%;background:var(--lav)"></span></i></div>
+<div class="panel wide"><h2>Today</h2>
+<label class="task"><input type="checkbox" checked><div>Send invoice to Brightside<br><small>Finance</small></div><span class="tag" style="background:var(--sage)">Done</span></label>
+<label class="task"><input type="checkbox"><div>Review homepage copy with Dan<br><small>Website refresh, 11:30</small></div><span class="tag" style="background:var(--peach)">Meeting</span></label>
+<label class="task"><input type="checkbox"><div>Book dentist for Friday<br><small>Personal</small></div><span class="tag" style="background:var(--lav)">5 min</span></label>
+<label class="task"><input type="checkbox"><div>Draft Q4 budget plan<br><small>Finance</small></div><span class="tag" style="background:var(--peach)">Deep work</span></label>
+</div>
+<div class="panel"><h2>October</h2><div class="week"><div>M<small>13</small></div><div class="on">T<small>14</small></div><div>W<small>15</small></div><div>T<small>16</small></div><div>F<small>17</small></div><div>S<small>18</small></div><div>S<small>19</small></div></div></div>
+</div>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+</main>
+</div>
+</body>
+</html>

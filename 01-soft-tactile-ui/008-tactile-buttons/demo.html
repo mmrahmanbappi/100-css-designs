@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clack Keyboards | Tactile 3D Buttons HTML Template</title>
+<meta name="description" content="Free tactile button template with 3D pressable keys. A working calculator and a keyboard shop page where every button visibly presses down. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--desk:#dcd6cc;--ink:#26221e;--cap:#f4f0e8;--capside:#bdb4a5;--orange:#f06a2a;--orangeside:#a8431a;--olive:#6f7a4e;--oliveside:#454d2e}
+*{box-sizing:border-box;margin:0}
+body{font-family:Chivo,system-ui,sans-serif;background:var(--desk);color:var(--ink);line-height:1.5}
+.key{--c:var(--cap);--s:var(--capside);font:inherit;font-weight:700;color:var(--ink);border:0;cursor:pointer;background:var(--c);border-radius:12px;padding:14px 22px;
+box-shadow:0 6px 0 var(--s),0 8px 12px rgba(0,0,0,.25),inset 0 2px 0 rgba(255,255,255,.7);transform:translateY(0);transition:transform .06s,box-shadow .06s}
+.key:active,.key.down{transform:translateY(5px);box-shadow:0 1px 0 var(--s),0 2px 4px rgba(0,0,0,.25),inset 0 2px 0 rgba(255,255,255,.5)}
+.key:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.key.o{--c:var(--orange);--s:var(--orangeside);color:#fff}
+.key.g{--c:var(--olive);--s:var(--oliveside);color:#fff}
+header{max-width:1060px;margin:0 auto;padding:22px;display:flex;justify-content:space-between;align-items:center}
+header b{font-weight:900;font-size:1.5rem}
+.hero{max-width:1060px;margin:0 auto;padding:30px 22px 60px;display:grid;grid-template-columns:1fr 380px;gap:50px;align-items:center}
+h1{font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:900;line-height:1;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;margin:18px 0 28px;max-width:36ch}
+.cta{display:flex;gap:16px;flex-wrap:wrap}
+.calc{background:#3a342e;border-radius:26px;padding:22px;box-shadow:0 20px 40px rgba(0,0,0,.35),inset 0 2px 0 rgba(255,255,255,.12)}
+.screen{background:#b9c7a5;color:#1f2a16;border-radius:12px;padding:16px 18px;text-align:right;font-size:2.2rem;font-weight:700;margin-bottom:20px;box-shadow:inset 0 4px 8px rgba(0,0,0,.35);min-height:78px;overflow:hidden;white-space:nowrap}
+.pad{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pad .key{padding:18px 0;font-size:1.3rem}
+.pad .wide{grid-column:span 2}
+.switches{max-width:1060px;margin:0 auto;padding:0 22px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sw{background:var(--cap);border-radius:20px;padding:24px;box-shadow:0 6px 0 var(--capside),0 10px 18px rgba(0,0,0,.15)}
+.sw h2{font-size:1.2rem}
+.sw p{margin:6px 0 16px}
+footer{text-align:center;padding:0 0 30px;font-size:.9rem}
+footer a{color:var(--ink)}
+@media(max-width:880px){.hero{grid-template-columns:1fr}.switches{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.key{transition:none}}
+</style>
+</head>
+<body>
+<header><b>Clack</b><button class="key">Cart (0)</button></header>
+<main>
+<section class="hero">
+<div><h1>Keyboards that feel good to press.</h1><p>Hand-built mechanical keyboards with thick keycaps and three switch types. Try the calculator to feel the press.</p>
+<div class="cta"><button class="key o">Shop keyboards</button><button class="key">Compare switches</button></div></div>
+<div class="calc" aria-label="Calculator"><div class="screen" id="scr" aria-live="polite">0</div>
+<div class="pad" id="pad">
+<button class="key g">C</button><button class="key g">(</button><button class="key g">)</button><button class="key o">/</button>
+<button class="key">7</button><button class="key">8</button><button class="key">9</button><button class="key o">*</button>
+<button class="key">4</button><button class="key">5</button><button class="key">6</button><button class="key o">-</button>
+<button class="key">1</button><button class="key">2</button><button class="key">3</button><button class="key o">+</button>
+<button class="key wide">0</button><button class="key">.</button><button class="key o">=</button>
+</div></div>
+</section>
+<section class="switches">
+<div class="sw"><h2>Linear</h2><p>Smooth from top to bottom. Good for fast typing and games.</p><button class="key">Add to cart</button></div>
+<div class="sw"><h2>Tactile</h2><p>A small bump tells you the key has registered. Our most popular.</p><button class="key o">Add to cart</button></div>
+<div class="sw"><h2>Clicky</h2><p>A crisp click on every press. Your coworkers will notice.</p><button class="key">Add to cart</button></div>
+</section>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>
+const scr=document.getElementById('scr');let expr='';
+document.getElementById('pad').addEventListener('click',e=>{const k=e.target.closest('button');if(!k)return;const v=k.textContent;
+if(v==='C')expr='';else if(v==='='){try{expr=String(Function('"use strict";return('+expr+')')());if(expr==='Infinity'||expr==='NaN')expr=''}catch{expr=''}}else expr+=v;scr.textContent=expr||'0'});
+</script>
+</body>
+</html>

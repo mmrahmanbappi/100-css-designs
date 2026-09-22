@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stillwater Sleep App | Frosted Aurora HTML Template</title>
+<meta name="description" content="Free frosted aurora landing page template. Slow moving northern lights colors behind frosted glass panels, built for a sleep and calm app. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--night:#07122b;--ink:#e9f1ff;--muted:#aebbd8}
+*{box-sizing:border-box;margin:0}
+body{font-family:Karla,system-ui,sans-serif;background:var(--night);color:var(--ink);min-height:100vh;line-height:1.6;overflow-x:hidden}
+.sky{position:fixed;inset:-20%;z-index:-1;filter:blur(60px);opacity:.85}
+.sky span{position:absolute;border-radius:50%;animation:drift 22s ease-in-out infinite alternate}
+.sky span:nth-child(1){width:60vw;height:40vw;left:5%;top:5%;background:#1ed3a4}
+.sky span:nth-child(2){width:50vw;height:35vw;right:0;top:20%;background:#6a4cff;animation-duration:28s}
+.sky span:nth-child(3){width:45vw;height:30vw;left:30%;top:45%;background:#ff5fa2;animation-duration:34s;opacity:.7}
+@keyframes drift{to{transform:translate(8vw,-6vw) scale(1.15)}}
+@media(prefers-reduced-motion:reduce){.sky span{animation:none}}
+.frost{background:rgba(10,20,50,.35);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:22px}
+header{max-width:1000px;margin:0 auto;padding:26px 22px;display:flex;justify-content:space-between;align-items:center}
+header b{font-family:Fraunces,serif;font-weight:600;font-size:1.4rem}
+header a{color:var(--ink);font-weight:600}
+.hero{max-width:1000px;margin:0 auto;padding:80px 22px 60px;text-align:center}
+h1{font-family:Fraunces,serif;font-weight:300;font-size:clamp(2.6rem,6.5vw,5rem);line-height:1.05;max-width:14ch;margin:0 auto}
+.hero p{color:var(--muted);font-size:1.2rem;max-width:44ch;margin:22px auto 30px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;background:var(--ink);color:var(--night);font-weight:600;text-decoration:none}
+.btn:focus-visible,a:focus-visible{outline:3px solid #1ed3a4;outline-offset:3px}
+.tracks{max-width:1000px;margin:0 auto;padding:20px 22px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.track{padding:24px}
+.track h2{font-family:Fraunces,serif;font-weight:600;font-size:1.3rem}
+.track p{color:var(--muted);margin:6px 0 14px}
+.track small{font-weight:600}
+.quote{max-width:720px;margin:0 auto 70px;padding:34px;text-align:center;font-family:Fraunces,serif;font-size:1.4rem;font-weight:300}
+.quote cite{display:block;font-family:Karla,sans-serif;font-style:normal;font-size:1rem;color:var(--muted);margin-top:12px}
+footer{text-align:center;color:var(--muted);padding:0 0 30px;font-size:.9rem}
+footer a{color:var(--ink)}
+@media(max-width:780px){.tracks{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span></span><span></span><span></span></div>
+<header><b>Stillwater</b><a href="#">Sign in</a></header>
+<main>
+<section class="hero"><h1>Fall asleep in twenty minutes, not two hours.</h1><p>Short bedtime stories, slow breathing and soft rain sounds. Pick one, put the phone face down, and let it play.</p><a class="btn" href="#">Get Stillwater free</a></section>
+<section class="tracks">
+<article class="frost track"><h2>The night ferry</h2><p>A calm story about crossing a quiet harbor after dark.</p><small>24 min story</small></article>
+<article class="frost track"><h2>Four count breathing</h2><p>Breathe in for four, hold, breathe out. Guided by a slow voice.</p><small>8 min exercise</small></article>
+<article class="frost track"><h2>Rain on a tin roof</h2><p>Steady rain with distant thunder. Fades out on its own.</p><small>60 min sound</small></article>
+</section>
+<blockquote class="frost quote">I used to scroll until 2am. Now I put on the ferry story and I never hear the end of it.<cite>Maya, night nurse in Leeds</cite></blockquote>
+</main>
+<footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+</body>
+</html>
