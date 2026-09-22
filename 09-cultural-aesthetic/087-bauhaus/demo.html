@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weimar Workshop Exhibition | Bauhaus HTML Template</title>
+<meta name="description" content="Free Bauhaus website template for a design exhibition. Primary red, yellow and blue, circles, squares and triangles on a strict grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d62828;--yel:#f7b801;--blu:#1d4e9e;--ink:#111;--paper:#f2ece0}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Josefin Sans",Futura,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+header{max-width:1140px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;font-weight:700;text-transform:lowercase}
+header a{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.poster{max-width:1140px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,180px);gap:0;border:3px solid var(--ink)}
+.poster>*{border:1.5px solid var(--ink);position:relative;overflow:hidden}
+.c1{grid-column:1/3;grid-row:1/3;background:var(--yel)}
+.c1::after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:var(--red);right:-60px;bottom:-60px}
+.c2{background:var(--blu)}
+.c3{background:var(--paper)}
+.c3::after{content:"";position:absolute;inset:30px;background:var(--ink);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.c4{grid-column:3/5;background:var(--paper);display:flex;align-items:flex-end;padding:20px}
+.c4 h1{font-size:clamp(2.6rem,6vw,5rem);line-height:.9;font-weight:700;text-transform:lowercase}
+.c5{background:var(--red)}
+.c5::after{content:"";position:absolute;left:0;right:0;top:50%;height:30px;background:var(--paper)}
+.c6{grid-column:2/4;background:var(--paper);padding:20px;display:flex;flex-direction:column;justify-content:space-between}
+.c6 p{font-size:1.1rem;max-width:34ch}
+.c7{background:var(--ink)}
+.c7::after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;background:var(--yel);left:20px;top:20px}
+.info{max-width:1140px;margin:0 auto;padding:40px 24px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.info div{border-top:6px solid var(--c);padding-top:12px}
+.info h2{text-transform:lowercase;font-size:1.4rem}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:12px 22px;text-decoration:none;font-weight:700;text-transform:lowercase;width:max-content}
+.credit{text-align:center;padding:0 0 30px;font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.poster{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:150px}.c1,.c4,.c6{grid-column:1/-1}.c1{grid-row:auto}.c6{height:auto;min-height:180px}.info{grid-template-columns:1fr}}
+</style></head><body>
+<header><span>weimar workshop</span><a href="#">tickets</a></header>
+<main><section class="poster"><div class="c1" aria-hidden="true"></div><div class="c2" aria-hidden="true"></div><div class="c3" aria-hidden="true"></div>
+<div class="c4"><h1>form follows people</h1></div><div class="c5" aria-hidden="true"></div>
+<div class="c6"><p>An exhibition of 200 chairs, lamps, posters and teapots made by students of the workshop, from 1919 to today.</p><a class="btn" href="#">book a visit</a></div><div class="c7" aria-hidden="true"></div></section>
+<section class="info"><div style="--c:var(--red)"><h2>when</h2><p>4 April to 30 August 2027, Tuesday to Sunday, 10:00 to 18:00.</p></div><div style="--c:var(--yel)"><h2>where</h2><p>Hall B, Theaterplatz 1, Weimar. Step free entrance on the north side.</p></div><div style="--c:var(--blu)"><h2>price</h2><p>€12, students €6, under 18 free. Workshops from €20.</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

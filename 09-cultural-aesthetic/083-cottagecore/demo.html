@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bramble and Bee Farm Shop | Cottagecore HTML Template</title>
+<meta name="description" content="Free cottagecore website template for a jam and flower farm shop. Gingham, pressed flowers, scalloped edges and a soft handwritten feel. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Homemade+Apple&family=Lora:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf5ea;--rose:#e8a5a5;--sage:#8fa37f;--butter:#f3dfa2;--ink:#3f3530;--muted:#7a6c62}
+*{box-sizing:border-box;margin:0}
+body{font-family:Lora,Georgia,serif;background:var(--cream);color:var(--ink);line-height:1.7}
+.ging{background-color:#fff;background-image:linear-gradient(90deg,rgba(232,165,165,.45) 50%,transparent 50%),linear-gradient(rgba(232,165,165,.45) 50%,transparent 50%);background-size:24px 24px}
+.scal{height:20px;background:radial-gradient(circle at 12px 0,transparent 12px,var(--cream) 12.5px) 0 0/24px 20px repeat-x}
+header{text-align:center;padding:30px 24px 10px}
+header b{font-family:"Cormorant Garamond",serif;font-size:2rem}
+header small{display:block;font-family:"Homemade Apple",cursive;color:var(--sage);font-size:1rem}
+.hero{max-width:1000px;margin:20px auto;padding:0 24px}
+.frame{border-radius:200px 200px 16px 16px;padding:60px 40px 50px;text-align:center;position:relative;background:var(--butter)}
+.frame::before{content:"";position:absolute;inset:12px;border:1.5px dashed var(--ink);border-radius:190px 190px 10px 10px;opacity:.35;pointer-events:none}
+h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;max-width:16ch;margin:0 auto}
+h1 em{font-weight:500;color:#b35f5f}
+.frame p{max-width:40ch;margin:16px auto 24px;color:var(--muted)}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);padding:12px 26px;border-radius:999px;text-decoration:none}
+a:focus-visible{outline:2px dashed var(--ink);outline-offset:4px}
+.flower{position:absolute;width:40px;height:40px}
+.flower i{position:absolute;width:18px;height:18px;border-radius:50%;background:var(--rose);left:11px;top:11px}
+.flower i:nth-child(1){transform:translateY(-11px)}.flower i:nth-child(2){transform:translateX(11px)}.flower i:nth-child(3){transform:translateY(11px)}.flower i:nth-child(4){transform:translateX(-11px)}
+.flower::after{content:"";position:absolute;left:15px;top:15px;width:10px;height:10px;border-radius:50%;background:#e9c46a}
+.band{margin-top:50px}
+.jars{background:var(--cream);max-width:1000px;margin:0 auto;padding:40px 24px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.jar{text-align:center}
+.jar .j{width:110px;height:130px;margin:0 auto 12px;border-radius:14px 14px 22px 22px;background:var(--c);position:relative;box-shadow:inset -12px 0 0 rgba(255,255,255,.25)}
+.jar .j::before{content:"";position:absolute;left:-6px;right:-6px;top:-18px;height:24px;border-radius:6px;background-color:#fff;background-image:linear-gradient(90deg,rgba(232,165,165,.6) 50%,transparent 50%),linear-gradient(rgba(232,165,165,.6) 50%,transparent 50%);background-size:10px 10px}
+.jar .j::after{content:attr(data-l);position:absolute;left:14px;right:14px;top:44px;background:var(--cream);font-family:"Homemade Apple",cursive;font-size:.7rem;padding:6px 2px;border-radius:4px}
+.jar h2{font-family:"Cormorant Garamond",serif;font-size:1.4rem}
+.jar p{color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem;background:var(--cream)}.credit a{color:var(--ink)}
+@media(max-width:760px){.jars{grid-template-columns:1fr}.frame{border-radius:120px 120px 16px 16px;padding:50px 22px}}
+</style></head><body>
+<header><b>Bramble and Bee</b><small>a little farm shop</small></header>
+<main><section class="hero"><div class="frame"><span class="flower" style="left:40px;top:120px" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="flower" style="right:50px;top:170px;transform:scale(.8)" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+<h1>Jam, honey and <em>cut flowers</em> from our hedgerows</h1><p>Made in a farmhouse kitchen in the Cotswolds, in batches of forty jars. Open Saturdays, or posted to you wrapped in brown paper.</p><a class="btn" href="#">Visit the shop</a></div></section>
+<div class="band"><div class="scal" style="transform:rotate(180deg)"></div><div class="ging" style="height:60px"></div><div class="scal"></div></div>
+<section class="jars"><div class="jar"><div class="j" style="--c:#b0385a" data-l="blackberry" aria-hidden="true"></div><h2>Hedgerow blackberry</h2><p>£5.50</p></div><div class="jar"><div class="j" style="--c:#e9a23b" data-l="wildflower" aria-hidden="true"></div><h2>Wildflower honey</h2><p>£7.00</p></div><div class="jar"><div class="j" style="--c:#d45d4c" data-l="rhubarb" aria-hidden="true"></div><h2>Rhubarb and rose</h2><p>£5.50</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

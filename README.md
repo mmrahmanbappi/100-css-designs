@@ -90,6 +90,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 078 | [Spatial UI](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/) | Habitat, a spatial meeting workspace | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/078-spatial-ui/demo.html) | <img src="08-3d-depth/078-spatial-ui/preview.png" width="260" alt="Spatial UI preview"> |
 | 079 | [Depth Blur](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/079-depth-blur/) | Terraza, a family winery | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/079-depth-blur/demo.html) | <img src="08-3d-depth/079-depth-blur/preview.png" width="260" alt="Depth Blur preview"> |
 | 080 | [Stacked Scroll Cards](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/080-stacked-cards/) | Harvest Planner, a garden app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/08-3d-depth/080-stacked-cards/demo.html) | <img src="08-3d-depth/080-stacked-cards/preview.png" width="260" alt="Stacked Scroll Cards preview"> |
+| 081 | [Japandi](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/081-japandi/) | Mado, a ceramics and homeware shop | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/081-japandi/demo.html) | <img src="09-cultural-aesthetic/081-japandi/preview.png" width="260" alt="Japandi preview"> |
+| 082 | [Scandinavian](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/082-scandinavian/) | Fjell, cabin rentals in Norway | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/082-scandinavian/demo.html) | <img src="09-cultural-aesthetic/082-scandinavian/preview.png" width="260" alt="Scandinavian preview"> |
+| 083 | [Cottagecore](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/083-cottagecore/) | Bramble and Bee, a farm jam shop | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/083-cottagecore/demo.html) | <img src="09-cultural-aesthetic/083-cottagecore/preview.png" width="260" alt="Cottagecore preview"> |
+| 084 | [Dark Academia](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/084-dark-academia/) | Ravenhall, a reading society | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/084-dark-academia/demo.html) | <img src="09-cultural-aesthetic/084-dark-academia/preview.png" width="260" alt="Dark Academia preview"> |
+| 085 | [Vaporwave](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/085-vaporwave/) | Palm Mall FM, a synth music label | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/085-vaporwave/demo.html) | <img src="09-cultural-aesthetic/085-vaporwave/preview.png" width="260" alt="Vaporwave preview"> |
+| 086 | [Solarpunk](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/086-solarpunk/) | Sunroot, a community solar co-op | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/086-solarpunk/demo.html) | <img src="09-cultural-aesthetic/086-solarpunk/preview.png" width="260" alt="Solarpunk preview"> |
+| 087 | [Bauhaus](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/087-bauhaus/) | Weimar Workshop, a design exhibition | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/087-bauhaus/demo.html) | <img src="09-cultural-aesthetic/087-bauhaus/preview.png" width="260" alt="Bauhaus preview"> |
+| 088 | [Art Deco](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/088-art-deco/) | The Gilded Lily, a cocktail bar | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/088-art-deco/demo.html) | <img src="09-cultural-aesthetic/088-art-deco/preview.png" width="260" alt="Art Deco preview"> |
+| 089 | [Islamic Geometric](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/089-islamic-geometric/) | Riad Zellige, a guesthouse in Marrakech | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/089-islamic-geometric/demo.html) | <img src="09-cultural-aesthetic/089-islamic-geometric/preview.png" width="260" alt="Islamic Geometric preview"> |
+| 090 | [Guochao](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/090-guochao/) | Moonrise Bakery, handmade mooncakes | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/090-guochao/demo.html) | <img src="09-cultural-aesthetic/090-guochao/preview.png" width="260" alt="Guochao preview"> |
 
 ## Categories
 
@@ -101,7 +111,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 6. Typography (live)
 - 7. Motion (live)
 - 8. 3D and Depth (live)
-- 9. Cultural and Aesthetic (coming soon)
+- 9. Cultural and Aesthetic (live)
 - 10. Business Ready Pages (coming soon)
 
 ## How to use a design

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fjell Cabins Norway | Scandinavian Design HTML Template</title>
+<meta name="description" content="Free Scandinavian website template for cabin rentals. Light wood, white space, soft blues and simple rounded shapes, with a booking card. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--white:#fbfbf9;--birch:#efe6d8;--pine:#2f4a45;--fjord:#8fb3c4;--ink:#23302e;--muted:#6b7775;--red:#c8553d}
+*{box-sizing:border-box;margin:0}
+body{font-family:Poppins,system-ui,sans-serif;font-weight:300;background:var(--white);color:var(--ink);line-height:1.7}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center}
+header b{font-weight:600;font-size:1.3rem}
+header a{color:var(--ink);font-weight:500}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--fjord);outline-offset:3px}
+.hero{max-width:1120px;margin:0 auto;padding:10px 24px}
+.pic{position:relative;height:430px;border-radius:24px;overflow:hidden;background:linear-gradient(#dbe9ef 0 55%,#cfdde3 55%)}
+.mtn{position:absolute;bottom:40%;left:0;right:0;height:180px;background:#b7cad2;clip-path:polygon(0 100%,18% 30%,30% 60%,48% 0,64% 55%,80% 25%,100% 100%)}
+.snow{position:absolute;bottom:40%;left:0;right:0;height:180px;background:#fff;clip-path:polygon(44% 12%,48% 0,52% 12%,50% 16%,46% 16%)}
+.lake{position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(var(--fjord),#6f97a9)}
+.cabin{position:absolute;left:58%;bottom:34%;width:120px;height:70px;background:var(--red)}
+.cabin::before{content:"";position:absolute;left:-10px;right:-10px;top:-44px;height:46px;background:#2b2b2b;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.cabin::after{content:"";position:absolute;left:44px;top:26px;width:22px;height:44px;background:#fff6dd}
+.book{position:relative;margin:-70px 30px 0 auto;width:min(420px,100%);background:#fff;border-radius:20px;padding:24px;box-shadow:0 20px 50px rgba(35,48,46,.12)}
+.book h1{font-weight:600;font-size:1.6rem;line-height:1.2}
+.book p{color:var(--muted);font-size:.95rem;margin:6px 0 16px}
+.f{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.f label{font-size:.8rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.f input,.f select{font:inherit;font-size:.95rem;padding:10px;border:1px solid #dfe3e1;border-radius:10px;background:var(--white);color:var(--ink)}
+.go{grid-column:1/-1;font:inherit;font-weight:500;background:var(--pine);color:#fff;border:0;border-radius:12px;padding:13px;cursor:pointer;margin-top:4px}
+.feat{max-width:1120px;margin:0 auto;padding:50px 24px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat div{background:var(--birch);border-radius:18px;padding:22px}
+.feat h2{font-weight:500;font-size:1.05rem}
+.feat p{color:var(--muted);font-size:.95rem}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.feat{grid-template-columns:1fr 1fr}.book{margin:-50px auto 0}}
+</style></head><body>
+<header><b>fjell</b><a href="#">Our cabins</a></header>
+<main><section class="hero"><div class="pic" role="img" aria-label="A red cabin by a lake below snowy mountains"><span class="mtn"></span><span class="snow"></span><span class="lake"></span><span class="cabin"></span></div>
+<div class="book"><h1>Three cabins by a quiet lake</h1><p>Sauna, wood stove and no Wi-Fi unless you ask. Two hours from Bergen.</p>
+<form class="f" onsubmit="event.preventDefault();this.querySelector('.go').textContent='We will email you within a day'"><label>Arrive<input type="date" required></label><label>Nights<select><option>2</option><option>3</option><option>5</option><option>7</option></select></label><label>Guests<select><option>2</option><option>4</option><option>6</option></select></label><label>Cabin<select><option>Lille</option><option>Mellom</option><option>Stor</option></select></label><button class="go">Check availability</button></form></div></section>
+<section class="feat"><div><h2>Wood fired sauna</h2><p>Then jump in the lake, if you dare.</p></div><div><h2>Boat included</h2><p>A rowing boat for every cabin.</p></div><div><h2>Local breakfast</h2><p>Bread, cheese and jam from the farm.</p></div><div><h2>From 1,400 kr</h2><p>Per night for up to four people.</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

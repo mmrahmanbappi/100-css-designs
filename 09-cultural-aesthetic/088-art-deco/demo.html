@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gilded Lily Cocktail Bar | Art Deco HTML Template</title>
+<meta name="description" content="Free Art Deco website template for a cocktail bar. Gold line patterns, fan shapes, stepped frames and perfect symmetry on deep green. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#0f2a24;--deep:#0a1e1a;--gold:#d4af61;--pale:#f3e6c4;--muted:#b9a67c}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Josefin Slab",serif;background:var(--deep);color:var(--pale);line-height:1.6;font-size:18px}
+.pat{background:repeating-linear-gradient(90deg,transparent 0 38px,rgba(212,175,97,.18) 38px 40px),var(--green)}
+header{text-align:center;padding:26px 24px 10px;letter-spacing:.3em;font-size:.85rem;color:var(--gold)}
+.hero{max-width:900px;margin:0 auto;padding:30px 24px 60px;text-align:center}
+.fan{width:260px;height:130px;margin:0 auto 10px;border-radius:260px 260px 0 0;background:repeating-conic-gradient(from -90deg at 50% 100%,var(--gold) 0 2deg,transparent 2deg 12deg);-webkit-mask:radial-gradient(circle at 50% 100%,transparent 40px,#000 41px);mask:radial-gradient(circle at 50% 100%,transparent 40px,#000 41px);border-bottom:2px solid var(--gold)}
+.frame{position:relative;padding:50px 40px;border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:8px;background:var(--deep)}
+.frame::before,.frame::after{content:"";position:absolute;width:36px;height:36px;border:2px solid var(--gold);background:var(--deep)}
+.frame::before{top:-19px;left:50%;margin-left:-18px;transform:rotate(45deg)}
+.frame::after{bottom:-19px;left:50%;margin-left:-18px;transform:rotate(45deg)}
+h1{font-family:"Poiret One",cursive;font-weight:400;font-size:clamp(2.8rem,8vw,5.6rem);line-height:1;color:var(--gold);letter-spacing:.06em}
+.frame p{max-width:38ch;margin:18px auto 26px;color:var(--muted)}
+.btn{display:inline-block;color:var(--deep);background:var(--gold);padding:12px 28px;text-decoration:none;letter-spacing:.2em;font-weight:600;font-size:.9rem}
+a:focus-visible{outline:2px solid var(--pale);outline-offset:4px}
+.menu{max-width:900px;margin:0 auto;padding:10px 24px 70px}
+.menu h2{font-family:"Poiret One",cursive;font-weight:400;text-align:center;color:var(--gold);font-size:2rem;letter-spacing:.12em;margin-bottom:20px;display:flex;align-items:center;gap:16px}
+.menu h2::before,.menu h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.menu h2::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.dr{display:flex;align-items:baseline;gap:10px;padding:10px 0}
+.dr b{font-weight:600;letter-spacing:.08em}
+.dr i{flex:1;border-bottom:1px dotted var(--muted);transform:translateY(-4px)}
+.dr small{display:block;color:var(--muted);font-size:.95rem}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--pale)}
+</style></head><body class="pat">
+<header>EST. 1927 &nbsp; LONDON</header>
+<main><section class="hero"><div class="fan" aria-hidden="true"></div><div class="frame"><h1>The Gilded Lily</h1><p>A basement cocktail bar under Mayfair, with velvet booths, a live pianist on Fridays and a list of drinks from the year we opened.</p><a class="btn" href="#">RESERVE A BOOTH</a></div></section>
+<section class="menu"><h2>COCKTAILS</h2>
+<div class="dr"><div><b>The Lily</b><small>Gin, elderflower, champagne</small></div><i></i><b>£14</b></div>
+<div class="dr"><div><b>Mayfair Sidecar</b><small>Cognac, orange, lemon, sugar rim</small></div><i></i><b>£15</b></div>
+<div class="dr"><div><b>Midnight Manhattan</b><small>Rye, sweet vermouth, cherry</small></div><i></i><b>£15</b></div>
+<div class="dr"><div><b>Gold Rush</b><small>Bourbon, honey, lemon</small></div><i></i><b>£13</b></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

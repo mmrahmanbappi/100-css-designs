@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunroot Community Solar | Solarpunk HTML Template</title>
+<meta name="description" content="Free solarpunk website template for a community solar co-op. Bright greens, warm sun, rooftop gardens and an optimistic future look. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#fff6d6;--sun:#ffc93c;--leaf:#2d9d5c;--moss:#1f5f3f;--teal:#2bb5a0;--ink:#15352a;--muted:#4e6a5f}
+*{box-sizing:border-box;margin:0}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--sky);color:var(--ink);line-height:1.6}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-family:Gabarito,sans-serif;font-weight:800;font-size:1.4rem;color:var(--leaf)}
+header a{color:var(--ink);font-weight:700}
+a:focus-visible{outline:3px solid var(--leaf);outline-offset:3px}
+.hero{max-width:1120px;margin:0 auto;padding:20px 24px 0;display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:end}
+h1{font-family:Gabarito,sans-serif;font-weight:800;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1;letter-spacing:-.02em}
+h1 span{color:var(--leaf)}
+.hero p{color:var(--muted);font-size:1.15rem;margin:16px 0 24px;max-width:40ch}
+.btn{display:inline-block;background:var(--leaf);color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;margin-bottom:60px}
+.city{position:relative;height:420px}
+.city .sun{position:absolute;right:12%;top:0;width:140px;height:140px;border-radius:50%;background:radial-gradient(#fff3b0,var(--sun) 60%);box-shadow:0 0 80px 30px rgba(255,201,60,.35)}
+.bld{position:absolute;bottom:0;width:var(--w);height:var(--h);left:var(--x);background:var(--c);border-radius:18px 18px 0 0}
+.bld::before{content:"";position:absolute;left:-6px;right:-6px;top:-18px;height:26px;border-radius:30px;background:var(--leaf);box-shadow:10px -8px 0 -2px var(--teal),-12px -6px 0 -4px #6ccf8e}
+.bld::after{content:"";position:absolute;left:12%;right:12%;top:28px;bottom:30px;background:repeating-linear-gradient(0deg,transparent 0 16px,rgba(255,255,255,.55) 16px 30px),repeating-linear-gradient(90deg,transparent 0 12px,var(--c) 12px 22px);border-radius:6px}
+.panel{position:absolute;width:60px;height:26px;background:repeating-linear-gradient(90deg,#1b4b8a 0 13px,#3a78c9 13px 15px);transform:skewX(-20deg);border:2px solid #cde}
+.ground{background:var(--moss);color:#eafff1}
+.stats{max-width:1120px;margin:0 auto;padding:50px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stats b{display:block;font-family:Gabarito,sans-serif;font-weight:800;font-size:3rem;color:var(--sun);line-height:1}
+.how{max-width:1120px;margin:0 auto;padding:50px 24px 60px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.how div{background:#fff;border-radius:24px;padding:24px;border:2px solid #d7ecd9}
+.how h2{font-family:Gabarito,sans-serif;font-size:1.3rem}
+.how p{color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.hero,.stats,.how{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Sunroot</b><a href="#">Become a member</a></header>
+<main><section class="hero"><div><h1>Power your street with <span>your own sun</span></h1><p>Sunroot is a co-op that puts solar panels on schools, libraries and flat roofs, and shares the power and profits with the people who live nearby.</p><a class="btn" href="#">Buy a £50 share</a></div>
+<div class="city" aria-hidden="true"><span class="sun"></span><span class="bld" style="--w:120px;--h:220px;--x:4%;--c:#f6a6a0"></span><span class="bld" style="--w:150px;--h:320px;--x:30%;--c:#9ad4c4"></span><span class="bld" style="--w:110px;--h:180px;--x:64%;--c:#f7d08a"></span><span class="panel" style="left:36%;top:78px"></span><span class="panel" style="left:48%;top:78px"></span><span class="panel" style="left:67%;top:222px"></span></div></section>
+<section class="ground"><div class="stats"><div><b>1,840</b>members across Bristol</div><div><b>2.1 MW</b>of panels on 34 roofs</div><div><b>£96k</b>given back to local projects</div></div></section>
+<section class="how"><div><h2>Buy a share</h2><p>From £50. Every member gets one vote, whatever they put in.</p></div><div><h2>We build panels</h2><p>On roofs chosen by members, starting with schools.</p></div><div><h2>Everyone gains</h2><p>Cheaper power for the building and a small yearly return for you.</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>
