@@ -250,7 +250,7 @@ function category_page($c) {
 
 function home() {
     global $SITE, $B, $CATEGORIES, $DESIGNS;
-    $title = '100 Free CSS Designs: Trending UI Styles with Live Demos and Downloads';
+    $title = '100 Free CSS Designs: Trending UI Styles with Live Demos';
     $desc = count($DESIGNS) . ' free CSS design templates live now, growing to 100. Glassmorphism, bento grid, neo brutalism, AI chat UI and more, each with a live demo.';
     $img = durl($DESIGNS[0]) . 'preview.png';
     $faq = [
