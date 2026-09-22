@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Verde Architects | Monochrome HTML Template</title>
+<meta name="description" content="Free monochrome website template for an architecture studio. Every color is a shade of one green, set with CSS variables and color-mix. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--h:#2f5d50;--s50:color-mix(in srgb,var(--h) 6%,#fff);--s100:color-mix(in srgb,var(--h) 14%,#fff);--s300:color-mix(in srgb,var(--h) 40%,#fff);--s500:var(--h);--s700:color-mix(in srgb,var(--h) 70%,#000);--s900:color-mix(in srgb,var(--h) 35%,#000)}
+*{box-sizing:border-box;margin:0}
+body{font-family:Karla,system-ui,sans-serif;background:var(--s50);color:var(--s900);line-height:1.6}
+header{max-width:1140px;margin:0 auto;padding:24px;display:flex;justify-content:space-between}
+header b{font-family:"Tenor Sans",serif;font-weight:400;font-size:1.3rem}
+header a{color:var(--s700)}
+a:focus-visible{outline:2px solid var(--s700);outline-offset:3px}
+.hero{max-width:1140px;margin:0 auto;padding:40px 24px 50px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+h1{font-family:"Tenor Sans",serif;font-weight:400;font-size:clamp(2.4rem,5.5vw,4.4rem);line-height:1.05}
+.hero p{color:var(--s700);font-size:1.15rem;max-width:38ch}
+.build{max-width:1140px;margin:0 auto;padding:0 24px;height:360px;display:grid;grid-template-columns:3fr 2fr 1fr;gap:6px;align-items:end}
+.build i{display:block;background:var(--c)}
+.build i:nth-child(1){--c:var(--s700);height:70%}
+.build i:nth-child(2){--c:var(--s500);height:100%}
+.build i:nth-child(3){--c:var(--s300);height:45%}
+.list{max-width:1140px;margin:0 auto;padding:50px 24px 70px}
+.list h2{font-family:"Tenor Sans",serif;font-weight:400;font-size:1.8rem;margin-bottom:16px}
+.pj{display:grid;grid-template-columns:80px 1fr 1fr 100px;gap:20px;padding:18px 0;border-top:1px solid var(--s300);align-items:center}
+.pj span:first-child{color:var(--s500);font-weight:600}
+.pj b{font-weight:600}
+.pj em{font-style:normal;color:var(--s700)}
+.pj span:last-child{text-align:right;background:var(--s100);padding:4px 10px;border-radius:999px;font-size:.9rem;justify-self:end}
+.swatch{display:flex;gap:6px;margin-top:30px}.swatch i{flex:1;height:36px;border-radius:6px}
+.credit{text-align:center;padding:0 0 30px;color:var(--s700);font-size:.9rem}.credit a{color:var(--s900)}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.pj{grid-template-columns:1fr;gap:4px}.pj span:last-child{justify-self:start}.build{height:220px}}
+</style></head><body>
+<header><b>Atelier Verde</b><a href="#">Contact the studio</a></header>
+<main><section class="hero"><h1>Quiet buildings for busy cities</h1><p>We design homes, schools and libraries in timber and brick that stay calm and cool for a hundred years. Based in Lyon since 2009.</p></section>
+<div class="build" aria-hidden="true"><i></i><i></i><i></i></div>
+<section class="list"><h2>Selected projects</h2>
+<div class="pj"><span>2026</span><b>Croix-Rousse library</b><em>Timber frame, 2,400 m²</em><span>Built</span></div>
+<div class="pj"><span>2025</span><b>Riverside primary school</b><em>Brick and oak, 18 classrooms</em><span>Built</span></div>
+<div class="pj"><span>2024</span><b>Maison des Pins</b><em>Private house, passive standard</em><span>Built</span></div>
+<div class="pj"><span>2027</span><b>Social housing, Gerland</b><em>64 homes around a garden</em><span>On site</span></div>
+<div class="swatch" aria-label="The five shades used on this page"><i style="background:var(--s100)"></i><i style="background:var(--s300)"></i><i style="background:var(--s500)"></i><i style="background:var(--s700)"></i><i style="background:var(--s900)"></i></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

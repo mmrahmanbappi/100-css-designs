@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solace Skincare | Aurora Gradient HTML Template</title>
+<meta name="description" content="Free aurora gradient website template for a skincare brand. Soft flowing northern lights colors on a light background, animated with pure CSS. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b2a33;--muted:#6c6a76}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:#fbfaff;line-height:1.6}
+.aur{position:relative;overflow:hidden;min-height:88vh;display:grid;place-items:center;text-align:center;padding:40px 24px}
+.aur::before{content:"";position:absolute;inset:-30%;background:conic-gradient(from 180deg at 50% 50%,#b8f3e3,#c7d2ff,#ffd6e8,#fff1c2,#b8f3e3);filter:blur(70px);opacity:.9;animation:spin 30s linear infinite}
+.aur::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,#fbfaff)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.aur::before{animation:none}}
+.aur>*{position:relative;z-index:1}
+.aur>nav{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;padding:24px}
+nav b{font-family:"Gowun Batang",serif;font-size:1.4rem}
+nav a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+h1{font-family:"Gowun Batang",serif;font-weight:700;font-size:clamp(2.6rem,7vw,5.2rem);line-height:1.05;max-width:14ch;margin:0 auto}
+.aur p{font-size:1.2rem;color:var(--muted);max-width:40ch;margin:20px auto 30px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:15px 30px;border-radius:999px;text-decoration:none;font-weight:600}
+.prod{max-width:1040px;margin:0 auto;padding:30px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.p{background:#fff;border-radius:24px;padding:26px;box-shadow:0 12px 34px rgba(80,70,140,.08)}
+.bottle{height:180px;border-radius:18px;margin-bottom:18px;display:grid;place-items:end center;background:var(--g)}
+.bottle i{width:64px;height:130px;border-radius:14px 14px 10px 10px;background:rgba(255,255,255,.75);margin-bottom:20px;box-shadow:inset 0 -30px 0 rgba(255,255,255,.4)}
+.p h2{font-family:"Gowun Batang",serif;font-size:1.3rem}
+.p p{color:var(--muted);margin:4px 0 10px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:820px){.prod{grid-template-columns:1fr}}
+</style></head><body>
+<header class="aur"><nav><b>Solace</b><a href="#">Shop</a></nav><div><h1>Gentle skincare for tired skin</h1><p>Three products, no perfume, nothing you can not pronounce. Made in small batches in Copenhagen.</p><a class="btn" href="#">Find your routine</a></div></header>
+<main class="prod">
+<section class="p"><div class="bottle" style="--g:linear-gradient(135deg,#b8f3e3,#c7d2ff)"><i></i></div><h2>Morning serum</h2><p>Vitamin C and niacinamide for a brighter look.</p><b>€34</b></section>
+<section class="p"><div class="bottle" style="--g:linear-gradient(135deg,#ffd6e8,#c7d2ff)"><i></i></div><h2>Barrier cream</h2><p>Ceramides and oat for dry, red patches.</p><b>€29</b></section>
+<section class="p"><div class="bottle" style="--g:linear-gradient(135deg,#fff1c2,#ffd6e8)"><i></i></div><h2>Night oil</h2><p>Squalane and rosehip. Two drops is enough.</p><b>€38</b></section>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

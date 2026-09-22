@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Nine Baby Clothes | Pastel Dream HTML Template</title>
+<meta name="description" content="Free pastel website template for a baby clothing shop. Soft candy colors, rounded shapes, floating clouds and gentle product cards. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ffd9e4;--blue:#d6ecff;--mint:#d8f5e8;--lemon:#fff3c4;--lilac:#e8dcff;--ink:#4a4166;--muted:#7d7597}
+*{box-sizing:border-box;margin:0}
+body{font-family:Quicksand,system-ui,sans-serif;background:linear-gradient(180deg,var(--blue),#fff 60%);color:var(--ink);line-height:1.55;min-height:100vh;overflow-x:hidden}
+.cloud{position:absolute;background:#fff;border-radius:60px;height:50px;box-shadow:0 10px 30px rgba(120,140,200,.12)}
+.cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+.cloud::before{width:60px;height:60px;top:-30px;left:24px}.cloud::after{width:44px;height:44px;top:-20px;right:26px}
+.float{animation:fl 8s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-12px)}}
+@media(prefers-reduced-motion:reduce){.float{animation:none}}
+header{max-width:1080px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;position:relative;z-index:1}
+header b{font-size:1.4rem}
+header a{color:var(--ink);font-weight:700}
+a:focus-visible,button:focus-visible{outline:3px solid #b69cff;outline-offset:3px}
+.hero{position:relative;max-width:1080px;margin:0 auto;padding:70px 24px 60px;text-align:center}
+.hero>*{position:relative;z-index:1}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.05;font-weight:700;max-width:15ch;margin:0 auto}
+.hero p{color:var(--muted);font-size:1.15rem;margin:16px auto 26px;max-width:40ch}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none}
+.shop{max-width:1080px;margin:0 auto;padding:0 24px 70px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.it{background:#fff;border-radius:28px;padding:16px;box-shadow:0 12px 30px rgba(120,110,180,.1)}
+.ph{height:170px;border-radius:20px;background:var(--c);display:grid;place-items:center}
+.ph i{width:90px;height:90px;background:rgba(255,255,255,.8);clip-path:polygon(25% 0,40% 8%,60% 8%,75% 0,100% 20%,85% 38%,78% 32%,78% 100%,22% 100%,22% 32%,15% 38%,0 20%)}
+.it h2{font-size:1.05rem;margin:12px 4px 2px}
+.it div{display:flex;justify-content:space-between;align-items:center;margin:0 4px}
+.it span{color:var(--muted)}
+.it button{font:inherit;font-weight:700;border:0;background:var(--c);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.shop{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<span class="cloud float" style="width:160px;top:120px;left:6%" aria-hidden="true"></span><span class="cloud float" style="width:120px;top:220px;right:8%;animation-delay:-3s" aria-hidden="true"></span>
+<header><b>Cloud Nine</b><a href="#">Basket (0)</a></header>
+<main><section class="hero"><h1>Soft clothes for brand new people</h1><p>Organic cotton baby clothes from newborn to 2 years. No scratchy labels, no tight necks, washable at 60.</p><a class="btn" href="#">Shop newborn</a></section>
+<section class="shop">
+<article class="it" style="--c:var(--pink)"><div class="ph"><i></i></div><h2>Petal onesie</h2><div><span>£18</span><button>Add</button></div></article>
+<article class="it" style="--c:var(--mint)"><div class="ph"><i></i></div><h2>Leaf romper</h2><div><span>£22</span><button>Add</button></div></article>
+<article class="it" style="--c:var(--lemon)"><div class="ph"><i></i></div><h2>Sunny tee</h2><div><span>£12</span><button>Add</button></div></article>
+<article class="it" style="--c:var(--lilac)"><div class="ph"><i></i></div><h2>Dream sleepsuit</h2><div><span>£24</span><button>Add</button></div></article>
+</section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

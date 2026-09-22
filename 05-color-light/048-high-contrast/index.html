@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Accessible High Contrast Website Template (WCAG)</title>
+<meta name="description" content="Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.">
+<meta name="keywords" content="accessible website template, high contrast css, wcag compliant template, government website template, focus ring css">
+<meta name="author" content="mmrahmanbappi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="100 CSS Designs">
+<meta property="og:title" content="Free Accessible High Contrast Website Template (WCAG)">
+<meta property="og:description" content="Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.">
+<meta property="og:url" content="https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/">
+<meta property="og:image" content="https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Accessible High Contrast Website Template (WCAG)">
+<meta name="twitter:description" content="Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.">
+<meta name="twitter:image" content="https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/preview.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>:root{--bg:#fbfbf8;--ink:#17191f;--muted:#5a5f6b;--line:#e4e3dc;--blue:#2445d6;--card:#fff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Instrument Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.bar{border-bottom:1px solid var(--line);background:#fff}
+.bar div{max-width:1120px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.bar a.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.25rem;color:var(--ink);text-decoration:none}
+.bar nav a{margin-left:18px;color:var(--ink);font-weight:600;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.crumbs{font-size:.9rem;color:var(--muted);padding:22px 0 0}
+.crumbs a{color:var(--muted)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800;margin:14px 0 14px;max-width:22ch}
+h2{font-size:1.6rem;margin:0 0 14px}
+h3{font-size:1.15rem}
+.lead{font-size:1.15rem;color:var(--muted);max-width:62ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:#fff}
+.btn.main{background:var(--ink);color:#fff}
+.shot{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(20,20,40,.12)}
+.shot img{display:block;width:100%;height:auto}
+.cols{display:grid;grid-template-columns:1.4fr 1fr;gap:50px;padding:60px 0}
+.cols p{margin-bottom:14px;max-width:65ch}
+ul.list{padding-left:20px}
+ul.list li{margin-bottom:6px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.code{position:relative;margin:0 0 60px}
+pre{background:#1d2030;color:#e8eaf3;border-radius:14px;padding:24px;overflow-x:auto;font-size:.9rem;line-height:1.6}
+.copy{position:absolute;top:12px;right:12px;font:inherit;font-size:.85rem;font-weight:700;border:0;border-radius:8px;padding:6px 12px;background:#fff;color:var(--ink);cursor:pointer}
+ol.steps{padding-left:22px;max-width:65ch;margin-bottom:60px}
+ol.steps li{margin-bottom:8px}
+details{border-top:1px solid var(--line);padding:16px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font-weight:700;cursor:pointer;font-size:1.05rem}
+details p{margin-top:10px;color:var(--muted);max-width:70ch}
+.faq{margin-bottom:60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px;margin:26px 0 60px}
+.tile{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+.tile div{padding:14px 16px}
+.tile small{color:var(--muted)}
+.tile:hover{border-color:var(--ink)}
+.cat{margin:50px 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.soon{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin:20px 0 70px}
+.soon div{border:1px dashed #c9c7bd;border-radius:12px;padding:18px;color:var(--muted)}
+.soon b{color:var(--ink);display:block}
+.pager{display:flex;justify-content:space-between;gap:16px;margin:0 0 60px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:30px 22px;text-align:center;color:var(--muted);font-size:.95rem}
+@media(max-width:820px){.cols{grid-template-columns:1fr;gap:30px;padding:40px 0}.bar nav a:first-child{display:none}}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/","url":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/","name":"Free Accessible High Contrast Website Template (WCAG)","description":"Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.","isPartOf":{"@type":"WebSite","name":"100 CSS Designs","url":"https://mmrahmanbappi.github.io/100-css-designs/"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/preview.png","width":1280,"height":800},"datePublished":"2026-09-23","dateModified":"2026-09-23","inLanguage":"en"},{"@type":"SoftwareSourceCode","name":"High Contrast Accessible CSS Template","description":"Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.","image":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/preview.png","url":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/","codeRepository":"https://github.com/mmrahmanbappi/100-css-designs","programmingLanguage":["HTML","CSS"],"license":"https://opensource.org/licenses/MIT","isAccessibleForFree":true,"keywords":"accessible website template, high contrast css, wcag compliant template, government website template, focus ring css","author":{"@type":"Person","name":"mmrahmanbappi","url":"https://github.com/mmrahmanbappi"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mmrahmanbappi.github.io/100-css-designs/"},{"@type":"ListItem","position":2,"name":"Color and Light","item":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/"},{"@type":"ListItem","position":3,"name":"High Contrast Accessible","item":"https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What contrast ratio does WCAG need?","acceptedAnswer":{"@type":"Answer","text":"WCAG AA needs 4.5 to 1 for normal text and AAA needs 7 to 1. The main text in this template is black on white, which is 21 to 1."}},{"@type":"Question","name":"What is a skip link?","acceptedAnswer":{"@type":"Answer","text":"It is a hidden link at the top that appears when you press Tab. It lets keyboard users jump past the menu straight to the content."}},{"@type":"Question","name":"Which font is best for accessibility?","acceptedAnswer":{"@type":"Answer","text":"Atkinson Hyperlegible was designed by the Braille Institute for readers with low vision. It is free on Google Fonts."}}]}]}</script>
+</head>
+<body>
+<header class="bar"><div><a class="logo" href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a><nav><a href="https://mmrahmanbappi.github.io/100-css-designs/#categories">Categories</a><a href="https://github.com/mmrahmanbappi/100-css-designs">GitHub</a></nav></div></header>
+<main class="wrap">
+<p class="crumbs"><a href="https://mmrahmanbappi.github.io/100-css-designs/">Home</a> / <a href="../">Color and Light</a> / High Contrast Accessible</p>
+<h1>High Contrast Accessible CSS Template, Free with Live Demo</h1>
+<p class="lead">Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download. The example is Brookfield Council, a local government site.</p>
+<div class="actions"><a class="btn main" href="demo.html">Open live demo</a><a class="btn" href="demo.html" download="high-contrast-template.html">Download HTML file</a><a class="btn" href="https://github.com/mmrahmanbappi/100-css-designs/tree/main/05-color-light/048-high-contrast">View code on GitHub</a></div>
+<a class="shot" href="demo.html"><img src="preview.png" alt="High Contrast Accessible CSS template example: Brookfield Council, a local government site" width="1280" height="800"></a>
+<section class="cols"><div><h2>What is high contrast accessible?</h2><p>A high contrast accessible design puts everyone first: people with low vision, older users, people on bright screens outside, and keyboard users. Black on white, blue underlined links, large text and focus rings you cannot miss.</p><p>It follows the same ideas as the UK government design system. There is a skip link, every button is at least 44 pixels tall, and the text size buttons change one variable that scales the whole page.</p></div>
+<div class="box"><h3>Good for</h3><ul class="list"><li>Government and council websites</li><li>Health services and clinics</li><li>Schools and universities</li><li>Charities and public services</li></ul></div></section>
+<section><h2>What you get in this template</h2><ul class="list" style="margin-bottom:40px"><li>Black and white text with contrast above 15 to 1</li><li>Yellow and black focus ring on every control</li><li>Skip to main content link</li><li>Three text size buttons that scale the page</li><li>Atkinson Hyperlegible, a font made for low vision readers</li></ul></section>
+<section><h2>The key CSS</h2><p style="margin-bottom:14px">This is the part that makes the high contrast accessible look work. Copy it into your own project.</p>
+<div class="code"><button class="copy" type="button">Copy CSS</button><pre><code>:root { font-size: var(--fs, 18px); }
+:focus-visible {
+  outline: 4px solid #000;
+  box-shadow: 0 0 0 8px #ffbf47;
+}
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 12px; top: 12px; }
+a { color: #0b3d91; text-decoration-thickness: 2px; text-underline-offset: 3px; }</code></pre></div></section>
+<section><h2>How to use it</h2><ol class="steps"><li>Click Download HTML file above.</li><li>Open the file in any code editor, like VS Code.</li><li>Change the text, colors and links to match your project. Colors are at the top of the style tag.</li><li>Upload it to any host, such as GitHub Pages, Netlify or your own server. It is one file with no build step.</li></ol></section>
+<section class="faq"><h2>Questions people ask</h2><details><summary>What contrast ratio does WCAG need?</summary><p>WCAG AA needs 4.5 to 1 for normal text and AAA needs 7 to 1. The main text in this template is black on white, which is 21 to 1.</p></details><details><summary>What is a skip link?</summary><p>It is a hidden link at the top that appears when you press Tab. It lets keyboard users jump past the menu straight to the content.</p></details><details><summary>Which font is best for accessibility?</summary><p>Atkinson Hyperlegible was designed by the Braille Institute for readers with low vision. It is free on Google Fonts.</p></details></section>
+<nav class="pager" aria-label="More designs"><a href="../047-pastel-dream/">Previous: Pastel Dream</a><a href="../049-grainy-gradient/">Next: Grainy Gradient</a></nav>
+<section><h2>More Color and Light designs</h2><div class="grid"><a class="tile" href="../041-aurora-gradient/"><img src="../041-aurora-gradient/preview.png" alt="Aurora Gradient CSS template preview" loading="lazy" width="1280" height="800"><div><h3>041. Aurora Gradient</h3><small>Solace, a skincare brand</small></div></a><a class="tile" href="../042-duotone/"><img src="../042-duotone/preview.png" alt="Duotone CSS template preview" loading="lazy" width="1280" height="800"><div><h3>042. Duotone</h3><small>Harbor Film Festival</small></div></a><a class="tile" href="../043-monochrome/"><img src="../043-monochrome/preview.png" alt="Monochrome CSS template preview" loading="lazy" width="1280" height="800"><div><h3>043. Monochrome</h3><small>Atelier Verde, an architecture studio</small></div></a><a class="tile" href="../044-dark-mode/"><img src="../044-dark-mode/preview.png" alt="Dark Mode First CSS template preview" loading="lazy" width="1280" height="800"><div><h3>044. Dark Mode First</h3><small>Ledgerly, a budget app</small></div></a><a class="tile" href="../045-neon-cyberpunk/"><img src="../045-neon-cyberpunk/preview.png" alt="Neon Cyberpunk CSS template preview" loading="lazy" width="1280" height="800"><div><h3>045. Neon Cyberpunk</h3><small>Voltage Arena, an esports tournament</small></div></a><a class="tile" href="../046-earthy-natural/"><img src="../046-earthy-natural/preview.png" alt="Earthy Natural CSS template preview" loading="lazy" width="1280" height="800"><div><h3>046. Earthy Natural</h3><small>Rootstock Farm, an organic veg box</small></div></a><a class="tile" href="../047-pastel-dream/"><img src="../047-pastel-dream/preview.png" alt="Pastel Dream CSS template preview" loading="lazy" width="1280" height="800"><div><h3>047. Pastel Dream</h3><small>Cloud Nine, a baby clothing shop</small></div></a><a class="tile" href="../049-grainy-gradient/"><img src="../049-grainy-gradient/preview.png" alt="Grainy Gradient CSS template preview" loading="lazy" width="1280" height="800"><div><h3>049. Grainy Gradient</h3><small>Late Signal, a podcast</small></div></a><a class="tile" href="../050-glow-borders/"><img src="../050-glow-borders/preview.png" alt="Glow Borders CSS template preview" loading="lazy" width="1280" height="800"><div><h3>050. Glow Borders</h3><small>Northstar, a hosting pricing page</small></div></a></div></section>
+</main>
+<footer>Free under the MIT license. Made by <a href="https://github.com/mmrahmanbappi">mmrahmanbappi</a>. <a href="https://github.com/mmrahmanbappi/100-css-designs">Star the repo on GitHub</a> to get new designs.</footer>
+<script>document.querySelectorAll('.copy').forEach(b=>b.onclick=()=>{navigator.clipboard.writeText(b.nextElementSibling.innerText).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy CSS',1500)})})</script>
+</body>
+</html>

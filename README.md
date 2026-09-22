@@ -50,6 +50,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 038 | [Linear Style Minimal](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/038-linear-style/) | Tracklet, an issue tracker | [Demo](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/038-linear-style/demo.html) | <img src="04-ai-era-interfaces/038-linear-style/preview.png" width="260" alt="Linear Style Minimal preview"> |
 | 039 | [Spotlight Cards](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/039-spotlight-cards/) | Lumen, an API platform | [Demo](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/039-spotlight-cards/demo.html) | <img src="04-ai-era-interfaces/039-spotlight-cards/preview.png" width="260" alt="Spotlight Cards preview"> |
 | 040 | [Holographic](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/040-holographic/) | Nova Pass, a festival membership card | [Demo](https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/040-holographic/demo.html) | <img src="04-ai-era-interfaces/040-holographic/preview.png" width="260" alt="Holographic preview"> |
+| 041 | [Aurora Gradient](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/041-aurora-gradient/) | Solace, a skincare brand | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/041-aurora-gradient/demo.html) | <img src="05-color-light/041-aurora-gradient/preview.png" width="260" alt="Aurora Gradient preview"> |
+| 042 | [Duotone](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/042-duotone/) | Harbor Film Festival | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/042-duotone/demo.html) | <img src="05-color-light/042-duotone/preview.png" width="260" alt="Duotone preview"> |
+| 043 | [Monochrome](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/043-monochrome/) | Atelier Verde, an architecture studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/043-monochrome/demo.html) | <img src="05-color-light/043-monochrome/preview.png" width="260" alt="Monochrome preview"> |
+| 044 | [Dark Mode First](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/044-dark-mode/) | Ledgerly, a budget app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/044-dark-mode/demo.html) | <img src="05-color-light/044-dark-mode/preview.png" width="260" alt="Dark Mode First preview"> |
+| 045 | [Neon Cyberpunk](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/045-neon-cyberpunk/) | Voltage Arena, an esports tournament | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/045-neon-cyberpunk/demo.html) | <img src="05-color-light/045-neon-cyberpunk/preview.png" width="260" alt="Neon Cyberpunk preview"> |
+| 046 | [Earthy Natural](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/046-earthy-natural/) | Rootstock Farm, an organic veg box | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/046-earthy-natural/demo.html) | <img src="05-color-light/046-earthy-natural/preview.png" width="260" alt="Earthy Natural preview"> |
+| 047 | [Pastel Dream](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/047-pastel-dream/) | Cloud Nine, a baby clothing shop | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/047-pastel-dream/demo.html) | <img src="05-color-light/047-pastel-dream/preview.png" width="260" alt="Pastel Dream preview"> |
+| 048 | [High Contrast Accessible](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/) | Brookfield Council, a local government site | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/demo.html) | <img src="05-color-light/048-high-contrast/preview.png" width="260" alt="High Contrast Accessible preview"> |
+| 049 | [Grainy Gradient](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/) | Late Signal, a podcast | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/demo.html) | <img src="05-color-light/049-grainy-gradient/preview.png" width="260" alt="Grainy Gradient preview"> |
+| 050 | [Glow Borders](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/) | Northstar, a hosting pricing page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/demo.html) | <img src="05-color-light/050-glow-borders/preview.png" width="260" alt="Glow Borders preview"> |
 
 ## Categories
 
@@ -57,7 +67,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 2. Bold and Raw (live)
 - 3. Layout Patterns (live)
 - 4. AI Era Interfaces (live)
-- 5. Color and Light (coming soon)
+- 5. Color and Light (live)
 - 6. Typography (coming soon)
 - 7. Motion (coming soon)
 - 8. 3D and Depth (coming soon)

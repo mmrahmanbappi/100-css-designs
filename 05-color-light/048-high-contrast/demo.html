@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brookfield Council Services | High Contrast Accessible HTML Template</title>
+<meta name="description" content="Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, text size buttons and a skip link. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#000;--muted:#2b2b2b;--link:#0b3d91;--band:#0b3d91;--focus:#ffbf47;--line:#000;font-size:var(--fs,18px)}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Atkinson Hyperlegible",Verdana,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--link);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:4px}
+:focus-visible{outline:4px solid var(--ink);outline-offset:0;box-shadow:0 0 0 8px var(--focus)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--focus);color:#000;padding:12px 16px;font-weight:700}
+.skip:focus{left:12px;top:12px}
+.band{background:var(--band);color:#fff}
+.band .in{max-width:1000px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.band b{font-size:1.4rem}
+.size{display:flex;gap:6px;align-items:center}
+.size button{font:inherit;font-weight:700;background:#fff;color:#000;border:2px solid #fff;padding:4px 12px;cursor:pointer;min-width:44px;min-height:44px}
+.size button[aria-pressed=true]{background:var(--focus);border-color:var(--focus)}
+main{max-width:1000px;margin:0 auto;padding:40px 24px 60px}
+h1{font-size:2.4rem;line-height:1.15;margin-bottom:14px}
+.lead{font-size:1.25rem;max-width:40em;margin-bottom:30px}
+.search{display:flex;gap:0;max-width:600px;margin-bottom:40px}
+.search label{display:block;font-weight:700;margin-bottom:6px}
+.search input{flex:1;font:inherit;padding:12px;border:3px solid var(--ink);border-right:0;min-height:52px}
+.search button{font:inherit;font-weight:700;background:var(--ink);color:#fff;border:3px solid var(--ink);padding:0 22px;cursor:pointer}
+.tasks{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:3px solid var(--line)}
+.tasks a{display:block;padding:20px 20px 22px 0;border-bottom:1px solid var(--line);font-size:1.2rem;font-weight:700}
+.tasks p{font-weight:400;color:var(--muted);font-size:1rem;margin-top:4px}
+.alert{border-left:10px solid var(--band);background:#f3f2f1;padding:18px 20px;margin-top:40px}
+.alert h2{font-size:1.3rem}
+.credit{max-width:1000px;margin:0 auto;padding:20px 24px 40px;border-top:1px solid var(--line)}
+@media(max-width:820px){.tasks{grid-template-columns:1fr}}
+@media(prefers-contrast:more){:root{--muted:#000}}
+</style></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="band"><div class="in"><b>Brookfield Council</b><div class="size" role="group" aria-label="Text size"><span>Text size</span><button aria-pressed="true" data-s="18px">A</button><button aria-pressed="false" data-s="21px">A+</button><button aria-pressed="false" data-s="24px">A++</button></div></div></header>
+<main id="main"><h1>Council services</h1><p class="lead">Find what you need, report a problem or pay a bill. Most tasks take less than five minutes.</p>
+<form class="search" role="search" onsubmit="event.preventDefault()"><div style="flex:1"><label for="q">Search the council website</label><div style="display:flex"><input id="q" type="search"><button>Search</button></div></div></form>
+<nav class="tasks" aria-label="Popular tasks">
+<a href="#">Bins and recycling<p>Collection days, missed bins, new bins</p></a>
+<a href="#">Council tax<p>Pay, check your band, get a discount</p></a>
+<a href="#">Parking<p>Permits, fines and car parks</p></a>
+<a href="#">Report a problem<p>Potholes, street lights, fly tipping</p></a>
+<a href="#">Schools<p>Apply for a place, term dates</p></a>
+<a href="#">Housing<p>Apply for housing, repairs, advice</p></a></nav>
+<section class="alert"><h2>Bin collections over the holidays</h2><p>Collections on 25 and 26 December move to the following Saturday. <a href="#">Check your new day</a>.</p></section></main>
+<footer class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>
+<script>document.querySelectorAll('.size button').forEach(b=>b.onclick=()=>{document.documentElement.style.setProperty('--fs',b.dataset.s);document.querySelectorAll('.size button').forEach(x=>x.setAttribute('aria-pressed',x===b))})</script>
+</body></html>

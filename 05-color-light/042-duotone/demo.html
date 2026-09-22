@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harbor Film Festival | Duotone HTML Template</title>
+<meta name="description" content="Free duotone website template for a film festival. Two color images and sections made with CSS blend modes, in a bold poster style. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Semi+Condensed:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--dark:#1a1446;--light:#ff6b4a;--paper:#fff4ee}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Barlow Semi Condensed",system-ui,sans-serif;background:var(--paper);color:var(--dark);line-height:1.5;font-size:18px}
+.duo{position:relative;background:var(--light);overflow:hidden}
+.duo .src{filter:grayscale(1) contrast(1.2);mix-blend-mode:multiply}
+.duo::after{content:"";position:absolute;inset:0;background:var(--dark);mix-blend-mode:lighten;pointer-events:none}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
+.hero .duo{min-height:420px}
+.src{width:100%;height:100%;display:block}
+.txt{padding:50px 5vw;display:flex;flex-direction:column;justify-content:center;background:var(--dark);color:var(--paper)}
+.txt small{color:var(--light);font-weight:600}
+h1{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:clamp(4rem,10vw,8.5rem);line-height:.85;margin:10px 0 18px}
+.txt p{max-width:36ch;opacity:.85}
+.btn{display:inline-block;margin-top:24px;background:var(--light);color:var(--dark);padding:14px 26px;font-weight:600;text-decoration:none;width:max-content}
+a:focus-visible{outline:3px solid var(--light);outline-offset:3px}
+.films{max-width:1120px;margin:0 auto;padding:60px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.films .duo{height:220px}
+.films .duo.b{--dark:#063b35;--light:#f9d949}
+.films .duo.c{--dark:#3d0b3b;--light:#5ce1e6}
+.films h2{font-family:"Bebas Neue",sans-serif;font-weight:400;font-size:2rem;margin-top:12px;line-height:1}
+.films p{color:#5a5580}
+.credit{text-align:center;padding:0 0 30px;color:#5a5580;font-size:.9rem}.credit a{color:var(--dark)}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.films{grid-template-columns:1fr}}
+</style></head><body>
+<main><section class="hero"><div class="duo" role="img" aria-label="Lighthouse on a rocky coast at night"><svg class="src" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="s" cx="70%" cy="25%"><stop offset="0" stop-color="#fff"/><stop offset=".5" stop-color="#999"/><stop offset="1" stop-color="#333"/></radialGradient></defs><rect width="400" height="500" fill="url(#s)"/><path d="M0 380 L80 330 L150 360 L230 300 L300 340 L400 310 L400 500 L0 500Z" fill="#111"/><rect x="250" y="160" width="34" height="150" fill="#eee"/><rect x="244" y="150" width="46" height="18" fill="#222"/><polygon points="267,120 250,150 284,150" fill="#222"/><polygon points="284,158 400,120 400,190" fill="#fff" opacity=".6"/></svg></div>
+<div class="txt"><small>14 to 20 March, Aberdeen</small><h1>Harbor Film Festival</h1><p>Seven nights of films about the sea, the coast and the people who live by it. 42 films from 19 countries, three cinemas, one very cold harbor.</p><a class="btn" href="#">Get a festival pass</a></div></section>
+<section class="films" aria-label="Featured films">
+<article><div class="duo a" style="--dark:#1a1446;--light:#ff6b4a"><svg class="src" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#aaa"/><circle cx="220" cy="60" r="30" fill="#fff"/><path d="M0 140 Q75 110 150 140 T300 140 V200 H0Z" fill="#333"/></svg></div><h2>The Last Ferry</h2><p>Opening night. A captain's final crossing before the route closes.</p></article>
+<article><div class="duo b"><svg class="src" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#ccc"/><rect x="40" y="70" width="60" height="90" fill="#444"/><rect x="120" y="50" width="80" height="110" fill="#222"/><rect x="220" y="90" width="50" height="70" fill="#555"/><rect y="160" width="300" height="40" fill="#111"/></svg></div><h2>Salt Town</h2><p>Documentary about a fishing village that refused to sell.</p></article>
+<article><div class="duo c"><svg class="src" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#999"/><ellipse cx="150" cy="120" rx="90" ry="40" fill="#222"/><circle cx="150" cy="70" r="26" fill="#eee"/></svg></div><h2>Deep Blue Hour</h2><p>A diver, a lost wreck and a secret kept for sixty years.</p></article>
+</section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

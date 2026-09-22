@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northstar Hosting Pricing | Animated Glow Border HTML Template</title>
+<meta name="description" content="Free animated glow border template for a pricing page. Light runs around the edge of the featured plan using a CSS conic gradient and @property. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+:root{--bg:#070b14;--card:#0e1422;--ink:#eef2fb;--muted:#8d97ad;--line:#1d2638;--c1:#38bdf8;--c2:#a78bfa;--c3:#f472b6}
+*{box-sizing:border-box;margin:0}
+body{font-family:Sora,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{text-align:center;padding:70px 24px 40px}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.05}
+header p{color:var(--muted);font-size:1.1rem;margin-top:12px}
+.plans{max-width:1060px;margin:0 auto;padding:10px 24px 80px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:center}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
+.plan h2{font-size:1.1rem;font-weight:600}
+.price{font-size:2.8rem;font-weight:800;margin:12px 0 4px}.price small{font-size:1rem;color:var(--muted);font-weight:400}
+.plan p{color:var(--muted)}
+.plan ul{padding-left:18px;margin:18px 0 24px;color:#c7cfe0}
+.plan li{margin-bottom:6px}
+.plan a{display:block;text-align:center;padding:13px;border-radius:12px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+a:focus-visible{outline:2px solid var(--c1);outline-offset:3px}
+.glow{position:relative;border:0;padding:31px;transform:scale(1.04);background:linear-gradient(var(--card),var(--card)) padding-box,conic-gradient(from var(--a),transparent 0 60%,var(--c1),var(--c2),var(--c3),transparent 95%) border-box;border:2px solid transparent;animation:rot 4s linear infinite}
+.glow::before{content:"";position:absolute;inset:-2px;border-radius:inherit;z-index:-1;background:conic-gradient(from var(--a),transparent 0 60%,var(--c1),var(--c2),var(--c3),transparent 95%);filter:blur(22px);opacity:.7;animation:rot 4s linear infinite}
+@keyframes rot{to{--a:360deg}}
+@media(prefers-reduced-motion:reduce){.glow,.glow::before{animation:none;--a:200deg}}
+.glow .tag{display:inline-block;font-size:.8rem;font-weight:600;background:rgba(167,139,250,.15);color:var(--c2);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.glow a{background:var(--ink);color:var(--bg);border:0}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.plans{grid-template-columns:1fr}.glow{transform:none}}
+</style></head><body>
+<header><h1>Hosting that stays up</h1><p>Simple monthly plans. Change or cancel any time.</p></header>
+<main class="plans">
+<section class="plan"><h2>Starter</h2><div class="price">$6<small> / month</small></div><p>For a blog or small site.</p><ul><li>1 website</li><li>10 GB SSD storage</li><li>Free SSL certificate</li></ul><a href="#">Choose Starter</a></section>
+<section class="plan glow"><span class="tag">Most popular</span><h2>Business</h2><div class="price">$18<small> / month</small></div><p>For shops and growing teams.</p><ul><li>10 websites</li><li>100 GB SSD storage</li><li>Daily backups, kept 30 days</li><li>Phone support</li></ul><a href="#">Choose Business</a></section>
+<section class="plan"><h2>Agency</h2><div class="price">$49<small> / month</small></div><p>For studios with many clients.</p><ul><li>Unlimited websites</li><li>400 GB SSD storage</li><li>White label dashboard</li></ul><a href="#">Choose Agency</a></section>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>
