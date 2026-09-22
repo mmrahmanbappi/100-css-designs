@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northline Studio | Marquee Ticker HTML Template</title>
+<meta name="description" content="Free marquee ticker template for a design studio. Endless scrolling client logos and reviews that pause on hover, made with pure CSS. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f2ee;--ink:#141414;--muted:#6d6a64;--blue:#2d48ff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Space Grotesk",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;overflow-x:hidden}
+header{max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.hero{max-width:1120px;margin:0 auto;padding:50px 24px 40px}
+h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:.98;letter-spacing:-.04em;max-width:14ch}
+.hero p{color:var(--muted);font-size:1.15rem;max-width:44ch;margin-top:16px}
+.mq{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;width:max-content;animation:scroll var(--t,30s) linear infinite}
+.mq:hover .track,.mq:focus-within .track{animation-play-state:paused}
+.mq.rev .track{animation-direction:reverse}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto}.track [aria-hidden]{display:none}}
+.logos{border-block:1px solid #d9d5cc;padding:24px 0;margin:30px 0}
+.logo{font-size:1.9rem;font-weight:700;padding:0 42px;white-space:nowrap;color:#3b3935}
+.logo:nth-child(3n){font-style:italic;font-weight:400}
+.logo:nth-child(4n){letter-spacing:.2em;font-size:1.4rem}
+.rev{padding:10px 0 60px}
+.q{width:360px;margin:0 12px;background:#fff;border-radius:18px;padding:22px;flex-shrink:0}
+.q p{font-size:1.02rem}
+.q b{display:block;margin-top:12px;font-size:.92rem}
+.q span{color:var(--muted);font-weight:400}
+.big{white-space:nowrap;font-size:clamp(3rem,10vw,8rem);font-weight:700;letter-spacing:-.04em;line-height:1.1;color:var(--blue);padding:0 .3em}
+.credit{text-align:center;padding:10px 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+</style></head><body>
+<header><b>Northline Studio</b><a href="#">Start a project</a></header>
+<main><section class="hero"><h1>Brand and web design for curious companies</h1><p>We are eleven people in Copenhagen who make logos, websites and packaging for brands that want to be remembered.</p></section>
+<section class="mq logos" aria-label="Clients"><div class="track"><span class="logo">Halden</span><span class="logo">Oat</span><span class="logo">Club</span><span class="logo">Marisol</span><span class="logo">Kettle&amp;Co</span><span class="logo">Fjord</span><span class="logo">NOVA</span><span class="logo">Birchwood</span><span class="logo">Parcel</span><span class="logo" aria-hidden="true">Halden</span><span class="logo" aria-hidden="true">Oat</span><span class="logo" aria-hidden="true">Club</span><span class="logo" aria-hidden="true">Marisol</span><span class="logo" aria-hidden="true">Kettle&amp;Co</span><span class="logo" aria-hidden="true">Fjord</span><span class="logo" aria-hidden="true">NOVA</span><span class="logo" aria-hidden="true">Birchwood</span><span class="logo" aria-hidden="true">Parcel</span></div></section>
+<section class="mq rev" style="--t:50s" aria-label="What clients say"><div class="track">
+<figure class="q"><p>They made our tiny bakery look like it had been around for fifty years.</p><b>Lena Holm <span>Birchwood Bakery</span></b></figure><figure class="q"><p>Our new site doubled online orders in three months.</p><b>Tomas Berg <span>Kettle and Co</span></b></figure><figure class="q"><p>Calm, clear and fast. The easiest agency we have worked with.</p><b>Sara Ali <span>Oat Club</span></b></figure><figure class="q"><p>The packaging sold out before the product even launched.</p><b>Noah Ek <span>Fjord Drinks</span></b></figure><figure class="q" aria-hidden="true"><p>They made our tiny bakery look like it had been around for fifty years.</p><b>Lena Holm <span>Birchwood Bakery</span></b></figure><figure class="q" aria-hidden="true"><p>Our new site doubled online orders in three months.</p><b>Tomas Berg <span>Kettle and Co</span></b></figure><figure class="q" aria-hidden="true"><p>Calm, clear and fast. The easiest agency we have worked with.</p><b>Sara Ali <span>Oat Club</span></b></figure><figure class="q" aria-hidden="true"><p>The packaging sold out before the product even launched.</p><b>Noah Ek <span>Fjord Drinks</span></b></figure></div></section>
+<section class="mq" style="--t:20s" aria-hidden="true"><div class="track"><span class="big">Let's make something good.</span><span class="big">Let's make something good.</span></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

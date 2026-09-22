@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline CRM | Staggered Entrance Animation HTML Template</title>
+<meta name="description" content="Free staggered entrance animation template for a CRM landing page. Headline, buttons and cards appear one after another on load. Pure CSS, one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfd;--ink:#0f1222;--muted:#5e6378;--acc:#1f6bff;--line:#e6e8f0}
+*{box-sizing:border-box;margin:0}
+body{font-family:Onest,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.in{opacity:0;animation:enter .7s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--d,0) * 90ms + 100ms)}
+@keyframes enter{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+h1 span{display:inline-block;opacity:0;animation:enter .7s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--w) * 70ms)}
+@media(prefers-reduced-motion:reduce){.in,h1 span{animation:none;opacity:1}}
+header{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.hero{max-width:900px;margin:0 auto;padding:60px 24px 40px;text-align:center}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.02}
+.hero p{color:var(--muted);font-size:1.2rem;max-width:44ch;margin:18px auto 28px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;font-weight:600;text-decoration:none;background:var(--acc);color:#fff}
+.btn.g{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.board{max-width:1100px;margin:30px auto 70px;padding:0 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.col{background:#f1f3f8;border-radius:16px;padding:14px}
+.col h2{font-size:.95rem;display:flex;justify-content:space-between;margin-bottom:10px}
+.col h2 span{color:var(--muted);font-weight:400}
+.deal{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+.deal b{display:block}.deal small{color:var(--muted)}
+.deal i{display:inline-block;font-style:normal;font-size:.8rem;font-weight:600;background:#eaf1ff;color:var(--acc);border-radius:999px;padding:1px 8px;margin-top:6px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.board{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.board{grid-template-columns:1fr}}
+</style></head><body>
+<header class="in"><b>Pipeline</b><a href="#">Log in</a></header>
+<main><section class="hero"><h1 aria-label="See every deal in one simple board"><span style="--w:0" aria-hidden="true">See</span> <span style="--w:1" aria-hidden="true">every</span> <span style="--w:2" aria-hidden="true">deal</span> <span style="--w:3" aria-hidden="true">in</span> <span style="--w:4" aria-hidden="true">one</span> <span style="--w:5" aria-hidden="true">simple</span> <span style="--w:6" aria-hidden="true">board</span> </h1>
+<p class="in" style="--d:6">Pipeline is a CRM for small sales teams. Drag deals between stages, get a nudge when one goes quiet, and stop living in spreadsheets.</p>
+<div class="cta"><a class="btn in" style="--d:8" href="#">Start free for 14 days</a><a class="btn g in" style="--d:9" href="#">Watch a 2 minute demo</a></div></section>
+<section class="board" aria-label="Example sales board"><div class="col in" style="--d:11"><h2>Lead <span>3</span></h2><div class="deal in" style="--d:12"><b>Northwind Café</b><small>$1,200</small><br><i>Follow up Tue</i></div><div class="deal in" style="--d:13"><b>Harbor Dental</b><small>$4,800</small></div></div><div class="col in" style="--d:14"><h2>Meeting <span>2</span></h2><div class="deal in" style="--d:15"><b>Oak and Ash</b><small>$9,500</small><br><i>Follow up Tue</i></div><div class="deal in" style="--d:16"><b>Pixel Bay</b><small>$2,300</small></div></div><div class="col in" style="--d:17"><h2>Proposal <span>2</span></h2><div class="deal in" style="--d:18"><b>Linden School</b><small>$14,000</small><br><i>Follow up Tue</i></div><div class="deal in" style="--d:19"><b>Riverside Gym</b><small>$3,600</small></div></div><div class="col in" style="--d:20"><h2>Won <span>4</span></h2><div class="deal in" style="--d:21"><b>Brightside Co</b><small>$6,200</small><br><i>Follow up Tue</i></div><div class="deal in" style="--d:22"><b>Moss Studio</b><small>$1,900</small></div></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

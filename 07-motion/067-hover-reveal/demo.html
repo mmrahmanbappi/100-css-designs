@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Halden Interiors | Hover Reveal HTML Template</title>
+<meta name="description" content="Free hover reveal website template for an interior design studio. Hover a project name and its picture appears and follows your cursor. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;1,500&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ede8e0;--ink:#1f1d1a;--muted:#6f6a61}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:1200px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+.intro{max-width:1200px;margin:0 auto;padding:30px 24px 30px;color:var(--muted);max-width:1200px}
+.intro p{max-width:44ch;font-size:1.1rem}
+.list{max-width:1200px;margin:0 auto;padding:0 24px 70px;position:relative}
+.list a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 0;border-top:1px solid #c9c2b6;color:var(--ink);text-decoration:none;position:relative;z-index:2}
+.list a:last-child{border-bottom:1px solid #c9c2b6}
+.list h2{font-family:Cormorant,serif;font-weight:500;font-size:clamp(2.4rem,7vw,5.6rem);line-height:1;transition:transform .35s,font-style .35s}
+.list a:hover h2,.list a:focus-visible h2{font-style:italic;transform:translateX(20px)}
+.list span{color:var(--muted);white-space:nowrap}
+.list:hover a:not(:hover) h2{opacity:.35}
+.pv{position:fixed;left:0;top:0;width:300px;height:380px;pointer-events:none;z-index:1;border-radius:4px;opacity:0;transform:translate(-50%,-50%) scale(.85);transition:opacity .25s,transform .25s,background .3s}
+.pv.on{opacity:1;transform:translate(-50%,-50%) scale(1)}
+@media(prefers-reduced-motion:reduce){.pv,.list h2{transition:none}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(hover:none){.pv{display:none}}
+@media(max-width:700px){.list a{flex-direction:column;gap:2px}}
+</style></head><body>
+<header><b>Studio Halden</b><a href="#">Contact</a></header>
+<main><section class="intro"><p>Interior design for homes, hotels and small restaurants in Oslo and Stockholm. Hover a project to see it.</p></section>
+<nav class="list" id="list" aria-label="Projects">
+<a href="#" data-g="linear-gradient(160deg,#d9c5a7,#a2805a 60%,#5b4632)"><h2>Villa Tjuvholmen</h2><span>Private home, 2026</span></a>
+<a href="#" data-g="linear-gradient(160deg,#c9d3c0,#7d9277 60%,#3f4d3c)"><h2>Hotel Grünerløkka</h2><span>32 rooms, 2025</span></a>
+<a href="#" data-g="linear-gradient(160deg,#e8c9b8,#c07a5a 60%,#6d3a28)"><h2>Bistro Sjø</h2><span>Restaurant, 2025</span></a>
+<a href="#" data-g="linear-gradient(160deg,#cfd6e0,#8392a8 60%,#3d475a)"><h2>Frogner Apartment</h2><span>Private home, 2024</span></a>
+<a href="#" data-g="linear-gradient(160deg,#e6dcc8,#b8a47c 60%,#6b5b3c)"><h2>Söder Bakery</h2><span>Shop, 2024</span></a></nav>
+<div class="pv" id="pv" aria-hidden="true"></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const pv=document.getElementById('pv');let x=0,y=0,px=0,py=0;
+document.querySelectorAll('#list a').forEach(a=>{a.onmouseenter=()=>{pv.style.background='radial-gradient(ellipse at 50% 85%,rgba(255,255,255,.35) 0 18%,transparent 19%),'+a.dataset.g;pv.classList.add('on')};a.onmouseleave=()=>pv.classList.remove('on')});
+addEventListener('pointermove',e=>{x=e.clientX;y=e.clientY});
+(function loop(){px+=(x-px)*.15;py+=(y-py)*.15;pv.style.left=px+'px';pv.style.top=py+'px';requestAnimationFrame(loop)})();
+</script>
+</body></html>

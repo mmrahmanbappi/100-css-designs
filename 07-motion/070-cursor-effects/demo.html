@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oddfellow Creative Studio | Custom Cursor Effects HTML Template</title>
+<meta name="description" content="Free custom cursor template for a creative studio. A smooth following cursor ring, magnetic buttons and a cursor that grows over links. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111;--ink:#f3f0ea;--muted:#9b978f;--acc:#ff5b2e}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;min-height:100vh}
+@media(hover:hover) and (pointer:fine){body.cc,body.cc a,body.cc button{cursor:none}}
+.dot,.ring{position:fixed;left:0;top:0;pointer-events:none;border-radius:50%;z-index:10;transform:translate(-50%,-50%)}
+.dot{width:8px;height:8px;background:var(--acc)}
+.ring{width:40px;height:40px;border:1.5px solid var(--ink);transition:width .25s,height .25s,background .25s,border-color .25s;mix-blend-mode:difference}
+.ring.big{width:90px;height:90px;background:var(--ink);border-color:var(--ink)}
+@media(hover:none),(pointer:coarse){.dot,.ring{display:none}}
+header{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:4px}
+.hero{max-width:1100px;margin:0 auto;padding:60px 24px}
+h1{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(3rem,9vw,7.5rem);line-height:.92;letter-spacing:-.03em}
+h1 a{color:var(--acc);text-decoration:none}
+.hero p{color:var(--muted);font-size:1.2rem;max-width:40ch;margin:22px 0 34px}
+.mag{display:inline-grid;place-items:center;width:160px;height:160px;border-radius:50%;background:var(--acc);color:#111;font:inherit;font-weight:600;border:0;margin-right:16px;transition:transform .2s ease-out}
+.mag span{transition:transform .2s ease-out;pointer-events:none}
+.mag.g{background:transparent;color:var(--ink);border:1.5px solid #444}
+.work{max-width:1100px;margin:0 auto;padding:20px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work a{display:block;color:var(--ink);text-decoration:none}
+.work i{display:block;aspect-ratio:4/5;border-radius:10px;background:var(--g);margin-bottom:10px}
+.work small{color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.ring,.mag,.mag span{transition:none}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:780px){.work{grid-template-columns:1fr}}
+</style></head><body>
+<span class="ring" id="ring" aria-hidden="true"></span><span class="dot" id="dot" aria-hidden="true"></span>
+<header><b>Oddfellow</b><a href="#">hello@oddfellow.studio</a></header>
+<main><section class="hero"><h1>We make brands feel <a href="#work">a bit odd</a>, in a good way.</h1><p>An independent creative studio in Lisbon. Identity, motion and websites for people who are tired of looking like everyone else.</p>
+<button class="mag"><span>Start a project</span></button><button class="mag g"><span>See our reel</span></button></section>
+<section class="work" id="work"><a href="#"><i style="--g:linear-gradient(160deg,#ff5b2e,#ffb347)"></i>Moth Coffee<br><small>Identity, packaging</small></a><a href="#"><i style="--g:linear-gradient(160deg,#6a82fb,#fc5c7d)"></i>Loop Radio<br><small>Motion, website</small></a><a href="#"><i style="--g:linear-gradient(160deg,#43cea2,#185a9d)"></i>Salt Swim School<br><small>Identity, signage</small></a></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(fine){document.body.classList.add('cc');const dot=document.getElementById('dot'),ring=document.getElementById('ring');let x=innerWidth/2,y=innerHeight/2,rx=x,ry=y;
+addEventListener('pointermove',e=>{x=e.clientX;y=e.clientY;dot.style.left=x+'px';dot.style.top=y+'px'});
+(function loop(){rx+=(x-rx)*(rm?1:.18);ry+=(y-ry)*(rm?1:.18);ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(loop)})();
+document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('pointerenter',()=>ring.classList.add('big'));el.addEventListener('pointerleave',()=>ring.classList.remove('big'))});
+if(!rm)document.querySelectorAll('.mag').forEach(m=>{m.addEventListener('pointermove',e=>{const r=m.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2;m.style.transform='translate('+dx*.3+'px,'+dy*.3+'px)';m.firstElementChild.style.transform='translate('+dx*.15+'px,'+dy*.15+'px)'});m.addEventListener('pointerleave',()=>{m.style.transform='';m.firstElementChild.style.transform=''})})}
+</script>
+</body></html>

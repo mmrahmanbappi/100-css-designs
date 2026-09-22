@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinecrest Campground | Layered Parallax HTML Template</title>
+<meta name="description" content="Free layered parallax website template for a campground. Mountain layers move at different speeds as you scroll, drawn with SVG. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1d2a24;--cream:#fdf6e9;--orange:#f08a4b;--muted:#5b6b62}
+*{box-sizing:border-box;margin:0}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+.par{position:relative;height:100vh;min-height:560px;overflow:hidden;background:linear-gradient(#ffd8a8,#ffb38a 40%,#f7c8a2)}
+.ly{position:absolute;left:0;right:0;bottom:0;will-change:transform}
+.ly svg{display:block;width:100%;height:auto}
+.sun{position:absolute;left:62%;top:18%;width:120px;height:120px;border-radius:50%;background:#fff4d6;will-change:transform}
+.title{position:absolute;top:22%;left:0;right:0;text-align:center;will-change:transform;padding:0 20px}
+h1{font-family:"Alfa Slab One",serif;font-weight:400;font-size:clamp(2.8rem,8vw,6rem);line-height:1;color:var(--ink)}
+.title p{font-size:1.2rem;margin-top:10px;font-weight:700}
+.info{background:#1d2a24;color:var(--cream);padding:60px 24px}
+.in{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.info h2{font-family:"Alfa Slab One",serif;font-weight:400;font-size:1.4rem;color:var(--orange)}
+.info p{opacity:.85}
+.book{max-width:1000px;margin:0 auto;padding:60px 24px;text-align:center}
+.book h2{font-family:"Alfa Slab One",serif;font-weight:400;font-size:2.2rem}
+.btn{display:inline-block;margin-top:14px;background:var(--orange);color:#fff;padding:14px 28px;border-radius:10px;font-weight:700;text-decoration:none}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:780px){.in{grid-template-columns:1fr}}
+</style></head><body>
+<header class="par" aria-label="Pinecrest Campground">
+<span class="sun" data-s=".15" aria-hidden="true"></span>
+<div class="title" data-s=".5"><h1>Pinecrest</h1><p>Tent pitches and cabins under the pines, since 1972</p></div>
+<div class="ly" data-s=".35" aria-hidden="true"><svg viewBox="0 0 1440 400" preserveAspectRatio="none"><path d="M0 300 L180 150 L320 260 L520 90 L720 250 L900 120 L1100 260 L1280 140 L1440 240 V400 H0Z" fill="#c98c7a"/></svg></div>
+<div class="ly" data-s=".2" aria-hidden="true"><svg viewBox="0 0 1440 400" preserveAspectRatio="none"><path d="M0 340 L140 230 L300 320 L460 200 L640 330 L820 220 L1000 330 L1180 210 L1440 320 V400 H0Z" fill="#7d6b64"/></svg></div>
+<div class="ly" data-s=".08" aria-hidden="true"><svg viewBox="0 0 1440 300" preserveAspectRatio="none"><path d="M0 300 V210 L0 210 L30 120 L60 210 L60 210 L90 120 L120 210 L120 210 L150 120 L180 210 L180 210 L210 120 L240 210 L240 210 L270 120 L300 210 L300 210 L330 120 L360 210 L360 210 L390 120 L420 210 L420 210 L450 120 L480 210 L480 210 L510 120 L540 210 L540 210 L570 120 L600 210 L600 210 L630 120 L660 210 L660 210 L690 120 L720 210 L720 210 L750 120 L780 210 L780 210 L810 120 L840 210 L840 210 L870 120 L900 210 L900 210 L930 120 L960 210 L960 210 L990 120 L1020 210 L1020 210 L1050 120 L1080 210 L1080 210 L1110 120 L1140 210 L1140 210 L1170 120 L1200 210 L1200 210 L1230 120 L1260 210 L1260 210 L1290 120 L1320 210 L1320 210 L1350 120 L1380 210 L1380 210 L1410 120 L1440 210 L1440 210 L1470 120 L1500 210  V300Z" fill="#2f4a3a"/></svg></div>
+<div class="ly" data-s="0" aria-hidden="true"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 120 V60 Q360 20 720 60 T1440 60 V120Z" fill="#1d2a24"/></svg></div>
+</header>
+<main><section class="info"><div class="in"><div><h2>Pitches</h2><p>48 grass pitches, 20 with power. Fire pits allowed from May to September.</p></div><div><h2>Cabins</h2><p>Six log cabins with a wood stove and bunk beds for four.</p></div><div><h2>The lake</h2><p>Five minutes' walk. Canoes to rent by the hour.</p></div></div></section>
+<section class="book"><h2>Pitches from $28 a night</h2><a class="btn" href="#">Check availability</a></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const L=[...document.querySelectorAll('[data-s]')],rm=matchMedia('(prefers-reduced-motion: reduce)');let tick=false;
+function upd(){const y=scrollY;L.forEach(e=>e.style.transform='translate'+(e.classList.contains('title')?'Y(':'Y(')+(y*e.dataset.s)+'px)');tick=false}
+addEventListener('scroll',()=>{if(rm.matches)return;if(!tick){requestAnimationFrame(upd);tick=true}},{passive:true});
+</script>
+</body></html>

@@ -70,6 +70,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 058 | [Handwritten Accents](https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/) | Nonna's Kitchen, a cooking school | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/demo.html) | <img src="06-typography/058-handwritten-accents/preview.png" width="260" alt="Handwritten Accents preview"> |
 | 059 | [Monospace](https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/) | Byte Sized Weekly, a developer newsletter | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/demo.html) | <img src="06-typography/059-monospace/preview.png" width="260" alt="Monospace preview"> |
 | 060 | [Vertical Text](https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/) | Kumo, a Japanese tea house | [Demo](https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/demo.html) | <img src="06-typography/060-vertical-text/preview.png" width="260" alt="Vertical Text preview"> |
+| 061 | [Scroll Driven Animation](https://mmrahmanbappi.github.io/100-css-designs/07-motion/061-scroll-driven/) | Volt Ride, an e-bike product page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/061-scroll-driven/demo.html) | <img src="07-motion/061-scroll-driven/preview.png" width="260" alt="Scroll Driven Animation preview"> |
+| 062 | [View Transitions](https://mmrahmanbappi.github.io/100-css-designs/07-motion/062-view-transitions/) | Fork and Field, a recipe site | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/062-view-transitions/demo.html) | <img src="07-motion/062-view-transitions/preview.png" width="260" alt="View Transitions preview"> |
+| 063 | [Micro Interactions](https://mmrahmanbappi.github.io/100-css-designs/07-motion/063-micro-interactions/) | Streak, a habit tracker | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/063-micro-interactions/demo.html) | <img src="07-motion/063-micro-interactions/preview.png" width="260" alt="Micro Interactions preview"> |
+| 064 | [Layered Parallax](https://mmrahmanbappi.github.io/100-css-designs/07-motion/064-parallax/) | Pinecrest, a campground | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/064-parallax/demo.html) | <img src="07-motion/064-parallax/preview.png" width="260" alt="Layered Parallax preview"> |
+| 065 | [Marquee Ticker](https://mmrahmanbappi.github.io/100-css-designs/07-motion/065-marquee/) | Northline, a design studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/065-marquee/demo.html) | <img src="07-motion/065-marquee/preview.png" width="260" alt="Marquee Ticker preview"> |
+| 066 | [Morphing Blobs](https://mmrahmanbappi.github.io/100-css-designs/07-motion/066-morphing-blobs/) | Bloom, a therapy practice | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/066-morphing-blobs/demo.html) | <img src="07-motion/066-morphing-blobs/preview.png" width="260" alt="Morphing Blobs preview"> |
+| 067 | [Hover Reveal](https://mmrahmanbappi.github.io/100-css-designs/07-motion/067-hover-reveal/) | Studio Halden, an interior design studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/067-hover-reveal/demo.html) | <img src="07-motion/067-hover-reveal/preview.png" width="260" alt="Hover Reveal preview"> |
+| 068 | [Staggered Entrance](https://mmrahmanbappi.github.io/100-css-designs/07-motion/068-staggered-entrance/) | Pipeline, a CRM landing page | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/068-staggered-entrance/demo.html) | <img src="07-motion/068-staggered-entrance/preview.png" width="260" alt="Staggered Entrance preview"> |
+| 069 | [Skeleton Loaders](https://mmrahmanbappi.github.io/100-css-designs/07-motion/069-skeleton-loaders/) | Morning Brief, a news app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/069-skeleton-loaders/demo.html) | <img src="07-motion/069-skeleton-loaders/preview.png" width="260" alt="Skeleton Loaders preview"> |
+| 070 | [Cursor Effects](https://mmrahmanbappi.github.io/100-css-designs/07-motion/070-cursor-effects/) | Oddfellow, a creative studio | [Demo](https://mmrahmanbappi.github.io/100-css-designs/07-motion/070-cursor-effects/demo.html) | <img src="07-motion/070-cursor-effects/preview.png" width="260" alt="Cursor Effects preview"> |
 
 ## Categories
 
@@ -79,7 +89,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 4. AI Era Interfaces (live)
 - 5. Color and Light (live)
 - 6. Typography (live)
-- 7. Motion (coming soon)
+- 7. Motion (live)
 - 8. 3D and Depth (coming soon)
 - 9. Cultural and Aesthetic (coming soon)
 - 10. Business Ready Pages (coming soon)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief News App | Skeleton Loader HTML Template</title>
+<meta name="description" content="Free skeleton loader template for a news app. Grey shimmer placeholders show while content loads, then real stories fade in. Pure CSS shimmer, one HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f4;--card:#fff;--ink:#1b1c1e;--muted:#6a6d73;--sk:#e7e7e4;--sk2:#f3f3f1}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{max-width:900px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between;align-items:center}
+header b{font-family:"Source Serif 4",serif;font-size:1.5rem}
+.reload{font:inherit;font-weight:600;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:9px 16px;cursor:pointer}
+.reload:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+main{max-width:900px;margin:0 auto;padding:0 24px 50px}
+.story{display:grid;grid-template-columns:180px 1fr;gap:18px;background:var(--card);border-radius:16px;padding:14px;margin-bottom:14px}
+.img{height:120px;border-radius:10px}
+.story h2{font-family:"Source Serif 4",serif;font-size:1.3rem;line-height:1.2}
+.story p{color:var(--muted);margin-top:6px}
+.story small{color:var(--muted);font-weight:500;display:block;margin-bottom:4px}
+.sk{background:linear-gradient(90deg,var(--sk) 0 30%,var(--sk2) 50%,var(--sk) 70%) 0 0/300% 100%;animation:shim 1.3s linear infinite;border-radius:6px}
+@keyframes shim{from{background-position:100% 0}to{background-position:0 0}}
+@media(prefers-reduced-motion:reduce){.sk{animation:none}}
+.line{height:14px;margin-bottom:10px}
+.line.h{height:22px;width:85%}
+.line.s{width:40%}
+.real{animation:fade .4s ease both}
+@keyframes fade{from{opacity:0}}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:600px){.story{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Morning Brief</b><button class="reload" id="r">Reload stories</button></header>
+<main id="feed" aria-live="polite" aria-busy="true"></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const S=[['World','Ferry strike ends after pay deal agreed','Services across the islands return to normal from Monday.','linear-gradient(135deg,#8ec5fc,#e0c3fc)'],['Tech','Library app now lends e-bikes too','Members can book one of 40 bikes for up to three days.','linear-gradient(135deg,#a1ffce,#faffd1)'],['Food','The best bakery in town, voted by you','Over 12,000 readers chose their favourite croissant.','linear-gradient(135deg,#fbc2eb,#f6d365)'],['Sport','Local rowing club wins national title','The girls eight crossed the line 0.4 seconds ahead.','linear-gradient(135deg,#84fab0,#8fd3f4)']];
+const f=document.getElementById('feed');
+function skel(){f.setAttribute('aria-busy','true');f.innerHTML=S.map(()=>'<div class="story" aria-hidden="true"><div class="img sk"></div><div><div class="line s sk"></div><div class="line h sk"></div><div class="line sk"></div><div class="line sk" style="width:70%"></div></div></div>').join('')}
+function real(){f.setAttribute('aria-busy','false');f.innerHTML=S.map(s=>'<article class="story real"><div class="img" style="background:'+s[3]+'"></div><div><small>'+s[0]+'</small><h2>'+s[1]+'</h2><p>'+s[2]+'</p></div></article>').join('')}
+function load(){skel();setTimeout(real,2200)}
+document.getElementById('r').onclick=load;load();
+</script>
+</body></html>

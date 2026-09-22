@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volt Ride E-Bike | Scroll Driven Animation HTML Template</title>
+<meta name="description" content="Free scroll driven animation template for an e-bike. Progress bar, reveals and a moving bike powered by CSS animation-timeline, no JavaScript. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f4ef;--ink:#121412;--muted:#61665f;--volt:#c6f432;--dark:#1b1f1b}
+*{box-sizing:border-box;margin:0}
+body{font-family:Archivo,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.bar{position:fixed;top:0;left:0;right:0;height:5px;background:var(--volt);transform-origin:left;transform:scaleX(0);z-index:5}
+header{max-width:1100px;margin:0 auto;padding:24px;display:flex;justify-content:space-between;font-weight:800}
+header a{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{max-width:1100px;margin:0 auto;padding:40px 24px 60px}
+h1{font-size:clamp(3rem,9vw,7.5rem);font-weight:800;line-height:.9;letter-spacing:-.04em}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:40ch;margin-top:18px}
+.road{position:relative;height:160px;margin:40px 0;border-bottom:4px solid var(--ink);overflow:hidden}
+.bike{position:absolute;bottom:0;left:0;width:150px;height:90px}
+.stats{max-width:1100px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.st{background:#fff;border-radius:20px;padding:28px}
+.st b{display:block;font-size:3.6rem;line-height:1;letter-spacing:-.03em}
+.st span{color:var(--muted)}
+.dark{background:var(--dark);color:#fff;margin-top:60px;padding:100px 24px}
+.dark h2{max-width:1100px;margin:0 auto;font-size:clamp(2.2rem,6vw,5rem);line-height:1;letter-spacing:-.03em}
+.dark h2 span{display:block}
+.buy{max-width:1100px;margin:0 auto;padding:80px 24px;text-align:center}
+.buy h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.03em}
+.btn{display:inline-block;margin-top:18px;background:var(--volt);color:var(--ink);padding:16px 32px;border-radius:999px;font-weight:800;text-decoration:none}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@supports (animation-timeline: view()){
+@media (prefers-reduced-motion: no-preference){
+.bar{animation:grow linear both;animation-timeline:scroll(root)}
+@keyframes grow{to{transform:scaleX(1)}}
+.bike{animation:ride linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+@keyframes ride{to{left:calc(100% - 150px)}}
+.st{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 30%}
+@keyframes rise{from{opacity:0;transform:translateY(60px) scale(.94)}}
+.dark h2 span{animation:fill linear both;animation-timeline:view();animation-range:entry 20% cover 50%}
+@keyframes fill{from{opacity:.15}}
+}}
+@media(max-width:820px){.stats{grid-template-columns:1fr}}
+</style></head><body>
+<div class="bar" aria-hidden="true"></div>
+<header><span>Volt Ride</span><a href="#buy">Book a test ride</a></header>
+<main><section class="hero"><h1>Ride further. Sweat less.</h1><p>A light city e-bike with a hidden battery, a belt that never needs oil and 120 km of range. Scroll down and it rides with you.</p>
+<div class="road" aria-hidden="true"><svg class="bike" viewBox="0 0 150 90"><circle cx="30" cy="62" r="24" fill="none" stroke="#121412" stroke-width="6"/><circle cx="120" cy="62" r="24" fill="none" stroke="#121412" stroke-width="6"/><path d="M30 62 L60 30 L100 30 L120 62 M60 30 L78 62 L100 30 M55 22 L70 22 M100 30 L96 16 L110 14" fill="none" stroke="#121412" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="34" width="30" height="10" rx="4" fill="#c6f432"/></svg></div></section>
+<section class="stats"><div class="st"><b>120 km</b><span>range on one charge</span></div><div class="st"><b>16 kg</b><span>light enough to carry upstairs</span></div><div class="st"><b>3 hours</b><span>to charge from empty</span></div></section>
+<section class="dark"><h2><span>No oil.</span><span>No chain.</span><span>No sweaty commute.</span></h2></section>
+<section class="buy" id="buy"><h2>From €1,890, or €49 a month</h2><a class="btn" href="#">Book a free test ride</a></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>
