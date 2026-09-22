@@ -273,7 +273,7 @@ def root_readme():
     rows = "\n".join(
         f"| {d['num']:03d} | [{d['name']}]({durl(d)}) | {d['example']} | [Demo]({durl(d)}demo.html) | <img src=\"{d['cat']}/{d['slug']}/preview.png\" width=\"260\" alt=\"{d['name']} preview\"> |"
         for d in DESIGNS)
-    cats = "\n".join(f"- {'✅' if c['ready'] else '⏳'} {c['num']}. {c['name']}" for c in CATEGORIES)
+    cats = "\n".join(f"- {c['num']}. {c['name']} ({'live' if c['ready'] else 'coming soon'})" for c in CATEGORIES)
     txt = f"""# 100 Free CSS Designs
 
 Trending UI styles built as real pages, with a live demo and a single HTML file for each one. No framework, no build step, free for commercial use.

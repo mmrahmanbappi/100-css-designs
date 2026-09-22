@@ -34,11 +34,12 @@ h1{font-size:clamp(2.4rem,5.5vw,4rem);line-height:1;font-weight:800}
 .world h3{font-size:1.35rem}
 .world p{font-size:1rem}
 .world:nth-child(1){background:var(--pink)}.world:nth-child(2){background:var(--mint)}.world:nth-child(3){background:var(--grape)}.world:nth-child(4){background:var(--lemon)}
-.world span{display:inline-block;width:46px;height:46px;border-radius:16px;background:rgba(255,255,255,.6);margin-bottom:10px;font-size:1.5rem;text-align:center;line-height:46px}
+.world span{font-weight:800;font-size:1.05rem!important;display:inline-block;width:46px;height:46px;border-radius:16px;background:rgba(255,255,255,.6);margin-bottom:10px;font-size:1.5rem;text-align:center;line-height:46px}
 footer{text-align:center;padding:0 0 30px;font-size:.95rem}
 footer a{color:var(--ink)}
 @media(max-width:860px){.hero{grid-template-columns:1fr}.worlds{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){.btn{transition:none}}
+.world span.tri{position:relative}.world span.tri::after{content:"";position:absolute;inset:11px;background:var(--ink);clip-path:polygon(50% 0,100% 100%,0 100%)}
 </style>
 </head>
 <body>
@@ -51,10 +52,10 @@ footer a{color:var(--ink)}
 <p id="msg" aria-live="polite">Tap an answer</p></div>
 </section>
 <section class="worlds" aria-label="Learning worlds">
-<div class="clay world"><span aria-hidden="true">🔢</span><h3>Counting Cove</h3><p>Count shells, fish and boats up to 100.</p></div>
-<div class="clay world"><span aria-hidden="true">➕</span><h3>Plus Park</h3><p>Adding and taking away with friendly animals.</p></div>
-<div class="clay world"><span aria-hidden="true">🔺</span><h3>Shape Hill</h3><p>Build towers and learn the names of shapes.</p></div>
-<div class="clay world"><span aria-hidden="true">⏰</span><h3>Clock Town</h3><p>Read the clock and plan a busy day in town.</p></div>
+<div class="clay world"><span aria-hidden="true">123</span><h3>Counting Cove</h3><p>Count shells, fish and boats up to 100.</p></div>
+<div class="clay world"><span aria-hidden="true">+</span><h3>Plus Park</h3><p>Adding and taking away with friendly animals.</p></div>
+<div class="clay world"><span aria-hidden="true" class="tri"></span><h3>Shape Hill</h3><p>Build towers and learn the names of shapes.</p></div>
+<div class="clay world"><span aria-hidden="true">3:00</span><h3>Clock Town</h3><p>Read the clock and plan a busy day in town.</p></div>
 </section>
 </main>
 <footer>Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></footer>

@@ -23,16 +23,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 
 ## Categories
 
-- ✅ 1. Soft and Tactile UI
-- ⏳ 2. Bold and Raw
-- ⏳ 3. Layout Patterns
-- ⏳ 4. AI Era Interfaces
-- ⏳ 5. Color and Light
-- ⏳ 6. Typography
-- ⏳ 7. Motion
-- ⏳ 8. 3D and Depth
-- ⏳ 9. Cultural and Aesthetic
-- ⏳ 10. Business Ready Pages
+- 1. Soft and Tactile UI (live)
+- 2. Bold and Raw (coming soon)
+- 3. Layout Patterns (coming soon)
+- 4. AI Era Interfaces (coming soon)
+- 5. Color and Light (coming soon)
+- 6. Typography (coming soon)
+- 7. Motion (coming soon)
+- 8. 3D and Depth (coming soon)
+- 9. Cultural and Aesthetic (coming soon)
+- 10. Business Ready Pages (coming soon)
 
 ## How to use a design
 
