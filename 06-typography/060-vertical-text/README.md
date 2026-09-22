@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/060-vertical-text/
 
-Free vertical text website template for a Japanese tea house. Top to bottom writing with CSS writing-mode, vertical labels and a red stamp. Live demo and HTML download.
+Free vertical text website template for a Japanese tea house. Top to bottom writing with CSS writing-mode, vertical labels and a red stamp. Live demo.
 
 ## What is vertical text?
 

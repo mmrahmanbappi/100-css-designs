@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/058-handwritten-accents/
 
-Free handwritten accents template for a cooking school. Scribbled underlines, circles, arrows and notes drawn with SVG over a clean layout. Live demo and download.
+Free handwritten accents template for a cooking school. Scribbled underlines, circles, arrows and notes drawn with SVG over a clean layout. Live demo.
 
 ## What is handwritten accents?
 

@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/031-chat-ui/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/031-chat-ui/
 
-Free chat interface template for an AI assistant. Sidebar of past chats, message bubbles, suggestion chips and a working input box. Live demo and HTML download.
+Free chat interface template for an AI assistant. Sidebar of past chats, message bubbles, suggestion chips and a working input box. Live demo.
 
 ## What is chat ui?
 

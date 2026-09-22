@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/053-oversized-serif/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/053-oversized-serif/
 
-Free oversized serif website template for a boutique hotel. Huge high contrast Bodoni headlines, fine rules and generous white space. Live demo and HTML download.
+Free oversized serif website template for a boutique hotel. Huge high contrast Bodoni headlines, fine rules and generous white space. Live demo.
 
 ## What is oversized serif?
 

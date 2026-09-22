@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/027-full-bleed/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/027-full-bleed/
 
-Free full bleed website template with edge to edge, screen filling sections and big type over CSS landscapes. Built for a tour company. Live demo and download.
+Free full bleed website template with edge to edge, screen filling sections and big type over CSS landscapes. Built for a tour company. Live demo.
 
 ## What is full bleed?
 

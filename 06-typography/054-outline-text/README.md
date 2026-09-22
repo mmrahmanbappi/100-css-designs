@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/054-outline-text/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/054-outline-text/
 
-Free outline text website template for a museum. Hollow stroked letters that fill with color on hover, in a bold stacked list. Pure CSS, live demo and download.
+Free outline text website template for a museum. Hollow stroked letters that fill with color on hover, in a bold stacked list. Live demo.
 
 ## What is outline text?
 

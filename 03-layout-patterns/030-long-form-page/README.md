@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/030-long-form-page/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/030-long-form-page/
 
-Free long form single page template with a sticky table of contents, reading progress bar and big number blocks. Built for a charity report. Live demo and download.
+Free long form single page template with a sticky table of contents, reading progress bar and big number blocks. Built for a charity report. Live demo.
 
 ## What is long form page?
 

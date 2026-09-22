@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/059-monospace/
 
-Free monospace website template for a developer newsletter. One mono font on a character grid, a light paper look, aligned columns and a sign up form. Live demo and download.
+Free monospace website template for a developer newsletter. One mono font on a character grid, aligned columns and a sign up form. Live demo.
 
 ## What is monospace?
 

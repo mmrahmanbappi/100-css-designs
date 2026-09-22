@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/057-gradient-text/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/057-gradient-text/
 
-Free gradient text website template for a festival lineup. Artist names in warm sunset gradients that slowly shift, made with background-clip text. Live demo and download.
+Free gradient text website template for a festival lineup. Artist names in warm sunset gradients that slowly shift, made with background-clip text. Live demo.
 
 ## What is gradient text?
 

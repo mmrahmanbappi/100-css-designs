@@ -18,8 +18,8 @@ $CATEGORIES = [
         'name' => 'Soft and Tactile UI',
         'ready' => true,
         'keywords' => 'soft ui css, glassmorphism, neumorphism, claymorphism, css templates free',
-        'title' => 'Soft and Tactile UI CSS Templates: Glassmorphism, Neumorphism and More (Free)',
-        'desc' => '10 free soft UI CSS templates with live demos. Glassmorphism, liquid glass, neumorphism, claymorphism and more. Each one is a single HTML file you can download.',
+        'title' => 'Free Soft UI CSS Templates: Glassmorphism, Neumorphism, Clay',
+        'desc' => '10 free soft UI CSS templates with live demos. Glassmorphism, liquid glass, neumorphism, claymorphism and more. One HTML file each.',
         'intro' => 'Soft UI is the family of styles that makes a screen feel like you could touch it. Frosted glass, puffy clay, pressable keys, paper you could pick up. These designs are popular right now because they make apps feel friendly and calm, and modern CSS can do all of it without images or plugins. Every template below is one HTML file. Open the demo, and if you like it, download it and make it yours.',
     ],
     [
@@ -27,7 +27,7 @@ $CATEGORIES = [
         'slug' => '02-bold-raw',
         'name' => 'Bold and Raw',
         'ready' => true,
-        'title' => 'Bold and Raw CSS Templates: Neo Brutalism, Y2K, Swiss and More (Free)',
+        'title' => 'Free Bold CSS Templates: Neo Brutalism, Y2K, Swiss Grid',
         'desc' => '10 free bold CSS templates with live demos. Neo brutalism, raw brutalist, Swiss grid, Y2K, Memphis, pixel, newspaper and risograph. Single HTML file each.',
         'keywords' => 'neo brutalism template, brutalist website, swiss style css, y2k website, memphis design, risograph css',
         'intro' => 'These are the styles that refuse to be polite. Thick borders, huge type, clashing fonts, chrome letters, pixel art and ink that looks freshly printed. Bold designs are popular because they get remembered, and in a sea of look alike websites that matters. Each template below is one HTML file with a live demo. Pick the one that fits your brand and make it yours.',
@@ -38,7 +38,7 @@ $CATEGORIES = [
         'name' => 'Layout Patterns',
         'ready' => true,
         'keywords' => 'bento grid template, masonry css, split screen layout, scrollytelling, horizontal scroll css, css layout templates',
-        'title' => 'CSS Layout Templates: Bento Grid, Masonry, Split Screen and More (Free)',
+        'title' => 'Free CSS Layout Templates: Bento Grid, Masonry, Split Screen',
         'desc' => '10 free CSS layout templates with live demos. Bento grid, masonry, split screen, broken grid, scrollytelling, carousel and more. Single HTML file each.',
         'intro' => 'A good layout decides what people see first and what they do next. These ten patterns cover the layouts people ask for most: bento grids for product pages, masonry for photos, split screens for restaurants, scrollytelling for stories and more. Every one is built with modern CSS Grid, Flexbox and scroll snap, with little or no JavaScript. Open the demo, then download the single HTML file.',
     ],
@@ -48,7 +48,7 @@ $CATEGORIES = [
         'name' => 'AI Era Interfaces',
         'ready' => true,
         'keywords' => 'ai chat ui template, ai dashboard template, prompt box ui, ai landing page, command palette css, streaming text effect',
-        'title' => 'AI Interface Templates: Chat UI, AI Dashboard, Prompt Box and More (Free)',
+        'title' => 'Free AI UI Templates: Chat UI, AI Dashboard, Prompt Box',
         'desc' => '10 free AI interface templates with live demos. Chat UI, AI dashboard with command palette, prompt box hero, node workflow, streaming text and more.',
         'intro' => 'AI products have their own design language now. A chat window with suggestion chips, a prompt box instead of a hero image, text that streams in word by word, a canvas of connected steps, and a dark interface that glows. These ten templates cover the patterns people use most, and many already work: you can type, drag, press Ctrl K and watch text stream. Plug in your own AI and ship.',
     ],
@@ -58,7 +58,7 @@ $CATEGORIES = [
         'name' => 'Color and Light',
         'ready' => true,
         'keywords' => 'css gradient templates, dark mode toggle, neon css, duotone css, grainy gradient, glow border css',
-        'title' => 'CSS Color Templates: Gradients, Dark Mode, Neon, Duotone and More (Free)',
+        'title' => 'Free CSS Color Templates: Gradients, Dark Mode, Neon',
         'desc' => '10 free CSS color and light templates with live demos. Aurora gradient, duotone, monochrome, dark mode toggle, neon, pastel, grain and glow borders.',
         'intro' => 'Color is usually the first thing people remember about a site. This category covers the palettes and light effects people search for most: soft aurora gradients, two color duotone photos, a whole site from one color, dark mode with a real toggle, neon glow, pastel shops, accessible high contrast, film grain and borders that glow. Each one shows the exact CSS that makes it work.',
     ],
@@ -68,7 +68,7 @@ $CATEGORIES = [
         'name' => 'Typography',
         'ready' => true,
         'keywords' => 'css typography templates, kinetic typography, variable fonts css, outline text css, gradient text css, vertical text css',
-        'title' => 'CSS Typography Templates: Kinetic, Variable Fonts, Outline, Gradient Text (Free)',
+        'title' => 'Free CSS Typography Templates: Kinetic, Variable, Outline',
         'desc' => '10 free CSS typography templates with live demos. Kinetic type, variable font sliders, oversized serif, outline, font pairing, image in text and more.',
         'intro' => 'Type can carry a whole page on its own. These ten templates show the text effects people search for most: letters that move, one variable font with live sliders, huge elegant serifs, hollow outline words, mixed fonts in one line, a photo inside the letters, flowing gradients, hand drawn marks, a full monospace layout and vertical Japanese text. All of it is real, selectable text.',
     ],
@@ -305,7 +305,7 @@ $DESIGNS = [
         'slug' => '005-frosted-aurora',
         'name' => 'Frosted Aurora',
         'example' => 'Stillwater, a sleep and calm app',
-        'title' => 'Free Aurora Background CSS Template with Frosted Glass (Live Demo)',
+        'title' => 'Free Aurora Background CSS Template with Frosted Glass',
         'desc' => 'Free aurora gradient background template with frosted glass cards. Slow moving northern lights colors made in pure CSS. Live demo and HTML download.',
         'keywords' => 'aurora background css, aurora gradient css, northern lights css animation, frosted glass css, animated gradient background',
         'what' => [
@@ -407,7 +407,7 @@ $DESIGNS = [
         'slug' => '007-skeuomorphism',
         'name' => 'Skeuomorphism',
         'example' => 'Field Journal, a notes app',
-        'title' => 'Free Skeuomorphic CSS Template: Leather, Paper and Brass (Live Demo)',
+        'title' => 'Free Skeuomorphic CSS Template: Leather, Paper and Brass',
         'desc' => 'Free skeuomorphism design template for a notes app. Leather cover, stitching, lined paper and a brass switch, all in pure CSS. Live demo and download.',
         'keywords' => 'skeuomorphism css, skeuomorphic design, skeuomorphic ui template, realistic css textures, notebook css',
         'what' => [
@@ -833,7 +833,7 @@ $DESIGNS = [
         'num' => 23, 'cat' => '03-layout-patterns', 'slug' => '023-split-screen', 'name' => 'Split Screen',
         'example' => 'Salt and Ember, a wood fire restaurant',
         'title' => 'Free Split Screen Website Template in CSS (Live Demo)',
-        'desc' => 'Free split screen website template for a restaurant. A sticky visual half on the left and a scrolling menu and booking form on the right. Live demo and download.',
+        'desc' => 'Free split screen website template for a restaurant. A sticky visual half on the left and a scrolling menu and booking form on the right. Live demo.',
         'keywords' => 'split screen website, split screen layout css, two column landing page, sticky half screen css, restaurant website template',
         'what' => [
             'A split screen layout divides the page into two halves. One side holds a strong visual or brand message and stays still, while the other side scrolls with the details.',
@@ -909,7 +909,7 @@ $DESIGNS = [
         'num' => 27, 'cat' => '03-layout-patterns', 'slug' => '027-full-bleed', 'name' => 'Full Bleed',
         'example' => 'North Atlantic Walks, a hiking tour company',
         'title' => 'Free Full Bleed Website Template with Full Screen Sections',
-        'desc' => 'Free full bleed website template with edge to edge, screen filling sections and big type over CSS landscapes. Built for a tour company. Live demo and download.',
+        'desc' => 'Free full bleed website template with edge to edge, screen filling sections and big type over CSS landscapes. Built for a tour company. Live demo.',
         'keywords' => 'full bleed website, full screen sections css, full width website template, 100vh sections, travel website template',
         'what' => [
             'Full bleed means the picture runs right to the edge of the screen with no margins. Each section fills the whole window, so scrolling feels like moving from one scene to the next.',
@@ -947,7 +947,7 @@ $DESIGNS = [
         'num' => 29, 'cat' => '03-layout-patterns', 'slug' => '029-magazine-layout', 'name' => 'Magazine Layout',
         'example' => 'Tide and Table, a food and travel magazine',
         'title' => 'Free Magazine Layout Website Template in CSS (Live Demo)',
-        'desc' => 'Free magazine website template with a cover story, CSS grid template areas, pull quote and article grid. Built for a food and travel magazine. Live demo and download.',
+        'desc' => 'Free magazine website template with a cover story, CSS grid template areas, pull quote and article grid. Built for a food and travel magazine. Live demo.',
         'keywords' => 'magazine website template, magazine layout css, grid template areas, blog magazine template, editorial layout html',
         'what' => [
             'A magazine layout looks like the opening spread of a printed magazine. A big cover photo, a headline beside it, a pull quote and a caption, then a row of smaller stories.',
@@ -966,7 +966,7 @@ $DESIGNS = [
         'num' => 30, 'cat' => '03-layout-patterns', 'slug' => '030-long-form-page', 'name' => 'Long Form Page',
         'example' => 'Plant a Street, a charity annual report',
         'title' => 'Free Long Form Single Page Template with Sticky Contents',
-        'desc' => 'Free long form single page template with a sticky table of contents, reading progress bar and big number blocks. Built for a charity report. Live demo and download.',
+        'desc' => 'Free long form single page template with a sticky table of contents, reading progress bar and big number blocks. Built for a charity report. Live demo.',
         'keywords' => 'long form page template, single page website, sticky table of contents css, reading progress bar, annual report html template',
         'what' => [
             'A long form page puts a whole story on one page instead of many. Readers scroll from start to end, with a table of contents on the side so they always know where they are.',
@@ -986,7 +986,7 @@ $DESIGNS = [
         'num' => 31, 'cat' => '04-ai-era-interfaces', 'slug' => '031-chat-ui', 'name' => 'Chat UI',
         'example' => 'Wayfarer, an AI travel assistant',
         'title' => 'Free AI Chat UI Template in HTML and CSS (Live Demo)',
-        'desc' => 'Free chat interface template for an AI assistant. Sidebar of past chats, message bubbles, suggestion chips and a working input box. Live demo and HTML download.',
+        'desc' => 'Free chat interface template for an AI assistant. Sidebar of past chats, message bubbles, suggestion chips and a working input box. Live demo.',
         'keywords' => 'chat ui template, ai chat interface html, chatbot ui css, chatgpt style ui, chat app template',
         'what' => [
             'A chat first interface puts a conversation at the center of the product. It is the layout people now expect from AI tools: past chats on the left, messages in the middle and a big input at the bottom.',
@@ -1062,7 +1062,7 @@ $DESIGNS = [
         'num' => 35, 'cat' => '04-ai-era-interfaces', 'slug' => '035-node-workflow', 'name' => 'Node Workflow Canvas',
         'example' => 'Relay, an automation builder',
         'title' => 'Free Node Workflow Editor Template in HTML and CSS (Live Demo)',
-        'desc' => 'Free node workflow canvas template for an automation builder. Draggable nodes joined by curved SVG lines on a dotted grid, with a test run. Live demo and download.',
+        'desc' => 'Free node workflow canvas template for an automation builder. Draggable nodes joined by curved SVG lines on a dotted grid, with a test run. Live demo.',
         'keywords' => 'node editor html, workflow builder ui, draggable nodes javascript, flow chart canvas css, automation builder template',
         'what' => [
             'A node canvas shows a process as boxes joined by lines. You see the trigger on the left, the steps in the middle and the result on the right. Tools like Zapier, n8n and AI agent builders all use it.',
@@ -1100,7 +1100,7 @@ $DESIGNS = [
         'num' => 37, 'cat' => '04-ai-era-interfaces', 'slug' => '037-terminal-dev', 'name' => 'Terminal Developer',
         'example' => 'shipit, a command line deploy tool',
         'title' => 'Free Terminal Style Website Template for Developer Tools',
-        'desc' => 'Free terminal style landing page template for a CLI tool. Dark monospace look, a terminal window that types commands, and a copy install button. Live demo and download.',
+        'desc' => 'Free terminal style landing page template for a CLI tool. Dark monospace look, a terminal window that types commands, and a copy install button. Live demo.',
         'keywords' => 'terminal website template, developer landing page, cli tool website, terminal css, monospace website design',
         'what' => [
             'The terminal look speaks directly to developers. Monospace type, a dark background, green prompts and a terminal window that shows the tool working in a few lines.',
@@ -1138,7 +1138,7 @@ $DESIGNS = [
         'num' => 39, 'cat' => '04-ai-era-interfaces', 'slug' => '039-spotlight-cards', 'name' => 'Spotlight Cards',
         'example' => 'Lumen, an API platform',
         'title' => 'Free Spotlight Hover Card Effect in CSS (Live Demo)',
-        'desc' => 'Free spotlight card template where cards and their borders glow wherever your cursor is. Dark feature grid made with CSS radial gradients. Live demo and download.',
+        'desc' => 'Free spotlight card template where cards and their borders glow wherever your cursor is. Dark feature grid made with CSS radial gradients. Live demo.',
         'keywords' => 'spotlight card css, mouse follow glow css, hover glow effect, cursor spotlight effect, glowing border hover css',
         'what' => [
             'Spotlight cards light up where your cursor is, like shining a torch over a dark surface. The glow spreads across the card and along its border, and moves with the mouse.',
@@ -1157,7 +1157,7 @@ $DESIGNS = [
         'num' => 40, 'cat' => '04-ai-era-interfaces', 'slug' => '040-holographic', 'name' => 'Holographic',
         'example' => 'Nova Pass, a festival membership card',
         'title' => 'Free Holographic Card Effect in CSS with 3D Tilt (Live Demo)',
-        'desc' => 'Free holographic card template with an iridescent rainbow shine that shifts as the card tilts under your cursor. Built for a festival pass. Live demo and download.',
+        'desc' => 'Free holographic card template with an iridescent rainbow shine that shifts as the card tilts under your cursor. Built for a festival pass. Live demo.',
         'keywords' => 'holographic css, iridescent effect css, holographic card effect, 3d tilt card css, rainbow foil css',
         'what' => [
             'Holographic style copies the rainbow foil on trading cards and ID cards. As you tilt the card, the colors slide across it and a bright shine moves with your view.',
@@ -1177,7 +1177,7 @@ $DESIGNS = [
         'num' => 41, 'cat' => '05-color-light', 'slug' => '041-aurora-gradient', 'name' => 'Aurora Gradient',
         'example' => 'Solace, a skincare brand',
         'title' => 'Free Aurora Gradient Background CSS Template (Light, Live Demo)',
-        'desc' => 'Free aurora gradient website template for a skincare brand. Soft flowing pastel colors on a light background, animated with one CSS conic gradient. Live demo and download.',
+        'desc' => 'Free aurora gradient website template for a skincare brand. Soft flowing pastel colors on a light background, animated with one CSS conic gradient. Live demo.',
         'keywords' => 'aurora gradient css, animated gradient background, conic gradient css, pastel gradient website, soft gradient hero',
         'what' => [
             'An aurora gradient is a soft, slowly moving wash of color, like the northern lights seen through fog. On a light background it feels fresh and calm, which suits beauty, wellness and lifestyle brands.',
@@ -1196,7 +1196,7 @@ $DESIGNS = [
         'num' => 42, 'cat' => '05-color-light', 'slug' => '042-duotone', 'name' => 'Duotone',
         'example' => 'Harbor Film Festival',
         'title' => 'Free Duotone Image Effect CSS Template (Live Demo)',
-        'desc' => 'Free duotone website template for a film festival. Any image becomes two colors with CSS blend modes, in a bold poster layout. Live demo, key CSS and download.',
+        'desc' => 'Free duotone website template for a film festival. Any image becomes two colors with CSS blend modes, in a bold poster layout. Live demo.',
         'keywords' => 'duotone css, duotone image effect, css blend mode duotone, two color image css, spotify duotone',
         'what' => [
             'Duotone turns an image into just two colors, one for the shadows and one for the highlights. Spotify made it famous, and it is still one of the fastest ways to make mixed photos look like one brand.',
@@ -1215,7 +1215,7 @@ $DESIGNS = [
         'num' => 43, 'cat' => '05-color-light', 'slug' => '043-monochrome', 'name' => 'Monochrome',
         'example' => 'Atelier Verde, an architecture studio',
         'title' => 'Free Monochrome Color Scheme Website Template (Live Demo)',
-        'desc' => 'Free monochrome website template for an architecture studio. Every color is a shade of one green, made with CSS color-mix from a single variable. Live demo and download.',
+        'desc' => 'Free monochrome website template for an architecture studio. Every color is a shade of one green, made with CSS color-mix from a single variable. Live demo.',
         'keywords' => 'monochrome website design, monochromatic color scheme css, color-mix css, one color website, architecture website template',
         'what' => [
             'A monochrome design uses one color in many shades, from nearly white to nearly black. It feels calm and confident, and it is very hard to get wrong because every color already matches.',
@@ -1234,7 +1234,7 @@ $DESIGNS = [
         'num' => 44, 'cat' => '05-color-light', 'slug' => '044-dark-mode', 'name' => 'Dark Mode First',
         'example' => 'Ledgerly, a budget app',
         'title' => 'Free Dark Mode Website Template with Light Mode Toggle',
-        'desc' => 'Free dark mode first website template for a budget app. Designed dark, with a working light mode toggle that remembers the choice. Live demo, key CSS and download.',
+        'desc' => 'Free dark mode first website template for a budget app. Designed dark, with a working light mode toggle that remembers the choice. Live demo.',
         'keywords' => 'dark mode toggle css, dark mode website template, light dark theme switch, css variables theme, prefers color scheme',
         'what' => [
             'Dark mode first means the site is designed in dark colors from the start, and light mode is the extra option. Many apps now work this way, because people use them at night and dark screens are easier on the eyes.',
@@ -1253,7 +1253,7 @@ $DESIGNS = [
         'num' => 45, 'cat' => '05-color-light', 'slug' => '045-neon-cyberpunk', 'name' => 'Neon Cyberpunk',
         'example' => 'Voltage Arena, an esports tournament',
         'title' => 'Free Neon Cyberpunk Website Template in CSS (Live Demo)',
-        'desc' => 'Free neon cyberpunk website template for an esports event. Glowing pink and cyan text, a synthwave sun, grid floor, scan lines and a glitch headline. Live demo and download.',
+        'desc' => 'Free neon cyberpunk website template for an esports event. Glowing pink and cyan text, a synthwave sun, grid floor and a glitch headline. Live demo.',
         'keywords' => 'neon css, cyberpunk website template, neon text effect css, synthwave css, glitch text css',
         'what' => [
             'Neon cyberpunk is the look of glowing signs on a dark night street. Hot pink and electric cyan light up a black background, with scan lines, a retro sun and a grid floor that runs to the horizon.',
@@ -1272,7 +1272,7 @@ $DESIGNS = [
         'num' => 46, 'cat' => '05-color-light', 'slug' => '046-earthy-natural', 'name' => 'Earthy Natural',
         'example' => 'Rootstock Farm, an organic veg box',
         'title' => 'Free Earthy Color Palette Website Template (Live Demo)',
-        'desc' => 'Free earthy website template for an organic farm. Sand, olive, moss and terracotta colors, organic blob shapes and a warm serif. Live demo, key CSS and HTML download.',
+        'desc' => 'Free earthy website template for an organic farm. Sand, olive, moss and terracotta colors, organic blob shapes and a warm serif. Live demo.',
         'keywords' => 'earthy color palette website, natural website template, organic farm website, earth tone css, blob shape css',
         'what' => [
             'Earthy design uses the colors of soil, plants and clay: sand, olive, moss green and terracotta. It feels warm, honest and close to nature, which is why food, farming and eco brands love it.',
@@ -1291,7 +1291,7 @@ $DESIGNS = [
         'num' => 47, 'cat' => '05-color-light', 'slug' => '047-pastel-dream', 'name' => 'Pastel Dream',
         'example' => 'Cloud Nine, a baby clothing shop',
         'title' => 'Free Pastel Website Template for Online Shops (Live Demo)',
-        'desc' => 'Free pastel website template for a baby clothing shop. Soft candy colors, CSS clouds, rounded product cards and add buttons. Live demo, key CSS and HTML download.',
+        'desc' => 'Free pastel website template for a baby clothing shop. Soft candy colors, CSS clouds, rounded product cards and add buttons. Live demo.',
         'keywords' => 'pastel website template, pastel color palette css, baby shop website, css cloud shape, soft ecommerce template',
         'what' => [
             'Pastel design uses soft, light colors like baby pink, sky blue, mint, lemon and lilac. It feels gentle and happy, and works well for products for children, weddings and anything sweet.',
@@ -1310,7 +1310,7 @@ $DESIGNS = [
         'num' => 48, 'cat' => '05-color-light', 'slug' => '048-high-contrast', 'name' => 'High Contrast Accessible',
         'example' => 'Brookfield Council, a local government site',
         'title' => 'Free Accessible High Contrast Website Template (WCAG)',
-        'desc' => 'Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.',
+        'desc' => 'Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo.',
         'keywords' => 'accessible website template, high contrast css, wcag compliant template, government website template, focus ring css',
         'what' => [
             'A high contrast accessible design puts everyone first: people with low vision, older users, people on bright screens outside, and keyboard users. Black on white, blue underlined links, large text and focus rings you cannot miss.',
@@ -1329,7 +1329,7 @@ $DESIGNS = [
         'num' => 49, 'cat' => '05-color-light', 'slug' => '049-grainy-gradient', 'name' => 'Grainy Gradient',
         'example' => 'Late Signal, a podcast',
         'title' => 'Free Grainy Gradient CSS Template with Noise Texture',
-        'desc' => 'Free grainy gradient website template for a podcast. Warm mesh gradients with film grain noise from an inline SVG filter, no image files. Live demo and download.',
+        'desc' => 'Free grainy gradient website template for a podcast. Warm mesh gradients with film grain noise from an inline SVG filter, no image files. Live demo.',
         'keywords' => 'grainy gradient css, noise texture css, grain effect css, mesh gradient css, svg feturbulence noise',
         'what' => [
             'A grainy gradient adds film grain on top of smooth color, so it looks printed or photographed instead of flat and digital. It is one of the biggest looks of the last few years, from Stripe to album covers.',
@@ -1348,7 +1348,7 @@ $DESIGNS = [
         'num' => 50, 'cat' => '05-color-light', 'slug' => '050-glow-borders', 'name' => 'Glow Borders',
         'example' => 'Northstar, a hosting pricing page',
         'title' => 'Free Animated Glow Border CSS Template for Pricing Cards',
-        'desc' => 'Free animated glow border template for a pricing page. Light runs around the featured plan with a conic gradient and CSS @property. Live demo, key CSS and download.',
+        'desc' => 'Free animated glow border template for a pricing page. Light runs around the featured plan with a conic gradient and CSS @property. Live demo.',
         'keywords' => 'animated border css, glowing border css, conic gradient border, css property animation, pricing table template',
         'what' => [
             'A glow border draws a line of light that keeps running around the edge of a card. On a pricing page it points straight at the plan you want people to pick.',
@@ -1368,7 +1368,7 @@ $DESIGNS = [
         'num' => 51, 'cat' => '06-typography', 'slug' => '051-kinetic-type', 'name' => 'Kinetic Type',
         'example' => 'Shift, a dance studio',
         'title' => 'Free Kinetic Typography CSS Template (Animated Text, Live Demo)',
-        'desc' => 'Free kinetic typography website template for a dance studio. Letters that stretch and bounce one after another, plus sliding text rows. Pure CSS, live demo and download.',
+        'desc' => 'Free kinetic typography website template for a dance studio. Letters that stretch and bounce one after another, plus sliding text rows. Live demo.',
         'keywords' => 'kinetic typography css, animated text css, text animation template, moving letters css, marquee text css',
         'what' => [
             'Kinetic typography means text that moves. Letters stretch, squash and bounce, and whole lines slide across the screen. It turns the words themselves into the main visual, which suits brands about movement, music and energy.',
@@ -1387,7 +1387,7 @@ $DESIGNS = [
         'num' => 52, 'cat' => '06-typography', 'slug' => '052-variable-fonts', 'name' => 'Variable Fonts',
         'example' => 'Flexa, a type foundry specimen page',
         'title' => 'Free Variable Font CSS Template with Live Sliders (Demo)',
-        'desc' => 'Free variable font template with live sliders for weight, width and slant, plus words that change weight on hover. Built as a type specimen. Live demo and download.',
+        'desc' => 'Free variable font template with live sliders for weight, width and slant, plus words that change weight on hover. Built as a type specimen. Live demo.',
         'keywords' => 'variable fonts css, font-variation-settings, variable font slider, roboto flex, type specimen template',
         'what' => [
             'A variable font is one font file that holds every weight and width in between. Instead of loading Light, Regular and Bold separately, you pick any value you like, such as weight 640, and even animate between them.',
@@ -1406,7 +1406,7 @@ $DESIGNS = [
         'num' => 53, 'cat' => '06-typography', 'slug' => '053-oversized-serif', 'name' => 'Oversized Serif',
         'example' => 'Maison Clair, a boutique hotel',
         'title' => 'Free Oversized Serif Typography Website Template (Live Demo)',
-        'desc' => 'Free oversized serif website template for a boutique hotel. Huge high contrast Bodoni headlines, fine rules and generous white space. Live demo and HTML download.',
+        'desc' => 'Free oversized serif website template for a boutique hotel. Huge high contrast Bodoni headlines, fine rules and generous white space. Live demo.',
         'keywords' => 'serif typography website, large serif headline, luxury website template, bodoni font css, elegant hotel website',
         'what' => [
             'Oversized serif design uses one giant, elegant serif headline as the hero. The thin and thick strokes of a font like Bodoni look beautiful when they are huge, and the size alone says premium.',
@@ -1425,7 +1425,7 @@ $DESIGNS = [
         'num' => 54, 'cat' => '06-typography', 'slug' => '054-outline-text', 'name' => 'Outline Text',
         'example' => 'Museum of Sound, an exhibition site',
         'title' => 'Free Outline Text CSS Template with Hover Fill (Live Demo)',
-        'desc' => 'Free outline text website template for a museum. Hollow stroked letters that fill with color on hover, in a bold stacked list. Pure CSS, live demo and download.',
+        'desc' => 'Free outline text website template for a museum. Hollow stroked letters that fill with color on hover, in a bold stacked list. Live demo.',
         'keywords' => 'outline text css, text stroke css, hollow text effect, webkit text stroke, hover text fill css',
         'what' => [
             'Outline text shows only the edges of the letters, with the inside left empty. It looks light and modern even at huge sizes, and it pairs well with one solid word to create contrast.',
@@ -1444,7 +1444,7 @@ $DESIGNS = [
         'num' => 55, 'cat' => '06-typography', 'slug' => '055-font-pairing', 'name' => 'Mixed Font Pairing',
         'example' => 'Paper Lantern, an independent bookshop',
         'title' => 'Free Font Pairing Website Template: Serif and Sans Mix',
-        'desc' => 'Free font pairing website template for a bookshop. Italic serif and bold grotesk mixed inside the same headline for an editorial feel. Live demo and HTML download.',
+        'desc' => 'Free font pairing website template for a bookshop. Italic serif and bold grotesk mixed inside the same headline for an editorial feel. Live demo.',
         'keywords' => 'font pairing css, serif and sans serif pairing, mixed fonts headline, instrument serif, editorial typography',
         'what' => [
             'Mixed font pairing puts two very different fonts in the same line: a bold, tight sans serif and a soft italic serif. The switch between them adds rhythm and emphasis, like a voice changing tone mid sentence.',
@@ -1463,7 +1463,7 @@ $DESIGNS = [
         'num' => 56, 'cat' => '06-typography', 'slug' => '056-image-in-text', 'name' => 'Image in Text',
         'example' => 'Alpenglow, a ski resort',
         'title' => 'Free Image Inside Text CSS Template (Text Mask, Live Demo)',
-        'desc' => 'Free text mask website template for a ski resort. A mountain scene shows through giant letters using background-clip text. Live demo, key CSS and HTML download.',
+        'desc' => 'Free text mask website template for a ski resort. A mountain scene shows through giant letters using background-clip text. Live demo.',
         'keywords' => 'image inside text css, background clip text, text mask css, photo in text, knockout text css',
         'what' => [
             'Image in text fills giant letters with a picture, so you see the scene through the word. It joins the headline and the hero image into one strong shape.',
@@ -1482,7 +1482,7 @@ $DESIGNS = [
         'num' => 57, 'cat' => '06-typography', 'slug' => '057-gradient-text', 'name' => 'Gradient Text',
         'example' => 'Sunset Sound, a festival lineup',
         'title' => 'Free Animated Gradient Text CSS Template (Live Demo)',
-        'desc' => 'Free gradient text website template for a festival lineup. Artist names in warm sunset gradients that slowly shift, made with background-clip text. Live demo and download.',
+        'desc' => 'Free gradient text website template for a festival lineup. Artist names in warm sunset gradients that slowly shift, made with background-clip text. Live demo.',
         'keywords' => 'gradient text css, animated gradient text, css text gradient, festival lineup template, colorful text css',
         'what' => [
             'Gradient text fills words with a blend of colors instead of one flat color. Animate the gradient and the colors slowly flow through the letters, like a sunset moving across the sky.',
@@ -1501,7 +1501,7 @@ $DESIGNS = [
         'num' => 58, 'cat' => '06-typography', 'slug' => '058-handwritten-accents', 'name' => 'Handwritten Accents',
         'example' => 'Nonna\'s Kitchen, a cooking school',
         'title' => 'Free Handwritten Underline and Circle CSS Template (Live Demo)',
-        'desc' => 'Free handwritten accents template for a cooking school. Scribbled underlines, circles, arrows and notes drawn with SVG over a clean layout. Live demo and download.',
+        'desc' => 'Free handwritten accents template for a cooking school. Scribbled underlines, circles, arrows and notes drawn with SVG over a clean layout. Live demo.',
         'keywords' => 'hand drawn underline css, svg scribble, handwritten font website, circle text css, caveat font template',
         'what' => [
             'Handwritten accents add little human marks to a clean page: a scribbled underline, a circle around a word, an arrow pointing at a note. It feels like someone went over the page with a pen for you.',
@@ -1520,7 +1520,7 @@ $DESIGNS = [
         'num' => 59, 'cat' => '06-typography', 'slug' => '059-monospace', 'name' => 'Monospace',
         'example' => 'Byte Sized Weekly, a developer newsletter',
         'title' => 'Free Monospace Website Template for Newsletters (Live Demo)',
-        'desc' => 'Free monospace website template for a developer newsletter. One mono font on a character grid, a light paper look, aligned columns and a sign up form. Live demo and download.',
+        'desc' => 'Free monospace website template for a developer newsletter. One mono font on a character grid, aligned columns and a sign up form. Live demo.',
         'keywords' => 'monospace website design, mono font website, newsletter landing page, ibm plex mono, minimal text website',
         'what' => [
             'A monospace site uses one font where every letter is the same width, like an old typewriter or a code editor. It looks honest and technical, and it makes text line up in neat columns.',
@@ -1539,7 +1539,7 @@ $DESIGNS = [
         'num' => 60, 'cat' => '06-typography', 'slug' => '060-vertical-text', 'name' => 'Vertical Text',
         'example' => 'Kumo, a Japanese tea house',
         'title' => 'Free Vertical Text CSS Template with writing-mode (Live Demo)',
-        'desc' => 'Free vertical text website template for a Japanese tea house. Top to bottom writing with CSS writing-mode, vertical labels and a red stamp. Live demo and HTML download.',
+        'desc' => 'Free vertical text website template for a Japanese tea house. Top to bottom writing with CSS writing-mode, vertical labels and a red stamp. Live demo.',
         'keywords' => 'vertical text css, writing-mode vertical-rl, japanese website template, vertical labels css, rotated text css',
         'what' => [
             'Vertical text runs from top to bottom instead of left to right. In Japanese and Chinese it is a traditional way to write, and on the web it adds a calm, poster like feel to a layout.',

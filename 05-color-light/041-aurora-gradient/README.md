@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/041-aurora-gradient/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/041-aurora-gradient/
 
-Free aurora gradient website template for a skincare brand. Soft flowing pastel colors on a light background, animated with one CSS conic gradient. Live demo and download.
+Free aurora gradient website template for a skincare brand. Soft flowing pastel colors on a light background, animated with one CSS conic gradient. Live demo.
 
 ## What is aurora gradient?
 

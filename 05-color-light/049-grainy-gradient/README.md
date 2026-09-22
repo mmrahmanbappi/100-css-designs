@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/049-grainy-gradient/
 
-Free grainy gradient website template for a podcast. Warm mesh gradients with film grain noise from an inline SVG filter, no image files. Live demo and download.
+Free grainy gradient website template for a podcast. Warm mesh gradients with film grain noise from an inline SVG filter, no image files. Live demo.
 
 ## What is grainy gradient?
 

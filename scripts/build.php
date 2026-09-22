@@ -251,7 +251,7 @@ function category_page($c) {
 function home() {
     global $SITE, $B, $CATEGORIES, $DESIGNS;
     $title = '100 Free CSS Designs: Trending UI Styles with Live Demos and Downloads';
-    $desc = '100 free CSS design templates in the styles people search for most: glassmorphism, bento grid, neo brutalism, AI dashboards and more. Live demo and single HTML download for each.';
+    $desc = count($DESIGNS) . ' free CSS design templates live now, growing to 100. Glassmorphism, bento grid, neo brutalism, AI chat UI and more, each with a live demo.';
     $img = durl($DESIGNS[0]) . 'preview.png';
     $faq = [
         ['Are these CSS templates really free?', 'Yes. Every design is released under the MIT license. You can use them for personal sites, client work and paid products without asking.'],
@@ -278,7 +278,7 @@ function home() {
     }
     $body = "<main class=\"wrap\">
 <h1 style=\"margin-top:50px\">100 free CSS designs you can use today</h1>
-<p class=\"lead\">The UI styles people are searching for right now, each built as a real page you can open and try. Glassmorphism, neumorphism, bento grids, neo brutalism, AI dashboards and more. Every design comes with a live demo, the key CSS to copy, and a single HTML file to download. No sign up, no framework, free for commercial use.</p>
+<p class=\"lead\">" . count($DESIGNS) . " designs are live, with more added every week. The UI styles people are searching for right now, each built as a real page you can open and try. Glassmorphism, neumorphism, bento grids, neo brutalism, AI dashboards and more. Every design comes with a live demo, the key CSS to copy, and a single HTML file to download. No sign up, no framework, free for commercial use.</p>
 <div class=\"actions\"><a class=\"btn main\" href=\"#categories\">Browse the designs</a><a class=\"btn\" href=\"{$SITE['repo']}/archive/refs/heads/main.zip\">Download everything (ZIP)</a><a class=\"btn\" href=\"{$SITE['repo']}\">Star on GitHub</a></div>
 <section id=\"categories\">$sections
 <h2 style=\"margin-top:30px\">More categories on the way</h2><div class=\"soon\">$soon</div></section>

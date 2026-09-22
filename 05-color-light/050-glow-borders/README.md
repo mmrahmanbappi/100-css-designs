@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/050-glow-borders/
 
-Free animated glow border template for a pricing page. Light runs around the featured plan with a conic gradient and CSS @property. Live demo, key CSS and download.
+Free animated glow border template for a pricing page. Light runs around the featured plan with a conic gradient and CSS @property. Live demo.
 
 ## What is glow borders?
 

@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/052-variable-fonts/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/052-variable-fonts/
 
-Free variable font template with live sliders for weight, width and slant, plus words that change weight on hover. Built as a type specimen. Live demo and download.
+Free variable font template with live sliders for weight, width and slant, plus words that change weight on hover. Built as a type specimen. Live demo.
 
 ## What is variable fonts?
 

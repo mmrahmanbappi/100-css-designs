@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/044-dark-mode/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/044-dark-mode/
 
-Free dark mode first website template for a budget app. Designed dark, with a working light mode toggle that remembers the choice. Live demo, key CSS and download.
+Free dark mode first website template for a budget app. Designed dark, with a working light mode toggle that remembers the choice. Live demo.
 
 ## What is dark mode first?
 

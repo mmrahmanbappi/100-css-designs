@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/042-duotone/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/042-duotone/
 
-Free duotone website template for a film festival. Any image becomes two colors with CSS blend modes, in a bold poster layout. Live demo, key CSS and download.
+Free duotone website template for a film festival. Any image becomes two colors with CSS blend modes, in a bold poster layout. Live demo.
 
 ## What is duotone?
 

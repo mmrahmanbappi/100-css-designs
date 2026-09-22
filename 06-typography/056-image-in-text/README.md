@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/056-image-in-text/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/056-image-in-text/
 
-Free text mask website template for a ski resort. A mountain scene shows through giant letters using background-clip text. Live demo, key CSS and HTML download.
+Free text mask website template for a ski resort. A mountain scene shows through giant letters using background-clip text. Live demo.
 
 ## What is image in text?
 

@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/043-monochrome/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/043-monochrome/
 
-Free monochrome website template for an architecture studio. Every color is a shade of one green, made with CSS color-mix from a single variable. Live demo and download.
+Free monochrome website template for an architecture studio. Every color is a shade of one green, made with CSS color-mix from a single variable. Live demo.
 
 ## What is monochrome?
 

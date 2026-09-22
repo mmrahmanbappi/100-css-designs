@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/047-pastel-dream/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/047-pastel-dream/
 
-Free pastel website template for a baby clothing shop. Soft candy colors, CSS clouds, rounded product cards and add buttons. Live demo, key CSS and HTML download.
+Free pastel website template for a baby clothing shop. Soft candy colors, CSS clouds, rounded product cards and add buttons. Live demo.
 
 ## What is pastel dream?
 

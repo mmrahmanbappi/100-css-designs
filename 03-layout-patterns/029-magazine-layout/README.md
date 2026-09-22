@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/029-magazine-layout/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/029-magazine-layout/
 
-Free magazine website template with a cover story, CSS grid template areas, pull quote and article grid. Built for a food and travel magazine. Live demo and download.
+Free magazine website template with a cover story, CSS grid template areas, pull quote and article grid. Built for a food and travel magazine. Live demo.
 
 ## What is magazine layout?
 

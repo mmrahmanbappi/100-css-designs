@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/048-high-contrast/
 
-Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo, key CSS and download.
+Free high contrast accessible website template for a local council. WCAG AAA colors, big focus rings, skip link and text size buttons. Live demo.
 
 ## What is high contrast accessible?
 

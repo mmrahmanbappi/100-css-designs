@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/045-neon-cyberpunk/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/045-neon-cyberpunk/
 
-Free neon cyberpunk website template for an esports event. Glowing pink and cyan text, a synthwave sun, grid floor, scan lines and a glitch headline. Live demo and download.
+Free neon cyberpunk website template for an esports event. Glowing pink and cyan text, a synthwave sun, grid floor and a glitch headline. Live demo.
 
 ## What is neon cyberpunk?
 

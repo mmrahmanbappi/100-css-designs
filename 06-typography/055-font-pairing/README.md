@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/055-font-pairing/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/055-font-pairing/
 
-Free font pairing website template for a bookshop. Italic serif and bold grotesk mixed inside the same headline for an editorial feel. Live demo and HTML download.
+Free font pairing website template for a bookshop. Italic serif and bold grotesk mixed inside the same headline for an editorial feel. Live demo.
 
 ## What is mixed font pairing?
 

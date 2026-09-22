@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/040-holographic/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/040-holographic/
 
-Free holographic card template with an iridescent rainbow shine that shifts as the card tilts under your cursor. Built for a festival pass. Live demo and download.
+Free holographic card template with an iridescent rainbow shine that shifts as the card tilts under your cursor. Built for a festival pass. Live demo.
 
 ## What is holographic?
 

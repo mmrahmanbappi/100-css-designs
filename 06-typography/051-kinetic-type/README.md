@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/051-kinetic-type/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/06-typography/051-kinetic-type/
 
-Free kinetic typography website template for a dance studio. Letters that stretch and bounce one after another, plus sliding text rows. Pure CSS, live demo and download.
+Free kinetic typography website template for a dance studio. Letters that stretch and bounce one after another, plus sliding text rows. Live demo.
 
 ## What is kinetic type?
 

@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/046-earthy-natural/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/05-color-light/046-earthy-natural/
 
-Free earthy website template for an organic farm. Sand, olive, moss and terracotta colors, organic blob shapes and a warm serif. Live demo, key CSS and HTML download.
+Free earthy website template for an organic farm. Sand, olive, moss and terracotta colors, organic blob shapes and a warm serif. Live demo.
 
 ## What is earthy natural?
 

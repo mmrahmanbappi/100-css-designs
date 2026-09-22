@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/039-spotlight-cards/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/039-spotlight-cards/
 
-Free spotlight card template where cards and their borders glow wherever your cursor is. Dark feature grid made with CSS radial gradients. Live demo and download.
+Free spotlight card template where cards and their borders glow wherever your cursor is. Dark feature grid made with CSS radial gradients. Live demo.
 
 ## What is spotlight cards?
 

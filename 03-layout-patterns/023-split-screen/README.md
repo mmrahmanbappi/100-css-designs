@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/023-split-screen/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/03-layout-patterns/023-split-screen/
 
-Free split screen website template for a restaurant. A sticky visual half on the left and a scrolling menu and booking form on the right. Live demo and download.
+Free split screen website template for a restaurant. A sticky visual half on the left and a scrolling menu and booking form on the right. Live demo.
 
 ## What is split screen?
 

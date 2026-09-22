@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/035-node-workflow/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/035-node-workflow/
 
-Free node workflow canvas template for an automation builder. Draggable nodes joined by curved SVG lines on a dotted grid, with a test run. Live demo and download.
+Free node workflow canvas template for an automation builder. Draggable nodes joined by curved SVG lines on a dotted grid, with a test run. Live demo.
 
 ## What is node workflow canvas?
 

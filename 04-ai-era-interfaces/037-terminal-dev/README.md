@@ -5,7 +5,7 @@
 **Live demo:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/037-terminal-dev/demo.html
 **Details and code:** https://mmrahmanbappi.github.io/100-css-designs/04-ai-era-interfaces/037-terminal-dev/
 
-Free terminal style landing page template for a CLI tool. Dark monospace look, a terminal window that types commands, and a copy install button. Live demo and download.
+Free terminal style landing page template for a CLI tool. Dark monospace look, a terminal window that types commands, and a copy install button. Live demo.
 
 ## What is terminal developer?
 
