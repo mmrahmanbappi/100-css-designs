@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recap Meeting Notes | Streaming Text UI HTML Template</title>
+<meta name="description" content="Free streaming text UI template for an AI meeting notes tool. Text types itself out word by word with a blinking cursor and a replay button. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f4ef;--card:#fff;--ink:#22231f;--muted:#6c6d66;--line:#e2e0d7;--accent:#c2410c}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+main{max-width:780px;margin:0 auto;padding:50px 22px}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+h1{font-family:"Source Serif 4",serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.4rem);line-height:1.15}
+.meta small{color:var(--muted);display:block}
+.status{display:flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--accent);animation:pulse 1s ease-in-out infinite}
+.status.done .dot{background:#15803d;animation:none}
+@keyframes pulse{50%{opacity:.3}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 30px;min-height:360px}
+.card h2{font-size:1.05rem;margin:18px 0 6px}
+.card h2:first-child{margin-top:0}
+.card ul{padding-left:20px}
+.cur{display:inline-block;width:.55em;height:1.1em;background:var(--ink);vertical-align:-.15em;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.dot,.cur{animation:none}}
+.tools{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.tools button{font:inherit;font-weight:600;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 16px;cursor:pointer;color:var(--ink)}
+.tools button.main{background:var(--ink);color:#fff;border-color:var(--ink)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.credit{text-align:center;padding:10px 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+</style></head><body>
+<main><div class="meta"><div><h1>Weekly product sync</h1><small>Tuesday, 32 minutes, 6 people</small></div><div class="status" id="st"><span class="dot"></span><span id="stt">Writing summary</span></div></div>
+<article class="card" id="out" aria-live="polite"></article>
+<div class="tools"><button class="main" id="replay">Replay</button><button>Copy notes</button><button>Send to Slack</button></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const html=`<h2>Summary</h2><p>The team agreed to ship the new checkout on 3 November, one week later than planned, so support has time to update the help pages.</p><h2>Decisions</h2><ul><li>Apple Pay goes in the first release. PayPal waits until December.</li><li>The old checkout stays live for two weeks as a fallback.</li></ul><h2>Action items</h2><ul><li>Amira: final copy for the payment screen by Friday</li><li>Jonas: load test with 5,000 orders per minute</li><li>Wei: write the release note and FAQ</li></ul>`;
+const out=document.getElementById('out'),st=document.getElementById('st'),stt=document.getElementById('stt');let timer;
+function stream(){clearInterval(timer);st.classList.remove('done');stt.textContent='Writing summary';
+const tmp=document.createElement('div');tmp.innerHTML=html;const nodes=[];(function walk(n){n.childNodes.forEach(c=>{if(c.nodeType===3){nodes.push(c)}else walk(c)})})(tmp);
+const full=nodes.map(n=>n.textContent);nodes.forEach(n=>n.textContent='');out.innerHTML='';out.append(...tmp.childNodes);
+const cur=document.createElement('span');cur.className='cur';let ni=0,wi=0;const words=full.map(t=>t.split(/(\s+)/));
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){nodes.forEach((n,i)=>n.textContent=full[i]);done();return}
+timer=setInterval(()=>{if(ni>=nodes.length){clearInterval(timer);cur.remove();done();return}
+nodes[ni].textContent+=words[ni][wi]||'';nodes[ni].parentNode.appendChild(cur);wi++;if(wi>=words[ni].length){ni++;wi=0}},35)}
+function done(){st.classList.add('done');stt.textContent='Summary ready'}
+document.getElementById('replay').onclick=stream;stream();
+</script>
+</body></html>

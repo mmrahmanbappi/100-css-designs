@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shipit CLI | Terminal Developer HTML Template</title>
+<meta name="description" content="Free terminal style landing page template for a developer CLI tool. Dark code look, a terminal window that types commands, and install snippet with copy. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1115;--panel:#161a21;--ink:#d7dde8;--muted:#7d8699;--green:#7ee787;--yellow:#e3b341;--blue:#79c0ff;--pink:#ff7b72}
+*{box-sizing:border-box;margin:0}
+body{font-family:"JetBrains Mono",ui-monospace,monospace;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px}
+header{max-width:1040px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{color:var(--green)}
+header a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--yellow);outline-offset:3px}
+.hero{max-width:1040px;margin:0 auto;padding:50px 24px 30px;display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+h1{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;line-height:1.15}
+h1 span{color:var(--green)}
+.hero p{color:var(--muted);margin:16px 0 22px}
+.install{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--panel);border:1px solid #262c36;border-radius:10px;padding:12px 14px}
+.install code{color:var(--ink)}.install code::before{content:"$ ";color:var(--muted)}
+.install button{font:inherit;font-size:.85rem;background:#232a35;color:var(--ink);border:1px solid #333b47;border-radius:6px;padding:4px 10px;cursor:pointer}
+.term{background:var(--panel);border:1px solid #262c36;border-radius:12px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4)}
+.bar{display:flex;gap:7px;padding:12px 14px;border-bottom:1px solid #262c36}
+.bar i{width:11px;height:11px;border-radius:50%;background:#3a414d}
+.bar i:nth-child(1){background:var(--pink)}.bar i:nth-child(2){background:var(--yellow)}.bar i:nth-child(3){background:var(--green)}
+pre{padding:18px;min-height:300px;white-space:pre-wrap;font:inherit;font-size:14px}
+.p{color:var(--blue)}.g{color:var(--green)}.y{color:var(--yellow)}.m{color:var(--muted)}
+.cur{display:inline-block;width:8px;height:16px;background:var(--ink);vertical-align:-3px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.cur{animation:none}}
+.feat{max-width:1040px;margin:0 auto;padding:40px 24px 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat div{border:1px solid #262c36;border-radius:10px;padding:18px}
+.feat h2{font-size:1rem;color:var(--yellow);margin-bottom:6px}.feat p{color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.85rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.hero,.feat{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>shipit</b><a href="#">GitHub</a></header>
+<main><section class="hero"><div><h1>Deploy from your terminal in <span>one command</span>.</h1><p>shipit reads your project, builds it, and puts it on a live URL. No config files, no dashboard, no YAML.</p>
+<div class="install"><code id="cmd">npm install -g shipit</code><button id="copy">Copy</button></div></div>
+<div class="term" aria-label="Terminal example"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><pre id="t"></pre></div></section>
+<section class="feat"><div><h2>Finds your framework</h2><p>Next, Astro, Vite, Django and Rails work out of the box.</p></div><div><h2>Preview links</h2><p>Every branch gets its own URL to share with your team.</p></div><div><h2>Rollback in 2s</h2><p>Type shipit rollback and the last good version is live again.</p></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const lines=[['<span class="p">~/my-app</span> $ ','shipit'],['<span class="m">Found Astro project, Node 20</span>',''],['<span class="m">Building</span> ','...................... <span class="g">done in 8.2s</span>'],['<span class="m">Uploading 64 files</span> ','<span class="g">done</span>'],['',''],['<span class="g">Live at</span> ','<span class="y">https://my-app.shipit.dev</span>'],['<span class="p">~/my-app</span> $ ','']];
+const t=document.getElementById('t');let out='';
+function typeLine(i){if(i>=lines.length){t.innerHTML=out+'<span class="cur"></span>';return}const[pre,txt]=lines[i];out+=pre;let k=0;
+const plain=txt.replace(/<[^>]+>/g,'');if(!plain||i>0){out+=txt+(i<lines.length-1?'\n':'');t.innerHTML=out+'<span class="cur"></span>';setTimeout(()=>typeLine(i+1),i===0?300:500);return}
+const iv=setInterval(()=>{k++;t.innerHTML=out+plain.slice(0,k)+'<span class="cur"></span>';if(k>=plain.length){clearInterval(iv);out+=txt+'\n';setTimeout(()=>typeLine(i+1),400)}},90)}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){t.innerHTML=lines.map(l=>l[0]+l[1]).join('\n')}else typeLine(0);
+document.getElementById('copy').onclick=e=>navigator.clipboard.writeText(document.getElementById('cmd').textContent).then(()=>{e.target.textContent='Copied';setTimeout(()=>e.target.textContent='Copy',1500)});
+</script>
+</body></html>

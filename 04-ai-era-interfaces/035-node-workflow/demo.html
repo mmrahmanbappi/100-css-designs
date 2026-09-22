@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relay Automation Builder | Node Workflow Canvas HTML Template</title>
+<meta name="description" content="Free node workflow canvas template for an automation builder. Draggable nodes joined by curved SVG lines on a dotted grid. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f3f5;--ink:#1a1d23;--muted:#6b7280;--line:#dfe2e7;--trig:#f97316;--ai:#7c3aed;--act:#0ea5e9;--ok:#16a34a}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Red Hat Display",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45;height:100vh;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:#fff;border-bottom:1px solid var(--line);gap:12px;flex-wrap:wrap}
+.top b{font-size:1.05rem}
+.top span{color:var(--muted);margin-left:8px;font-size:.95rem}
+.run{font:inherit;font-weight:700;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:9px 16px;cursor:pointer}
+.canvas{position:relative;flex:1;overflow:auto;background-image:radial-gradient(#c9cdd4 1px,transparent 1px);background-size:22px 22px}
+.inner{position:relative;width:1100px;height:560px}
+svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+path{fill:none;stroke:#9aa1ad;stroke-width:2}
+path.live{stroke:var(--ok);stroke-dasharray:6 6;animation:flow .8s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-12}}
+@media(prefers-reduced-motion:reduce){path.live{animation:none}}
+.node{position:absolute;width:230px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.06);cursor:grab;user-select:none;touch-action:none}
+.node:active{cursor:grabbing}
+.node:focus-visible,.run:focus-visible{outline:2px solid var(--ai);outline-offset:3px}
+.node header{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.node header i{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:700;font-size:.85rem}
+.node header small{display:block;color:var(--muted);font-size:.78rem}
+.node p{padding:10px 14px;font-size:.9rem;color:var(--muted)}
+.node::before,.node::after{content:"";position:absolute;top:26px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #9aa1ad}
+.node::before{left:-7px}.node::after{right:-7px}
+.node.first::before,.node.last::after{display:none}
+.node.done header{background:#f0fdf4}
+.credit{padding:8px 20px;font-size:.85rem;color:var(--muted);background:#fff;border-top:1px solid var(--line)}.credit a{color:var(--ink)}
+</style></head><body>
+<header class="top"><div><b>New order to thank you email</b><span>Saved 2 min ago</span></div><button class="run" id="run">Test run</button></header>
+<main class="canvas"><div class="inner" id="inner"><svg id="wires" aria-hidden="true"></svg>
+<div class="node first" tabindex="0" style="left:40px;top:200px" data-id="a"><header><i style="background:var(--trig)">1</i><div>New order<small>Trigger, Shopify</small></div></header><p>When someone buys from your store</p></div>
+<div class="node" tabindex="0" style="left:330px;top:90px" data-id="b"><header><i style="background:var(--ai)">2</i><div>Write a note<small>AI step</small></div></header><p>Draft a short thank you that mentions what they bought</p></div>
+<div class="node" tabindex="0" style="left:330px;top:320px" data-id="c"><header><i style="background:var(--act)">3</i><div>Add to sheet<small>Google Sheets</small></div></header><p>Log name, product and total</p></div>
+<div class="node last" tabindex="0" style="left:630px;top:200px" data-id="d"><header><i style="background:var(--act)">4</i><div>Send email<small>Gmail</small></div></header><p>Send the note from your own address</p></div>
+</div></main>
+<p class="credit">Drag the steps to move them. Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const links=[['a','b'],['a','c'],['b','d']],svg=document.getElementById('wires'),inner=document.getElementById('inner');
+const N=id=>inner.querySelector(`[data-id="${id}"]`);
+function draw(live){svg.innerHTML=links.map(([f,t])=>{const a=N(f),b=N(t);const x1=a.offsetLeft+a.offsetWidth,y1=a.offsetTop+32,x2=b.offsetLeft,y2=b.offsetTop+32,dx=Math.max(60,(x2-x1)/2);
+return `<path class="${live?'live':''}" d="M${x1} ${y1} C${x1+dx} ${y1} ${x2-dx} ${y2} ${x2} ${y2}"/>`}).join('')}
+draw();
+inner.querySelectorAll('.node').forEach(n=>{n.addEventListener('pointerdown',e=>{const sx=e.clientX-n.offsetLeft,sy=e.clientY-n.offsetTop;n.setPointerCapture(e.pointerId);
+const mv=ev=>{n.style.left=Math.max(0,ev.clientX-sx)+'px';n.style.top=Math.max(0,ev.clientY-sy)+'px';draw()};
+const up=()=>{n.removeEventListener('pointermove',mv);n.removeEventListener('pointerup',up)};n.addEventListener('pointermove',mv);n.addEventListener('pointerup',up)})});
+document.getElementById('run').onclick=()=>{draw(true);const ns=[...inner.querySelectorAll('.node')];ns.forEach(n=>n.classList.remove('done'));ns.forEach((n,i)=>setTimeout(()=>n.classList.add('done'),400*(i+1)));setTimeout(()=>draw(false),2200)};
+</script>
+</body></html>

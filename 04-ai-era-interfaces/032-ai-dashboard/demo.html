@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signalboard Support AI | AI Dashboard HTML Template</title>
+<meta name="description" content="Free AI dashboard template for a customer support tool. KPI cards, bar chart, ticket table and a working command palette opened with Ctrl K. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--ink:#16181d;--muted:#667085;--line:#e4e7ec;--blue:#3056d3;--green:#12a150;--amber:#d98a00}
+*{box-sizing:border-box;margin:0}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:15px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:var(--card);border-bottom:1px solid var(--line);gap:16px}
+.top b{font-size:1.1rem}
+.k{font:inherit;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;min-width:260px;text-align:left;display:flex;justify-content:space-between}
+kbd{font-family:inherit;font-size:.8rem;border:1px solid var(--line);border-radius:4px;padding:0 5px;background:#fff}
+main{max-width:1200px;margin:0 auto;padding:24px}
+h1{font-size:1.4rem;font-weight:600}
+.sub{color:var(--muted);margin-bottom:20px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
+.kpi small{color:var(--muted)}
+.kpi strong{display:block;font-size:1.9rem;font-weight:600;margin:4px 0}
+.up{color:var(--green);font-weight:500}.dn{color:var(--amber);font-weight:500}
+.row{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:16px}
+.card h2{font-size:1rem;font-weight:600;margin-bottom:14px}
+.bars{display:flex;align-items:end;gap:10px;height:180px;border-bottom:1px solid var(--line)}
+.bars div{flex:1;display:flex;flex-direction:column;justify-content:end;gap:2px;height:100%}
+.bars i{display:block;border-radius:4px 4px 0 0}
+.bars i.ai{background:var(--blue)}.bars i.hu{background:#b9c6f2;border-radius:0}
+.days{display:flex;gap:10px;color:var(--muted);font-size:.8rem;margin-top:6px}.days span{flex:1;text-align:center}
+.legend{display:flex;gap:14px;color:var(--muted);font-size:.85rem;margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+table{width:100%;border-collapse:collapse}
+td{padding:10px 0;border-top:1px solid var(--line);vertical-align:top}
+td small{display:block;color:var(--muted)}
+.pill{font-size:.78rem;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.pill.ok{background:#e3f6ea;color:var(--green)}.pill.wait{background:#fff3db;color:var(--amber)}
+.pal{position:fixed;inset:0;background:rgba(16,24,40,.35);display:none;align-items:start;justify-content:center;padding-top:14vh}
+.pal.open{display:flex}
+.pal div{width:min(560px,92vw);background:#fff;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.25);overflow:hidden}
+.pal input{width:100%;font:inherit;font-size:1.05rem;border:0;border-bottom:1px solid var(--line);padding:16px 18px;outline:none}
+.pal li{list-style:none;padding:11px 18px;cursor:pointer;display:flex;justify-content:space-between}
+.pal li:hover,.pal li.sel{background:#eef2ff}
+.pal ul{padding:6px 0;margin:0}
+button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.credit{text-align:center;padding:20px;color:var(--muted);font-size:.85rem}.credit a{color:var(--ink)}
+@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}.k{min-width:0}}
+</style></head><body>
+<header class="top"><b>Signalboard</b><button class="k" id="open">Search or run a command <span><kbd>Ctrl</kbd> <kbd>K</kbd></span></button></header>
+<main><h1>Support this week</h1><p class="sub">The assistant answered most questions on its own. 14 tickets are waiting for a person.</p>
+<section class="kpis">
+<div class="card kpi"><small>Tickets in</small><strong>1,284</strong><span class="up">+8% vs last week</span></div>
+<div class="card kpi"><small>Solved by AI</small><strong>71%</strong><span class="up">+5 points</span></div>
+<div class="card kpi"><small>First reply time</small><strong>38s</strong><span class="up">12s faster</span></div>
+<div class="card kpi"><small>Customer rating</small><strong>4.6</strong><span class="dn">-0.1</span></div></section>
+<section class="row"><div class="card"><h2>Tickets solved per day</h2>
+<div class="bars" aria-label="Bar chart of tickets solved by AI and by people">
+<div><i class="hu" style="height:14%"></i><i class="ai" style="height:40%"></i></div><div><i class="hu" style="height:16%"></i><i class="ai" style="height:52%"></i></div><div><i class="hu" style="height:12%"></i><i class="ai" style="height:48%"></i></div><div><i class="hu" style="height:18%"></i><i class="ai" style="height:60%"></i></div><div><i class="hu" style="height:15%"></i><i class="ai" style="height:66%"></i></div><div><i class="hu" style="height:6%"></i><i class="ai" style="height:28%"></i></div><div><i class="hu" style="height:5%"></i><i class="ai" style="height:22%"></i></div></div>
+<div class="days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+<div class="legend"><span><i style="background:var(--blue)"></i>Solved by AI</span><span><i style="background:#b9c6f2"></i>Solved by team</span></div></div>
+<div class="card"><h2>Needs a person</h2><table>
+<tr><td>Refund for double charge<small>Order 88213, asked 2h ago</small></td><td><span class="pill wait">Waiting</span></td></tr>
+<tr><td>Change delivery address<small>AI drafted a reply</small></td><td><span class="pill ok">Draft ready</span></td></tr>
+<tr><td>Broken item on arrival<small>Photo attached</small></td><td><span class="pill wait">Waiting</span></td></tr>
+<tr><td>Bulk order for a school<small>Sales lead</small></td><td><span class="pill ok">Draft ready</span></td></tr></table></div></section></main>
+<div class="pal" id="pal" role="dialog" aria-label="Command palette"><div><input id="q" placeholder="Type a command or search" aria-label="Command"><ul id="list"><li class="sel">Show tickets waiting for a person <kbd>G W</kbd></li><li>Ask AI to summarize this week</li><li>Export report as CSV</li><li>Invite a teammate</li><li>Open settings</li></ul></div></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const pal=document.getElementById('pal'),q=document.getElementById('q'),items=[...document.querySelectorAll('#list li')];
+function show(o){pal.classList.toggle('open',o);if(o){q.value='';filter();setTimeout(()=>q.focus(),0)}}
+document.getElementById('open').onclick=()=>show(true);
+addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();show(!pal.classList.contains('open'))}if(e.key==='Escape')show(false)});
+pal.addEventListener('click',e=>{if(e.target===pal)show(false)});
+function filter(){const v=q.value.toLowerCase();items.forEach(li=>li.hidden=!li.textContent.toLowerCase().includes(v))}
+q.addEventListener('input',filter);items.forEach(li=>li.onclick=()=>show(false));
+</script>
+</body></html>

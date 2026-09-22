@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buildwell AI Website Builder | Prompt Box Hero HTML Template</title>
+<meta name="description" content="Free prompt box hero template for an AI website builder. A big input as the hero, rotating example prompts and suggestion chips. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f3;--ink:#1c1b19;--muted:#6f6a62;--line:#e3ddd2;--accent:#2a6df4;--warm:#ffe6c7}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Familjen Grotesk",system-ui,sans-serif;background:radial-gradient(ellipse at 50% -10%,var(--warm),transparent 60%),var(--bg);color:var(--ink);line-height:1.5;min-height:100vh}
+header{max-width:1100px;margin:0 auto;padding:22px 24px;display:flex;justify-content:space-between}
+header b{font-size:1.2rem}
+header a{color:var(--ink)}
+.hero{max-width:820px;margin:0 auto;padding:80px 24px 40px;text-align:center}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.03em;font-weight:700}
+.hero p{color:var(--muted);font-size:1.15rem;margin:16px auto 34px;max-width:40ch}
+.pb{background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:0 20px 50px rgba(60,40,10,.08);text-align:left}
+.pb:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px rgba(42,109,244,.15),0 20px 50px rgba(60,40,10,.08)}
+textarea{width:100%;font:inherit;font-size:1.15rem;border:0;resize:none;min-height:90px;padding:8px 10px;color:var(--ink);background:transparent}
+textarea:focus{outline:none}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.bar small{color:var(--muted);padding-left:10px}
+.go{font:inherit;font-weight:700;background:var(--ink);color:#fff;border:0;border-radius:14px;padding:12px 20px;cursor:pointer}
+.go:disabled{opacity:.35;cursor:default}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.chips button{font:inherit;font-size:.95rem;background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;color:var(--ink)}
+.chips button:hover{background:#fff}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.made{max-width:1100px;margin:0 auto;padding:40px 24px 60px}
+.made h2{font-size:1.1rem;color:var(--muted);font-weight:500;margin-bottom:16px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.site{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.site span{display:block;height:150px}
+.site p{padding:12px 14px;font-size:.95rem}
+.site p small{display:block;color:var(--muted)}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:780px){.grid{grid-template-columns:1fr}}
+</style></head><body>
+<header><b>Buildwell</b><a href="#">Log in</a></header>
+<main><section class="hero"><h1>Describe your website. Get it in a minute.</h1><p>Tell Buildwell what you do in one or two sentences. You get a real site you can edit, with your own domain.</p>
+<div class="pb"><textarea id="p" aria-label="Describe your website"></textarea><div class="bar"><small id="count">Try one of the ideas below</small><button class="go" id="go" disabled>Build my site</button></div></div>
+<div class="chips"><button>A bakery in Bristol that takes cake orders</button><button>Portfolio for a wedding photographer</button><button>Landing page for a dog walking app</button></div></section>
+<section class="made"><h2>Built this week with Buildwell</h2><div class="grid">
+<div class="site"><span style="background:linear-gradient(135deg,#f6d5b8,#e9a178)"></span><p>Rosie's Cakes<small>Bakery, Bristol</small></p></div>
+<div class="site"><span style="background:linear-gradient(135deg,#1f2937,#4b5563)"></span><p>Mateo Ruiz Photography<small>Weddings, Valencia</small></p></div>
+<div class="site"><span style="background:linear-gradient(135deg,#bbf7d0,#4ade80)"></span><p>Walkies<small>Dog walking app, Toronto</small></p></div></div></section></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const p=document.getElementById('p'),go=document.getElementById('go'),count=document.getElementById('count');
+const ideas=['A yoga studio in Leeds with a class timetable','A plumber in Austin who wants more local calls','An online shop for handmade candles'];let i=0;
+function rot(){if(!p.value)p.placeholder=ideas[i++%ideas.length]}rot();
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(rot,3000);
+p.addEventListener('input',()=>{go.disabled=!p.value.trim();count.textContent=p.value.trim()?p.value.trim().split(/\s+/).length+' words':'Try one of the ideas below'});
+document.querySelectorAll('.chips button').forEach(b=>b.onclick=()=>{p.value=b.textContent;p.dispatchEvent(new Event('input'));p.focus()});
+go.onclick=()=>{go.textContent='Building...';setTimeout(()=>go.textContent='Build my site',1600)};
+</script>
+</body></html>

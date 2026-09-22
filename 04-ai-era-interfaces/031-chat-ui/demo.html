@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayfarer Travel Assistant | Chat UI HTML Template</title>
+<meta name="description" content="Free chat interface template for an AI travel assistant. Sidebar of past chats, message bubbles, suggestion chips and a working input. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6f2;--side:#efede6;--ink:#1d1f1c;--muted:#6b6e67;--me:#1f5c4a;--line:#e1ded4;--card:#fff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Schibsted Grotesk",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;height:100vh}
+.app{display:grid;grid-template-columns:260px 1fr;height:100vh}
+aside{background:var(--side);border-right:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:6px;overflow-y:auto}
+aside b{font-size:1.2rem;margin-bottom:10px}
+.new{font:inherit;font-weight:500;background:var(--ink);color:#fff;border:0;border-radius:10px;padding:10px;cursor:pointer;margin-bottom:12px}
+aside small{color:var(--muted);margin:10px 0 4px}
+aside a{color:var(--ink);text-decoration:none;padding:8px 10px;border-radius:8px;font-size:.95rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+aside a[aria-current]{background:#fff}
+button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid var(--me);outline-offset:2px}
+.chat{display:flex;flex-direction:column;height:100vh}
+.log{flex:1;overflow-y:auto;padding:30px max(24px,calc((100% - 760px)/2))}
+.msg{margin-bottom:22px;max-width:640px}
+.msg.me{margin-left:auto;background:var(--me);color:#fff;padding:12px 16px;border-radius:18px 18px 4px 18px;width:fit-content}
+.msg.ai p+p{margin-top:10px}
+.who{font-size:.85rem;color:var(--muted);font-weight:700;margin-bottom:4px}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}
+.plan div{display:flex;gap:14px;padding:6px 0;border-top:1px solid var(--line)}.plan div:first-child{border:0}
+.plan span{color:var(--muted);min-width:56px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;padding:0 max(24px,calc((100% - 760px)/2)) 10px}
+.chips button{font:inherit;font-size:.9rem;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--ink)}
+.box{padding:0 max(24px,calc((100% - 760px)/2)) 20px}
+.in{display:flex;gap:10px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px 10px 10px 16px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+textarea{flex:1;font:inherit;border:0;resize:none;background:transparent;color:var(--ink);height:26px;margin-top:6px}
+textarea:focus{outline:none}
+.send{font:inherit;font-weight:700;background:var(--me);color:#fff;border:0;border-radius:12px;padding:10px 16px;cursor:pointer}
+.note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:8px}.note a{color:var(--muted)}
+@media(max-width:760px){.app{grid-template-columns:1fr}aside{display:none}}
+</style></head><body>
+<div class="app">
+<aside><b>Wayfarer</b><button class="new">New trip chat</button><small>Recent</small><a href="#" aria-current="page">Long weekend in Lisbon</a><a href="#">Cheap flights to Japan in May</a><a href="#">Family camping, Lake District</a><a href="#">Rome with a toddler</a><small>Last month</small><a href="#">Honeymoon ideas, not too hot</a></aside>
+<main class="chat"><div class="log" id="log" aria-live="polite">
+<div class="msg me">Planning 3 days in Lisbon in late October. We like food, walking and one day trip. Not museums all day.</div>
+<div class="msg ai"><div class="who">Wayfarer</div><p>Late October is a great time. It is usually around 20 degrees and much quieter than summer. Here is a relaxed plan:</p>
+<div class="plan"><div><span>Day 1</span>Alfama on foot, lunch at a tasca, sunset at Miradouro da Senhora do Monte</div><div><span>Day 2</span>Day trip to Sintra by train, 40 minutes. Go early to beat the tour buses</div><div><span>Day 3</span>LX Factory in the morning, pastries in Belém, dinner in Príncipe Real</div></div>
+<p>Want me to add restaurant picks for each evening?</p></div>
+</div>
+<div class="chips"><button>Yes, add restaurants</button><button>Make day 2 cheaper</button><button>Where should we stay?</button></div>
+<div class="box"><div class="in"><textarea id="t" rows="1" placeholder="Ask about your trip" aria-label="Message"></textarea><button class="send" id="s">Send</button></div><p class="note">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p></div>
+</main></div>
+<script>
+const log=document.getElementById('log'),t=document.getElementById('t');
+function send(txt){if(!txt.trim())return;const m=document.createElement('div');m.className='msg me';m.textContent=txt;log.appendChild(m);
+const a=document.createElement('div');a.className='msg ai';a.innerHTML='<div class="who">Wayfarer</div><p>Good question. This is a demo, so connect your own AI to answer here.</p>';setTimeout(()=>{log.appendChild(a);log.scrollTop=log.scrollHeight},500);t.value='';log.scrollTop=log.scrollHeight}
+document.getElementById('s').onclick=()=>send(t.value);
+t.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send(t.value)}});
+document.querySelectorAll('.chips button').forEach(b=>b.onclick=()=>send(b.textContent));
+</script>
+</body></html>

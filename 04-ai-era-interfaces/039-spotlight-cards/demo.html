@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen API Platform | Spotlight Cards HTML Template</title>
+<meta name="description" content="Free spotlight card template where cards glow wherever your cursor is. Dark feature grid for an API platform, made with CSS radial gradients. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090b;--card:#111114;--ink:#f4f4f5;--muted:#a1a1aa;--line:rgba(255,255,255,.08);--glow:94,234,212}
+*{box-sizing:border-box;margin:0}
+body{font-family:Urbanist,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{max-width:1080px;margin:0 auto;padding:70px 24px 30px;text-align:center}
+h1{font-size:clamp(2.3rem,5.5vw,4rem);font-weight:800;line-height:1.02;letter-spacing:-.03em}
+header p{color:var(--muted);font-size:1.15rem;max-width:44ch;margin:16px auto 0}
+.grid{max-width:1080px;margin:0 auto;padding:20px 24px 80px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sp{position:relative;border-radius:18px;background:var(--card);border:1px solid var(--line);padding:26px;overflow:hidden;--x:50%;--y:50%}
+.sp::before{content:"";position:absolute;inset:0;border-radius:inherit;opacity:0;transition:opacity .3s;background:radial-gradient(400px circle at var(--x) var(--y),rgba(var(--glow),.12),transparent 40%)}
+.sp::after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--x) var(--y),rgba(var(--glow),.7),transparent 40%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.grid:hover .sp::before,.grid:hover .sp::after{opacity:1}
+.sp>*{position:relative;z-index:1}
+.sp.wide{grid-column:span 2}
+.sp h2{font-size:1.2rem;font-weight:600;margin-bottom:6px}
+.sp p{color:var(--muted)}
+.big{font-size:3rem;font-weight:800;letter-spacing:-.04em;line-height:1;margin:14px 0 6px}
+code{display:block;margin-top:14px;background:#0b0b0d;border:1px solid var(--line);border-radius:10px;padding:14px;font-size:.85rem;color:#99f6e4;white-space:pre-wrap;font-family:ui-monospace,monospace}
+.btn{display:inline-block;margin-top:16px;background:var(--ink);color:var(--bg);padding:11px 20px;border-radius:999px;font-weight:600;text-decoration:none}
+a:focus-visible{outline:2px solid rgb(var(--glow));outline-offset:3px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.grid{grid-template-columns:1fr}.sp.wide{grid-column:auto}}
+@media(hover:none){.sp::before,.sp::after{opacity:1}}
+</style></head><body>
+<header><h1>One API for maps, places and routes</h1><p>Lumen gives your app fast search, clean addresses and turn by turn routes, priced per request with no minimum.</p></header>
+<main class="grid" id="grid">
+<section class="sp wide"><h2>Search as you type</h2><p>Results in under 40ms from 38 regions. Handles typos and local names.</p><code>GET /v1/search?q=blue bottle oakl
+200 OK  12 results  31ms</code></section>
+<section class="sp"><h2>Uptime last 90 days</h2><div class="big">99.99%</div><p>Status page updated every minute.</p></section>
+<section class="sp"><h2>Clean addresses</h2><p>Turn messy input into a verified address with postcode and coordinates.</p></section>
+<section class="sp"><h2>Routes</h2><p>Driving, cycling and walking, with live traffic in 60 countries.</p></section>
+<section class="sp"><h2>Pay per request</h2><div class="big">$0.40</div><p>per 1,000 requests after the first 100,000 free each month.</p><a class="btn" href="#">Get an API key</a></section>
+</main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+document.getElementById('grid').addEventListener('pointermove',e=>{document.querySelectorAll('.sp').forEach(c=>{const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')})});
+</script>
+</body></html>
