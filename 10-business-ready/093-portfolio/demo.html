@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ana Ribeiro Product Designer | Minimal Portfolio HTML Template</title>
+<meta name="description" content="Free minimal portfolio template for a product designer. Short intro, selected work with case study cards, experience list and contact. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Inter+Tight:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf8;--ink:#161616;--muted:#6b6b66;--line:#e5e4de}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.w{max-width:860px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;padding:26px 0}
+nav a{color:var(--ink);margin-left:18px}
+a{color:var(--ink)}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.intro{padding:60px 0 50px}
+h1{font-family:Newsreader,serif;font-weight:400;font-size:clamp(2rem,5vw,3.2rem);line-height:1.2;max-width:22ch}
+h1 em{color:var(--muted)}
+.intro p{color:var(--muted);margin-top:14px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb36d;margin-right:8px}
+h2{font-size:.95rem;font-weight:500;color:var(--muted);margin-bottom:16px}
+.work{display:grid;gap:40px;padding-bottom:60px}
+.cs{display:block;text-decoration:none;color:var(--ink)}
+.cs .img{aspect-ratio:16/9;border-radius:12px;background:var(--g);transition:transform .35s}
+.cs:hover .img{transform:scale(.985)}
+.cs div{display:flex;justify-content:space-between;margin-top:12px;gap:16px}
+.cs h3{font-weight:500;font-size:1.1rem}
+.cs span{color:var(--muted)}
+.cs p{color:var(--muted)}
+@media(prefers-reduced-motion:reduce){.cs .img{transition:none}}
+.exp{padding-bottom:60px}
+.row{display:grid;grid-template-columns:140px 1fr auto;gap:20px;padding:12px 0;border-top:1px solid var(--line)}
+.row span{color:var(--muted)}
+.contact{padding:40px 0 60px;border-top:1px solid var(--line)}
+.contact p{font-family:Newsreader,serif;font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.25}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+</style></head><body><div class="w">
+<nav><b>Ana Ribeiro</b><div><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
+<main><section class="intro"><h1>Product designer making <em>complicated</em> tools feel simple.</h1><p><span class="dot" aria-hidden="true"></span>Open to new projects from January. Based in Porto, working with teams across Europe.</p></section>
+<section id="work"><h2>Selected work</h2><div class="work">
+<a class="cs" href="#"><span class="img" style="display:block;--g:linear-gradient(135deg,#dfe7fd,#b6c6f5)"></span><div><h3>Rebuilding checkout for Parcel</h3><span>2026</span></div><p>Cut checkout steps from six to three and lifted conversion by 18 percent.</p></a>
+<a class="cs" href="#"><span class="img" style="display:block;--g:linear-gradient(135deg,#fde2cf,#f5b58c)"></span><div><h3>A clinic booking app for older patients</h3><span>2025</span></div><p>Large type, fewer choices and a phone number on every screen.</p></a>
+<a class="cs" href="#"><span class="img" style="display:block;--g:linear-gradient(135deg,#d9f2e4,#9fd8b8)"></span><div><h3>Design system for Oat Club</h3><span>2024</span></div><p>120 components shared by web and mobile, used by 40 people.</p></a></div></section>
+<section class="exp"><h2>Experience</h2><div class="row"><span>2023 to now</span><b>Independent</b><span>Porto</span></div><div class="row"><span>2019 to 2023</span><b>Lead designer, Parcel</b><span>Lisbon</span></div><div class="row"><span>2016 to 2019</span><b>Product designer, Halden</b><span>Oslo</span></div></section>
+<section class="contact" id="contact"><h2>Contact</h2><p>Have a product that feels harder than it should? <a href="mailto:hello@example.com">hello@example.com</a></p></section></main></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formly Form Builder | SaaS Landing Page HTML Template</title>
+<meta name="description" content="Free SaaS landing page template for a form builder. Hero with product preview, logo row, features, testimonial, FAQ and sign up call to action. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f5f6fb;--ink:#141829;--muted:#5d6380;--acc:#4f46e5;--acc2:#e0e7ff;--line:#e6e8f2}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.w{max-width:1140px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+nav b{font-size:1.25rem}
+nav .l a{color:var(--muted);margin-left:22px;text-decoration:none;font-weight:600}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none;border:0;font:inherit;cursor:pointer}
+.btn.o{background:#fff;color:var(--ink);border:1px solid var(--line)}
+a:focus-visible,.btn:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.hero{text-align:center;padding:60px 0 30px}
+.tag{display:inline-block;background:var(--acc2);color:var(--acc);font-weight:600;font-size:.9rem;padding:5px 12px;border-radius:999px}
+h1{font-size:clamp(2.4rem,6vw,4.2rem);line-height:1.05;letter-spacing:-.035em;font-weight:800;max-width:16ch;margin:16px auto}
+.hero p{color:var(--muted);font-size:1.2rem;max-width:46ch;margin:0 auto 26px}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero small{display:block;color:var(--muted);margin-top:12px}
+.app{margin:44px auto 0;max-width:940px;background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 30px 60px rgba(20,24,41,.08)}
+.app .in{background:#fff;border-radius:12px;display:grid;grid-template-columns:200px 1fr;min-height:320px;text-align:left}
+.app aside{border-right:1px solid var(--line);padding:16px;font-size:.9rem;color:var(--muted)}
+.app aside div{padding:8px 10px;border-radius:8px}
+.app aside .on{background:var(--acc2);color:var(--acc);font-weight:600}
+.app .form{padding:24px 30px}
+.app .form label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 6px}
+.app .form span{display:block;height:40px;border:1px solid var(--line);border-radius:8px}
+.logos{padding:50px 0 20px;text-align:center;color:var(--muted)}
+.logos div{display:flex;justify-content:center;gap:44px;flex-wrap:wrap;margin-top:14px;font-weight:800;font-size:1.3rem;color:#a6abc4}
+.feat{padding:60px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.feat div{padding:26px;border:1px solid var(--line);border-radius:16px}
+.feat i{display:block;width:40px;height:40px;border-radius:10px;background:var(--acc2);margin-bottom:14px;position:relative}
+.feat i::after{content:"";position:absolute;inset:12px;border-radius:3px;background:var(--acc)}
+.feat h2{font-size:1.15rem}
+.feat p{color:var(--muted)}
+.quote{background:var(--soft);border-radius:24px;padding:50px;text-align:center}
+.quote p{font-size:clamp(1.3rem,3vw,1.9rem);font-weight:600;line-height:1.35;max-width:32ch;margin:0 auto}
+.quote b{display:block;margin-top:16px;font-weight:600}.quote span{color:var(--muted);font-weight:400}
+.faq{padding:60px 0;max-width:760px}
+.faq h2{font-size:2rem;letter-spacing:-.02em;margin-bottom:14px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin-top:8px}
+.end{background:var(--ink);color:#fff;border-radius:24px;padding:56px 30px;text-align:center;margin-bottom:50px}
+.end h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.02em}
+.end form{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.end input{font:inherit;padding:12px 14px;border-radius:10px;border:0;min-width:260px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.feat{grid-template-columns:1fr}.app .in{grid-template-columns:1fr}.app aside{display:none}nav .l a:not(:last-child){display:none}}
+</style></head><body>
+<div class="w"><nav><b>Formly</b><div class="l"><a href="#features">Features</a><a href="#faq">FAQ</a><a href="#">Log in</a></div></nav>
+<header class="hero"><span class="tag">New: payments inside your forms</span><h1>Forms people actually finish</h1><p>Build a sign up form, survey or order form in five minutes. Formly asks one question at a time, so more people get to the end.</p>
+<div class="cta"><a class="btn" href="#start">Start free</a><a class="btn o" href="#">See a live example</a></div><small>Free for up to 100 responses a month. No card needed.</small>
+<div class="app" aria-hidden="true"><div class="in"><aside><div class="on">Event sign up</div><div>Customer survey</div><div>Cake orders</div><div>Job application</div></aside><div class="form"><b>Event sign up</b><label>Your name</label><span></span><label>Email</label><span></span><label>Which session?</label><span></span></div></div></div></header>
+<section class="logos"><p>Used by 12,000 teams, from bakeries to universities</p><div><span>Northwind</span><span>Halden</span><span>Oat Club</span><span>Brightside</span><span>Parcel</span></div></section>
+<section class="feat" id="features"><div><i aria-hidden="true"></i><h2>One question at a time</h2><p>Forms feel like a short chat, and completion rates go up by a third on average.</p></div><div><i aria-hidden="true"></i><h2>Take payments</h2><p>Add a price to any form and get paid by card or Apple Pay.</p></div><div><i aria-hidden="true"></i><h2>Send answers anywhere</h2><p>Google Sheets, Slack, email or your own webhook.</p></div></section>
+<section class="quote"><p>We moved our volunteer sign up to Formly and got twice as many finished forms in the first week.</p><b>Hannah Cole <span>Riverside Food Bank</span></b></section>
+<section class="faq" id="faq"><h2>Questions</h2><details><summary>Is there really a free plan?</summary><p>Yes. Up to 100 responses a month, unlimited forms, forever.</p></details><details><summary>Can I use my own domain?</summary><p>Yes, on the Pro plan and above.</p></details><details><summary>Is my data safe?</summary><p>Data is stored in the EU, encrypted, and never sold.</p></details></section>
+<section class="end" id="start"><h2>Build your first form today</h2><form onsubmit="event.preventDefault();this.querySelector('button').textContent='Check your inbox'"><input type="email" required placeholder="you@company.com" aria-label="Work email"><button class="btn">Start free</button></form></section></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

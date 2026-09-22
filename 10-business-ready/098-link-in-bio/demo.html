@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Juno Hale Music | Link in Bio HTML Template</title>
+<meta name="description" content="Free link in bio template for a musician. Mobile first single column with profile, big link buttons, a tour date list and social links. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#141019;--ink:#f6f1ff;--muted:#b3a8c7;--card:#221b2b;--acc:#ff8a5c;--acc2:#b98cff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Space Grotesk",system-ui,sans-serif;background:radial-gradient(circle at 50% -10%,#4a2a66,var(--bg) 55%);color:var(--ink);min-height:100vh;line-height:1.5}
+main{max-width:460px;margin:0 auto;padding:46px 20px 30px;text-align:center}
+.av{width:104px;height:104px;border-radius:50%;margin:0 auto 14px;background:conic-gradient(from 200deg,var(--acc),var(--acc2),var(--acc));padding:4px}
+.av span{display:block;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 50% 38%,#f2d0b8 0 20%,transparent 21%),radial-gradient(ellipse at 50% 100%,#3a2a4a 0 45%,transparent 46%),#6b4a86}
+h1{font-size:1.6rem}
+.bio{color:var(--muted);margin:6px 0 24px}
+.links a{display:block;background:var(--card);border:1px solid rgba(255,255,255,.08);color:var(--ink);text-decoration:none;font-weight:700;padding:16px;border-radius:16px;margin-bottom:12px;transition:transform .15s,background .15s}
+.links a:hover{transform:translateY(-2px);background:#2c2338}
+.links a.hl{background:linear-gradient(90deg,var(--acc),var(--acc2));color:#1a1020;border:0}
+.links a small{display:block;font-weight:500;color:var(--muted);font-size:.85rem}
+.links a.hl small{color:#3a2440}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+h2{font-size:.95rem;color:var(--muted);font-weight:500;margin:26px 0 10px}
+.dates{text-align:left;background:var(--card);border-radius:16px;padding:6px 16px}
+.dates div{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.dates div:last-child{border:0}
+.dates b{display:block}.dates span{color:var(--muted);font-size:.9rem}
+.dates a{color:var(--acc);font-weight:700}
+.soc{display:flex;justify-content:center;gap:10px;margin-top:24px}
+.soc a{color:var(--ink);text-decoration:none;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:7px 14px;font-size:.9rem}
+@media(prefers-reduced-motion:reduce){.links a{transition:none}}
+.credit{text-align:center;padding:10px 0 30px;color:var(--muted);font-size:.85rem}.credit a{color:var(--ink)}
+</style></head><body>
+<main><div class="av" aria-hidden="true"><span></span></div><h1>Juno Hale</h1><p class="bio">Songs about late trains and good friends. New album "Platform 4" out now.</p>
+<nav class="links" aria-label="Links"><a class="hl" href="#">Listen to Platform 4<small>Spotify, Apple Music, Bandcamp</small></a><a href="#">Watch the new video<small>"Last Train Home"</small></a><a href="#">Signed vinyl<small>Limited to 500 copies</small></a><a href="#">Join the mailing list</a></nav>
+<h2>On tour</h2><div class="dates"><div><span><b>Leeds, Brudenell</b><span>14 Nov</span></span><a href="#">Tickets</a></div><div><span><b>Glasgow, King Tut's</b><span>16 Nov</span></span><a href="#">Tickets</a></div><div><span><b>London, Scala</b><span>20 Nov</span></span><a href="#">Sold out</a></div></div>
+<div class="soc"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a></div></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+</body></html>

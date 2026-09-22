@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small Kitchen Diaries Food Blog | Blog HTML Template</title>
+<meta name="description" content="Free blog template for a food blog. Featured post, post list with tags and reading time, topic filter, author box and newsletter sign up. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffcf7;--ink:#241f1a;--muted:#6e665c;--line:#ece4d8;--acc:#c0492b;--soft:#f6efe4}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+.w{max-width:1080px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+header b{font-family:Fraunces,serif;font-size:1.5rem}
+header nav a{color:var(--ink);margin-left:18px;text-decoration:none;font-weight:600}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.feat{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:center;padding:40px 0;text-decoration:none}
+.feat .img{aspect-ratio:4/3;border-radius:14px;background:radial-gradient(circle at 50% 55%,#f6d7a7 0 22%,#e3a04b 23% 30%,transparent 31%),radial-gradient(circle at 30% 30%,#8fa36b 0 6%,transparent 7%),radial-gradient(circle at 70% 25%,#c0492b 0 5%,transparent 6%),#efe4d2}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--acc);text-transform:none}
+.feat h1{font-family:Fraunces,serif;font-size:clamp(2rem,4.5vw,3rem);line-height:1.08;margin:6px 0 10px}
+.feat p{color:var(--muted)}
+.meta{color:var(--muted);font-size:.9rem;margin-top:10px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;padding:10px 0 20px;border-top:1px solid var(--line)}
+.bar button{font:inherit;font-size:.95rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;cursor:pointer;color:var(--ink)}
+.bar button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.layout{display:grid;grid-template-columns:1fr 300px;gap:40px;padding-bottom:60px}
+.post{display:grid;grid-template-columns:160px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.post .th{aspect-ratio:4/3;border-radius:10px;background:var(--g)}
+.post h2{font-family:Fraunces,serif;font-size:1.35rem;line-height:1.2;margin:2px 0 6px}
+.post p{color:var(--muted);font-size:.98rem}
+aside .box{background:var(--soft);border-radius:14px;padding:22px;margin-bottom:20px}
+aside h3{font-family:Fraunces,serif;font-size:1.2rem;margin-bottom:6px}
+aside p{color:var(--muted);font-size:.95rem}
+.av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#e3a04b,#c0492b);margin-bottom:10px}
+aside form{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+aside input{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px}
+aside button{font:inherit;font-weight:600;background:var(--acc);color:#fff;border:0;border-radius:8px;padding:10px;cursor:pointer}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.feat,.layout{grid-template-columns:1fr}.post{grid-template-columns:110px 1fr}header nav{display:none}}
+</style></head><body><div class="w">
+<header><b>Small Kitchen Diaries</b><nav><a href="#">Recipes</a><a href="#">About</a><a href="#">Newsletter</a></nav></header>
+<main><a class="feat" href="#"><span class="img" role="img" aria-label="A bowl of pumpkin soup with herbs"></span><div><span class="tag">Autumn</span><h1>The only pumpkin soup you need, made in one pot</h1><p>Roasting the pumpkin first is the whole secret. Here is how I do it in a flat with a two ring hob and no blender.</p><p class="meta">12 October, 6 min read</p></div></a>
+<div class="bar" role="group" aria-label="Filter posts"><button aria-pressed="true" data-t="all">All</button><button aria-pressed="false" data-t="quick">Quick dinners</button><button aria-pressed="false" data-t="baking">Baking</button><button aria-pressed="false" data-t="budget">On a budget</button></div>
+<div class="layout"><section id="list" aria-label="Latest posts">
+<a class="post" href="#" data-t="quick"><span class="th" style="--g:linear-gradient(135deg,#f3d27a,#e38b3b)"></span><div><span class="tag">Quick dinners</span><h2>Ten minute egg fried rice</h2><p>Day old rice, two eggs and whatever is in the fridge.</p><p class="meta">4 min read</p></div></a>
+<a class="post" href="#" data-t="baking"><span class="th" style="--g:linear-gradient(135deg,#e9d3b5,#b9875a)"></span><div><span class="tag">Baking</span><h2>No knead bread in a frying pan</h2><p>For anyone without an oven. It works, I promise.</p><p class="meta">7 min read</p></div></a>
+<a class="post" href="#" data-t="budget"><span class="th" style="--g:linear-gradient(135deg,#bfd8a8,#6f9a54)"></span><div><span class="tag">On a budget</span><h2>A week of lunches for £15</h2><p>Five meals from one shop, with a shopping list you can print.</p><p class="meta">9 min read</p></div></a>
+<a class="post" href="#" data-t="quick"><span class="th" style="--g:linear-gradient(135deg,#f2b8a2,#c0492b)"></span><div><span class="tag">Quick dinners</span><h2>Tomato butter pasta</h2><p>Five ingredients, one pan, better than it has any right to be.</p><p class="meta">3 min read</p></div></a></section>
+<aside><div class="box"><span class="av" style="display:block" aria-hidden="true"></span><h3>Hi, I'm Priya</h3><p>I cook in a tiny London kitchen and write down what works. No life stories before the recipe, just a short note and the steps.</p></div>
+<div class="box"><h3>One recipe a week</h3><p>Every Sunday, straight to your inbox. 18,000 readers.</p><form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks, see you Sunday'"><input type="email" required placeholder="you@example.com" aria-label="Email"><button>Subscribe</button></form></div></aside></div></main></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>document.querySelectorAll('.bar button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.bar button').forEach(x=>x.setAttribute('aria-pressed',x===b));document.querySelectorAll('#list .post').forEach(p=>p.hidden=b.dataset.t!=='all'&&p.dataset.t!==b.dataset.t)})</script>
+</body></html>

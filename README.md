@@ -6,7 +6,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 
 ![Preview of the first designs](01-soft-tactile-ui/001-glassmorphism/preview.png)
 
-## Designs so far
+## All designs
 
 | # | Design | Example | Live | Preview |
 |---|---|---|---|---|
@@ -100,6 +100,16 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 | 088 | [Art Deco](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/088-art-deco/) | The Gilded Lily, a cocktail bar | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/088-art-deco/demo.html) | <img src="09-cultural-aesthetic/088-art-deco/preview.png" width="260" alt="Art Deco preview"> |
 | 089 | [Islamic Geometric](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/089-islamic-geometric/) | Riad Zellige, a guesthouse in Marrakech | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/089-islamic-geometric/demo.html) | <img src="09-cultural-aesthetic/089-islamic-geometric/preview.png" width="260" alt="Islamic Geometric preview"> |
 | 090 | [Guochao](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/090-guochao/) | Moonrise Bakery, handmade mooncakes | [Demo](https://mmrahmanbappi.github.io/100-css-designs/09-cultural-aesthetic/090-guochao/demo.html) | <img src="09-cultural-aesthetic/090-guochao/preview.png" width="260" alt="Guochao preview"> |
+| 091 | [SaaS Landing Page](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/091-saas-landing/) | Formly, a form builder | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/091-saas-landing/demo.html) | <img src="10-business-ready/091-saas-landing/preview.png" width="260" alt="SaaS Landing Page preview"> |
+| 092 | [Pricing Table](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/092-pricing-table/) | Notecraft, a notes app | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/092-pricing-table/demo.html) | <img src="10-business-ready/092-pricing-table/preview.png" width="260" alt="Pricing Table preview"> |
+| 093 | [Minimal Portfolio](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/093-portfolio/) | Ana Ribeiro, a product designer | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/093-portfolio/demo.html) | <img src="10-business-ready/093-portfolio/preview.png" width="260" alt="Minimal Portfolio preview"> |
+| 094 | [Docs Site](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/094-docs-site/) | Quarry, an API documentation site | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/094-docs-site/demo.html) | <img src="10-business-ready/094-docs-site/preview.png" width="260" alt="Docs Site preview"> |
+| 095 | [Shop Product Grid](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/095-shop-grid/) | Loop and Knot, a knitwear shop | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/095-shop-grid/demo.html) | <img src="10-business-ready/095-shop-grid/preview.png" width="260" alt="Shop Product Grid preview"> |
+| 096 | [Analytics Dashboard](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/096-analytics-dashboard/) | Tally, a web analytics tool | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/096-analytics-dashboard/demo.html) | <img src="10-business-ready/096-analytics-dashboard/preview.png" width="260" alt="Analytics Dashboard preview"> |
+| 097 | [Blog](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/097-blog/) | Small Kitchen Diaries, a food blog | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/097-blog/demo.html) | <img src="10-business-ready/097-blog/preview.png" width="260" alt="Blog preview"> |
+| 098 | [Link in Bio](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/098-link-in-bio/) | Juno Hale, a musician | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/098-link-in-bio/demo.html) | <img src="10-business-ready/098-link-in-bio/preview.png" width="260" alt="Link in Bio preview"> |
+| 099 | [Waitlist Page](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/099-waitlist/) | Brightwell, a sleep app before launch | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/099-waitlist/demo.html) | <img src="10-business-ready/099-waitlist/preview.png" width="260" alt="Waitlist Page preview"> |
+| 100 | [Directory Listing](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/100-directory-listing/) | Course Compass, a college finder | [Demo](https://mmrahmanbappi.github.io/100-css-designs/10-business-ready/100-directory-listing/demo.html) | <img src="10-business-ready/100-directory-listing/preview.png" width="260" alt="Directory Listing preview"> |
 
 ## Categories
 
@@ -112,7 +122,7 @@ Trending UI styles built as real pages, with a live demo and a single HTML file 
 - 7. Motion (live)
 - 8. 3D and Depth (live)
 - 9. Cultural and Aesthetic (live)
-- 10. Business Ready Pages (coming soon)
+- 10. Business Ready Pages (live)
 
 ## How to use a design
 

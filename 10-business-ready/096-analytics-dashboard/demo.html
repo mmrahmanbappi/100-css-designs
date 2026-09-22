@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally Web Analytics | Analytics Dashboard HTML Template</title>
+<meta name="description" content="Free analytics dashboard template for a web analytics tool. KPI cards, SVG line chart with date range switch, donut chart and top pages table. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f8;--card:#fff;--ink:#141821;--muted:#636a7a;--line:#e5e8ef;--a:#2f6fed;--b:#18a57b;--c:#f2a33a;--d:#d94f7a}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;font-size:15px}
+.w{max-width:1240px;margin:0 auto;padding:22px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.top h1{font-size:1.4rem}
+.top small{color:var(--muted);display:block}
+.rng{display:inline-flex;background:#e9ecf2;border-radius:10px;padding:3px}
+.rng button{font:inherit;font-weight:600;border:0;background:transparent;border-radius:8px;padding:7px 12px;cursor:pointer;color:var(--muted)}
+.rng button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+button:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.kpi small{color:var(--muted);font-weight:500}
+.kpi b{display:block;font-size:1.8rem;margin:2px 0}
+.up{color:var(--b);font-weight:600}.dn{color:var(--d);font-weight:600}
+.row{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:14px}
+.card h2{font-size:1rem;margin-bottom:10px;display:flex;justify-content:space-between}
+.card h2 span{color:var(--muted);font-weight:500;font-size:.9rem}
+svg{display:block;width:100%;height:auto}
+.grid line{stroke:var(--line)}
+.ax{fill:var(--muted);font-size:11px}
+.lineA{fill:none;stroke:var(--a);stroke-width:2.5}
+.areaA{fill:url(#ga)}
+.lineB{fill:none;stroke:var(--b);stroke-width:2;stroke-dasharray:5 5}
+.leg{display:flex;gap:16px;color:var(--muted);font-size:.85rem;margin-top:8px}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+.don{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:center}
+.ring{width:140px;height:140px;border-radius:50%;background:conic-gradient(var(--a) 0 52%,var(--b) 52% 76%,var(--c) 76% 91%,var(--d) 91%);-webkit-mask:radial-gradient(circle,transparent 42px,#000 43px);mask:radial-gradient(circle,transparent 42px,#000 43px)}
+.don ul{list-style:none;padding:0}
+.don li{display:flex;justify-content:space-between;padding:4px 0}
+.don li i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:8px}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:500;font-size:.85rem}
+td:not(:first-child),th:not(:first-child){text-align:right}
+.bar{position:relative}.bar::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:var(--p);background:#eef3fe;border-radius:4px;z-index:-1}
+.credit{text-align:center;padding:16px 0;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:900px){.kpis{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr}}
+</style></head><body><div class="w">
+<div class="top"><div><h1>brightside.shop</h1><small>Visitors and sales, updated 2 minutes ago</small></div><div class="rng" role="group" aria-label="Date range"><button aria-pressed="false" data-r="7">7 days</button><button aria-pressed="true" data-r="30">30 days</button><button aria-pressed="false" data-r="90">90 days</button></div></div>
+<section class="kpis"><div class="card kpi"><small>Visitors</small><b id="k1">48,210</b><span class="up">+12.4%</span></div><div class="card kpi"><small>Page views</small><b id="k2">131,905</b><span class="up">+8.1%</span></div><div class="card kpi"><small>Bounce rate</small><b>41%</b><span class="dn">+2.3 pts</span></div><div class="card kpi"><small>Revenue</small><b id="k4">€18,420</b><span class="up">+15.0%</span></div></section>
+<section class="row"><div class="card"><h2>Visitors <span id="rl">Last 30 days</span></h2>
+<svg viewBox="0 0 700 240" role="img" aria-label="Line chart of visitors compared with the previous period"><defs><linearGradient id="ga" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f6fed" stop-opacity=".25"/><stop offset="1" stop-color="#2f6fed" stop-opacity="0"/></linearGradient></defs>
+<g class="grid"><line x1="40" x2="690" y1="30" y2="30"/><line x1="40" x2="690" y1="90" y2="90"/><line x1="40" x2="690" y1="150" y2="150"/><line x1="40" x2="690" y1="210" y2="210"/></g>
+<text class="ax" x="30" y="34" text-anchor="end">3k</text><text class="ax" x="30" y="94" text-anchor="end">2k</text><text class="ax" x="30" y="154" text-anchor="end">1k</text><text class="ax" x="30" y="214" text-anchor="end">0</text>
+<path id="area" class="areaA"/><path id="la" class="lineA"/><path id="lb" class="lineB"/></svg>
+<div class="leg"><span><i style="background:var(--a)"></i>This period</span><span><i style="background:var(--b)"></i>Previous period</span></div></div>
+<div class="card"><h2>Traffic sources</h2><div class="don"><div class="ring" role="img" aria-label="Donut chart: search 52%, social 24%, direct 15%, email 9%"></div><ul><li><span><i style="background:var(--a)"></i>Search</span><b>52%</b></li><li><span><i style="background:var(--b)"></i>Social</span><b>24%</b></li><li><span><i style="background:var(--c)"></i>Direct</span><b>15%</b></li><li><span><i style="background:var(--d)"></i>Email</span><b>9%</b></li></ul></div></div></section>
+<section class="card" style="margin-top:14px"><h2>Top pages</h2><table><thead><tr><th>Page</th><th>Visitors</th><th>Avg. time</th></tr></thead><tbody>
+<tr><td class="bar" style="--p:100%">/</td><td>21,480</td><td>0:48</td></tr><tr><td class="bar" style="--p:62%">/shop/winter-sale</td><td>13,320</td><td>1:52</td></tr><tr><td class="bar" style="--p:38%">/blog/how-to-choose-boots</td><td>8,160</td><td>3:05</td></tr><tr><td class="bar" style="--p:21%">/about</td><td>4,510</td><td>0:36</td></tr></tbody></table></section></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const D={7:{n:7,k:['11,902','32,480','€4,210']},30:{n:30,k:['48,210','131,905','€18,420']},90:{n:30,k:['139,774','392,110','€52,960']}};
+function series(n,seed,base,amp){let a=[],v=base;for(let i=0;i<n;i++){v+=Math.sin(i*1.3+seed)*amp+ (Math.cos(i*.7+seed*2))*amp*.6;a.push(Math.max(300,Math.min(2900,v+i*18)))}return a}
+function path(a){const w=650/(a.length-1);return a.map((v,i)=>(i?'L':'M')+(40+i*w).toFixed(1)+' '+(210-v/3000*180).toFixed(1)).join(' ')}
+function draw(r){const d=D[r],A=series(d.n,r/7,1500,180),B=series(d.n,r/7+2,1250,150),p=path(A);
+document.getElementById('la').setAttribute('d',p);document.getElementById('area').setAttribute('d',p+' L690 210 L40 210 Z');document.getElementById('lb').setAttribute('d',path(B));
+document.getElementById('k1').textContent=d.k[0];document.getElementById('k2').textContent=d.k[1];document.getElementById('k4').textContent=d.k[2];document.getElementById('rl').textContent='Last '+r+' days'}
+document.querySelectorAll('.rng button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.rng button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw(b.dataset.r)});draw(30);
+</script>
+</body></html>

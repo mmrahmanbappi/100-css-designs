@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notecraft Pricing | Pricing Table HTML Template</title>
+<meta name="description" content="Free pricing table template with a working monthly and yearly toggle, three plans, a featured tier and a full feature comparison table. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f7f4;--card:#fff;--ink:#16181d;--muted:#62666f;--acc:#0e7c66;--line:#e4e4de}
+*{box-sizing:border-box;margin:0}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.w{max-width:1100px;margin:0 auto;padding:0 24px}
+header{text-align:center;padding:60px 0 30px}
+h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.03em}
+header p{color:var(--muted);font-size:1.15rem;margin-top:10px}
+.tog{display:inline-flex;background:#ebebe5;border-radius:999px;padding:4px;margin-top:24px}
+.tog button{font:inherit;font-weight:600;border:0;background:transparent;padding:9px 18px;border-radius:999px;cursor:pointer;color:var(--muted)}
+.tog button[aria-pressed=true]{background:#fff;color:var(--ink);box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.tog em{font-style:normal;color:var(--acc);font-size:.85rem;margin-left:4px}
+button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:20px 0 50px;align-items:start}
+.p{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.p.f{border:2px solid var(--acc);position:relative}
+.p.f::before{content:"Most popular";position:absolute;top:-13px;left:24px;background:var(--acc);color:#fff;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:999px}
+.p h2{font-size:1.1rem}
+.p .d{color:var(--muted);font-size:.95rem;min-height:3em}
+.amt{font-size:2.8rem;font-weight:800;letter-spacing:-.03em;margin:14px 0 0}
+.amt small{font-size:1rem;color:var(--muted);font-weight:600}
+.bill{color:var(--muted);font-size:.9rem;min-height:1.5em}
+.p a{display:block;text-align:center;margin:18px 0;padding:12px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);color:var(--ink)}
+.p.f a{background:var(--acc);color:#fff;border-color:var(--acc)}
+.p ul{list-style:none;padding:0}
+.p li{padding:6px 0 6px 26px;position:relative}
+.p li::before{content:"";position:absolute;left:4px;top:13px;width:10px;height:6px;border-left:2px solid var(--acc);border-bottom:2px solid var(--acc);transform:rotate(-45deg)}
+.cmp{overflow-x:auto;margin-bottom:60px;background:#fff;border:1px solid var(--line);border-radius:16px}
+table{width:100%;border-collapse:collapse;min-width:600px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:.95rem}
+td:not(:first-child),th:not(:first-child){text-align:center}
+tbody tr:last-child td{border:0}
+.y{color:var(--acc);font-weight:800}.n{color:#b7b7b0}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+@media(max-width:860px){.plans{grid-template-columns:1fr}}
+</style></head><body><div class="w">
+<header><h1>Simple pricing for every team</h1><p>Start free. Upgrade when your notes outgrow you.</p>
+<div class="tog" role="group" aria-label="Billing period"><button aria-pressed="true" data-m="m">Monthly</button><button aria-pressed="false" data-m="y">Yearly<em>save 20%</em></button></div></header>
+<main><section class="plans">
+<div class="p"><h2>Free</h2><p class="d">For personal notes and trying things out.</p><p class="amt"><span data-m="0" data-y="0">$0</span><small> / month</small></p><p class="bill">Free forever</p><a href="#">Start free</a><ul><li>Up to 3 notebooks</li><li>Sync on 2 devices</li><li>7 day history</li></ul></div>
+<div class="p f"><h2>Pro</h2><p class="d">For people who write every day.</p><p class="amt"><span data-m="10" data-y="8">$10</span><small> / month</small></p><p class="bill" data-mb="Billed monthly" data-yb="$96 billed yearly">Billed monthly</p><a href="#">Start 14 day trial</a><ul><li>Unlimited notebooks</li><li>Sync on all devices</li><li>AI summaries</li><li>1 year history</li></ul></div>
+<div class="p"><h2>Team</h2><p class="d">For teams that share docs and wikis.</p><p class="amt"><span data-m="18" data-y="14">$18</span><small> / user / month</small></p><p class="bill" data-mb="Billed monthly" data-yb="$168 per user yearly">Billed monthly</p><a href="#">Talk to us</a><ul><li>Everything in Pro</li><li>Shared spaces</li><li>Admin controls and SSO</li><li>Unlimited history</li></ul></div></section>
+<h2 style="font-size:1.5rem;margin-bottom:14px">Compare plans</h2>
+<div class="cmp"><table><thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th><th scope="col">Team</th></tr></thead><tbody>
+<tr><td>Notebooks</td><td>3</td><td>Unlimited</td><td>Unlimited</td></tr>
+<tr><td>Devices</td><td>2</td><td>Unlimited</td><td>Unlimited</td></tr>
+<tr><td>AI summaries</td><td class="n">No</td><td class="y">Yes</td><td class="y">Yes</td></tr>
+<tr><td>Shared spaces</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Single sign on</td><td class="n">No</td><td class="n">No</td><td class="y">Yes</td></tr>
+<tr><td>Support</td><td>Community</td><td>Email</td><td>Priority, 4 hours</td></tr></tbody></table></div></main></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+document.querySelectorAll('.tog button').forEach(b=>b.onclick=()=>{const y=b.dataset.m==='y';document.querySelectorAll('.tog button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+document.querySelectorAll('.amt span').forEach(s=>s.textContent='$'+(y?s.dataset.y:s.dataset.m));document.querySelectorAll('.bill[data-mb]').forEach(p=>p.textContent=y?p.dataset.yb:p.dataset.mb)});
+</script>
+</body></html>

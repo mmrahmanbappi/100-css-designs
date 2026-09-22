@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quarry API Docs | Documentation Site HTML Template</title>
+<meta name="description" content="Free documentation site template for an API. Sidebar with search filter, readable article, code blocks with copy buttons, callouts and an on this page menu. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--side:#f7f8fa;--ink:#1a1d24;--muted:#5d6472;--line:#e5e7ec;--acc:#0b6bcb;--code:#0f1420;--note:#eef6ff}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Inter Tight",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16.5px}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:12px 22px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.92);backdrop-filter:blur(8px)}
+.top b{font-size:1.05rem}.top b span{color:var(--muted);font-weight:500;margin-left:6px}
+.top a{color:var(--ink);font-weight:500;margin-left:18px;text-decoration:none}
+a{color:var(--acc)}
+a:focus-visible,input:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr) 200px;max-width:1300px;margin:0 auto}
+aside.nav{position:sticky;top:53px;height:calc(100vh - 53px);overflow-y:auto;padding:20px 16px;border-right:1px solid var(--line);background:var(--side)}
+aside input{width:100%;font:inherit;font-size:.95rem;padding:9px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:14px;background:#fff}
+aside h3{font-size:.8rem;color:var(--muted);margin:14px 8px 4px;font-weight:600}
+aside a{display:block;padding:5px 8px;border-radius:6px;color:var(--ink);text-decoration:none;font-size:.95rem}
+aside a:hover{background:#eceef2}
+aside a[aria-current]{background:#e3eefb;color:var(--acc);font-weight:600}
+article{padding:36px 48px 60px;max-width:780px}
+.crumb{color:var(--muted);font-size:.9rem}
+h1{font-size:2.2rem;letter-spacing:-.02em;line-height:1.15;margin:6px 0 12px}
+h2{font-size:1.4rem;margin:34px 0 10px;scroll-margin-top:70px}
+p{margin-bottom:12px}
+code{font-family:"JetBrains Mono",monospace;font-size:.88em;background:#f1f3f6;padding:2px 5px;border-radius:4px}
+.cb{position:relative;margin:14px 0 18px}
+.cb small{position:absolute;left:14px;top:8px;color:#8b94a7;font-size:.78rem}
+.cb pre code{background:none;padding:0;font-size:1em;color:inherit}
+.cb pre{background:var(--code);color:#e6e9f0;border-radius:10px;padding:32px 16px 16px;overflow-x:auto;font-family:"JetBrains Mono",monospace;font-size:.88rem;line-height:1.6}
+.cb button{position:absolute;right:10px;top:8px;font:inherit;font-size:.8rem;background:#232a38;color:#e6e9f0;border:0;border-radius:6px;padding:4px 10px;cursor:pointer}
+.k{color:#7cc4ff}.s{color:#a5e38c}.c{color:#6c7589}
+.note{background:var(--note);border-left:4px solid var(--acc);border-radius:6px;padding:12px 16px;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:10px 0 18px;font-size:.95rem}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.pager{display:flex;justify-content:space-between;margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
+aside.toc{position:sticky;top:53px;align-self:start;padding:36px 16px;font-size:.9rem}
+aside.toc b{display:block;margin-bottom:8px}
+aside.toc a{display:block;color:var(--muted);text-decoration:none;padding:3px 0}
+.credit{color:var(--muted);font-size:.9rem;margin-top:30px}
+@media(max-width:1080px){.layout{grid-template-columns:230px minmax(0,1fr)}aside.toc{display:none}}
+@media(max-width:760px){.layout{grid-template-columns:1fr}aside.nav{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}article{padding:24px 20px}}
+</style></head><body>
+<header class="top"><b>Quarry<span>Docs</span></b><div><a href="#">API reference</a><a href="#">Dashboard</a></div></header>
+<div class="layout"><aside class="nav" aria-label="Docs"><input id="q" type="search" placeholder="Filter pages" aria-label="Filter pages">
+<h3>Getting started</h3><a href="#">Introduction</a><a href="#" aria-current="page">Quick start</a><a href="#">Authentication</a>
+<h3>Guides</h3><a href="#">Search as you type</a><a href="#">Filtering results</a><a href="#">Pagination</a><a href="#">Webhooks</a>
+<h3>Reference</h3><a href="#">Errors</a><a href="#">Rate limits</a><a href="#">Changelog</a></aside>
+<article><p class="crumb">Getting started / Quick start</p><h1>Quick start</h1><p>Send your first search request in under five minutes. You need an API key from your dashboard and any tool that can make HTTP requests.</p>
+<h2 id="install">Install the client</h2><div class="cb"><small>bash</small><button>Copy</button><pre><code>npm install @quarry/client</code></pre></div>
+<h2 id="key">Add your key</h2><p>Keep your key on the server. Never put it in code that runs in the browser.</p>
+<div class="cb"><small>javascript</small><button>Copy</button><pre><code><span class="k">import</span> { Quarry } <span class="k">from</span> <span class="s">"@quarry/client"</span>;
+
+<span class="k">const</span> quarry = <span class="k">new</span> Quarry(process.env.QUARRY_KEY);
+<span class="k">const</span> results = <span class="k">await</span> quarry.search(<span class="s">"blue running shoes"</span>, { limit: 10 });
+<span class="c">// results.items is an array of matches</span></code></pre></div>
+<div class="note"><b>Tip.</b> Test keys start with <code>qk_test_</code> and never charge you. Switch to a live key when you go to production.</div>
+<h2 id="params">Options</h2><table><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td><code>limit</code></td><td>number</td><td>Results to return, 1 to 100. Default 20.</td></tr><tr><td><code>filters</code></td><td>object</td><td>Only return items that match, for example <code>{ color: "blue" }</code>.</td></tr><tr><td><code>typo</code></td><td>boolean</td><td>Allow small spelling mistakes. Default true.</td></tr></tbody></table>
+<div class="pager"><a href="#">Previous: Introduction</a><a href="#">Next: Authentication</a></div>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p></article>
+<aside class="toc" aria-label="On this page"><b>On this page</b><a href="#install">Install the client</a><a href="#key">Add your key</a><a href="#params">Options</a></aside></div>
+<script>
+document.querySelectorAll('.cb button').forEach(b=>b.onclick=()=>navigator.clipboard.writeText(b.nextElementSibling.innerText).then(()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)}));
+document.getElementById('q').oninput=e=>{const v=e.target.value.toLowerCase();document.querySelectorAll('aside.nav a').forEach(a=>a.hidden=!a.textContent.toLowerCase().includes(v))};
+</script>
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brightwell Sleep App | Waitlist Coming Soon HTML Template</title>
+<meta name="description" content="Free waitlist and coming soon template for an app launch. Live countdown, email sign up with a place in line number, and a referral share link. One HTML file.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1020;--ink:#eef0fb;--muted:#9aa0bd;--acc:#ffcf70;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0}
+body{font-family:Geist,system-ui,sans-serif;background:radial-gradient(ellipse at 50% 120%,#3b2a6b,transparent 60%),radial-gradient(circle at 80% 10%,rgba(255,207,112,.15),transparent 40%),var(--bg);color:var(--ink);min-height:100vh;line-height:1.55;display:flex;flex-direction:column}
+main{flex:1;max-width:700px;margin:0 auto;padding:70px 24px 40px;text-align:center}
+.moon{width:74px;height:74px;border-radius:50%;margin:0 auto 22px;background:var(--acc);box-shadow:inset -18px -6px 0 #e0a93f,0 0 50px rgba(255,207,112,.35)}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:var(--muted);font-size:.9rem}
+h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(2.8rem,8vw,5rem);line-height:1;margin:18px 0 14px}
+.lead{color:var(--muted);font-size:1.15rem;max-width:44ch;margin:0 auto 30px}
+.cd{display:flex;justify-content:center;gap:12px;margin-bottom:30px}
+.cd div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 0;width:84px}
+.cd b{display:block;font-size:2rem;font-weight:600;font-variant-numeric:tabular-nums}
+.cd span{color:var(--muted);font-size:.8rem}
+form{display:flex;gap:8px;max-width:460px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px}
+input{flex:1;font:inherit;background:transparent;border:0;color:var(--ink);padding:10px 12px;min-width:0}
+input:focus{outline:none}
+form:focus-within{border-color:var(--acc)}
+button{font:inherit;font-weight:600;background:var(--acc);color:#1a1530;border:0;border-radius:10px;padding:10px 18px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.done{display:none;max-width:460px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.done b{font-size:1.4rem;color:var(--acc)}
+.done p{color:var(--muted);margin:6px 0 12px}
+.share{display:flex;gap:8px}.share code{flex:1;background:rgba(0,0,0,.3);border-radius:8px;padding:10px;font-size:.85rem;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.social{color:var(--muted);font-size:.9rem;margin-top:16px}
+.credit{text-align:center;padding:0 0 30px;color:var(--muted);font-size:.9rem}.credit a{color:var(--ink)}
+</style></head><body>
+<main><div class="moon" aria-hidden="true"></div><span class="tag">Launching in spring</span><h1>Better sleep, starting tonight</h1><p class="lead">Brightwell is a calm sleep app that learns your rhythm and dims your evening a little at a time. Join the waitlist for early access and three free months.</p>
+<div class="cd" aria-label="Time until launch" id="cd"><div><b id="d">00</b><span>days</span></div><div><b id="h">00</b><span>hours</span></div><div><b id="m">00</b><span>minutes</span></div><div><b id="s">00</b><span>seconds</span></div></div>
+<form id="f"><input type="email" required placeholder="Your email address" aria-label="Email address"><button>Join the waitlist</button></form>
+<div class="done" id="done" aria-live="polite"><b>You are number <span id="pos">2,418</span></b><p>Share your link. Every friend who joins moves you up 50 places.</p><div class="share"><code id="link">brightwell.app/join?ref=you</code><button id="cp">Copy</button></div></div>
+<p class="social">2,417 people are already waiting</p></main>
+<p class="credit">Free template from <a href="https://mmrahmanbappi.github.io/100-css-designs/">100 CSS Designs</a></p>
+<script>
+const launch=new Date();launch.setDate(launch.getDate()+42);launch.setHours(9,0,0,0);
+function tick(){let t=Math.max(0,launch-new Date());const d=Math.floor(t/864e5);t-=d*864e5;const h=Math.floor(t/36e5);t-=h*36e5;const m=Math.floor(t/6e4);t-=m*6e4;const s=Math.floor(t/1e3);
+[['d',d],['h',h],['m',m],['s',s]].forEach(([k,v])=>document.getElementById(k).textContent=String(v).padStart(2,'0'))}tick();setInterval(tick,1000);
+document.getElementById('f').onsubmit=e=>{e.preventDefault();e.target.style.display='none';document.getElementById('done').style.display='block'};
+document.getElementById('cp').onclick=e=>navigator.clipboard.writeText('https://'+document.getElementById('link').textContent).then(()=>{e.target.textContent='Copied';setTimeout(()=>e.target.textContent='Copy',1500)});
+</script>
+</body></html>
