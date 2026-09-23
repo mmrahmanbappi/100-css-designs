@@ -87,8 +87,52 @@ MMCSS;
 const MMFONT = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">';
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">';
 
+// ---- SEO helpers: keep titles within 60 characters and descriptions within 110 to 160 ----
+function mm_trim_stop(array $w): array { $stop = ['and','with','for','in','of','the','a','an','to','&','on','by','your','or']; while ($w && in_array(strtolower(end($w)), $stop, true)) array_pop($w); return $w; }
+function mm_clean(string $t): string {
+    $t = trim($t);
+    if (substr_count($t, '(') > substr_count($t, ')')) $t = trim(substr($t, 0, strrpos($t, '(')));
+    $w = mm_trim_stop(explode(' ', $t)); $t = implode(' ', $w);
+    return rtrim($t, " ,;:-");
+}
+function mm_title(string $t): string {
+    if (mb_strlen($t) <= 60) return $t;
+    while (mb_strlen($t) > 60 && preg_match('/\s*\([^()]*\)/', $t)) {
+        preg_match_all('/\s*\([^()]*\)/', $t, $m, PREG_OFFSET_CAPTURE); $last = end($m[0]);
+        $t = trim(substr($t, 0, $last[1]) . substr($t, $last[1] + strlen($last[0])));
+    }
+    if (mb_strlen($t) <= 60) return mm_clean($t);
+    foreach ([': ', ' | ', ' - '] as $sep) {
+        $p = strpos($t, $sep);
+        if ($p !== false) {
+            $h = substr($t, 0, $p); $s = substr($t, $p + strlen($sep));
+            if (strpos($s, ',') !== false && mb_strlen($h) <= 60) return mm_clean($h);
+            $w = explode(' ', $s);
+            while ($w && mb_strlen($h . $sep . implode(' ', $w)) > 60) array_pop($w);
+            $r = mm_clean(implode(' ', $w));
+            if ($r !== '') return $h . $sep . $r;
+            $t = $h; break;
+        }
+    }
+    if (mb_strlen($t) <= 60) return mm_clean($t);
+    $w = explode(' ', $t); while ($w && mb_strlen(implode(' ', $w)) > 60) array_pop($w);
+    return mm_clean(implode(' ', $w));
+}
+function mm_desc(string $d, string $tail): string {
+    $d = trim($d);
+    if (mb_strlen($d) > 160) {
+        $cut = mb_substr($d, 0, 159); $p = mb_strrpos($cut, '. ');
+        if ($p !== false && $p > 100) $d = mb_substr($cut, 0, $p + 1);
+        else { $w = explode(' ', mb_substr($d, 0, 158)); array_pop($w); $d = rtrim(implode(' ', mm_trim_stop($w)), ',;:') . '.'; }
+    }
+    if (mb_strlen($d) < 110 && mb_strlen($d . ' ' . $tail) <= 160) $d .= ' ' . $tail;
+    return $d;
+}
+const MMTAIL = 'Free, with a live demo and one HTML file to download.';
 function head($title, $desc, $url, $image, $keywords, $schema) {
     global $SITE, $B;
+    $title = mm_title($title); $desc = mm_desc($desc, MMTAIL);
+    $ogimg = rtrim($url, '/') . '/og.jpg';
     $t = e($title); $d = e($desc);
     return "<!DOCTYPE html>
 <html lang=\"en\">
@@ -106,11 +150,15 @@ function head($title, $desc, $url, $image, $keywords, $schema) {
 <meta property=\"og:title\" content=\"$t\">
 <meta property=\"og:description\" content=\"$d\">
 <meta property=\"og:url\" content=\"$url\">
-<meta property=\"og:image\" content=\"$image\">
+<meta property=\"og:image\" content=\"$ogimg\">
+<meta property=\"og:image:alt\" content=\"$t\">
+<meta property=\"og:image:width\" content=\"1200\">
+<meta property=\"og:image:height\" content=\"630\">
+<link rel=\"image_src\" href=\"$image\">
 <meta name=\"twitter:card\" content=\"summary_large_image\">
 <meta name=\"twitter:title\" content=\"$t\">
 <meta name=\"twitter:description\" content=\"$d\">
-<meta name=\"twitter:image\" content=\"$image\">
+<meta name=\"twitter:image\" content=\"$ogimg\">
 " . FONTS . MMFONT . "
 <style>" . CSS . MMCSS . "</style>
 <script type=\"application/ld+json\">" . jsonld($schema) . "</script>

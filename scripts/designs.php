@@ -6,8 +6,8 @@ $SITE = [
     'name' => '100 CSS Designs',
     'base' => 'https://mmrahmanbappi.github.io/100-css-designs/',
     'repo' => 'https://github.com/mmrahmanbappi/100-css-designs',
-    'author' => 'mmrahmanbappi',
-    'author_url' => 'https://github.com/mmrahmanbappi',
+    'author' => 'MM Rahman Bappi',
+    'author_url' => 'https://mmrahmanbappi.github.io/',
     'published' => '2026-09-23',
 ];
 
