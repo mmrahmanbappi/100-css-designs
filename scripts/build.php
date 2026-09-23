@@ -83,6 +83,29 @@ a{color:var(--ink)}
 details{border-color:var(--line)}
 .btn{background:var(--card);color:var(--ink);border-color:var(--ink)}.copy{background:var(--card)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
 @media (max-width:700px){.bar nav a:not(.gh){display:none}}
+.mthero{padding:28px 0 36px}.mthero h1{margin-top:14px!important;font-size:clamp(2.2rem,3.6vw,3.2rem)!important}
+.hgrid{display:grid;grid-template-columns:1.05fr 1.15fr .9fr;gap:26px;align-items:center;min-height:470px}
+.mtbadge{display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--mt-soft);border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem .25rem .3rem}
+.mtbadge b{background:#b23a0a;color:#fff;border-radius:999px;padding:.1rem .5rem}
+.stack{position:relative;height:440px;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.stack figure{position:absolute;margin:0;width:62%;aspect-ratio:16/10;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(23,21,24,.06),0 18px 40px -22px rgba(23,21,24,.35);border:1px solid var(--line);background:var(--card);animation:mtfloat 7s ease-in-out infinite}
+.stack figure img{width:100%;height:100%;object-fit:cover;object-position:top}
+.stack figure:nth-child(1){left:2%;top:4%;transform:rotate(-7deg);animation-delay:-1s}.stack figure:nth-child(2){right:0;top:0;transform:rotate(5deg);animation-delay:-3s}
+.stack figure:nth-child(3){left:18%;top:26%;transform:rotate(-1deg);z-index:3;width:70%;animation-delay:-2s}.stack figure:nth-child(4){left:0;top:52%;transform:rotate(4deg);animation-delay:-4s}
+.stack figure:nth-child(5){right:2%;top:48%;transform:rotate(-5deg);animation-delay:-5s}.stack figure:nth-child(6){left:24%;top:70%;transform:rotate(2deg);animation-delay:-6s}
+@keyframes mtfloat{50%{translate:0 -8px}}
+.mtside{display:flex;flex-direction:column;gap:16px}
+.mtcycle,.mtstat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:15px 17px}.mtcycle{box-shadow:0 18px 40px -26px rgba(23,21,24,.35)}
+.mtcycle .hd{display:flex;align-items:center;gap:11px}.mtcycle .hd i{width:36px;height:36px;border-radius:10px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.7rem;flex:none}
+.mtcycle small{display:block;color:var(--muted);font-size:.78rem}.mtcycle strong{color:var(--ink);font-size:.95rem;display:block;min-height:1.5em;transition:opacity .35s}
+.mtcycle ul{list-style:none;margin:12px 0 0;padding:0 0 0 47px;font-size:.9rem;display:flex;flex-direction:column;gap:7px}
+.mtcycle li:nth-child(1){opacity:.9}.mtcycle li:nth-child(2){opacity:.65}.mtcycle li:nth-child(3){opacity:.4}.mtcycle li:nth-child(4){opacity:.18}
+.mtstat{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}.mtstat small{color:var(--muted);font-size:.85rem;line-height:1.4}
+.mtstat b{display:block;font-size:2rem;color:var(--ink);letter-spacing:-.03em;line-height:1;text-align:right}.mtstat em{font-style:normal;font-size:.78rem;color:var(--blue);font-weight:600;display:block;text-align:right;margin-top:6px}
+.mtbig{font-size:clamp(1.9rem,3.2vw,2.6rem);line-height:1.02;color:var(--ink);font-weight:560;letter-spacing:-.035em;margin:0}
+@media (max-width:1060px){.hgrid{grid-template-columns:1fr 1fr}.mtside{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;align-items:start}.mtbig{grid-column:1/-1}}
+@media (max-width:760px){.hgrid{grid-template-columns:1fr;min-height:0}.stack{height:280px;order:2}.mtside{grid-template-columns:1fr;order:3}}
+@media (prefers-reduced-motion:reduce){.stack figure{animation:none}}
 MMCSS;
 const MMFONT = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">';
 const FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">';
@@ -129,6 +152,20 @@ function mm_desc(string $d, string $tail): string {
     return $d;
 }
 const MMTAIL = 'Free, with a live demo and one HTML file to download.';
+
+function mm_hero(string $badge, string $mark, string $label, array $items, array $imgs, string $statLabel, string $statValue, string $statNote, string $big): array {
+    $figs = ''; foreach (array_slice($imgs, 0, 6) as $im) $figs .= '<figure><img src="' . e($im) . '" alt="" width="640" height="400" loading="lazy"></figure>';
+    $nx = ''; foreach (array_slice($items, 1, 4) as $it) $nx .= '<li>' . e($it) . '</li>';
+    $open = '<section class="mthero"><div class="hgrid"><div><span class="mtbadge"><b>Free</b>' . e($badge) . '</span>';
+    $close = '</div><div class="stack" aria-hidden="true">' . $figs . '</div><div class="mtside"><div class="mtcycle"><div class="hd"><i aria-hidden="true">' . e($mark) . '</i><div><small>' . e($label) . '</small>'
+        . '<strong id="mtcur" data-items="' . e(json_encode(array_values($items))) . '">' . e($items[0]) . '</strong></div></div><ul id="mtnx" aria-hidden="true">' . $nx . '</ul></div>'
+        . '<div class="mtstat"><small>' . $statLabel . '</small><div><b>' . e($statValue) . '</b><em>' . e($statNote) . '</em></div></div><p class="mtbig">' . e($big) . '</p></div></div></section>';
+    return [$open, $close];
+}
+const MMHEROJS = <<<'MMJS'
+<script>(function(){var cur=document.getElementById('mtcur'),nx=document.getElementById('mtnx');if(!cur||matchMedia('(prefers-reduced-motion: reduce)').matches)return;var items=JSON.parse(cur.dataset.items),i=0;
+setInterval(function(){i=(i+1)%items.length;cur.style.opacity=0;setTimeout(function(){cur.textContent=items[i];cur.style.opacity=1;nx.innerHTML='';for(var k=1;k<5;k++){var li=document.createElement('li');li.textContent=items[(i+k)%items.length];nx.appendChild(li);}},350);},2600);})();</script>
+MMJS;
 function head($title, $desc, $url, $image, $keywords, $schema) {
     global $SITE, $B;
     $title = mm_title($title); $desc = mm_desc($desc, MMTAIL);
@@ -345,16 +382,20 @@ function home() {
             $soon .= "<div><b>{$c['num']}. $cn</b>Coming soon</div>";
         }
     }
-    $body = "<main class=\"wrap\">
-<h1 style=\"margin-top:50px\">100 free CSS designs you can use today</h1>
+    $mmImgs = []; foreach ($CATEGORIES as $mc) { foreach ($DESIGNS as $md) if ($md['cat'] === $mc['slug']) { $mmImgs[] = durl($md) . 'preview.png'; break; } }
+    $mmCats = array_values(array_filter($CATEGORIES, fn($mc) => count(array_filter($DESIGNS, fn($md) => $md['cat'] === $mc['slug'])) > 0));
+    $mmNames = array_map(fn($mc) => $mc['name'] . ' designs', $mmCats);
+    [$mmOpen, $mmClose] = mm_hero('CSS design templates', 'CSS', 'Design styles in the set', $mmNames, $mmImgs, 'Free CSS designs<br>with live demos', (string)count($DESIGNS), count($mmCats) . ' categories', 'Pick a style. Copy the CSS.');
+    $body = "<main class=\"wrap\">" . $mmOpen . "
+<h1>100 free CSS designs you can use today</h1>
 <p class=\"lead\">" . (count($DESIGNS) >= 100 ? "All 100 designs are live. The UI styles" : count($DESIGNS) . " designs are live, with more added every week. The UI styles")." people are searching for right now, each built as a real page you can open and try. Glassmorphism, neumorphism, bento grids, neo brutalism, AI dashboards and more. Every design comes with a live demo, the key CSS to copy, and a single HTML file to download. No sign up, no framework, free for commercial use.</p>
-<div class=\"actions\"><a class=\"btn main\" href=\"#categories\">Browse the designs</a><a class=\"btn\" href=\"{$SITE['repo']}/archive/refs/heads/main.zip\">Download everything (ZIP)</a><a class=\"btn\" href=\"{$SITE['repo']}\">Star on GitHub</a></div>
+<div class=\"actions\"><a class=\"btn main\" href=\"#categories\">Browse the designs</a><a class=\"btn\" href=\"{$SITE['repo']}/archive/refs/heads/main.zip\">Download everything (ZIP)</a><a class=\"btn\" href=\"{$SITE['repo']}\">Star on GitHub</a></div>" . $mmClose . "
 <section id=\"categories\">$sections
 " . ($soon ? "<h2 style=\"margin-top:30px\">More categories on the way</h2><div class=\"soon\">$soon</div>" : "") . "</section>
 <section class=\"faq\"><h2>Questions people ask</h2>" . faq_html($faq) . "</section>
 </main>
 ";
-    out('index.html', head($title, $desc, $B, $img, 'free css templates, css designs, html templates free download, glassmorphism template, neumorphism template, ui design trends', $schema) . $body . foot());
+    out('index.html', head($title, $desc, $B, $img, 'free css templates, css designs, html templates free download, glassmorphism template, neumorphism template, ui design trends', $schema) . $body . MMHEROJS . foot());
 }
 
 function root_readme() {
