@@ -198,6 +198,15 @@ function head($title, $desc, $url, $image, $keywords, $schema) {
 <meta name=\"twitter:image\" content=\"$ogimg\">
 " . FONTS . MMFONT . "
 <style>" . CSS . MMCSS . "</style>
+<!-- Google tag (gtag.js) -->
+<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-D8QGLFQD12\"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D8QGLFQD12');
+</script>
 <script type=\"application/ld+json\">" . jsonld($schema) . "</script>
 </head>
 <body>
